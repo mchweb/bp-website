@@ -647,9 +647,13 @@ h4 {
   line-height: 1.33333em;
   max-width: 800px;
   margin: 0 auto;
+  margin-top: 0.375em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
 }
 
-/* line 61, ../sass/_typography.scss */
+/* line 62, ../sass/_typography.scss */
 strong {
   font-weight: 600;
 }
@@ -839,7 +843,7 @@ header {
 
 /* line 72, ../sass/_main.scss */
 .navMainItem_dept2:hover {
-  border-color: #009966 !important;
+  border-color: #26a55b !important;
 }
 
 /* line 76, ../sass/_main.scss */
@@ -962,17 +966,18 @@ header {
   background-image: url(../img/back.jpg);
   background-size: cover;
   display: flex;
+  display: -webkit-flex;
   align-items: center;
   height: 45em;
   width: 100%;
 }
 
-/* line 14, ../sass/_pages.scss */
+/* line 15, ../sass/_pages.scss */
 .firstScreen__text {
   width: 100%;
 }
 
-/* line 18, ../sass/_pages.scss */
+/* line 19, ../sass/_pages.scss */
 .mainHeading {
   font-size: 3em;
   line-height: 1.125em;
@@ -982,24 +987,24 @@ header {
   margin-bottom: 0.1875em;
 }
 
-/* line 22, ../sass/_pages.scss */
+/* line 23, ../sass/_pages.scss */
 .mainHeadingCaption {
   font-size: 1.25em;
   line-height: 1.2em;
 }
 
-/* line 25, ../sass/_pages.scss */
+/* line 26, ../sass/_pages.scss */
 .mainHeading, .mainHeadingCaption {
   color: white;
   text-shadow: 1px 1px 2px black;
 }
 
-/* line 30, ../sass/_pages.scss */
+/* line 31, ../sass/_pages.scss */
 .depts {
   text-align: center;
 }
 
-/* line 33, ../sass/_pages.scss */
+/* line 34, ../sass/_pages.scss */
 .deptRow {
   margin-top: 0em;
   padding-top: 1.5em;
@@ -1007,7 +1012,7 @@ header {
   margin-bottom: 0em;
 }
 
-/* line 36, ../sass/_pages.scss */
+/* line 37, ../sass/_pages.scss */
 .dept__item img {
   width: auto;
   height: 12em;
@@ -1019,7 +1024,7 @@ header {
   margin-bottom: 0.75em;
 }
 
-/* line 44, ../sass/_pages.scss */
+/* line 45, ../sass/_pages.scss */
 .bAbout {
   margin-top: 1.5em;
   padding-top: 0.75em;
@@ -1038,13 +1043,20 @@ header {
 
 /* line 55, ../sass/_pages.scss */
 .bAboutRow {
+  margin: 0 auto;
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
+@media (max-width: 680px) {
+  /* line 55, ../sass/_pages.scss */
+  .bAboutRow {
+    max-width: 480px;
+  }
+}
 
-/* line 58, ../sass/_pages.scss */
+/* line 62, ../sass/_pages.scss */
 .bAboutItem__heading {
   color: white;
   font-size: 1.125em;
@@ -1052,10 +1064,144 @@ header {
   font-weight: 600;
 }
 
-/* line 63, ../sass/_pages.scss */
+/* line 67, ../sass/_pages.scss */
 .bAbout__item img {
   width: 100%;
   height: auto;
+}
+
+/* line 72, ../sass/_pages.scss */
+.events__header {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+
+/* line 75, ../sass/_pages.scss */
+.events {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+
+/* line 78, ../sass/_pages.scss */
+.event {
+  background-size: cover;
+  margin-top: 0em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin-bottom: 0em;
+  border-color: white;
+}
+
+/* line 83, ../sass/_pages.scss */
+.eventInfo {
+  max-width: 640px;
+  color: black;
+}
+
+/* line 87, ../sass/_pages.scss */
+.eventInfo__dept {
+  display: inline;
+  margin-top: 0em;
+  padding-top: 0.1875em;
+  padding-bottom: 0.1875em;
+  margin-bottom: 0em;
+  padding-left: .5em;
+  padding-right: .5em;
+  border: 2px dashed black;
+  font-weight: 600;
+}
+
+/* line 95, ../sass/_pages.scss */
+.eventInfo__dept img {
+  width: auto;
+  height: 1em;
+  margin-right: 0.5em;
+}
+
+/* line 100, ../sass/_pages.scss */
+.eventInfo_dept1 {
+  background: #ffcc00;
+}
+
+/* line 103, ../sass/_pages.scss */
+.eventInfo_dept2 {
+  background: #26a55b;
+}
+
+/* line 107, ../sass/_pages.scss */
+.eventInfo__main {
+  margin-top: 0.75em;
+  padding-top: 0.75em;
+  padding-bottom: 1.125em;
+  margin-bottom: 1.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+@media (max-width: 680px) {
+  /* line 107, ../sass/_pages.scss */
+  .eventInfo__main {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+/* line 116, ../sass/_pages.scss */
+.eventInfo__meta {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.375em;
+}
+
+/* line 120, ../sass/_pages.scss */
+.eventInfo__more {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  margin-top: 0em;
+  padding-top: 0.5625em;
+  padding-bottom: 0.5625em;
+  margin-bottom: 1.125em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  background: white;
+  color: black;
+  font-weight: 600;
+}
+@media (max-width: 680px) {
+  /* line 120, ../sass/_pages.scss */
+  .eventInfo__more {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+/* line 134, ../sass/_pages.scss */
+.eventInfo__more:hover {
+  color: white;
+}
+
+/* line 137, ../sass/_pages.scss */
+.eventMore_dept1:hover {
+  background: #ffcc00;
+}
+
+/* line 140, ../sass/_pages.scss */
+.eventMore_dept2:hover {
+  background: #26a55b;
+}
+
+/* line 143, ../sass/_pages.scss */
+.eventSeparator {
+  height: 2px;
+  width: 100%;
+  background-color: white;
 }
 
 /* line 5, ../sass/_decoration.scss */

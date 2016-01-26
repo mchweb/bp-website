@@ -6,6 +6,7 @@
 	background-image:url(../img/back.jpg);
 	background-size:cover; 
 	display:flex;
+	display:-webkit-flex;
 	align-items:center;
 	height:45em;
 	width:100%;
@@ -46,14 +47,17 @@
 	background:rgb(30,30,30);
 	color:white;
 	text-align:center;
-	
 }
 .bAbout__mapImage{
 	width:auto;
 	height:20em;
 }
 .bAboutRow{
+	margin:0 auto;
 	@include rhythm(4, 0, 0, 0);
+	@media (max-width: 680px) {
+		max-width:480px;
+	}
 }
 .bAboutItem__heading{
 	color:white;
@@ -63,4 +67,81 @@
 .bAbout__item img{
 	width:100%;
 	height:auto;
+}
+
+.events__header{
+	@include rhythm(0, 0, 0, 4);
+}
+.events {
+	@include rhythm(0, 0, 0, 4);
+}
+.event{
+	background-size:cover;
+	@include rhythm(0, 4, 4, 0);
+	border-color:white;
+}
+.eventInfo {
+	max-width:640px;
+	color:black;
+}
+.eventInfo__dept{
+	display:inline;
+	@include rhythm(0, 0.5, 0.5, 0);
+	padding-left:.5em;
+	padding-right:.5em;
+	border:2px dashed black;
+	font-weight:600;
+}
+.eventInfo__dept img{
+	width:auto;
+	height:1em;
+	margin-right:0.5em;
+}
+.eventInfo_dept1{
+	background:$dept1;
+}
+.eventInfo_dept2{
+	background:$dept2;
+}
+
+.eventInfo__main{
+	@include rhythm(2, 2, 3, 4);
+	padding-left:2em;
+	padding-right:2em;
+	@media (max-width: 680px) {
+		padding-left:1em;
+		padding-right:1em;
+	}
+}
+.eventInfo__meta{
+	@include adjust-font-size-to(18px);
+	@include rhythm(0, 0, 0, 1);
+}
+.eventInfo__more{
+	@include adjust-font-size-to(20px);
+	text-transform: uppercase;
+	@include rhythm(0, 1.5, 1.5, 3);
+	padding-left:1.5em;
+	padding-right:1.5em;
+	background:white;
+	color:black;
+	font-weight:600;
+	@media (max-width: 680px) {
+		padding-left:1em;
+		padding-right:1em;
+	}
+}
+.eventInfo__more:hover{
+	color:white;
+}
+.eventMore_dept1:hover{
+	background:$dept1;
+}
+.eventMore_dept2:hover{
+	background:$dept2;
+}
+.eventSeparator{
+	height:2px;
+	width:100%;
+	background-color:white;
 }
