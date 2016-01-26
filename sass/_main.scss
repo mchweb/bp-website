@@ -1,0 +1,150 @@
+// MAIN STYLES
+// Links
+// ==================
+a {
+	color:$red;
+}
+a:hover{
+	color:$lightred;
+}
+
+// Buttons
+// ==================
+
+header {
+	position:absolute;
+	background:rgba(0,0,0,0.75);
+	width:100%;
+}
+.header__logo {
+	@include rhythm(2, 0, 0, 2);
+	float:left;
+}
+.header__logo img {
+	width:auto;
+	height:54px;
+	@media (max-width: 749px) {
+		height:36px;
+	}
+}
+.header__navMain{
+	float:right;
+	@include rhythm(5, 0, 0, 0);
+	
+	@media (max-width: 749px) {
+		position: fixed;
+		z-index:101;
+		height:100%;
+		background: black;
+		@include rhythm(0, 1.5, 0, 0);
+		top:0;
+		right:-200px;
+	}
+	
+}
+.navMain {
+	list-style-type:none;
+}
+.navMain li {
+	display:inline;
+	padding-left:1em;
+	padding-right:1em;
+	@include trailing-border(2px, 0.5);
+	@include rhythm(0, 0, 5, 0);
+	border-color:transparent;
+	@media (max-width: 749px) {
+		display:list-item;
+		padding-left:1.5em;
+		padding-right:3em;
+		border-right-width: 6px;
+		border-right-style:solid;
+		border-right-color:transparent;
+		border-bottom-style:none;
+		@include rhythm(0, 1.5, 1.5, 0);
+	}
+}
+.navMain li:hover{
+	border-color:$red;
+}
+.navMainItem_dept1:hover{
+	border-color:$dept1 !important;
+}
+.navMainItem_dept2:hover{
+	border-color:$dept2 !important;
+}
+
+#navTrigger {
+	float:right;
+	color:white;
+	@include rhythm(0, 3, 0, 0);
+	cursor:pointer;
+	@media (min-width: 750px) {
+		display:none;
+	}
+}
+.navMain_open {
+	right:0px;
+}
+#navMain__back{
+	display:none;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255,255,255);
+    opacity:0;
+    z-index: 100;
+}
+.navMain__back_open{
+	display:block !important;
+}
+
+
+
+.navMain li:hover a{
+	color:rgba(255,255,255,1);
+}
+.navMain li a{
+	color:rgba(255,255,255,.85);
+	@include adjust-font-size-to(20px);
+	font-weight:300;
+}
+
+
+.header__contacts {
+	display:none;
+	float:right;
+	background:$red;
+	@include rhythm(0, 3, 2, 0);
+	padding-left:1.5em;
+	padding-right:1em;
+	margin-left:2em;
+	@media (min-width: 1020px) {
+		display:block;
+	}
+}
+.contacts__image {
+	float:right;
+	margin-left:1em;
+}
+.contacts__image img {
+	width:auto;
+	@include rhythm(0, 0, 0, 0);
+	height:3em;
+}
+.contacts__info{
+	float:left;
+}
+.contacts__info p{
+	text-align:right;
+}
+.contacts__info p a{
+	color:white;
+}
+.contacts__info p a:hover{
+	color:rgba(0,0,0,0.75)
+}
+.contacts__phone {
+	@include adjust-font-size-to(20px);
+}

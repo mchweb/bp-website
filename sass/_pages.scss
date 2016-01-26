@@ -1,0 +1,66 @@
+// PAGE-SPECIFIC STYLES
+// Home page
+// ==================
+
+.firstScreen{
+	background-image:url(../img/back.jpg);
+	background-size:cover; 
+	display:flex;
+	align-items:center;
+	height:45em;
+	width:100%;
+}
+
+.firstScreen__text{
+	width:100%;
+}
+
+.mainHeading {
+	@include adjust-font-size-to(48px);
+	@include rhythm(0, 0, 0, 0.5);
+}
+.mainHeadingCaption{
+	@include adjust-font-size-to(20px);
+}
+.mainHeading, .mainHeadingCaption{
+	color:white;
+	text-shadow:1px 1px 2px black;
+}
+
+.depts {
+	text-align: center;
+}
+.deptRow{
+	@include rhythm(0, 4, 0, 0);
+}
+.dept__item img{
+	width:auto;
+	height:12em;
+	border-radius:100%;
+	border:4px dashed $red;
+	@include rhythm(0, 0, 0, 2);
+}
+
+.bAbout {
+	@include rhythm(4, 2, 6, 2);
+	background:rgb(30,30,30);
+	color:white;
+	text-align:center;
+	
+}
+.bAbout__mapImage{
+	width:auto;
+	height:20em;
+}
+.bAboutRow{
+	@include rhythm(4, 0, 0, 0);
+}
+.bAboutItem__heading{
+	color:white;
+	@include adjust-font-size-to(18px);
+	font-weight:600;
+}
+.bAbout__item img{
+	width:100%;
+	height:auto;
+}

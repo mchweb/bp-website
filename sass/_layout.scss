@@ -1,0 +1,45 @@
+// PAGE LAYOUT
+// Top-line
+// ==================
+
+// Header
+// ==================
+
+// Footer
+// ==================
+
+.wrap {
+	@include container(); 
+	max-width:$lg;
+	padding-left:1em;
+	padding-right:1em;
+}
+
+.knowMore__image, .contactForm__text {
+	@include span(6); 
+}
+.knowMore__main, .contactForm__form {
+	@include span(6); 
+}
+
+.dept__item {
+	@include span(4); 
+}
+
+.bAbout__item {
+	@include span(4); 
+	@media (max-width: 680px) {
+		@include span(12 last); 
+		@include rhythm(0, 0, 0, 2);
+	}
+}
+
+.content {
+	//@include rhythm(2, 2, 2, 2);
+}
+
+.sidebar {
+	@include span(4 last); 
+	@include leading-border(1px, .5);
+	@include trailing-border(1px, .5);
+}
