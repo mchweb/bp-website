@@ -63,7 +63,8 @@
 			<!-- BEGIN of firstScreen -->
 			<div class="firstScreen" id="firstScreen">
 				<div class="firstScreen__text wrap">
-					<img src="" alt="">
+					<img class="firstScreen__image" src="img/firstScreenBorder.png" alt="">
+					<img class="firstScreen__image2" src="img/firstScreen.png" alt="">
 					<h1 class="mainHeading">Акселерация и масштабирование бизнеса</h1>
 					<p class="mainHeadingCaption">С нами ваша компания растет не на проценты, а в разы</p>
 				</div>
@@ -72,21 +73,21 @@
 			
 			<!-- BEGIN of depts -->
 			<div class="depts wrap">
-				<h2 class="pageHeading"><strong>Бизнес партнеры</strong> — это</h2>
+				<h2 class="pageHeading"><strong>Бизнес партнеры</strong>&nbsp;— это</h2>
 				<div class="deptRow">
 					<div class="dept__item">
 						<img src="img/dept1.png" alt="">
-						<h3>Акселерационные программы</h3>
+						<h3 class="dept__heading">Акселерационные программы</h3>
 						<p>Развитие компетенций команды и привлечение ресурсов</p>
 					</div>
 					<div class="dept__item">
 						<img src="img/dept2.png" alt="">
-						<h3>Франчайзинговые продукты</h3>
+						<h3 class="dept__heading">Франчайзинговые продукты</h3>
 						<p>Запуск франчайзинговых сетей и вывод компаний на федеральный рынок</p>
 					</div>
 					<div class="dept__item">
 						<img src="img/dept3.png" alt="">
-						<h3>Развитие предпринимательской экосистемы</h3>
+						<h3 class="dept__heading">Развитие предпринимательской экосистемы</h3>
 						<p>Повышению уровня предпринимательского сообщества</p>
 					</div>
 				</div>
@@ -97,6 +98,14 @@
 			<!-- BEGIN of bAbout -->
 			<div class="bAbout">
 				<div class="wrap">
+					<img src="img/tag.png" class="bAbout__tagImage animateOnScroll" id="tag1" alt="">
+					<img src="img/tag.png" class="bAbout__tagImage animateOnScroll" id="tag2" alt="">
+					<img src="img/tag.png" class="bAbout__tagImage animateOnScroll" id="tag3" alt="">
+					<img src="img/tag.png" class="bAbout__tagImage animateOnScroll" id="tag4" alt="">
+					<img src="img/tag.png" class="bAbout__tagImage animateOnScroll" id="tag5" alt="">
+					<img src="img/tag.png" class="bAbout__tagImage animateOnScroll" id="tag6" alt="">
+					<img src="img/tag.png" class="bAbout__tagImage animateOnScroll" id="tag7" alt="">
+
 					<img src="img/map.png" class="bAbout__mapImage" alt="">
 					<h2 class="pageHeading clr-white">Помогаем расти быстрее.</h2>
 					<p></p>
@@ -126,7 +135,7 @@
 
 			<!-- BEGIN of events -->
 			<div class="events">
-				<div class="events__header">
+				<div class="events__header wrap">
 					<h2 class="pageHeading">Посетите наши мероприятия</h2>
 					<p class="pageHeadingCaption">На них мы приглашаем экспертов мирового уровня. По результатам мероприятий участники обычно разрабатывают конкретный план работы на ближайшие несколько месяцев</p>
 				</div>
@@ -141,7 +150,7 @@
 								<h2 class="eventHeader">Старт акселерационной программы</h2>
 								<div class="eventDesc">
 									<p class="eventInfo__meta"><strong>24 февраля</strong> в Томске</p>
-									<p>Кожух, в первом приближении, отличительно даёт более простую систему дифференциальных уравнений, если исключить кинетический момент. Специально для графоманов здесь теперь можно писать огромные полотнища текста.</p>
+									<p>Кожух, в первом приближении, отличительно даёт более простую систему дифференциальных уравнений, если исключить кинетический момент. Специально для графоманов здесь теперь можно писать огромные полотнища.</p>
 								</div>
 							</div>
 							<a class="eventInfo__more eventMore_dept2" href="#">Узнать больше</a>
@@ -160,7 +169,7 @@
 								<h2 class="eventHeader">Франчайзинг. Стартовое</h2>
 								<div class="eventDesc">
 									<p class="eventInfo__meta"><strong>16 марта</strong> в Томске</p>
-									<p>Кожух, в первом приближении, отличительно даёт более простую систему дифференциальных уравнений, если исключить кинетический момент. Специально для графоманов здесь теперь можно писать огромные полотнища текста.</p>
+									<p>Хотите&nbsp;ли вы, чтобы ваш бизнес работал в&nbsp;других регионах? Почти каждый нормальный предприниматель ответит на&nbsp;этот вопрос положительно. Другой вопрос&nbsp;&mdash; а&nbsp;можно&nbsp;ли ваш бизнес тиражировать уже сейчас и&nbsp;как это сделать? Именно на&nbsp;эти и&nbsp;другие вопросы мы&nbsp;будет отвечать в&nbsp;процессе тренинга.</p>
 								</div>
 							</div>
 							<a class="eventInfo__more eventMore_dept1" href="#">Узнать больше</a>
@@ -171,19 +180,24 @@
 			<!-- END of events -->
 
 			<!-- BEGIN of kmowMore -->
-			<div class="kmowMore">
-				<div class="knowMore__image">&nbsp;</div>
-				<div class="knowMore__main">
-					<h2>Для масштабирования бизнеса уже сегодня вы можете</h2>
-					<div class="knowMoreItem">
-						<img src="knowMore1.png" alt="" class="knowMoreItem__image">
-						<h3 class="knowMoreItem__heading">Разработать франшизу</h3>
-						<p class="knowMoreItem__link"><a href="#">Узнать больше »</a></p>
-					</div>
-					<div class="knowMoreItem">
-						<img src="knowMore2.png" alt="" class="knowMoreItem__image">
-						<h3 class="knowMoreItem__heading">Пройти курс акселерации</h3>
-						<p class="knowMoreItem__link"><a href="#">Узнать больше »</a></p>
+			<div class="kmowMore wrap">
+				<h2 class="pageHeading">Для масштабирования бизнеса уже сегодня <strong>вы можете:</strong></h2>
+				<div class="knowMoreItem">
+					<div class="knowMoreItem__wrap">
+						<a href="#">
+							<img src="img/arrow-dept1.png" width="100" height="100" alt="" class="knowMoreItem__image">
+							<h3 class="knowMoreItem__heading">Разработать франшизу</h3>
+							<p class="knowMoreItem__link">Узнать больше »</p>
+						</a>
+					</div>					
+				</div>
+				<div class="knowMoreItem">
+					<div class="knowMoreItem__wrap">
+						<a href="#">
+							<img src="img/arrow-dept2.png" alt="" width="100" height="100" class="knowMoreItem__image">
+							<h3 class="knowMoreItem__heading">Пройти курс акселерации</h3>
+							<p class="knowMoreItem__link">Узнать больше »</p>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -191,29 +205,38 @@
 
 			<!-- BEGIN of contactForm -->
 			<div class="contactForm">
-				<div class="contactForm__text">
-					<h2 class="pageHeading">Оставьте свои контакты</h2>
-					<p class="pageHeadingCaption">Мы предупредим вас о важных предстоящих мероприятиях, а также можем подготовить индивидуальное предложение для сотрудничества.</p>
-				</div>
-				<div class="contactForm__form">
-					<form method="POST" action="javascript:void(null);" onsubmit="sendContactForm()">
-						<div class="contactForm__control">
-							<label for="contactForm__name">Представьтесь</label>
-							<input id="contactForm__name" name="NAME" type="text" class="form-control" placeholder="Иванов Иван Иванович" required="">
-						</div>
-						<div class="contactForm__control">
-							<label for="contactForm__email">E-mail</label>
-							<input id="contactForm__email" name="EMAIL" type="email" class="form-control" placeholder="ivanov@gmail.com" required="">
-						</div>
-						<div class="contactForm__control">
-							<label for="contactForm__phone">Телефон</label>
-							<input id="contactForm__phone" name="PHONE" type="text" class="form-control" placeholder="+79123456789" required="">
-						</div>
-						<div class="contactForm__control">
-							<label for="contactForm__message">Дополнительная информация</label>
-							<textarea id="contactForm__message" name="MESSAGE" type="text" class="form-control" placeholder="" rows="4" required=""></textarea>
-						</div>
-					</form>
+				<div class="wrap">
+					<div class="contactForm__text">
+						<h2 class="cFormHeading">Оставьте свои контакты</h2>
+						<p class="cFormCaption">Мы предупредим вас о важных предстоящих мероприятиях, а также сможем подготовить индивидуальное 	предложение для сотрудничества.<br/><br/>
+						Вы также можете задать свой вопрос с помощью данной формы.</p>
+					</div>
+					<div class="contactForm__form">
+						<div class="contactForm__formWrap">
+							<form method="POST" action="javascript:void(null);" onsubmit="sendContactForm()">
+								<div class="contactForm__control">
+									<label for="contactForm__name">Представьтесь</label>
+									<input id="contactForm__name" name="NAME" type="text" class="form-control" placeholder="Иванов Иван Иванович" required="">
+								</div>
+								<div class="contactForm__control">
+									<label for="contactForm__email">E-mail</label>
+									<input id="contactForm__email" name="EMAIL" type="email" class="form-control" placeholder="ivanov@gmail.com" required="">
+								</div>
+								<div class="contactForm__control">
+									<label for="contactForm__phone">Телефон</label>
+									<input id="contactForm__phone" name="PHONE" type="text" class="form-control" placeholder="+79123456789">
+								</div>
+								<div class="contactForm__control">
+									<label for="contactForm__message">Дополнительная информация</label><br>
+									<textarea id="contactForm__message" name="MESSAGE" type="text" class="form-control" placeholder="Расскажите о себе и своей компании" rows="3"></textarea>
+								</div>
+								<div class="contactForm__checkbox">
+									<label><input type="checkbox" required="">Даю согласие на обработку своих персональных данных</label>
+								</div>
+								<button class="contactForm__button" href="#">Отправить</button>
+							</form>
+					</div>
+					</div>
 				</div>
 			</div>
 			<!-- END of contactForm -->
@@ -223,28 +246,37 @@
 
 
 		
-
+		<div class="footer__decorator"></div>
 		<footer class="footer">
 			<ul class="footer__socLinks">
-				<li><a href=""><img src="" alt="Мы в Facebook"></a></li>
-				<li><a href=""><img src="" alt="Мы ВКонтакте"></a></li>
+				<li><a href="https://www.facebook.com/ipartner.pro"><img src="img/fb.svg" class="footer__socLinkImage" alt="Мы в Facebook"></a></li>
+				<li><a href="https://vk.com/biznes.partnery"><img src="img/vk.svg" class="footer__socLinkImage" alt="Мы ВКонтакте"></a></li>
 			</ul>
 			<ul class="footer__upperNav">
-				<li>акселерация</li>
-				<li>франчайзинг</li>
+				<li><a class="upperNav_dept1" href="#">акселерация</a></li>
+				<li><a class="upperNav_dept2" href="#">франчайзинг</a></li>
+				<li><a class="upperNav_dept3" href="#">сообщество</a></li>
 			</ul>
 			<ul class="footer__lowerNav">
-				<li>О компании</li>
-				<li>Контакты</li>
+				<li><a href="#">Главная</a></li>
+				<li class="lowerNav__separator">|</li>
+				<li><a href="#">О компании</a></li>
+				<li class="lowerNav__separator">|</li>
+				<li><a href="#">Контакты</a></li>
 			</ul>
 			<div class="footer__adress">
-				<p>Красноармейская 96,</p>
-				<p>офис 303</p>
+				
 			</div>
-			<div class="footer__contacts">
-				<p><a href="tel:+73822933976">(3822)&nbsp;933-976</a></p>
-				<p><a href="mailto:info@ipartner.pro">info@ipartner.pro</a></p>
-			</div>
+			<ul class="footer__contacts">
+				<li class="footer__contacts-left">
+					Красноармейская 96,<br>
+					офис 303
+				</li>
+				<li class="footer__contacts-right">
+					<a href="tel:+73822933976">(3822)&nbsp;933-976</a><br>
+					<a href="mailto:info@ipartner.pro">info@ipartner.pro</a>
+				</li>
+			</ul>
 		</footer>
 
 		<div id="updown"><div id="updown-container"></div></div>

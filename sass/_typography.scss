@@ -49,8 +49,8 @@ h4 {
 .mainHeading, .pageHeading, .mainHeadingCaption, .pageHeadingCaption {
 	text-align:center;
 }
-.mainHeading, .pageHeading{
-	@include rhythm(0, 2, 0, 0);
+.pageHeading {
+	@include rhythm(0, 1, 0, 0);
 }
 .mainHeadingCaption, .pageHeadingCaption {
 	@include adjust-font-size-to(18px);

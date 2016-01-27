@@ -148,3 +148,79 @@ header {
 .contacts__phone {
 	@include adjust-font-size-to(20px);
 }
+
+.footer__decorator{
+	background:url("../img/footerDecorator.png");
+	background-size:contain;
+	width:100%;
+	height:36px;
+	margin-top:-19px;
+}
+
+footer{
+	@include rhythm(0, 4, 5, 0);
+	background:#333333;
+	color:white;
+	text-align:center;
+}
+footer a{
+	color:white;
+}
+.footer__socLinkImage{
+	height:3em;
+	width:3em;
+}
+.footer__socLinks li{
+	display:inline;
+	margin:0 0.5em;
+}
+.footer__upperNav{
+	@include rhythm(1, 0, 0, 3);
+}
+.footer__upperNav li{
+	display:inline;
+	margin:0 0.5em;
+	@include adjust-font-size-to(20px);
+	font-weight:600;	
+}
+.upperNav_dept1:hover{
+	color:$dept1;
+}
+.upperNav_dept2:hover{
+	color:$dept2;
+}
+.upperNav_dept3:hover{
+	color:$dept3;
+}
+.footer__lowerNav li{
+	display:inline;
+	margin:0 0.5em;
+	@include adjust-font-size-to(20px);
+	font-weight:300;
+	text-transform:uppercase;
+	@media (max-width: 680px) {
+		display:block;
+		@include rhythm(0, 0, 0, 1);
+	}
+
+}
+.lowerNav__separator{
+	@media (max-width: 680px) {
+		display:none !important;
+	}
+}
+
+.footer__lowerNav{
+	@include rhythm(0, 0, 0, 2);
+}
+
+.footer__contacts li{
+	display:inline-block;
+	margin:0 0.5em;
+}
+.footer__contacts-left{
+	text-align:right;
+}
+.footer__contacts-right{
+	text-align:left;
+}

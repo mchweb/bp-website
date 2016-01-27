@@ -15,15 +15,12 @@
 	padding-right:1em;
 }
 
-.knowMore__image, .contactForm__text {
-	@include span(6); 
-}
-.knowMore__main, .contactForm__form {
-	@include span(6); 
-}
-
 .dept__item {
 	@include span(4); 
+	@media (max-width: 749px) {
+		@include span(12 last); 
+		@include rhythm(0, 0, 0, 2);
+	}
 }
 
 .bAbout__item {
@@ -34,6 +31,36 @@
 	}
 }
 
+.knowMoreItem{
+	@include span(6); 
+	@include rhythm(4, 0, 0, 2);
+	@media (max-width: 800px) {
+		@include span(12 last);
+		@include rhythm(2, 0, 0, 0);
+	}
+}
+
+.contactForm__text{
+	@include span(4);
+	@media (max-width: 960px) {
+		@include span(6);
+	}
+	@media (max-width: 680px) {
+		@include span(12); 
+	}
+}
+.contactForm__form{
+	@include span(8 last);
+	@include rhythm(2, 0, 0, 0);
+	@media (max-width: 960px) {
+		@include span(6 last);
+	}
+	@media (max-width: 680px) {
+		@include span(12); 
+	}
+}
+
+/*
 .content {
 	//@include rhythm(2, 2, 2, 2);
 }
@@ -43,3 +70,4 @@
 	@include leading-border(1px, .5);
 	@include trailing-border(1px, .5);
 }
+*/
