@@ -45,7 +45,10 @@ module.exports = function(grunt) {
         processhtml: {
             build: {
                 files: {
-                    'prod/index.html': ['index.html']
+                    'prod/index.html': ['index.html'],
+                    'prod/about.html': ['about.html'],
+                    'prod/404.html': ['404.html'],
+                    'prod/contacts.html': ['contacts.html']
                 }
             }
         },

@@ -3,12 +3,11 @@
 // ==================
 
 .firstScreen{
-	background-image:url(../img/back.jpg);
 	background-size:cover; 
 	display:flex;
 	display:-webkit-flex;
 	align-items:center;
-	height:45em;
+	height:47em;
 	width:100%;
 	@include rhythm(0, 0, 0, 2);
 }
@@ -61,6 +60,9 @@
 }
 .mainHeadingCaption{
 	@include adjust-font-size-to(20px);
+}
+.mainHeadingCaption a{
+	color:white;
 }
 .mainHeading, .mainHeadingCaption{
 	color:white;
@@ -431,4 +433,98 @@
 }
 .contactForm__control button{
     margin-left: 30%;
+}
+
+// CONTACTS
+.fistScreen_contacts{
+	margin-bottom: -26px;
+	align-items:flex-end;
+	align-items:-webkit-flex-end;
+}
+.contactInfo__wrap{
+	position: absolute;
+    top:7em;
+    margin: 0 auto;
+    left:30px;
+    margin-left:1em;
+    margin-right:1em;
+}
+.contacts__mapWrap{
+	width:100%;
+}
+#map iframe{
+	@media (max-width: 880px) {
+		opacity:0;
+		pointer-events:none;
+	}
+}
+#map{
+	@media (max-width: 880px) {
+		background-image:url(../img/2gis.jpg);
+		background-size:cover;
+		width:100%;
+	}
+}
+.contactInfo{
+	background:rgba(0,0,0,0.75);
+	color:white;
+	border-radius: 3px;
+	@include rhythm(0, 3, 2, 0);
+	padding-right:1em;
+	padding-left:1em;
+	width:432px;
+	@media (max-width: 480px) {
+		width:280px;
+	}
+	@include adjust-font-size-to(18px);
+}
+.contactInfo__logo{
+	width:auto;
+	max-height:5em;
+	max-width:20em;
+}
+.contactInfo__link{
+	color:white;
+}
+p.contactInfo__link {
+	@include rhythm(2, 0, 0, 0);
+}
+.contactInfo__list li{
+	display:table;
+	@include rhythm(0, 0, 0, 0.5);
+}
+.contactInfo__list li img {
+	display:table-cell;
+	float:left;
+	height:1.5em;
+	width:auto;
+	margin-right:0.75em;
+}
+.contactInfo__list li span{
+	display:table-cell;
+	vertical-align: top;
+}
+.contactInfo_marDown{
+	margin-bottom:0.75em !important;
+}
+
+.contact__button {
+	display:inline-block;
+	text-transform: uppercase;
+	border:none;
+	@include trailing-border(3px, 0.5);
+	@include rhythm(2, 1.5, 1, 1);
+	padding-left:1.5em;
+	padding-right:1.5em;
+	background:#eee;
+	color:black;
+	border-color:$red;
+	background: linear-gradient(to top, $red 50%, white 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+	font-weight:600;
+}
+.contact__button:hover{
+	color:white;
+	background-position:right bottom;
 }

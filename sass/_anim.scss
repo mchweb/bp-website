@@ -7,7 +7,8 @@
 .header__navMain,
 .event,
 .knowMoreItem__wrap,
-.navMain li a
+.navMain li a,
+.contactInfo__wrap
 {
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -16,7 +17,7 @@
 	transition: all 0.2s ease-in-out;
 }
 
-.eventInfo__more, .contactForm__button{
+.eventInfo__more, .contactForm__button, .contact__button {
 	-webkit-transition: all 0.1s ease-in-out;
 	-moz-transition: all 0.1s ease-in-out;
 	-ms-transition: all 0.1s ease-in-out;

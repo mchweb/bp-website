@@ -12,11 +12,24 @@ $(document).ready(function(){
 		$("nav#navMain").removeClass("navMain_open");
 	});
 
-  var x = 500;
+  var x = 590;
   if (x < document.documentElement.clientHeight){x = document.documentElement.clientHeight}
 	$("#firstScreen").css("max-height",x);
 });
 
+/* Contacts div */
+function resizeContactsDiv(){
+  var window_width = $window.width();
+  var x = (window_width - 1280) / 2;
+  var y = 432;
+  if (window_width < 463) {y = 280}
+  if (window_width < 880){ x = (window_width - y - 32) / 2;} 
+  if (x < 0) {x = 0;}
+  $('#contactInfo').css("left", x);
+}
+
+$(document).ready(resizeContactsDiv);
+$(window).resize(resizeContactsDiv);
 
 /* Start Animation On scroll */
 var $animation_elements = $('.animateOnScroll');
