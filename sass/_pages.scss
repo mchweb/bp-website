@@ -1,76 +1,9 @@
 // PAGE-SPECIFIC STYLES
 // Home page
 // ==================
-
-.firstScreen{
-	background-size:cover; 
-	display:flex;
-	display:-webkit-flex;
-	align-items:center;
-	height:47em;
-	width:100%;
-	@include rhythm(0, 0, 0, 2);
-}
-
-.firstScreen__text{
-	width:100%;
-	text-align:center;
-}
-.firstScreen__image{
-	width:auto;
-	max-height:12em;
-	position:absolute;
-	transform: scale(0.91, 0.73);
-    transform-origin: left bottom;
-    -webkit-animation: grow 0.5s ease-in forwards;
-    animation: grow 0.5s ease-in forwards;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-    @media (max-width: 539px) {
-    	max-height:6em;
-    }
-}
-.firstScreen__image2{
-	width:auto;
-	max-height:12em;
-	@include rhythm(0, 0, 0, 2);
-	@media (max-width: 539px) {
-    	max-height:6em;
-    }
-}
-
-@-webkit-keyframes grow {
-    100% { transform: scale(1, 1);}
-}
-
-@keyframes grow {
-    100% { transform: scale(1, 1);}
-
-}
-
-.mainHeading {
-	@include adjust-font-size-to(48px);
-	@include rhythm(0, 0, 0, 0.5);
-	@media (max-width: 539px) {
-		@include adjust-font-size-to(36px);
-	}
-	@media (max-width: 400px) {
-		@include adjust-font-size-to(30px);
-	}
-}
-.mainHeadingCaption{
-	@include adjust-font-size-to(20px);
-}
-.mainHeadingCaption a{
-	color:white;
-}
-.mainHeading, .mainHeadingCaption{
-	color:white;
-	text-shadow:1px 1px 2px black;
-}
-
 .depts {
 	text-align: center;
+	@include rhythm(2, 0, 0, 0);
 }
 .deptRow{
 	@include rhythm(0, 4, 0, 0);
@@ -527,4 +460,246 @@ p.contactInfo__link {
 .contact__button:hover{
 	color:white;
 	background-position:right bottom;
+}
+.contact__button_dept1{
+	border-color:$dept1;
+	background: linear-gradient(to top, $dept1 50%, white 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+}
+.contact__button_dept2{
+	border-color:$dept2;
+	background: linear-gradient(to top, $dept2 50%, white 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+}
+.contact__button_dept1:hover, .contact__button_dept2:hover,{
+	background-position:right bottom;
+}
+
+
+// About
+.aboutTopHeading{
+	@include adjust-font-size-to(100px);
+	@media (max-width: 800px) {
+		@include adjust-font-size-to(60px);
+	}
+	@media (max-width: 300px) {
+		@include adjust-font-size-to(32px);
+	}
+}
+.aboutTopHeadingCaption{
+	@include adjust-font-size-to(26px);
+	@media (max-width: 600px) {
+		@include adjust-font-size-to(20px);
+	}
+}
+.aboutTopHeading, .aboutTopHeadingCaption{
+	color:white;
+	text-shadow:1px 1px 2px black;
+}
+.aboutTop__logo{
+	max-width:600px;
+	-webkit-filter:drop-shadow(1px 1px 2px black);
+	@media (max-width: 800px) {
+		max-width:400px;
+	}
+}
+
+.aboutQuote{
+	font-weight:300;
+	text-align:center;
+	margin:0 auto;
+    @include trailing-border(1px, 0.5);
+    @include leading-border(1px, 0.5);
+    @include rhythm(8,6,6,8);
+    max-width:$md;
+    @media (max-width: 680px) {
+    	@include rhythm(6,4,4,3);
+    }
+}
+.aboutQuote__text{
+	width:90%;
+	margin:0 auto;
+	@media (max-width: 680px) {
+		@include adjust-font-size-to(24px);
+	}
+}
+.aboutQuote__text strong{
+	font-weight:400;
+}
+.aboutDepts{
+	@include rhythm(4, 0, 0, 4);
+	@media (max-width: 680px) {
+		@include rhythm(0, 0, 0, 4);
+	}
+}
+.aboutDepts__itemWrap{
+	padding-left:0.75em;
+	padding-right:0.75em;
+}
+.aboutDepts__item{
+	height:20em;
+    background-size:cover;
+    padding:1em;
+    display:flex;
+    display:-webkit-flex;
+    align-items:center;
+    @media (max-width: 960px) {
+		height:16em;
+	}
+}
+.aboutDepts__item{
+	@media (max-width: 680px) {
+		height:12em;
+		@include rhythm(4, 0, 0, 0);
+	}
+}
+.aboutDepts__item_dept0{
+	@media (max-width: 960px) {
+		height:12em;
+		@include rhythm(4, 0, 0, 0);
+	}
+}
+.aboutDepts__item_dept1{
+	background-image:url('../img/aboutDept1.jpg');
+}
+.aboutDepts__item_dept2{
+	background-image:url('../img/aboutDept2.jpg');
+}
+.aboutDepts__item_dept0{
+	background-image:url('../img/aboutDept0.jpg');
+}
+.aboutDepts__info {
+	width:100%;
+    text-align: center;
+}
+.aboutDepts__dept:hover{
+	-webkit-filter: brightness(1.2);
+}
+.aboutDepts__dept{
+	@include adjust-font-size-to(26px);
+	color:black;
+	font-weight:600;
+	@media (max-width: 960px) {
+		@include adjust-font-size-to(22px);
+	}
+}
+.aboutDepts__dept{
+	display:inline;
+	@include rhythm(0, 0.5, 0.5, 0);
+	padding-left:.5em;
+	padding-right:.5em;
+	border:4px dashed black;
+	font-weight:600;
+}
+.aboutDepts__dept img{
+	width:auto;
+	height: 1.8em;
+    padding-top: 0.8em;
+	margin-right:0.5em;
+}
+.aboutDepts_dept1{
+	background:$dept1;
+}
+.aboutDepts_dept2{
+	background:$dept2;
+}
+
+.aboutDepts__text{
+	color:white;
+	text-shadow:1px 1px 2px black;
+	@include adjust-font-size-to(22px);
+	@include rhythm(0, 2, 0, 0);
+	font-weight:600;
+	@media (max-width: 960px) {
+		@include adjust-font-size-to(18px);
+	}
+}
+
+.aboutFacts{
+	background:#1e1e1e;
+	text-align:center;
+	@include rhythm(0, 4, 2, 0);
+}
+.pageHeading_aboutFacts{
+	color:white;
+	@include rhythm(0, 0, 0, 2);
+}
+.aboutFactsCol {
+	@include rhythm(2, 0, 0, 0);
+	min-height:12em;
+}
+.aboutFactsCol p{
+	max-width:360px;
+}
+.aboutFactsCol img {
+	width:auto;
+	max-height:4em;
+}
+
+.aboutPartners{
+	@include rhythm(2, 0, 0, 0);
+}
+.aboutParnets__header{
+	@include rhythm(0, 0, 0, 4);
+}
+.aboutPartners__separator{
+	clear:both;
+	@include rhythm(0, 0, 0, 4);
+}
+.aboutPartners__logo img{
+	width:100%;
+	height:auto;
+	padding-right: 1.5em;
+	max-width:320px;
+}
+
+.aboutTeam{
+	@include rhythm(2,0,0,0);
+	text-align:center;
+}
+.aboutTeam__header{
+	@include rhythm(0,0,0,2);
+}
+.aboutTeam__item{
+	max-width:200px;
+}
+.aboutTeam__itemImage{
+	background-size:cover;
+	height:12.5em;
+	display:flex;
+	display:-webkit-flex;
+	align-items:flex-end;
+	align-items:-webkit-flex-end;
+}
+.aboutTeam__itemName{
+	@include adjust-font-size-to(24px);
+	@include rhythm(1,0,0,0);
+}
+.aboutTeam__itemImage:hover .aboutTeamItem__expertWrap {
+	height:12.5em;
+	opacity:0.75;
+	cursor:pointer;
+}
+.aboutTeam__itemImage:hover .aboutTeamItem__expert{
+	display:block;
+}
+.aboutTeamItem__expert_dept1{
+	background-color:$dept1 !important;
+}
+.aboutTeamItem__expert_dept2{
+	background-color:$dept2 !important;
+}
+.aboutTeamItem__expertWrap, .aboutTeamItem__wrap{
+	background:$red;
+	width:100%;
+	height:1em;
+}
+.aboutTeamItem__expert{
+	display:none;
+	color:white;
+}
+.aboutTeamItem__expert a{
+	color:white;
 }

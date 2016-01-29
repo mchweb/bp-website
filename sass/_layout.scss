@@ -14,6 +14,12 @@
 	padding-left:1em;
 	padding-right:1em;
 }
+.wrap_md {
+	@include container(); 
+	max-width:$md;
+	padding-left:1em;
+	padding-right:1em;
+}
 
 .dept__item {
 	@include span(4); 
@@ -60,6 +66,60 @@
 	}
 }
 
+.aboutTopCol{
+	@include span(4);
+	@media (max-width: 460px) {
+		@include span(12); 
+	}
+}
+
+.aboutDepts__itemWrap{
+	@include span(4);
+	@media (max-width: 960px) {
+		@include span(6);
+	}
+	@media (max-width: 680px) {
+		@include span(12); 
+	}
+}
+.aboutDepts__itemWrap_dept0{
+	@media (max-width: 960px) {
+		@include span(12);
+	}
+}
+
+.aboutFactsCol{
+	@include span(4);
+	@media (max-width: $md) {
+		@include span(6);
+	}
+	@media (max-width: 680px) {
+		@include span(12); 
+	}
+}
+
+.aboutPartners__logo {
+	@include span(5);
+	@media (max-width: 800px) {
+		@include span(6);
+	}
+	@media (max-width: 680px) {
+		@include span(12); 
+	}
+}
+.aboutPartners__info{
+	@include span(7 last);
+	@media (max-width: 800px) {
+		@include span(6 last);
+	}
+	@media (max-width: 680px) {
+		@include span(12); 
+	}
+}
+
+.aboutTeam__itemWrap{
+	@include span(3);
+}
 /*
 .content {
 	//@include rhythm(2, 2, 2, 2);
