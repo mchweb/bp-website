@@ -11,8 +11,6 @@
 .dept__item img{
 	width:auto;
 	max-height:12em;
-	border-radius:100%;
-	border:4px dashed $red;
 	@include rhythm(0, 0, 0, 2);
 	@media (max-width: 1019px) {
 		max-height:10em;
@@ -457,6 +455,12 @@ p.contactInfo__link {
     background-position:left top;
 	font-weight:600;
 }
+.contact__button_gray{
+	background: linear-gradient(to top, $red 50%, $gray 50%);
+}
+.contact__button_big{
+	@include adjust-font-size-to(20px);
+}
 .contact__button:hover{
 	color:white;
 	background-position:right bottom;
@@ -467,9 +471,19 @@ p.contactInfo__link {
 	background-size: 100% 200%;
     background-position:left top;
 }
+.contact__button_gray.contact__button_dept1{
+	background: linear-gradient(to top, $dept1 50%, $gray 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+}
 .contact__button_dept2{
 	border-color:$dept2;
 	background: linear-gradient(to top, $dept2 50%, white 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+}
+.contact__button_gray.contact__button_dept2{
+	background: linear-gradient(to top, $dept2 50%, $gray 50%);
 	background-size: 100% 200%;
     background-position:left top;
 }
@@ -581,17 +595,18 @@ p.contactInfo__link {
 	@include adjust-font-size-to(26px);
 	color:black;
 	font-weight:600;
-	@media (max-width: 960px) {
-		@include adjust-font-size-to(22px);
-	}
-}
-.aboutDepts__dept{
 	display:inline;
 	@include rhythm(0, 0.5, 0.5, 0);
 	padding-left:.5em;
 	padding-right:.5em;
 	border:4px dashed black;
-	font-weight:600;
+	@media (max-width: 960px) {
+		@include adjust-font-size-to(22px);
+	}
+	@media (max-width: 680px) {
+		@include adjust-font-size-to(20px);
+	}
+	
 }
 .aboutDepts__dept img{
 	width:auto;
@@ -613,12 +628,12 @@ p.contactInfo__link {
 	@include rhythm(0, 2, 0, 0);
 	font-weight:600;
 	@media (max-width: 960px) {
-		@include adjust-font-size-to(18px);
+		@include adjust-font-size-to(17px);
 	}
 }
 
 .aboutFacts{
-	background:#1e1e1e;
+	background:$dark;
 	text-align:center;
 	@include rhythm(0, 4, 2, 0);
 }
@@ -656,50 +671,284 @@ p.contactInfo__link {
 }
 
 .aboutTeam{
-	@include rhythm(2,0,0,0);
+	@include rhythm(4,0,0,0);
 	text-align:center;
 }
 .aboutTeam__header{
-	@include rhythm(0,0,0,2);
+	@include rhythm(0,0,0,4);
 }
 .aboutTeam__item{
 	max-width:200px;
+    margin: 0 auto;
+    min-height:20em;
 }
 .aboutTeam__itemImage{
-	background-size:cover;
-	height:12.5em;
-	display:flex;
-	display:-webkit-flex;
-	align-items:flex-end;
-	align-items:-webkit-flex-end;
+	background-size:contain;
+	padding-top: 100%;
 }
 .aboutTeam__itemName{
 	@include adjust-font-size-to(24px);
 	@include rhythm(1,0,0,0);
 }
-.aboutTeam__itemImage:hover .aboutTeamItem__expertWrap {
-	height:12.5em;
-	opacity:0.75;
-	cursor:pointer;
+
+.aboutTeam__itemImage:hover .aboutTeamItem__back_expert {
+	opacity:0.8;
+	margin-top:-100%;
+	padding-top:100%;
 }
-.aboutTeam__itemImage:hover .aboutTeamItem__expert{
-	display:block;
+.aboutTeam__itemImage:hover .aboutTeamItem__back_dept1 {
+	background:url('../img/expert-dept1.png');
+	background-size:cover;
 }
-.aboutTeamItem__expert_dept1{
+.aboutTeam__itemImage:hover .aboutTeamItem__back_dept2 {
+	background:url('../img/expert-dept2.png');
+	background-size:cover;
+}
+.aboutTeamItem__back_dept1{
 	background-color:$dept1 !important;
 }
-.aboutTeamItem__expert_dept2{
+.aboutTeamItem__back_dept2{
 	background-color:$dept2 !important;
 }
-.aboutTeamItem__expertWrap, .aboutTeamItem__wrap{
+.aboutTeamItem__back {
 	background:$red;
 	width:100%;
 	height:1em;
+	margin-top:-1em;
 }
-.aboutTeamItem__expert{
+.aboutTeamItem__expertImage{
+	max-width:100%;
+	height:auto;
 	display:none;
+}
+
+.deptInclude{
+	@include rhythm(2,0,0,4);
+}
+.deptIncludeItem__wrap{
+	@include rhythm(4,0,0,0);
+}
+.deptIncludeItem {
+	margin:0 auto;
+	@include rhythm(0,2,2,0);
+	max-width:220px;
+	min-height:10em;
+	padding-left:1.5em;
+	padding-right:1.5em;
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+}
+.deptIncludeItem_dept1 {
+	background:$dept1;
+}
+.deptIncludeItem_dept2 {
+	background:$dept2;
+}
+.deptIncludeItem__caption{
+	@include adjust-font-size-to(20px);
+	font-weight:600;
+	color:white;
+	text-align:center;
+}
+
+.deptInclude__hr{
+	height:1em;
+	width:100%;
+	border-style:solid;
+	border-color:black;
+	border-width:0px 1px 1px 1px;
+	clear:both;
+	@include rhythm(0,0,0,2);
+}
+.deptInclude__bottomHeading{
+	@include adjust-font-size-to(36px);
+	text-align: center;
+	font-weight:600;
+}
+.deptInclude__bottomHeadingCaption{
+	@include adjust-font-size-to(22px);
+	text-align: center;
+}
+
+.deptSteps{
+	@include rhythm(0,2,6,2);
+	background:url('../img/cFormBack.jpg');
+	background-size:cover;
+}
+.deptStepsItem{
+	text-align:center;
+	color:white;
+	@include rhythm(4,0,0,4);
+}
+.deptStepsItem__circle{
+	width:90px;
+	height:90px;
+	margin:0 auto;
+	border-radius:50%;
+	background:$dept2;
+	@include rhythm(0,0,0,2);
+}
+.deptStepsItem__circle p{
+	text-align:center;
+	color:white;	
+	@include adjust-font-size-to(60px);
+	line-height:90px;
+	font-weight:900;
+}
+.deptStepsItem__caption{
+	@include adjust-font-size-to(20px);
+}
+
+.dept2Req{
+	@include rhythm(0,2,5,0);
+	background:$dark;
+	background-size:cover;
+}
+.dept2ReqItem__wrap{
+	@include rhythm(4,0,0,2);
+	padding-left:1em;
+	padding-right:1em;
+}
+.dept2ReqItem{
+	margin:0 auto;
+	@include rhythm(0,1,1,0);
+	max-width:220px;
+	min-height:10em;
+	border:4px dashed white;	
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	cursor:pointer;
+	padding-left:0.5em;
+	padding-right:0.5em;
+}
+.dept2ReqItem:hover{
+	border-color:$dept2;
+}
+.dept2ReqItem_on{
+	background:$dept2;
+	border-color:$dept2;
+}
+.dept2ReqItem p{
+	color:white;
+	text-align:center;
+	@include adjust-font-size-to(18px);
+}
+
+#dept2ReqButton{
+	display:none;
+}
+
+.dept2Exp{
+	@include rhythm(0,0,0,4);
+}
+.dept2Exp__heading{
+	@include rhythm(2,0,0,4);
+}
+.dept2Exp__message{
+	border:2px dashed $dept2;
+	@include rhythm(0,2,2,0);
+	padding-left:1.25em;
+	padding-right:1.25em;
+}
+
+.dept2Exp__aboutTeam__itemWrap{
+	padding-right:1.5em;
+}
+.dept2Exp__aboutTeam__itemWrap .aboutTeam__item {
+	min-height:0;
+	@media (max-width: 680px) {
+		margin:0;
+		@include rhythm(0,0,0,2);
+	}
+}
+
+.dept2Price__heading{
+	@include rhythm(2,0,0,0);
+}
+.dept2Price{
+	max-width:500px;
+	margin:0 auto;
+	@include rhythm(0,0,0,2);
+	padding-left:1.5em;
+	padding-right:1.5em;
+	@media (max-width: 520px) {
+		max-width:240px;
+		text-align:center;
+	}
+}
+.dept2Price__image {
+	float:left;
+	max-width:200px;
+	margin-right:1.5em;
+	@media (max-width: 520px) {
+		float:none;
+	}
+}
+.dept2Price__image img{
+	max-width:100%;
+	height:auto;
+	@include rhythm(-5,0,0,0);
+	@media (max-width: 520px) {
+		margin-top:0;
+
+	}
+}
+
+.dept2Price__price{
+	@include adjust-font-size-to(42px);
+	font-weight:900;
+	color:black;
+	@include rhythm(2,0,0,0);
+	@media (max-width: 420px) {
+		margin-top:0;
+	}
+}
+.dept2Price__wrap{
+	margin:0 auto;
+}
+
+.dept2Results{
+	background:$dark;
+	@include rhythm(2,2,6,0);
+	color:white;
+	text-align:center;
+}
+
+.deptTimer__heading{
+	color:white;
+	padding-left:1em;
+	@media (max-width: 540px) {
+		text-align:center;
+	}
+}
+.deptTimerWrap{
+	max-width:80px;
+	margin:0 auto;
+	text-align:center;
+}
+.deptTimer__data{
+	margin:0 auto;
+	border-radius:1em;
+	background:white;
+	@include rhythm(2,2,2,1);
+	padding-left:0.5em;
+	padding-right:0.5em;
+}
+.deptTimer__data p{
+	@include adjust-font-size-to(42px);
+	font-weight:900;
+	color:black;
+	@media (max-width: 380px) {
+		@include adjust-font-size-to(36px);
+	}
+}
+.deptTimer__caption{
 	color:white;
 }
-.aboutTeamItem__expert a{
-	color:white;
+.deptTimerItem_dummy{
+	@media (max-width: 540px) {
+		display:none;
+	}
 }

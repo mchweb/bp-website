@@ -14,6 +14,18 @@ a {
 a:hover{
 	color:$lightred;
 }
+a.notDecided{
+	@include adjust-font-size-to(14px);
+	@include trailing-border(1px, 0.5);
+	border-style:dashed;
+}
+a.notDecided:hover{
+	border-style:solid;
+}
+a.notDecided.clr-white{
+	color:white;
+	border-color:white;
+}
 
 // Buttons
 // ==================

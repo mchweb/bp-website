@@ -20,6 +20,12 @@
 	padding-left:1em;
 	padding-right:1em;
 }
+.wrap_sm {
+	@include container(); 
+	max-width:$sm;
+	padding-left:1em;
+	padding-right:1em;
+}
 
 .dept__item {
 	@include span(4); 
@@ -119,6 +125,70 @@
 
 .aboutTeam__itemWrap{
 	@include span(3);
+	@media (max-width: 900px) {
+		@include span(4); 
+	}
+	@media (max-width: 680px) {
+		@include span(6); 
+	}
+	@media (max-width: 460px) {
+		@include span(12); 
+	}
+}
+
+.deptIncludeItem__wrap{
+	@include span(3);
+	@media (max-width: 960px) {
+		@include span(6);
+	}
+	@media (max-width: 540px) {
+		@include span(12); 
+	}
+}
+
+.deptStepsItem{
+	@include span(4);
+	@media (max-width: 680px) {
+		@include span(12); 
+	}
+}
+
+.dept2ReqItem__wrap{
+	@include span(1 of 5);
+	@media (max-width: 960px) {
+		@include span(4);
+	}
+	@media (max-width: 700px) {
+		@include span(6);
+	}
+	@media (max-width: 460px) {
+		@include span(12); 
+	}
+}
+
+.dept2Exp__aboutTeam__itemWrap{
+	@include span(3);
+	@media (max-width: 680px) {
+		@include span(12);
+	}
+}
+.dept2Exp__message{
+	@include span(9);
+	@media (max-width: 680px) {
+		@include span(12); 
+	}
+}
+
+.deptTimerItem{
+	@include span(2);
+	@media (max-width: 540px) {
+		@include span(3); 
+	}
+}
+.deptTimerItem_last{
+	@media (max-width: 540px) {
+		@include span(12); 
+	}
 }
 /*
 .content {

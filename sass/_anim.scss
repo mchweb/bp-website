@@ -9,7 +9,9 @@
 .knowMoreItem__wrap,
 .navMain li a,
 .contactInfo__wrap,
-.aboutDepts__dept
+.aboutDepts__dept,
+#updown-container,
+.dept2ReqItem
 {
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -19,7 +21,7 @@
 }
 
 .eventInfo__more, .contactForm__button, .contact__button,
-.aboutTeamItem__expertWrap {
+.aboutTeamItem__back {
 	-webkit-transition: all 0.1s ease-in-out;
 	-moz-transition: all 0.1s ease-in-out;
 	-ms-transition: all 0.1s ease-in-out;

@@ -59,6 +59,30 @@ function check_if_in_view() {
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
+/* dept2 req */
+$( ".dept2ReqItem" ).each(function(index) {
+    $(this).on("click", function(){
+        if ($(this).hasClass("dept2ReqItem_on")){
+          $(this).removeClass("dept2ReqItem_on");
+        }else{
+          $(this).addClass("dept2ReqItem_on");
+        }
+        checkDept2Req();
+    });
+});
+
+function checkDept2Req(){
+  var x = false;
+  $(".dept2ReqItem").each(function (index) {
+    if ($(this).hasClass("dept2ReqItem_on")) {
+        x = true;
+    }
+  if (x) {$("#dept2ReqButton").css("display","inline-block");}
+  else {$("#dept2ReqButton").css("display","none");}
+
+});
+}
+
 /* Updown */
 
   $(function () { 
