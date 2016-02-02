@@ -138,7 +138,7 @@
 
 .deptIncludeItem__wrap{
 	@include span(3);
-	@media (max-width: 960px) {
+	@media (max-width: 940px) {
 		@include span(6);
 	}
 	@media (max-width: 540px) {
@@ -153,6 +153,15 @@
 	}
 }
 
+.dept1ReqItem__wrap{
+	@include span(3);
+	@media (max-width: 860px) {
+		@include span(6);
+	}
+	@media (max-width: 460px) {
+		@include span(12); 
+	}
+}
 .dept2ReqItem__wrap{
 	@include span(1 of 5);
 	@media (max-width: 960px) {
@@ -166,13 +175,13 @@
 	}
 }
 
-.dept2Exp__aboutTeam__itemWrap{
+.deptExp__aboutTeam__itemWrap{
 	@include span(3);
 	@media (max-width: 680px) {
 		@include span(12);
 	}
 }
-.dept2Exp__message{
+.deptExp__message{
 	@include span(9);
 	@media (max-width: 680px) {
 		@include span(12); 
@@ -190,7 +199,25 @@
 		@include span(12); 
 	}
 }
+
+.dept1InfoItemWrap{
+	@include span(4);
+	@media (max-width: 820px) {
+		@include span(12);
+	}
+}
+
+.dept1PriceItem__wrap{
+	@include span(3);
+	@media (max-width: 1100px) {
+		@include span(6);
+	}
+	@media (max-width: 540px) {
+		@include span(12); 
+	}
+}
 /*
+
 .content {
 	//@include rhythm(2, 2, 2, 2);
 }

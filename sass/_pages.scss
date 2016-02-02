@@ -465,6 +465,9 @@ p.contactInfo__link {
 	color:white;
 	background-position:right bottom;
 }
+.contact__button_dept1:hover{
+	color:$dept1-gray !important;
+}
 .contact__button_dept1{
 	border-color:$dept1;
 	background: linear-gradient(to top, $dept1 50%, white 50%);
@@ -739,8 +742,20 @@ p.contactInfo__link {
 	display:-webkit-flex;
 	align-items:center;
 }
+.deptIncludeItem__content{
+	text-align:center;
+}
 .deptIncludeItem_dept1 {
 	background:$dept1;
+}
+.deptIncludeItem_dept1 .deptIncludeItem__content p{
+	color:$dept1-gray;
+}
+.deptIncludeItem_accent{
+	border: 4px dashed $dept1-gray;
+}
+.deptIncludeItem_accent:hover{
+	background:$dept1-accent;
 }
 .deptIncludeItem_dept2 {
 	background:$dept2;
@@ -749,7 +764,6 @@ p.contactInfo__link {
 	@include adjust-font-size-to(20px);
 	font-weight:600;
 	color:white;
-	text-align:center;
 }
 
 .deptInclude__hr{
@@ -786,8 +800,16 @@ p.contactInfo__link {
 	height:90px;
 	margin:0 auto;
 	border-radius:50%;
-	background:$dept2;
 	@include rhythm(0,0,0,2);
+}
+.deptStepsItem__circle_dept1{
+	background:$dept1;
+}
+.deptStepsItem__circle_dept1 p{
+	color:$dept1-gray !important;
+}
+.deptStepsItem__circle_dept2{
+	background:$dept2;
 }
 .deptStepsItem__circle p{
 	text-align:center;
@@ -800,17 +822,17 @@ p.contactInfo__link {
 	@include adjust-font-size-to(20px);
 }
 
-.dept2Req{
+.deptReq{
 	@include rhythm(0,2,5,0);
 	background:$dark;
 	background-size:cover;
 }
-.dept2ReqItem__wrap{
+.dept2ReqItem__wrap, .dept1ReqItem__wrap{
 	@include rhythm(4,0,0,2);
 	padding-left:1em;
 	padding-right:1em;
 }
-.dept2ReqItem{
+.deptReqItem{
 	margin:0 auto;
 	@include rhythm(0,1,1,0);
 	max-width:220px;
@@ -823,40 +845,56 @@ p.contactInfo__link {
 	padding-left:0.5em;
 	padding-right:0.5em;
 }
-.dept2ReqItem:hover{
+.deptReqItem_dept2:hover{
 	border-color:$dept2;
 }
-.dept2ReqItem_on{
+.deptReqItem_dept2.deptReqItem_on{
 	background:$dept2;
 	border-color:$dept2;
 }
-.dept2ReqItem p{
+.deptReqItem_dept1:hover{
+	border-color:$dept1;
+}
+.deptReqItem_dept1.deptReqItem_on p{
+	color:$dept1-gray;
+}
+.deptReqItem_dept1.deptReqItem_on{
+	background:$dept1;
+	border-color:$dept1;
+}
+
+.deptReqItem p{
 	color:white;
 	text-align:center;
 	@include adjust-font-size-to(18px);
 }
 
-#dept2ReqButton{
+#deptReqButton{
 	display:none;
 }
 
-.dept2Exp{
+.deptExp{
 	@include rhythm(0,0,0,4);
 }
-.dept2Exp__heading{
+.deptExp__heading{
 	@include rhythm(2,0,0,4);
 }
-.dept2Exp__message{
-	border:2px dashed $dept2;
+.deptExp__message{
 	@include rhythm(0,2,2,0);
 	padding-left:1.25em;
 	padding-right:1.25em;
 }
+.deptExp__message_dept1{ 
+	border:2px dashed $dept1;
+}
+.deptExp__message_dept2{ 
+	border:2px dashed $dept2;
+}
 
-.dept2Exp__aboutTeam__itemWrap{
+.deptExp__aboutTeam__itemWrap{
 	padding-right:1.5em;
 }
-.dept2Exp__aboutTeam__itemWrap .aboutTeam__item {
+.deptExp__aboutTeam__itemWrap .aboutTeam__item {
 	min-height:0;
 	@media (max-width: 680px) {
 		margin:0;
@@ -951,4 +989,87 @@ p.contactInfo__link {
 	@media (max-width: 540px) {
 		display:none;
 	}
+}
+
+.dept1Info{
+	text-align:center;
+	@include rhythm(1,0,0,5);
+}
+.dept1InfoItem{
+	max-width:300px;
+	margin:0 auto;
+}
+.dept1Info__heading{
+	@include adjust-font-size-to(26px);
+	font-weight:600;
+	margin-top: -80px;
+}
+.dept1Info__heading_after{
+	margin-top: 0px;
+    opacity:0;
+    font-size:0;
+}
+.dept1Info__caption{
+	@include adjust-font-size-to(20px);
+	opacity:0;
+}
+.dept1Info__caption_after, .dept1InfoImage_after{
+	opacity:1 !important;
+}
+.dept1InfoImage{
+	max-width:100%;
+	height:auto;
+}
+.dept1InfoImage__anim{
+	width:100%;
+	background-size: 30% 30%;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-image:url('../img/dept1Info.png');
+}
+.dept1InfoImage__anim_after{
+	background-size: 100% 100%;
+}
+.dept1InfoImage_hidden{
+	opacity:0;	
+}
+
+.dept1Price__heading{
+	@include rhythm(2,0,0,2);
+}
+.dept1PriceItem{
+	max-width:320px;
+	margin:0 auto;
+	background:$dept1-50;
+	@include rhythm(2,2,2,2);
+	padding-left:1.5em;
+	padding-right:1.5em;
+	text-align:center;
+	color:black;
+}
+.dept1PriceItem__price{
+	@include adjust-font-size-to(36px);
+	font-weight:900;
+}
+.dept1PriceItem__priceSmall{
+	font-size:60%;
+}
+.dept1PriceItem__priceSmaller{
+	font-size:50%;
+}
+.dept1PriceItem__captionWrap{
+	min-height:6.5em;
+	@media (max-width: 540px) {
+		min-height:0;
+	}
+}
+
+.dept1PriceItem__priceWrap{
+	min-height:5em;
+	@media (max-width: 540px) {
+		min-height:0;
+	}
+}
+.dept1PriceItem__caption{
+	@include adjust-font-size-to(22px);
 }

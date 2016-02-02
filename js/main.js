@@ -1,12 +1,14 @@
 /* Responsive menu */
 $(document).ready(function(){
 	$("#navTrigger").click(function(){
+    $("body").addClass("modal_open");
 		$("div#navMain__back").animate({ opacity: 0.6 }, 100).addClass("navMain__back_open");
 
 		$("nav#navMain").addClass("navMain_open");
 		
 	});
 	$("#navMain__back").click(function(){
+    $("body").removeClass("modal_open");
 		$("div#navMain__back").animate({ opacity: 0 }, {duration: 200, complete: function() { $("div#navMain__back").removeClass("navMain__back_open"); }});
 		
 		$("nav#navMain").removeClass("navMain_open");
@@ -59,26 +61,43 @@ function check_if_in_view() {
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
-/* dept2 req */
-$( ".dept2ReqItem" ).each(function(index) {
+/* dept1 info */
+$("#dept1Info").hover(function() {
+  showDept1Info();
+});
+
+function showDept1Info(){
+  $("#dept1InfoImageMain").addClass("dept1InfoImage__anim_after");
+  $( ".dept1Info__caption" ).each(function(index) {
+      $(this).addClass("dept1Info__caption_after");
+  });
+  $( ".dept1InfoImage" ).each(function(index) {
+      $(this).addClass("dept1InfoImage_after");
+  });
+  $("#dept1Info__heading").addClass("dept1Info__heading_after");
+}
+
+
+/* dept req */
+$( ".deptReqItem" ).each(function(index) {
     $(this).on("click", function(){
-        if ($(this).hasClass("dept2ReqItem_on")){
-          $(this).removeClass("dept2ReqItem_on");
+        if ($(this).hasClass("deptReqItem_on")){
+          $(this).removeClass("deptReqItem_on");
         }else{
-          $(this).addClass("dept2ReqItem_on");
+          $(this).addClass("deptReqItem_on");
         }
-        checkDept2Req();
+        checkDeptReq();
     });
 });
 
-function checkDept2Req(){
+function checkDeptReq(){
   var x = false;
-  $(".dept2ReqItem").each(function (index) {
-    if ($(this).hasClass("dept2ReqItem_on")) {
+  $(".deptReqItem").each(function (index) {
+    if ($(this).hasClass("deptReqItem_on")) {
         x = true;
     }
-  if (x) {$("#dept2ReqButton").css("display","inline-block");}
-  else {$("#dept2ReqButton").css("display","none");}
+  if (x) {$("#deptReqButton").css("display","inline-block");}
+  else {$("#deptReqButton").css("display","none");}
 
 });
 }
@@ -138,3 +157,14 @@ $(window).resize(updownResize);
 
       }
     }
+
+/* mfp */
+$(document).ready(function() {
+  $('.mfp-link').magnificPopup({
+    type: 'inline',
+    preloader: false,
+    midClick: true,
+    removalDelay: 300,
+    mainClass: 'my-mfp-slide-bottom'
+  });
+});
