@@ -330,3 +330,43 @@ footer a{
 .footer__contacts-right{
 	text-align:left;
 }
+
+// POPUP
+.popup{
+	background-color:white;
+	max-width:960px;
+	margin:0.5em auto;
+	padding:1.5em;
+	@include trailing-border(6px, 0.5);
+	border-color:$red;
+}
+.popup_dept1 {
+	border-color:$dept1;
+}
+.popup_dept2 {
+	border-color:$dept2;
+}
+.popupContent{
+	max-width:600px;
+	@include rhythm(0,4,4,0);
+	margin: 0 auto;
+}
+.popupContent__heading{
+	@include adjust-font-size-to(32px);
+	@include rhythm(0,0,0,1);
+	font-weight:600;
+}
+.popupContent__caption{
+	@include adjust-font-size-to(18px);
+	@include rhythm(0,0,0,2);
+	font-weight:300;
+}
+.popupContent__caption strong{
+	font-weight:400;
+}
+.popupContent_success{
+	display:none;
+}
+.popupContent_resume{
+	max-width:880px;
+}

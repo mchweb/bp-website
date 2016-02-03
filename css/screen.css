@@ -697,7 +697,7 @@ button::-moz-focus-inner {
 
 /* line 151, ../sass/lib/_mfp.scss */
 .mfp-close-btn-in .mfp-close {
-  color: #333;
+  color: #cf0000;
 }
 
 /* line 154, ../sass/lib/_mfp.scss */
@@ -1052,6 +1052,68 @@ img.mfp-img {
   top: 0;
   right: 0;
   padding-top: 0;
+}
+
+/**
+ * Fade-zoom animation for first dialog
+ */
+/* start state */
+/* line 398, ../sass/lib/_mfp.scss */
+.my-mfp-zoom-in .zoom-anim-dialog {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+/* animate in */
+/* line 416, ../sass/lib/_mfp.scss */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* animate out */
+/* line 427, ../sass/lib/_mfp.scss */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+/* Dark overlay, start state */
+/* line 438, ../sass/lib/_mfp.scss */
+.my-mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+/* animate in */
+/* line 446, ../sass/lib/_mfp.scss */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+/* animate out */
+/* line 450, ../sass/lib/_mfp.scss */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
 }
 
 /* line 2, ../sass/_common.scss */
@@ -1667,7 +1729,7 @@ strong {
   padding-left: 1.04167%;
   padding-right: 1.04167%;
 }
-@media (max-width: 680px) {
+@media (max-width: 860px) {
   /* line 178, ../sass/_layout.scss */
   .deptExp__aboutTeam__itemWrap {
     width: 100%;
@@ -1678,15 +1740,15 @@ strong {
 }
 
 /* line 184, ../sass/_layout.scss */
-.deptExp__message {
+.deptExp__messageWrap {
   width: 75%;
   float: left;
   padding-left: 1.04167%;
   padding-right: 1.04167%;
 }
-@media (max-width: 680px) {
+@media (max-width: 860px) {
   /* line 184, ../sass/_layout.scss */
-  .deptExp__message {
+  .deptExp__messageWrap {
     width: 100%;
     float: left;
     padding-left: 1.04167%;
@@ -2282,6 +2344,75 @@ footer a {
   text-align: left;
 }
 
+/* line 335, ../sass/_main.scss */
+.popup {
+  background-color: white;
+  max-width: 960px;
+  margin: 0.5em auto;
+  padding: 1.5em;
+  border-bottom-width: 0.375em;
+  border-bottom-style: solid;
+  padding-bottom: -0.1875em;
+  border-color: #cf0000;
+}
+
+/* line 343, ../sass/_main.scss */
+.popup_dept1 {
+  border-color: #ffcc00;
+}
+
+/* line 346, ../sass/_main.scss */
+.popup_dept2 {
+  border-color: #26a55b;
+}
+
+/* line 349, ../sass/_main.scss */
+.popupContent {
+  max-width: 600px;
+  margin-top: 0em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin-bottom: 0em;
+  margin: 0 auto;
+}
+
+/* line 354, ../sass/_main.scss */
+.popupContent__heading {
+  font-size: 2em;
+  line-height: 1.125em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.375em;
+  font-weight: 600;
+}
+
+/* line 359, ../sass/_main.scss */
+.popupContent__caption {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.75em;
+  font-weight: 300;
+}
+
+/* line 364, ../sass/_main.scss */
+.popupContent__caption strong {
+  font-weight: 400;
+}
+
+/* line 367, ../sass/_main.scss */
+.popupContent_success {
+  display: none;
+}
+
+/* line 370, ../sass/_main.scss */
+.popupContent_resume {
+  max-width: 880px;
+}
+
 /* line 4, ../sass/_pages.scss */
 .depts {
   text-align: center;
@@ -2742,20 +2873,39 @@ footer a {
 }
 
 /* line 282, ../sass/_pages.scss */
+.contactForm__control {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.375em;
+}
+
+/* line 285, ../sass/_pages.scss */
 .contactForm__control label {
+  width: 100%;
+  text-align: left;
+  margin-top: 0em;
+  padding-top: 0.1875em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+}
+
+/* line 290, ../sass/_pages.scss */
+.contactForm__control_horiz label {
   width: 25%;
   display: block;
   float: left;
   text-align: right;
   margin-right: 3%;
+  margin-left: 0;
   margin-top: 0em;
   padding-top: 0.75em;
   padding-bottom: 0em;
   margin-bottom: 0em;
 }
 @media (max-width: 960px) {
-  /* line 282, ../sass/_pages.scss */
-  .contactForm__control label {
+  /* line 290, ../sass/_pages.scss */
+  .contactForm__control_horiz label {
     float: none;
     width: 100%;
     text-align: left;
@@ -2768,69 +2918,91 @@ footer a {
   }
 }
 @media (max-width: 680px) {
-  /* line 282, ../sass/_pages.scss */
-  .contactForm__control label {
+  /* line 290, ../sass/_pages.scss */
+  .contactForm__control_horiz label {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
-/* line 302, ../sass/_pages.scss */
+/* line 311, ../sass/_pages.scss */
 .contactForm__checkbox {
+  width: 100% !important;
+}
+
+/* line 314, ../sass/_pages.scss */
+.contactForm__checkbox label {
+  width: 69% !important;
+  text-align: left !important;
+}
+@media (max-width: 960px) {
+  /* line 314, ../sass/_pages.scss */
+  .contactForm__checkbox label {
+    width: 100%;
+  }
+}
+
+/* line 321, ../sass/_pages.scss */
+.contactForm__checkbox.contactForm__control_horiz {
   margin-left: 29%;
   width: 69%;
 }
 @media (max-width: 960px) {
-  /* line 302, ../sass/_pages.scss */
-  .contactForm__checkbox {
+  /* line 321, ../sass/_pages.scss */
+  .contactForm__checkbox.contactForm__control_horiz {
     margin-left: 0;
     width: 100%;
   }
 }
 
-/* line 310, ../sass/_pages.scss */
+/* line 330, ../sass/_pages.scss */
 .contactForm__checkbox input {
-  margin-right: 0.5em;
+  margin-right: 0.5em !important;
+  width: auto !important;
 }
 
-/* line 314, ../sass/_pages.scss */
+/* line 335, ../sass/_pages.scss */
 .contactForm__formWrap {
   max-width: 660px;
   margin: 0 auto;
 }
 
-/* line 318, ../sass/_pages.scss */
-.contactForm__control input, .contactForm__control textarea {
+/* line 339, ../sass/_pages.scss */
+.contactForm__control input, .contactForm__control textarea, .contactForm__control select {
   padding: 0.5em 1em;
-  margin: 0.25em;
   border: 1px solid #cccccc;
   border-radius: 4px;
-  width: 70%;
+  width: 100%;
   color: black;
+  margin: 0.25em 0;
+}
+
+/* line 347, ../sass/_pages.scss */
+.contactForm__control_horiz input, .contactForm__control_horiz textarea {
+  width: 70%;
+  margin: 0.25em;
 }
 @media (max-width: 960px) {
-  /* line 318, ../sass/_pages.scss */
-  .contactForm__control input, .contactForm__control textarea {
+  /* line 347, ../sass/_pages.scss */
+  .contactForm__control_horiz input, .contactForm__control_horiz textarea {
     width: 100%;
   }
 }
 @media (max-width: 680px) {
-  /* line 318, ../sass/_pages.scss */
-  .contactForm__control input, .contactForm__control textarea {
+  /* line 347, ../sass/_pages.scss */
+  .contactForm__control_horiz input, .contactForm__control_horiz textarea {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
-/* line 333, ../sass/_pages.scss */
-.contactForm__control textarea {
+/* line 359, ../sass/_pages.scss */
+.contactForm__control_horiz textarea {
   margin-top: -1.25em;
 }
 
-/* line 336, ../sass/_pages.scss */
+/* line 362, ../sass/_pages.scss */
 .contactForm__button {
-  margin-right: 5%;
-  float: right;
   display: inline-block;
   font-size: 1.25em;
   line-height: 1.2em;
@@ -2854,37 +3026,74 @@ footer a {
   font-weight: 600;
 }
 @media (max-width: 960px) {
-  /* line 336, ../sass/_pages.scss */
+  /* line 362, ../sass/_pages.scss */
   .contactForm__button {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
 }
 @media (max-width: 680px) {
-  /* line 336, ../sass/_pages.scss */
+  /* line 362, ../sass/_pages.scss */
   .contactForm__button {
-    width: 100%;
+    width: 100%  !important;
   }
 }
 
-/* line 361, ../sass/_pages.scss */
+/* line 385, ../sass/_pages.scss */
+.contactForm__button_gray {
+  background: linear-gradient(to top, #cf0000 50%, #dddddd 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+}
+
+/* line 390, ../sass/_pages.scss */
+.contactForm__button_gray.contactForm__button_dept1 {
+  background: linear-gradient(to top, #ffcc00 50%, #dddddd 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+}
+
+/* line 395, ../sass/_pages.scss */
+.contactForm__button_dept1 {
+  border-color: #ffcc00;
+}
+
+/* line 398, ../sass/_pages.scss */
+.contactForm__button_dept2 {
+  border-color: #26a55b;
+}
+
+/* line 401, ../sass/_pages.scss */
+.contactForm__button_gray.contactForm__button_dept2 {
+  background: linear-gradient(to top, #26a55b 50%, #dddddd 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+}
+
+/* line 406, ../sass/_pages.scss */
+.contactForm__button_right {
+  margin-right: 5%;
+  float: right;
+}
+
+/* line 410, ../sass/_pages.scss */
 .contactForm__button:hover {
   color: white;
   background-position: right bottom;
 }
 
-/* line 365, ../sass/_pages.scss */
+/* line 414, ../sass/_pages.scss */
 .contactForm__control button {
   margin-left: 30%;
 }
 
-/* line 370, ../sass/_pages.scss */
+/* line 419, ../sass/_pages.scss */
 .fistScreen_contacts {
   margin-bottom: -26px;
   align-items: flex-end;
   align-items: -webkit-flex-end;
 }
 
-/* line 375, ../sass/_pages.scss */
+/* line 424, ../sass/_pages.scss */
 .contactInfo__wrap {
   position: absolute;
   top: 7em;
@@ -2894,13 +3103,13 @@ footer a {
   margin-right: 1em;
 }
 
-/* line 383, ../sass/_pages.scss */
+/* line 432, ../sass/_pages.scss */
 .contacts__mapWrap {
   width: 100%;
 }
 
 @media (max-width: 880px) {
-  /* line 386, ../sass/_pages.scss */
+  /* line 435, ../sass/_pages.scss */
   #map iframe {
     opacity: 0;
     pointer-events: none;
@@ -2908,7 +3117,7 @@ footer a {
 }
 
 @media (max-width: 880px) {
-  /* line 392, ../sass/_pages.scss */
+  /* line 441, ../sass/_pages.scss */
   #map {
     background-image: url(../img/2gis.jpg);
     background-size: cover;
@@ -2916,7 +3125,7 @@ footer a {
   }
 }
 
-/* line 399, ../sass/_pages.scss */
+/* line 448, ../sass/_pages.scss */
 .contactInfo {
   background: rgba(0, 0, 0, 0.75);
   color: white;
@@ -2932,25 +3141,25 @@ footer a {
   line-height: 1.33333em;
 }
 @media (max-width: 480px) {
-  /* line 399, ../sass/_pages.scss */
+  /* line 448, ../sass/_pages.scss */
   .contactInfo {
     width: 280px;
   }
 }
 
-/* line 412, ../sass/_pages.scss */
+/* line 461, ../sass/_pages.scss */
 .contactInfo__logo {
   width: auto;
   max-height: 5em;
   max-width: 20em;
 }
 
-/* line 417, ../sass/_pages.scss */
+/* line 466, ../sass/_pages.scss */
 .contactInfo__link {
   color: white;
 }
 
-/* line 420, ../sass/_pages.scss */
+/* line 469, ../sass/_pages.scss */
 p.contactInfo__link {
   margin-top: 0.75em;
   padding-top: 0em;
@@ -2958,7 +3167,7 @@ p.contactInfo__link {
   margin-bottom: 0em;
 }
 
-/* line 423, ../sass/_pages.scss */
+/* line 472, ../sass/_pages.scss */
 .contactInfo__list li {
   display: table;
   margin-top: 0em;
@@ -2967,7 +3176,7 @@ p.contactInfo__link {
   margin-bottom: 0.1875em;
 }
 
-/* line 427, ../sass/_pages.scss */
+/* line 476, ../sass/_pages.scss */
 .contactInfo__list li img {
   display: table-cell;
   float: left;
@@ -2976,18 +3185,18 @@ p.contactInfo__link {
   margin-right: 0.75em;
 }
 
-/* line 434, ../sass/_pages.scss */
+/* line 483, ../sass/_pages.scss */
 .contactInfo__list li span {
   display: table-cell;
   vertical-align: top;
 }
 
-/* line 438, ../sass/_pages.scss */
+/* line 487, ../sass/_pages.scss */
 .contactInfo_marDown {
   margin-bottom: 0.75em !important;
 }
 
-/* line 442, ../sass/_pages.scss */
+/* line 491, ../sass/_pages.scss */
 .contact__button {
   display: inline-block;
   text-transform: uppercase;
@@ -3010,29 +3219,31 @@ p.contactInfo__link {
   font-weight: 600;
 }
 
-/* line 458, ../sass/_pages.scss */
+/* line 507, ../sass/_pages.scss */
 .contact__button_gray {
   background: linear-gradient(to top, #cf0000 50%, #dddddd 50%);
+  background-size: 100% 200%;
+  background-position: left top;
 }
 
-/* line 461, ../sass/_pages.scss */
+/* line 512, ../sass/_pages.scss */
 .contact__button_big {
   font-size: 1.25em;
   line-height: 1.2em;
 }
 
-/* line 464, ../sass/_pages.scss */
+/* line 515, ../sass/_pages.scss */
 .contact__button:hover {
   color: white;
   background-position: right bottom;
 }
 
-/* line 468, ../sass/_pages.scss */
+/* line 519, ../sass/_pages.scss */
 .contact__button_dept1:hover {
   color: #444 !important;
 }
 
-/* line 471, ../sass/_pages.scss */
+/* line 522, ../sass/_pages.scss */
 .contact__button_dept1 {
   border-color: #ffcc00;
   background: linear-gradient(to top, #ffcc00 50%, #ffffff 50%);
@@ -3040,14 +3251,14 @@ p.contactInfo__link {
   background-position: left top;
 }
 
-/* line 477, ../sass/_pages.scss */
+/* line 528, ../sass/_pages.scss */
 .contact__button_gray.contact__button_dept1 {
   background: linear-gradient(to top, #ffcc00 50%, #dddddd 50%);
   background-size: 100% 200%;
   background-position: left top;
 }
 
-/* line 482, ../sass/_pages.scss */
+/* line 533, ../sass/_pages.scss */
 .contact__button_dept2 {
   border-color: #26a55b;
   background: linear-gradient(to top, #26a55b 50%, #ffffff 50%);
@@ -3055,70 +3266,77 @@ p.contactInfo__link {
   background-position: left top;
 }
 
-/* line 488, ../sass/_pages.scss */
+/* line 539, ../sass/_pages.scss */
 .contact__button_gray.contact__button_dept2 {
   background: linear-gradient(to top, #26a55b 50%, #dddddd 50%);
   background-size: 100% 200%;
   background-position: left top;
 }
 
-/* line 493, ../sass/_pages.scss */
+/* line 544, ../sass/_pages.scss */
 .contact__button_dept1:hover, .contact__button_dept2:hover {
   background-position: right bottom;
 }
 
-/* line 499, ../sass/_pages.scss */
+/* line 547, ../sass/_pages.scss */
+.contactForm__loading {
+  color: transparent !important;
+  background: url("../img/loading.gif");
+  background-size: cover;
+}
+
+/* line 554, ../sass/_pages.scss */
 .aboutTopHeading {
   font-size: 6.25em;
   line-height: 1.08em;
 }
 @media (max-width: 800px) {
-  /* line 499, ../sass/_pages.scss */
+  /* line 554, ../sass/_pages.scss */
   .aboutTopHeading {
     font-size: 3.75em;
     line-height: 1.1em;
   }
 }
 @media (max-width: 300px) {
-  /* line 499, ../sass/_pages.scss */
+  /* line 554, ../sass/_pages.scss */
   .aboutTopHeading {
     font-size: 2em;
     line-height: 1.125em;
   }
 }
 
-/* line 508, ../sass/_pages.scss */
+/* line 563, ../sass/_pages.scss */
 .aboutTopHeadingCaption {
   font-size: 1.625em;
   line-height: 1.15385em;
 }
 @media (max-width: 600px) {
-  /* line 508, ../sass/_pages.scss */
+  /* line 563, ../sass/_pages.scss */
   .aboutTopHeadingCaption {
     font-size: 1.25em;
     line-height: 1.2em;
   }
 }
 
-/* line 514, ../sass/_pages.scss */
+/* line 569, ../sass/_pages.scss */
 .aboutTopHeading, .aboutTopHeadingCaption {
   color: white;
   text-shadow: 1px 1px 2px black;
 }
 
-/* line 518, ../sass/_pages.scss */
+/* line 573, ../sass/_pages.scss */
 .aboutTop__logo {
   max-width: 600px;
   -webkit-filter: drop-shadow(1px 1px 2px black);
 }
 @media (max-width: 800px) {
-  /* line 518, ../sass/_pages.scss */
+  /* line 573, ../sass/_pages.scss */
   .aboutTop__logo {
     max-width: 400px;
   }
 }
 
-/* line 526, ../sass/_pages.scss */
+/* line 581, ../sass/_pages.scss */
 .aboutQuote {
   font-weight: 300;
   text-align: center;
@@ -3136,7 +3354,7 @@ p.contactInfo__link {
   max-width: 990px;
 }
 @media (max-width: 680px) {
-  /* line 526, ../sass/_pages.scss */
+  /* line 581, ../sass/_pages.scss */
   .aboutQuote {
     margin-top: 2.25em;
     padding-top: 1.5em;
@@ -3145,25 +3363,25 @@ p.contactInfo__link {
   }
 }
 
-/* line 538, ../sass/_pages.scss */
+/* line 593, ../sass/_pages.scss */
 .aboutQuote__text {
   width: 90%;
   margin: 0 auto;
 }
 @media (max-width: 680px) {
-  /* line 538, ../sass/_pages.scss */
+  /* line 593, ../sass/_pages.scss */
   .aboutQuote__text {
     font-size: 1.5em;
     line-height: 1.25em;
   }
 }
 
-/* line 545, ../sass/_pages.scss */
+/* line 600, ../sass/_pages.scss */
 .aboutQuote__text strong {
   font-weight: 400;
 }
 
-/* line 548, ../sass/_pages.scss */
+/* line 603, ../sass/_pages.scss */
 .aboutDepts {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -3171,7 +3389,7 @@ p.contactInfo__link {
   margin-bottom: 1.5em;
 }
 @media (max-width: 680px) {
-  /* line 548, ../sass/_pages.scss */
+  /* line 603, ../sass/_pages.scss */
   .aboutDepts {
     margin-top: 0em;
     padding-top: 0em;
@@ -3180,13 +3398,13 @@ p.contactInfo__link {
   }
 }
 
-/* line 554, ../sass/_pages.scss */
+/* line 609, ../sass/_pages.scss */
 .aboutDepts__itemWrap {
   padding-left: 0.75em;
   padding-right: 0.75em;
 }
 
-/* line 558, ../sass/_pages.scss */
+/* line 613, ../sass/_pages.scss */
 .aboutDepts__item {
   height: 20em;
   background-size: cover;
@@ -3196,14 +3414,14 @@ p.contactInfo__link {
   align-items: center;
 }
 @media (max-width: 960px) {
-  /* line 558, ../sass/_pages.scss */
+  /* line 613, ../sass/_pages.scss */
   .aboutDepts__item {
     height: 16em;
   }
 }
 
 @media (max-width: 680px) {
-  /* line 569, ../sass/_pages.scss */
+  /* line 624, ../sass/_pages.scss */
   .aboutDepts__item {
     height: 12em;
     margin-top: 1.5em;
@@ -3214,7 +3432,7 @@ p.contactInfo__link {
 }
 
 @media (max-width: 960px) {
-  /* line 575, ../sass/_pages.scss */
+  /* line 630, ../sass/_pages.scss */
   .aboutDepts__item_dept0 {
     height: 12em;
     margin-top: 1.5em;
@@ -3224,33 +3442,33 @@ p.contactInfo__link {
   }
 }
 
-/* line 581, ../sass/_pages.scss */
+/* line 636, ../sass/_pages.scss */
 .aboutDepts__item_dept1 {
   background-image: url("../img/aboutDept1.jpg");
 }
 
-/* line 584, ../sass/_pages.scss */
+/* line 639, ../sass/_pages.scss */
 .aboutDepts__item_dept2 {
   background-image: url("../img/aboutDept2.jpg");
 }
 
-/* line 587, ../sass/_pages.scss */
+/* line 642, ../sass/_pages.scss */
 .aboutDepts__item_dept0 {
   background-image: url("../img/aboutDept0.jpg");
 }
 
-/* line 590, ../sass/_pages.scss */
+/* line 645, ../sass/_pages.scss */
 .aboutDepts__info {
   width: 100%;
   text-align: center;
 }
 
-/* line 594, ../sass/_pages.scss */
+/* line 649, ../sass/_pages.scss */
 .aboutDepts__dept:hover {
   -webkit-filter: brightness(1.2);
 }
 
-/* line 597, ../sass/_pages.scss */
+/* line 652, ../sass/_pages.scss */
 .aboutDepts__dept {
   font-size: 1.625em;
   line-height: 1.15385em;
@@ -3266,21 +3484,21 @@ p.contactInfo__link {
   border: 4px dashed black;
 }
 @media (max-width: 960px) {
-  /* line 597, ../sass/_pages.scss */
+  /* line 652, ../sass/_pages.scss */
   .aboutDepts__dept {
     font-size: 1.375em;
     line-height: 1.36364em;
   }
 }
 @media (max-width: 680px) {
-  /* line 597, ../sass/_pages.scss */
+  /* line 652, ../sass/_pages.scss */
   .aboutDepts__dept {
     font-size: 1.25em;
     line-height: 1.2em;
   }
 }
 
-/* line 614, ../sass/_pages.scss */
+/* line 669, ../sass/_pages.scss */
 .aboutDepts__dept img {
   width: auto;
   height: 1.8em;
@@ -3288,17 +3506,17 @@ p.contactInfo__link {
   margin-right: 0.5em;
 }
 
-/* line 620, ../sass/_pages.scss */
+/* line 675, ../sass/_pages.scss */
 .aboutDepts_dept1 {
   background: #ffcc00;
 }
 
-/* line 623, ../sass/_pages.scss */
+/* line 678, ../sass/_pages.scss */
 .aboutDepts_dept2 {
   background: #26a55b;
 }
 
-/* line 627, ../sass/_pages.scss */
+/* line 682, ../sass/_pages.scss */
 .aboutDepts__text {
   color: white;
   text-shadow: 1px 1px 2px black;
@@ -3311,14 +3529,14 @@ p.contactInfo__link {
   font-weight: 600;
 }
 @media (max-width: 960px) {
-  /* line 627, ../sass/_pages.scss */
+  /* line 682, ../sass/_pages.scss */
   .aboutDepts__text {
     font-size: 1.0625em;
     line-height: 1.41176em;
   }
 }
 
-/* line 638, ../sass/_pages.scss */
+/* line 693, ../sass/_pages.scss */
 .aboutFacts {
   background: #1e1e1e;
   text-align: center;
@@ -3328,7 +3546,7 @@ p.contactInfo__link {
   margin-bottom: 0em;
 }
 
-/* line 643, ../sass/_pages.scss */
+/* line 698, ../sass/_pages.scss */
 .pageHeading_aboutFacts {
   color: white;
   margin-top: 0em;
@@ -3337,7 +3555,7 @@ p.contactInfo__link {
   margin-bottom: 0.75em;
 }
 
-/* line 647, ../sass/_pages.scss */
+/* line 702, ../sass/_pages.scss */
 .aboutFactsCol {
   margin-top: 0.75em;
   padding-top: 0em;
@@ -3346,18 +3564,18 @@ p.contactInfo__link {
   min-height: 12em;
 }
 
-/* line 651, ../sass/_pages.scss */
+/* line 706, ../sass/_pages.scss */
 .aboutFactsCol p {
   max-width: 360px;
 }
 
-/* line 654, ../sass/_pages.scss */
+/* line 709, ../sass/_pages.scss */
 .aboutFactsCol img {
   width: auto;
   max-height: 4em;
 }
 
-/* line 659, ../sass/_pages.scss */
+/* line 714, ../sass/_pages.scss */
 .aboutPartners {
   margin-top: 0.75em;
   padding-top: 0em;
@@ -3365,7 +3583,7 @@ p.contactInfo__link {
   margin-bottom: 0em;
 }
 
-/* line 662, ../sass/_pages.scss */
+/* line 717, ../sass/_pages.scss */
 .aboutParnets__header {
   margin-top: 0em;
   padding-top: 0em;
@@ -3373,7 +3591,7 @@ p.contactInfo__link {
   margin-bottom: 1.5em;
 }
 
-/* line 665, ../sass/_pages.scss */
+/* line 720, ../sass/_pages.scss */
 .aboutPartners__separator {
   clear: both;
   margin-top: 0em;
@@ -3382,7 +3600,7 @@ p.contactInfo__link {
   margin-bottom: 1.5em;
 }
 
-/* line 669, ../sass/_pages.scss */
+/* line 724, ../sass/_pages.scss */
 .aboutPartners__logo img {
   width: 100%;
   height: auto;
@@ -3390,7 +3608,7 @@ p.contactInfo__link {
   max-width: 320px;
 }
 
-/* line 676, ../sass/_pages.scss */
+/* line 731, ../sass/_pages.scss */
 .aboutTeam {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -3399,7 +3617,7 @@ p.contactInfo__link {
   text-align: center;
 }
 
-/* line 680, ../sass/_pages.scss */
+/* line 735, ../sass/_pages.scss */
 .aboutTeam__header {
   margin-top: 0em;
   padding-top: 0em;
@@ -3407,20 +3625,20 @@ p.contactInfo__link {
   margin-bottom: 1.5em;
 }
 
-/* line 683, ../sass/_pages.scss */
+/* line 738, ../sass/_pages.scss */
 .aboutTeam__item {
   max-width: 200px;
   margin: 0 auto;
   min-height: 20em;
 }
 
-/* line 688, ../sass/_pages.scss */
+/* line 743, ../sass/_pages.scss */
 .aboutTeam__itemImage {
   background-size: contain;
   padding-top: 100%;
 }
 
-/* line 692, ../sass/_pages.scss */
+/* line 747, ../sass/_pages.scss */
 .aboutTeam__itemName {
   font-size: 1.5em;
   line-height: 1.25em;
@@ -3430,36 +3648,36 @@ p.contactInfo__link {
   margin-bottom: 0em;
 }
 
-/* line 697, ../sass/_pages.scss */
+/* line 752, ../sass/_pages.scss */
 .aboutTeam__itemImage:hover .aboutTeamItem__back_expert {
   opacity: 0.8;
   margin-top: -100%;
   padding-top: 100%;
 }
 
-/* line 702, ../sass/_pages.scss */
+/* line 757, ../sass/_pages.scss */
 .aboutTeam__itemImage:hover .aboutTeamItem__back_dept1 {
   background: url("../img/expert-dept1.png");
   background-size: cover;
 }
 
-/* line 706, ../sass/_pages.scss */
+/* line 761, ../sass/_pages.scss */
 .aboutTeam__itemImage:hover .aboutTeamItem__back_dept2 {
   background: url("../img/expert-dept2.png");
   background-size: cover;
 }
 
-/* line 710, ../sass/_pages.scss */
+/* line 765, ../sass/_pages.scss */
 .aboutTeamItem__back_dept1 {
   background-color: #ffcc00 !important;
 }
 
-/* line 713, ../sass/_pages.scss */
+/* line 768, ../sass/_pages.scss */
 .aboutTeamItem__back_dept2 {
   background-color: #26a55b !important;
 }
 
-/* line 716, ../sass/_pages.scss */
+/* line 771, ../sass/_pages.scss */
 .aboutTeamItem__back {
   background: #cf0000;
   width: 100%;
@@ -3467,14 +3685,14 @@ p.contactInfo__link {
   margin-top: -1em;
 }
 
-/* line 722, ../sass/_pages.scss */
+/* line 777, ../sass/_pages.scss */
 .aboutTeamItem__expertImage {
   max-width: 100%;
   height: auto;
   display: none;
 }
 
-/* line 728, ../sass/_pages.scss */
+/* line 783, ../sass/_pages.scss */
 .deptInclude {
   margin-top: 0.75em;
   padding-top: 0em;
@@ -3482,7 +3700,7 @@ p.contactInfo__link {
   margin-bottom: 1.5em;
 }
 
-/* line 731, ../sass/_pages.scss */
+/* line 786, ../sass/_pages.scss */
 .deptIncludeItem__wrap {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -3490,7 +3708,7 @@ p.contactInfo__link {
   margin-bottom: 0em;
 }
 
-/* line 734, ../sass/_pages.scss */
+/* line 789, ../sass/_pages.scss */
 .deptIncludeItem {
   margin: 0 auto;
   margin-top: 0em;
@@ -3506,37 +3724,37 @@ p.contactInfo__link {
   align-items: center;
 }
 
-/* line 745, ../sass/_pages.scss */
+/* line 800, ../sass/_pages.scss */
 .deptIncludeItem__content {
   text-align: center;
 }
 
-/* line 748, ../sass/_pages.scss */
+/* line 803, ../sass/_pages.scss */
 .deptIncludeItem_dept1 {
   background: #ffcc00;
 }
 
-/* line 751, ../sass/_pages.scss */
+/* line 806, ../sass/_pages.scss */
 .deptIncludeItem_dept1 .deptIncludeItem__content p {
   color: #444;
 }
 
-/* line 754, ../sass/_pages.scss */
+/* line 809, ../sass/_pages.scss */
 .deptIncludeItem_accent {
   border: 4px dashed #444;
 }
 
-/* line 757, ../sass/_pages.scss */
+/* line 812, ../sass/_pages.scss */
 .deptIncludeItem_accent:hover {
   background: #ff9900;
 }
 
-/* line 760, ../sass/_pages.scss */
+/* line 815, ../sass/_pages.scss */
 .deptIncludeItem_dept2 {
   background: #26a55b;
 }
 
-/* line 763, ../sass/_pages.scss */
+/* line 818, ../sass/_pages.scss */
 .deptIncludeItem__caption {
   font-size: 1.25em;
   line-height: 1.2em;
@@ -3544,7 +3762,7 @@ p.contactInfo__link {
   color: white;
 }
 
-/* line 769, ../sass/_pages.scss */
+/* line 824, ../sass/_pages.scss */
 .deptInclude__hr {
   height: 1em;
   width: 100%;
@@ -3558,7 +3776,7 @@ p.contactInfo__link {
   margin-bottom: 0.75em;
 }
 
-/* line 778, ../sass/_pages.scss */
+/* line 833, ../sass/_pages.scss */
 .deptInclude__bottomHeading {
   font-size: 2.25em;
   line-height: 1.16667em;
@@ -3566,14 +3784,14 @@ p.contactInfo__link {
   font-weight: 600;
 }
 
-/* line 783, ../sass/_pages.scss */
+/* line 838, ../sass/_pages.scss */
 .deptInclude__bottomHeadingCaption {
   font-size: 1.375em;
   line-height: 1.36364em;
   text-align: center;
 }
 
-/* line 788, ../sass/_pages.scss */
+/* line 843, ../sass/_pages.scss */
 .deptSteps {
   margin-top: 0em;
   padding-top: 0.75em;
@@ -3583,7 +3801,7 @@ p.contactInfo__link {
   background-size: cover;
 }
 
-/* line 793, ../sass/_pages.scss */
+/* line 848, ../sass/_pages.scss */
 .deptStepsItem {
   text-align: center;
   color: white;
@@ -3593,7 +3811,7 @@ p.contactInfo__link {
   margin-bottom: 1.5em;
 }
 
-/* line 798, ../sass/_pages.scss */
+/* line 853, ../sass/_pages.scss */
 .deptStepsItem__circle {
   width: 90px;
   height: 90px;
@@ -3605,22 +3823,22 @@ p.contactInfo__link {
   margin-bottom: 0.75em;
 }
 
-/* line 805, ../sass/_pages.scss */
+/* line 860, ../sass/_pages.scss */
 .deptStepsItem__circle_dept1 {
   background: #ffcc00;
 }
 
-/* line 808, ../sass/_pages.scss */
+/* line 863, ../sass/_pages.scss */
 .deptStepsItem__circle_dept1 p {
   color: #444 !important;
 }
 
-/* line 811, ../sass/_pages.scss */
+/* line 866, ../sass/_pages.scss */
 .deptStepsItem__circle_dept2 {
   background: #26a55b;
 }
 
-/* line 814, ../sass/_pages.scss */
+/* line 869, ../sass/_pages.scss */
 .deptStepsItem__circle p {
   text-align: center;
   color: white;
@@ -3630,13 +3848,13 @@ p.contactInfo__link {
   font-weight: 900;
 }
 
-/* line 821, ../sass/_pages.scss */
+/* line 876, ../sass/_pages.scss */
 .deptStepsItem__caption {
   font-size: 1.25em;
   line-height: 1.2em;
 }
 
-/* line 825, ../sass/_pages.scss */
+/* line 880, ../sass/_pages.scss */
 .deptReq {
   margin-top: 0em;
   padding-top: 0.75em;
@@ -3646,7 +3864,7 @@ p.contactInfo__link {
   background-size: cover;
 }
 
-/* line 830, ../sass/_pages.scss */
+/* line 885, ../sass/_pages.scss */
 .dept2ReqItem__wrap, .dept1ReqItem__wrap {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -3656,7 +3874,7 @@ p.contactInfo__link {
   padding-right: 1em;
 }
 
-/* line 835, ../sass/_pages.scss */
+/* line 890, ../sass/_pages.scss */
 .deptReqItem {
   margin: 0 auto;
   margin-top: 0em;
@@ -3674,34 +3892,34 @@ p.contactInfo__link {
   padding-right: 0.5em;
 }
 
-/* line 848, ../sass/_pages.scss */
+/* line 903, ../sass/_pages.scss */
 .deptReqItem_dept2:hover {
   border-color: #26a55b;
 }
 
-/* line 851, ../sass/_pages.scss */
+/* line 906, ../sass/_pages.scss */
 .deptReqItem_dept2.deptReqItem_on {
   background: #26a55b;
   border-color: #26a55b;
 }
 
-/* line 855, ../sass/_pages.scss */
+/* line 910, ../sass/_pages.scss */
 .deptReqItem_dept1:hover {
   border-color: #ffcc00;
 }
 
-/* line 858, ../sass/_pages.scss */
+/* line 913, ../sass/_pages.scss */
 .deptReqItem_dept1.deptReqItem_on p {
   color: #444;
 }
 
-/* line 861, ../sass/_pages.scss */
+/* line 916, ../sass/_pages.scss */
 .deptReqItem_dept1.deptReqItem_on {
   background: #ffcc00;
   border-color: #ffcc00;
 }
 
-/* line 866, ../sass/_pages.scss */
+/* line 921, ../sass/_pages.scss */
 .deptReqItem p {
   color: white;
   text-align: center;
@@ -3709,12 +3927,12 @@ p.contactInfo__link {
   line-height: 1.33333em;
 }
 
-/* line 872, ../sass/_pages.scss */
+/* line 927, ../sass/_pages.scss */
 #deptReqButton {
   display: none;
 }
 
-/* line 876, ../sass/_pages.scss */
+/* line 931, ../sass/_pages.scss */
 .deptExp {
   margin-top: 0em;
   padding-top: 0em;
@@ -3722,7 +3940,7 @@ p.contactInfo__link {
   margin-bottom: 1.5em;
 }
 
-/* line 879, ../sass/_pages.scss */
+/* line 934, ../sass/_pages.scss */
 .deptExp__heading {
   margin-top: 0.75em;
   padding-top: 0em;
@@ -3730,7 +3948,7 @@ p.contactInfo__link {
   margin-bottom: 1.5em;
 }
 
-/* line 882, ../sass/_pages.scss */
+/* line 937, ../sass/_pages.scss */
 .deptExp__message {
   margin-top: 0em;
   padding-top: 0.75em;
@@ -3740,27 +3958,32 @@ p.contactInfo__link {
   padding-right: 1.25em;
 }
 
-/* line 887, ../sass/_pages.scss */
+/* line 942, ../sass/_pages.scss */
+.deptExp__message_nopad {
+  padding: 0;
+}
+
+/* line 945, ../sass/_pages.scss */
 .deptExp__message_dept1 {
   border: 2px dashed #ffcc00;
 }
 
-/* line 890, ../sass/_pages.scss */
+/* line 948, ../sass/_pages.scss */
 .deptExp__message_dept2 {
   border: 2px dashed #26a55b;
 }
 
-/* line 894, ../sass/_pages.scss */
+/* line 952, ../sass/_pages.scss */
 .deptExp__aboutTeam__itemWrap {
   padding-right: 1.5em;
 }
 
-/* line 897, ../sass/_pages.scss */
+/* line 955, ../sass/_pages.scss */
 .deptExp__aboutTeam__itemWrap .aboutTeam__item {
   min-height: 0;
 }
-@media (max-width: 680px) {
-  /* line 897, ../sass/_pages.scss */
+@media (max-width: 860px) {
+  /* line 955, ../sass/_pages.scss */
   .deptExp__aboutTeam__itemWrap .aboutTeam__item {
     margin: 0;
     margin-top: 0em;
@@ -3770,7 +3993,55 @@ p.contactInfo__link {
   }
 }
 
-/* line 905, ../sass/_pages.scss */
+/* line 962, ../sass/_pages.scss */
+.deptExp__resumeText h3 {
+  margin-top: 0.75em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+}
+
+/* line 966, ../sass/_pages.scss */
+.list-dots {
+  list-style-type: initial;
+  margin-left: 1em;
+}
+
+/* line 970, ../sass/_pages.scss */
+.list-img {
+  margin-top: 0.375em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+}
+
+/* line 973, ../sass/_pages.scss */
+.list-img li {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  display: table;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.1875em;
+}
+
+/* line 978, ../sass/_pages.scss */
+.list-img li i {
+  display: table-cell;
+  float: left;
+  width: auto;
+  margin-right: 0.75em;
+  line-height: 1.5em;
+}
+
+/* line 985, ../sass/_pages.scss */
+.list-img li span {
+  display: table-cell;
+  vertical-align: top;
+}
+
+/* line 990, ../sass/_pages.scss */
 .dept2Price__heading {
   margin-top: 0.75em;
   padding-top: 0em;
@@ -3778,7 +4049,7 @@ p.contactInfo__link {
   margin-bottom: 0em;
 }
 
-/* line 908, ../sass/_pages.scss */
+/* line 993, ../sass/_pages.scss */
 .dept2Price {
   max-width: 500px;
   margin: 0 auto;
@@ -3790,27 +4061,27 @@ p.contactInfo__link {
   padding-right: 1.5em;
 }
 @media (max-width: 520px) {
-  /* line 908, ../sass/_pages.scss */
+  /* line 993, ../sass/_pages.scss */
   .dept2Price {
     max-width: 240px;
     text-align: center;
   }
 }
 
-/* line 919, ../sass/_pages.scss */
+/* line 1004, ../sass/_pages.scss */
 .dept2Price__image {
   float: left;
   max-width: 200px;
   margin-right: 1.5em;
 }
 @media (max-width: 520px) {
-  /* line 919, ../sass/_pages.scss */
+  /* line 1004, ../sass/_pages.scss */
   .dept2Price__image {
     float: none;
   }
 }
 
-/* line 927, ../sass/_pages.scss */
+/* line 1012, ../sass/_pages.scss */
 .dept2Price__image img {
   max-width: 100%;
   height: auto;
@@ -3820,13 +4091,13 @@ p.contactInfo__link {
   margin-bottom: 0em;
 }
 @media (max-width: 520px) {
-  /* line 927, ../sass/_pages.scss */
+  /* line 1012, ../sass/_pages.scss */
   .dept2Price__image img {
     margin-top: 0;
   }
 }
 
-/* line 937, ../sass/_pages.scss */
+/* line 1022, ../sass/_pages.scss */
 .dept2Price__price {
   font-size: 2.625em;
   line-height: 1.14286em;
@@ -3838,18 +4109,18 @@ p.contactInfo__link {
   margin-bottom: 0em;
 }
 @media (max-width: 420px) {
-  /* line 937, ../sass/_pages.scss */
+  /* line 1022, ../sass/_pages.scss */
   .dept2Price__price {
     margin-top: 0;
   }
 }
 
-/* line 946, ../sass/_pages.scss */
+/* line 1031, ../sass/_pages.scss */
 .dept2Price__wrap {
   margin: 0 auto;
 }
 
-/* line 950, ../sass/_pages.scss */
+/* line 1035, ../sass/_pages.scss */
 .dept2Results {
   background: #1e1e1e;
   margin-top: 0.75em;
@@ -3860,26 +4131,26 @@ p.contactInfo__link {
   text-align: center;
 }
 
-/* line 957, ../sass/_pages.scss */
+/* line 1042, ../sass/_pages.scss */
 .deptTimer__heading {
   color: white;
   padding-left: 1em;
 }
 @media (max-width: 540px) {
-  /* line 957, ../sass/_pages.scss */
+  /* line 1042, ../sass/_pages.scss */
   .deptTimer__heading {
     text-align: center;
   }
 }
 
-/* line 964, ../sass/_pages.scss */
+/* line 1049, ../sass/_pages.scss */
 .deptTimerWrap {
   max-width: 80px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 969, ../sass/_pages.scss */
+/* line 1054, ../sass/_pages.scss */
 .deptTimer__data {
   margin: 0 auto;
   border-radius: 1em;
@@ -3892,7 +4163,7 @@ p.contactInfo__link {
   padding-right: 0.5em;
 }
 
-/* line 977, ../sass/_pages.scss */
+/* line 1062, ../sass/_pages.scss */
 .deptTimer__data p {
   font-size: 2.625em;
   line-height: 1.14286em;
@@ -3900,26 +4171,26 @@ p.contactInfo__link {
   color: black;
 }
 @media (max-width: 380px) {
-  /* line 977, ../sass/_pages.scss */
+  /* line 1062, ../sass/_pages.scss */
   .deptTimer__data p {
     font-size: 2.25em;
     line-height: 1.16667em;
   }
 }
 
-/* line 985, ../sass/_pages.scss */
+/* line 1070, ../sass/_pages.scss */
 .deptTimer__caption {
   color: white;
 }
 
 @media (max-width: 540px) {
-  /* line 988, ../sass/_pages.scss */
+  /* line 1073, ../sass/_pages.scss */
   .deptTimerItem_dummy {
     display: none;
   }
 }
 
-/* line 994, ../sass/_pages.scss */
+/* line 1079, ../sass/_pages.scss */
 .dept1Info {
   text-align: center;
   margin-top: 0.375em;
@@ -3928,13 +4199,13 @@ p.contactInfo__link {
   margin-bottom: 1.875em;
 }
 
-/* line 998, ../sass/_pages.scss */
+/* line 1083, ../sass/_pages.scss */
 .dept1InfoItem {
   max-width: 300px;
   margin: 0 auto;
 }
 
-/* line 1002, ../sass/_pages.scss */
+/* line 1087, ../sass/_pages.scss */
 .dept1Info__heading {
   font-size: 1.625em;
   line-height: 1.15385em;
@@ -3942,32 +4213,32 @@ p.contactInfo__link {
   margin-top: -80px;
 }
 
-/* line 1007, ../sass/_pages.scss */
+/* line 1092, ../sass/_pages.scss */
 .dept1Info__heading_after {
   margin-top: 0px;
   opacity: 0;
   font-size: 0;
 }
 
-/* line 1012, ../sass/_pages.scss */
+/* line 1097, ../sass/_pages.scss */
 .dept1Info__caption {
   font-size: 1.25em;
   line-height: 1.2em;
   opacity: 0;
 }
 
-/* line 1016, ../sass/_pages.scss */
+/* line 1101, ../sass/_pages.scss */
 .dept1Info__caption_after, .dept1InfoImage_after {
   opacity: 1 !important;
 }
 
-/* line 1019, ../sass/_pages.scss */
+/* line 1104, ../sass/_pages.scss */
 .dept1InfoImage {
   max-width: 100%;
   height: auto;
 }
 
-/* line 1023, ../sass/_pages.scss */
+/* line 1108, ../sass/_pages.scss */
 .dept1InfoImage__anim {
   width: 100%;
   background-size: 30% 30%;
@@ -3976,17 +4247,17 @@ p.contactInfo__link {
   background-image: url("../img/dept1Info.png");
 }
 
-/* line 1030, ../sass/_pages.scss */
+/* line 1115, ../sass/_pages.scss */
 .dept1InfoImage__anim_after {
   background-size: 100% 100%;
 }
 
-/* line 1033, ../sass/_pages.scss */
+/* line 1118, ../sass/_pages.scss */
 .dept1InfoImage_hidden {
   opacity: 0;
 }
 
-/* line 1037, ../sass/_pages.scss */
+/* line 1122, ../sass/_pages.scss */
 .dept1Price__heading {
   margin-top: 0.75em;
   padding-top: 0em;
@@ -3994,7 +4265,7 @@ p.contactInfo__link {
   margin-bottom: 0.75em;
 }
 
-/* line 1040, ../sass/_pages.scss */
+/* line 1125, ../sass/_pages.scss */
 .dept1PriceItem {
   max-width: 320px;
   margin: 0 auto;
@@ -4009,46 +4280,46 @@ p.contactInfo__link {
   color: black;
 }
 
-/* line 1050, ../sass/_pages.scss */
+/* line 1135, ../sass/_pages.scss */
 .dept1PriceItem__price {
   font-size: 2.25em;
   line-height: 1.16667em;
   font-weight: 900;
 }
 
-/* line 1054, ../sass/_pages.scss */
+/* line 1139, ../sass/_pages.scss */
 .dept1PriceItem__priceSmall {
   font-size: 60%;
 }
 
-/* line 1057, ../sass/_pages.scss */
+/* line 1142, ../sass/_pages.scss */
 .dept1PriceItem__priceSmaller {
   font-size: 50%;
 }
 
-/* line 1060, ../sass/_pages.scss */
+/* line 1145, ../sass/_pages.scss */
 .dept1PriceItem__captionWrap {
   min-height: 6.5em;
 }
 @media (max-width: 540px) {
-  /* line 1060, ../sass/_pages.scss */
+  /* line 1145, ../sass/_pages.scss */
   .dept1PriceItem__captionWrap {
     min-height: 0;
   }
 }
 
-/* line 1067, ../sass/_pages.scss */
+/* line 1152, ../sass/_pages.scss */
 .dept1PriceItem__priceWrap {
   min-height: 5em;
 }
 @media (max-width: 540px) {
-  /* line 1067, ../sass/_pages.scss */
+  /* line 1152, ../sass/_pages.scss */
   .dept1PriceItem__priceWrap {
     min-height: 0;
   }
 }
 
-/* line 1073, ../sass/_pages.scss */
+/* line 1158, ../sass/_pages.scss */
 .dept1PriceItem__caption {
   font-size: 1.375em;
   line-height: 1.36364em;

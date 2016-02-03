@@ -279,12 +279,21 @@
 	text-shadow: 1px 1px 2px black;
 	color:white;
 }
+.contactForm__control {
+	@include rhythm(0, 0, 0, 1);
+}
 .contactForm__control label{
-    width: 25%;
+    width:100%;
+    text-align:left;
+    @include rhythm(0, 0.5, 0, 0);
+}
+.contactForm__control_horiz label{
+	width: 25%;
     display: block;
     float: left;
     text-align: right;
     margin-right: 3%;
+    margin-left:0;
     @include rhythm(0, 2, 0, 0);
     @media (max-width: 960px) {
     	float:none;
@@ -300,28 +309,44 @@
     }
 }
 .contactForm__checkbox{
+	width:100% !important;
+}
+.contactForm__checkbox label{
+	width:69% !important;
+	text-align:left !important;
+	@media (max-width: 960px) {
+		width:100%
+	}
+}
+.contactForm__checkbox.contactForm__control_horiz{
 	margin-left:29%;
 	width:69%;
 	@media (max-width: 960px) {
 		margin-left:0;
 		width:100%;
 	}
+	
 }
 .contactForm__checkbox input{
-	margin-right:0.5em;
+	margin-right:0.5em !important;
+	width: auto !important;
 }
 
 .contactForm__formWrap{
 	max-width:660px;
 	margin:0 auto;
 }
-.contactForm__control input, .contactForm__control textarea{
+.contactForm__control input, .contactForm__control textarea, .contactForm__control select{
 	padding:0.5em 1em;
-	margin:0.25em;
 	border: 1px solid #cccccc;
     border-radius: 4px;
-    width:70%;
+    width:100%;
     color:black;
+    margin:0.25em 0;
+}
+.contactForm__control_horiz input, .contactForm__control_horiz textarea{
+ 	width:70%;
+    margin:0.25em;
     @media (max-width: 960px) {
     	width:100%;
     }
@@ -330,12 +355,11 @@
     	margin-right:0;
     }
 }
-.contactForm__control textarea {
+
+.contactForm__control_horiz textarea {
 	margin-top: -1.25em;
 }
 .contactForm__button{
-	margin-right: 5%;
-    float: right;
 	display:inline-block;
 	@include adjust-font-size-to(20px);
 	text-transform: uppercase;
@@ -352,11 +376,36 @@
     background-position:left top;
 	font-weight:600;
 	@media (max-width: 960px) {
-		margin-right: 0;
+		margin-right: 0 !important;
 	}
 	@media (max-width: 680px) {
-		width:100%;
+		width:100%  !important;
 	}
+}
+.contactForm__button_gray{
+	background: linear-gradient(to top, $red 50%, $gray 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+}
+.contactForm__button_gray.contactForm__button_dept1{
+	background: linear-gradient(to top, $dept1 50%, $gray 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+}
+.contactForm__button_dept1{
+	border-color:$dept1;
+}
+.contactForm__button_dept2{
+	border-color:$dept2;
+}
+.contactForm__button_gray.contactForm__button_dept2{
+	background: linear-gradient(to top, $dept2 50%, $gray 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+}
+.contactForm__button_right{
+	margin-right: 5%;
+    float: right;
 }
 .contactForm__button:hover{
 	color:white;
@@ -457,6 +506,8 @@ p.contactInfo__link {
 }
 .contact__button_gray{
 	background: linear-gradient(to top, $red 50%, $gray 50%);
+	background-size: 100% 200%;
+    background-position:left top;
 }
 .contact__button_big{
 	@include adjust-font-size-to(20px);
@@ -493,7 +544,11 @@ p.contactInfo__link {
 .contact__button_dept1:hover, .contact__button_dept2:hover,{
 	background-position:right bottom;
 }
-
+.contactForm__loading{
+	color:transparent !important;
+	background:url('../img/loading.gif');
+	background-size:cover;
+}
 
 // About
 .aboutTopHeading{
@@ -884,6 +939,9 @@ p.contactInfo__link {
 	padding-left:1.25em;
 	padding-right:1.25em;
 }
+.deptExp__message_nopad{
+	padding:0;
+}
 .deptExp__message_dept1{ 
 	border:2px dashed $dept1;
 }
@@ -896,10 +954,37 @@ p.contactInfo__link {
 }
 .deptExp__aboutTeam__itemWrap .aboutTeam__item {
 	min-height:0;
-	@media (max-width: 680px) {
+	@media (max-width: 860px) {
 		margin:0;
 		@include rhythm(0,0,0,2);
 	}
+}
+.deptExp__resumeText h3{
+	@include rhythm(2,0,0,0);
+}
+
+.list-dots{
+	list-style-type: initial;
+    margin-left: 1em;
+}
+.list-img{
+	@include rhythm(1, 0, 0, 0);
+}
+.list-img li{
+	@include adjust-font-size-to(18px);
+	display:table;
+	@include rhythm(0, 0, 0, 0.5);
+}
+.list-img li i {
+	display:table-cell;
+	float:left;
+	width:auto;
+	margin-right:0.75em;
+	line-height: 1.5em;
+}
+.list-img li span{
+	display:table-cell;
+	vertical-align: top;
 }
 
 .dept2Price__heading{

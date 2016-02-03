@@ -177,13 +177,13 @@
 
 .deptExp__aboutTeam__itemWrap{
 	@include span(3);
-	@media (max-width: 680px) {
+	@media (max-width: 860px) {
 		@include span(12);
 	}
 }
-.deptExp__message{
+.deptExp__messageWrap{
 	@include span(9);
-	@media (max-width: 680px) {
+	@media (max-width: 860px) {
 		@include span(12); 
 	}
 }

@@ -48,6 +48,7 @@ module.exports = function(grunt) {
                     'prod/index.html': ['index.html'],
                     'prod/about.html': ['about.html'],
                     'prod/404.html': ['404.html'],
+                    'prod/dept1.html': ['dept1.html'],
 					'prod/dept2.html': ['dept2.html'],
                     'prod/contacts.html': ['contacts.html']
                 }
