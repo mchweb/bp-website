@@ -133,7 +133,7 @@
 	margin:0 auto;
 	@include rhythm(4, 0, 0, 0);
 	@media (max-width: 680px) {
-		max-width:480px;
+		max-width:440px;
 	}
 }
 .bAboutItem__heading{
@@ -261,7 +261,7 @@
 }
 .contactForm{
 	background-size:cover;
-	background-image:url('../img/cFormBack.jpg');
+	background-image:url('../img/blur.jpg');
 	@include rhythm(4, 4, 6, 0);
 }
 .contactForm__text, .contactForm__form{
@@ -440,7 +440,7 @@
 }
 #map{
 	@media (max-width: 880px) {
-		background-image:url(../img/2gis.jpg);
+		background-image:url(../img/bg-contact.jpg);
 		background-size:cover;
 		width:100%;
 	}
@@ -546,8 +546,8 @@ p.contactInfo__link {
 }
 .contactForm__loading{
 	color:transparent !important;
-	background:url('../img/loading.gif');
-	background-size:cover;
+	background:url('../img/loading.gif') !important;
+	background-size:cover !important;
 }
 
 // About
@@ -634,13 +634,13 @@ p.contactInfo__link {
 	}
 }
 .aboutDepts__item_dept1{
-	background-image:url('../img/aboutDept1.jpg');
+	background-image:url('../img/about-Dept1.jpg');
 }
 .aboutDepts__item_dept2{
-	background-image:url('../img/aboutDept2.jpg');
+	background-image:url('../img/about-Dept2.jpg');
 }
 .aboutDepts__item_dept0{
-	background-image:url('../img/aboutDept0.jpg');
+	background-image:url('../img/about-Dept0.jpg');
 }
 .aboutDepts__info {
 	width:100%;
@@ -842,7 +842,7 @@ p.contactInfo__link {
 
 .deptSteps{
 	@include rhythm(0,2,6,2);
-	background:url('../img/cFormBack.jpg');
+	background:url('../img/blur.jpg');
 	background-size:cover;
 }
 .deptStepsItem{

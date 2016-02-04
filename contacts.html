@@ -9,14 +9,14 @@
 		<meta name="description" content="Проводим акселерационные программы, запускаем франчайзинговые сети, развиваем предпринимательские сообщества">
 		
 		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+		<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 		
 		<!--[if lt IE 9]>
 			<script src="js/vendor/html5shiv.min.js"></script>
 		<![endif]-->
 
-		<!-- build:css css/screen.min.css -->
-		<link rel="stylesheet" media="screen" href="css/screen.css">
+		<!-- build:css assets/css/screen.min.css -->
+		<link rel="stylesheet" media="screen" href="assets/css/screen.css">
 		<!-- /build -->
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -32,7 +32,7 @@
 		<header class="header">
 			<div class="wrap">
 				<div class="header__logo">
-					<a href=""><img src="img/logo-white.svg" width="114" height="54"></a>
+					<a href=""><img src="assets/img/logo-white.svg" width="114" height="54"></a>
 				</div>	
 				<div class="header__contacts">
 					<div class="contacts__info">
@@ -40,7 +40,7 @@
 						<p><a href="mailto:info@ipartner.pro">info@ipartner.pro</a></p>
 					</div>
 					<div class="contacts__image">
-						<img src="img/arrow-white.svg" width="100" height="100" />
+						<img src="assets/img/arrow-white.svg" width="100" height="100" />
 					</div>
 				</div>
 				<nav class="header__navMain" id="navMain">
@@ -64,33 +64,33 @@
 			<div class="firstScreen fistScreen_contacts" id="firstScreen">
 				<div class="contactInfo__wrap" id="contactInfo">
 					<div class="contactInfo">
-						<img src="img/logo-white-red.svg" alt="" class="contactInfo__logo"/>
+						<img src="assets/img/logo-white-red.svg" alt="" class="contactInfo__logo"/>
 						<p class="contactInfo_marDown">НП&nbsp;&laquo;ПИТ &bdquo;Бизнес партнеры&ldquo;&raquo;</p>
 						<ul class="contactInfo__list">
 							<li class="contactInfo_marDown">
-								<img src="img/arrow-white.svg" alt="">
+								<img src="assets/img/arrow-white.svg" alt="">
 								<span>г. Томск,<br>
 								ул. Красноармейская, 96,<br>
 								офис 303 (3 этаж)</span>
 							</li>
 							<li>
-								<img src="img/vk.svg" alt="">
-								<span><a class="contactInfo__link" href="#">(3822) 933-975</a></span>
+								<img src="assets/img/cnt.svg" alt="">
+								<span><a class="contactInfo__link" href="#">(3822) 933-976</a></span>
 							</li>
 							<li>
-								<img src="img/vk.svg" alt="">
+								<img src="assets/img/cnt.svg" alt="">
 								<span><a class="contactInfo__link" href="#">info@winbd.ru</a></span>
 							</li>
 							<li>
-								<img src="img/fb.svg" alt="">
+								<img src="assets/img/fb.svg" alt="">
 								<span><a class="contactInfo__link" href="#">Мы в Facebook</a></span>
 							</li>
 							<li>
-								<img src="img/vk.svg" alt="">
+								<img src="assets/img/vk.svg" alt="">
 								<span><a class="contactInfo__link" href="#">Мы ВКонтакте</a></span>
 							</li>
 						</ul>
-						<p class="contactInfo__link"><a class="contactInfo__link" href="#"><strong>Реквизиты »</strong></a></p>
+						<p class="contactInfo__link"><a class="contactInfo__link mfp-link" href="#popup_legal"><strong>Реквизиты »</strong></a></p>
 						<p><a class="contact__button" href="#">Задать вопрос</a></p>
 					</div>
 				</div>
@@ -102,8 +102,58 @@
 			</div>
 			<!-- END of firstScreen -->
 
+			<!-- BEGIN of popup-message -->
+			<div class="popup mfp-hide zoom-anim-dialog" id="popup_message">
+				<div class="popupContent" id="popup__message">
+					<p class="popupContent__heading" id="popup__message_heading"></p>
+					<p class="popupContent__caption" id="popup__message_caption"></p>
+					<form method="POST" action="javascript:void(null);" onsubmit="sendMessageForm()">
+						<input type="hidden" id="popup__message_type" name="messageForm__type">
+						<div class="contactForm__control">
+							<input id="messageForm__name" name="messageForm__name" type="text" class="form-control" placeholder="Представьтесь" required="">
+						</div>
+						<div class="contactForm__control">
+							<input id="messageForm__email" name="messageForm__email" type="text" class="form-control" placeholder="ivanov@gmail.com" required="">
+						</div>
+						<input type="hidden" id="messageForm__phone" name="messageForm__phone" value="">
+						<div class="contactForm__control">
+							<textarea id="messageForm__message" name="messageForm__message" type="text" class="form-control" placeholder="Ваш вопрос" rows="3"></textarea>
+						</div>
+						<div class="contactForm__checkbox">
+							<label><input type="checkbox" required="">Даю согласие на обработку своих персональных данных</label>
+						</div>
+						<button class="contactForm__button contactForm__button_gray" href="#">Отправить</button>
+					</form>
+				</div>
+				<div class="popupContent popupContent_success"  id="popup__message_success">
+					<p class="popupContent__heading"><i class="fa fa-check"></i>&nbsp;Свяжемся в ближайшее время</p>
+					<p class="popupContent__caption">Спасибо за интерес! Ваш запрос отправлен на обработку. <a style="cursor:pointer" onclick="$.magnificPopup.close();">Продолжить просмотр сайта&nbsp;»</a></p>
+					
+				</div>
+			</div>
+			<!-- END of popup-message -->
 
-			
+			<!-- BEGIN of legalInfo -->
+			<div class="popup mfp-hide zoom-anim-dialog" id="popup_legal">
+				<div class="popupContent">
+					<h3>Ассоциация НП&nbsp;&laquo;ПИТ &bdquo;Бизнес партнеры&ldquo;&raquo;</h3>
+					<p><strong>Директор:</strong> Смолякова Светлана Николаевна<br>
+						<strong>Телефон:</strong> +7 (3822) 933-976<br>
+						<strong>Адрес:</strong> 634028, Томская обл, г Томск, тракт Московский, д 83, офис 131<br>
+						<strong>Веб-сайт:</strong> ipartner.pro<br>
+						<strong>ИНН:</strong> 7014054136<br>
+						<strong>КПП:</strong> 701701001<br>
+						<strong>ОГРН:</strong> 1107000000964<br><br>
+					</p>
+					<h3>Банковский счёт:</h3>
+					<p><strong>Банк:</strong> Филиал ПАО &laquo;Бинбанк&raquo; в Новосибирске<br>
+						<strong>Расчетный счет:</strong> 40703810020170000018<br>
+						<strong>БИК:</strong> 045004842
+					</p>
+				</div>
+			</div>
+			<!-- END of legalInfo -->
+
 		</div>
 		<!-- END of content -->
 
@@ -112,8 +162,8 @@
 		<div class="footer__decorator footer_contacts"></div>
 		<footer class="footer footer_contacts">
 			<ul class="footer__socLinks">
-				<li><a href="https://www.facebook.com/ipartner.pro"><img src="img/fb.svg" class="footer__socLinkImage" alt="Мы в Facebook"></a></li>
-				<li><a href="https://vk.com/biznes.partnery"><img src="img/vk.svg" class="footer__socLinkImage" alt="Мы ВКонтакте"></a></li>
+				<li><a href="https://www.facebook.com/ipartner.pro"><img src="assets/img/fb.svg" class="footer__socLinkImage" alt="Мы в Facebook"></a></li>
+				<li><a href="https://vk.com/biznes.partnery"><img src="assets/img/vk.svg" class="footer__socLinkImage" alt="Мы ВКонтакте"></a></li>
 			</ul>
 			<ul class="footer__upperNav">
 				<li><a class="upperNav_dept1" href="#">франчайзинг</a></li>
@@ -147,8 +197,8 @@
 		<script src="http://use.edgefonts.net/source-sans-pro:n3,n4,n6,n9:all.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
-		<!-- build:js inline js/main.min.js -->
-		<script src="js/main.js"></script>
+		<!-- build:js assets/js/main.min.js -->
+		<script src="assets/js/main.js"></script>
 		<!-- /build -->
 	</body>
 </html>

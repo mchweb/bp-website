@@ -3,24 +3,24 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
             build: {
-                src: 'js/main.js',
-                dest: 'js/main.min.js'
+                src: 'assets/js/main.js',
+                dest: 'assets/js/main.min.js'
             }
         },
         imagemin: {
             dynamic: {
                 files: [{
                     expand: true,
-                    cwd: 'img/',
+                    cwd: 'assets/img/',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'prod/img/'
+                    dest: 'prod/assets/img/'
                 }]
             }
         },
         cssmin: {
             dist: {
                 files: {
-                    'prod/css/screen.min.css': ['css/screen.css']
+                    'prod/assets/css/screen.min.css': ['assets/css/screen.css']
                 }
             }
         },
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     sassDir: 'sass',
-                    cssDir: 'css'
+                    cssDir: 'assets/css'
                 }
             }
         },
@@ -58,8 +58,9 @@ module.exports = function(grunt) {
             main: {
                 files: [
                     {expand: true, src: ['favicon.ico'], dest: 'prod/', filter: 'isFile'},
-                    {expand: true, src: ['js/vendor/*'], dest: 'prod/', filter: 'isFile'},
-					{expand: true, src: ['img/*.svg'], dest: 'prod/', filter: 'isFile'}
+                    {expand: true, src: ['assets/js/main.min.js'], dest: 'prod/', filter: 'isFile'},
+                    {expand: true, src: ['assets/js/vendor/*'], dest: 'prod/', filter: 'isFile'},
+					{expand: true, src: ['assets/img/*.svg'], dest: 'prod/', filter: 'isFile'}
                 ],
             },
         },
@@ -79,6 +80,11 @@ module.exports = function(grunt) {
                     'css/tidy.css': ['index.html']
                 }
             }
+        },
+        inlineImgSize: {
+            files: {
+                src: ['index.html', 'contact.html', '404.html', 'dept1.html', 'dept2.html', 'about.html']
+            }
         }
     });
 
@@ -91,6 +97,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-uncss');
     grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-inline-imgsize');
 
     grunt.registerTask('default', ['compass', 'uglify', 'imagemin', 'cssmin', 'processhtml', 'copy']);
     grunt.registerTask('landing', ['compass', 'uglify', 'imagemin', 'uncss', 'cssmin', 'processhtml', 'copy']);
