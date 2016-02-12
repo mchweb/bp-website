@@ -216,6 +216,52 @@
 		@include span(12); 
 	}
 }
+
+
+
+
+
+.bEventInfoLeft{
+	@include span(3);
+}
+.bEventInfoCenter{
+	@include span(5);
+}
+
+.bEventInfoRight{
+	@include span(4);
+}
+
+.bEventSpeaker__itemWrap{
+	@include span(3);
+}
+.bEventSpeaker__messageWrap{
+	@include span(9);
+}
+
+
+.bEventFacts__itemWrap{
+	@include span(4);
+}
+
+.bEventInfoList__left{
+	@include span(7);
+	@media (max-width: 1020px) {
+		@include span(6);
+	}
+	@media (max-width: 760px) {
+		@include span(12);
+	}
+}
+.bEventInfoList__right{
+	@include span(5);
+	@media (max-width: 1020px) {
+		@include span(6);
+	}
+	@media (max-width: 760px) {
+		@include span(12);
+	}
+}
 /*
 
 .content {

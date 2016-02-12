@@ -967,6 +967,9 @@ p.contactInfo__link {
 	list-style-type: initial;
     margin-left: 1em;
 }
+.list-md li{
+	max-width:600px;
+}
 .list-img{
 	@include rhythm(1, 0, 0, 0);
 }
@@ -1157,4 +1160,128 @@ p.contactInfo__link {
 }
 .dept1PriceItem__caption{
 	@include adjust-font-size-to(22px);
+}
+
+
+///
+
+.bEventInfo{
+	@include rhythm(2,4,4,6);
+}
+.bEventInfoCenter__content{
+	max-width:380px;
+	margin:0 auto;
+}
+.bEventInfo__title{
+	@include adjust-font-size-to(36px);
+	font-weight:600;
+	color:black;
+	line-height:1.5em;
+
+}
+.bEventInfo__title span{
+	background-color:$dept1;
+}
+.bEventPhoto{
+	background-size:cover;
+	background-position:center center;
+	min-height:300px;
+	@media (max-width: 1140px) {
+		min-height:200px;
+	}
+	@media (max-width: 800px) {
+		min-height:160px;
+	}
+}
+
+.bEventSpeakers{
+	@include rhythm(4,0,0,8);
+}
+.bEventSpeakers__heading{
+	@include rhythm(0,0,0,4);
+}
+.bEventSpeaker__item {
+}
+.bEventSpeaker__item img{
+	width:100%;
+	height:auto;
+	border-bottom:1em solid $dept1;
+	padding-bottom:-1em;
+}
+.bEventSpeaker__message{
+	background:$gray;
+	@include rhythm(0,2,1,1);
+	padding-left:1.5em;
+	padding-right:1.5em;
+	color:black;
+}
+.bEventSpeaker__messageIntro{
+	@include adjust-font-size-to(22px);
+	font-weight:300;
+	@include rhythm(0,0,0,2);
+}
+.bEventSpeaker__itemSep{
+	clear:both;
+	@include rhythm(0,0,0,4);
+}
+.bEventSpeaker__messageIntro span{
+	background:$dept1;
+	font-weight:400;
+}
+
+.bEventFacts{
+	@include rhythm(4,0,0,8);
+	
+}
+.bEventFacts__item{
+	max-width:320px;
+	margin:0 auto;
+}
+.bEventFacts__item img{
+	max-width:100%;
+	height:auto;
+}
+.bEventFacts__heading{
+	text-align:center;
+}
+
+.bEventInfoList{
+	background:$dark;
+	color:white;
+	@include rhythm(0,4,4,8);
+}
+.bEventInfoListHeading{
+	color:white;
+	text-align:left;
+}
+.bEventInfoList__right{
+	@include rhythm(0,6,0,0);
+	text-align:center;
+}
+.bEventInfoList__right img{
+	width: 390px;
+    height: auto;
+    @media (max-width: 880px) {
+    	width: 280px;
+    }
+    @media (max-width: 760px) {
+    	width: 390px;
+    }
+    @media (max-width: 460px) {
+    	width: 280px;
+    }
+}
+.bEventInfoList__image{
+	z-index:10;
+}
+.bEventInfoList__image_after{
+	position: absolute;
+	transform: scale(0.88, 0.74);
+    transform-origin: left bottom;
+}
+.bEventInfoList__image_after.in-view{
+    -webkit-animation: grow .5s ease-in forwards;
+    animation: grow .5s ease-in forwards;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;	
 }

@@ -69,6 +69,9 @@ $window.trigger('scroll');
 $("#dept1Info").hover(function() {
   showDept1Info();
 });
+$("#dept1Info").on("touchstart", function (e) {
+  showDept1Info();
+});
 
 function showDept1Info(){
   $("#dept1InfoImageMain").addClass("dept1InfoImage__anim_after");
