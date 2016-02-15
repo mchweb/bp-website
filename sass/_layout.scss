@@ -223,25 +223,49 @@
 
 .bEventInfoLeft{
 	@include span(3);
+	@media (max-width: 600px) {
+		@include span(12);
+	}
 }
 .bEventInfoCenter{
 	@include span(5);
+	@media (max-width: 960px) {
+		@include span(6);
+	}
+	@media (max-width: 600px) {
+		@include span(12);
+	}
 }
 
 .bEventInfoRight{
 	@include span(4);
+	@media (max-width: 960px) {
+		@include span(3);
+	}
+	@media (max-width: 600px) {
+		@include span(12);
+	}
 }
 
 .bEventSpeaker__itemWrap{
 	@include span(3);
+	@media (max-width: 540px) {
+		@include span(12);
+	}
 }
 .bEventSpeaker__messageWrap{
 	@include span(9);
+	@media (max-width: 540px) {
+		@include span(12);
+	}
 }
 
 
 .bEventFacts__itemWrap{
 	@include span(4);
+	@media (max-width: 680px) {
+		@include span(12);
+	}
 }
 
 .bEventInfoList__left{
@@ -258,6 +282,27 @@
 	@media (max-width: 1020px) {
 		@include span(6);
 	}
+	@media (max-width: 760px) {
+		@include span(12);
+	}
+}
+
+.bEventMore__itemWrap{
+	@include span(6);
+	@media (max-width: 720px) {
+		@include span(12);
+	}
+}
+
+.bEventPartner__itemWrap{
+	@include span(3);
+	@media (max-width: 760px) {
+		@include span(6);
+	}
+}
+
+.bEventContacts__itemWrap{
+	@include span(6);
 	@media (max-width: 760px) {
 		@include span(12);
 	}

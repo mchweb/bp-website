@@ -1168,15 +1168,44 @@ p.contactInfo__link {
 .bEventInfo{
 	@include rhythm(2,4,4,6);
 }
+.bEventInfo__bigDigit{
+	@include adjust-font-size-to(80px);
+	font-weight:900;
+	color:black;
+	@media (max-width: 740px) {
+		@include adjust-font-size-to(60px);
+	}
+}
+.bEventInfo__caption{
+	@include adjust-font-size-to(24px);
+	@media (max-width: 740px) {
+		@include adjust-font-size-to(20px);
+	}
+}
+.bEventInfoLeft{
+	text-align:center;
+}
+.bEventInfoRight{
+	@media (max-width: 600px) {
+		text-align:center;
+	}
+}
 .bEventInfoCenter__content{
 	max-width:380px;
 	margin:0 auto;
+	@media (max-width: 600px) {
+		@include rhythm(4,0,0,4);
+	}
 }
 .bEventInfo__title{
 	@include adjust-font-size-to(36px);
 	font-weight:600;
 	color:black;
 	line-height:1.5em;
+	@media (max-width: 740px) {
+		@include adjust-font-size-to(26px);
+		line-height:1.5em;
+	}
 
 }
 .bEventInfo__title span{
@@ -1201,6 +1230,18 @@ p.contactInfo__link {
 	@include rhythm(0,0,0,4);
 }
 .bEventSpeaker__item {
+	max-width:240px;
+}
+.bEventSpeaker__itemLeft{
+	display:none;
+	@media (max-width: 540px) {
+		display:block;
+	}
+}
+.bEventSpeaker__itemRight{
+	@media (max-width: 540px) {
+		display:none;
+	}
 }
 .bEventSpeaker__item img{
 	width:100%;
@@ -1231,7 +1272,9 @@ p.contactInfo__link {
 
 .bEventFacts{
 	@include rhythm(4,0,0,8);
-	
+}
+.bEventFacts__itemWrap{
+	@include rhythm(0,0,0,4);
 }
 .bEventFacts__item{
 	max-width:320px;
@@ -1248,7 +1291,7 @@ p.contactInfo__link {
 .bEventInfoList{
 	background:$dark;
 	color:white;
-	@include rhythm(0,4,4,8);
+	@include rhythm(0,4,4,4);
 }
 .bEventInfoListHeading{
 	color:white;
@@ -1284,4 +1327,109 @@ p.contactInfo__link {
     animation: grow .5s ease-in forwards;
     -webkit-animation-delay: .5s;
     animation-delay: .5s;	
+}
+
+.bEventMore{
+	@include rhythm(0,0,0,8);
+}
+.bEventMoreHeading{
+	text-align:center;
+}
+.bEventMoreHeading{
+	@include rhythm(0,0,0,4);
+}
+
+.bEventMoreItem{
+	max-width:440px;
+	margin:0 auto;
+	min-height:10em;
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	border: 4px dashed $dept1;
+	@include rhythm(0,2,2,0);
+	padding-left:1.5em;
+	padding-right:1.5em;
+	text-align:center;
+	@media (max-width: 760px) {
+		@include rhythm(0,2,2,4);
+	}
+}
+.bEventMoreItem__heading_price{
+	font-weight:900;
+	@include adjust-font-size-to(40px);
+}
+span.discount{
+	text-decoration: line-through;
+	color:$red;
+}
+span.discount span{
+	color:black;
+}
+.bEventMoreItem__content p{
+	@include adjust-font-size-to(18px);
+}
+
+.bEventPartners{
+	@include rhythm(0,0,0,4);
+}
+.bEventPartner__item_dummy{
+	@media (max-width: 760px) {
+		display:none;
+	}
+}
+.bEventPartner__item{
+	width:100%;
+	max-width:200px;
+	margin: 0 auto;
+}
+.bEventPartner__item img{
+	max-width:100%;
+	height:auto;
+	margin: 0 auto;
+	-webkit-filter: grayscale(1);
+}
+.bEventPartner__item img:hover{
+	-webkit-filter: grayscale(0);
+}
+.bEventPartners__heading{
+	@include rhythm(0,0,0,4);
+}
+
+.bEventContactsHeading {
+	@include rhythm(0,0,0,4);
+}
+
+.bEventContactsItem{
+	max-width:400px;
+	margin:0 auto;
+	display:table;
+	color:white;
+	@include rhythm(0,0,0,4);
+}
+.bEventContacts__image{
+	display:table-cell;
+	float:left;
+	margin-right:1em;
+}
+.bEventContacts__image img{
+	max-width:100px;
+	height:auto;
+	border-radius: 100%;
+}
+.bEventContacts__text{
+	display:table-cell;
+	vertical-align:middle;
+}
+.bEventContacts__heading{
+	@include adjust-font-size-to(20px);
+	font-weight:600;	
+}
+.bEventContacts__text a{
+	color:white;
+	@include trailing-border(1px, 0.5);
+	border-style:dashed;
+}
+.bEventContacts__text a:hover{
+	border-style:solid;
 }

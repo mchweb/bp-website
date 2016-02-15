@@ -1833,66 +1833,78 @@ strong {
   padding-left: 1.04167%;
   padding-right: 1.04167%;
 }
+@media (max-width: 600px) {
+  /* line 224, ../../sass/_layout.scss */
+  .bEventInfoLeft {
+    width: 100%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+  }
+}
 
-/* line 227, ../../sass/_layout.scss */
+/* line 230, ../../sass/_layout.scss */
 .bEventInfoCenter {
   width: 41.66667%;
   float: left;
   padding-left: 1.04167%;
   padding-right: 1.04167%;
 }
-
-/* line 231, ../../sass/_layout.scss */
-.bEventInfoRight {
-  width: 33.33333%;
-  float: left;
-  padding-left: 1.04167%;
-  padding-right: 1.04167%;
-}
-
-/* line 235, ../../sass/_layout.scss */
-.bEventSpeaker__itemWrap {
-  width: 25%;
-  float: left;
-  padding-left: 1.04167%;
-  padding-right: 1.04167%;
-}
-
-/* line 238, ../../sass/_layout.scss */
-.bEventSpeaker__messageWrap {
-  width: 75%;
-  float: left;
-  padding-left: 1.04167%;
-  padding-right: 1.04167%;
-}
-
-/* line 243, ../../sass/_layout.scss */
-.bEventFacts__itemWrap {
-  width: 33.33333%;
-  float: left;
-  padding-left: 1.04167%;
-  padding-right: 1.04167%;
-}
-
-/* line 247, ../../sass/_layout.scss */
-.bEventInfoList__left {
-  width: 58.33333%;
-  float: left;
-  padding-left: 1.04167%;
-  padding-right: 1.04167%;
-}
-@media (max-width: 1020px) {
-  /* line 247, ../../sass/_layout.scss */
-  .bEventInfoList__left {
+@media (max-width: 960px) {
+  /* line 230, ../../sass/_layout.scss */
+  .bEventInfoCenter {
     width: 50%;
     float: left;
     padding-left: 1.04167%;
     padding-right: 1.04167%;
   }
 }
-@media (max-width: 760px) {
-  /* line 247, ../../sass/_layout.scss */
-  .bEventInfoList__left {
+@media (max-width: 600px) {
+  /* line 230, ../../sass/_layout.scss */
+  .bEventInfoCenter {
+    width: 100%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+  }
+}
+
+/* line 240, ../../sass/_layout.scss */
+.bEventInfoRight {
+  width: 33.33333%;
+  float: left;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%;
+}
+@media (max-width: 960px) {
+  /* line 240, ../../sass/_layout.scss */
+  .bEventInfoRight {
+    width: 25%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+  }
+}
+@media (max-width: 600px) {
+  /* line 240, ../../sass/_layout.scss */
+  .bEventInfoRight {
+    width: 100%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+  }
+}
+
+/* line 250, ../../sass/_layout.scss */
+.bEventSpeaker__itemWrap {
+  width: 25%;
+  float: left;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%;
+}
+@media (max-width: 540px) {
+  /* line 250, ../../sass/_layout.scss */
+  .bEventSpeaker__itemWrap {
     width: 100%;
     float: left;
     padding-left: 1.04167%;
@@ -1901,6 +1913,66 @@ strong {
 }
 
 /* line 256, ../../sass/_layout.scss */
+.bEventSpeaker__messageWrap {
+  width: 75%;
+  float: left;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%;
+}
+@media (max-width: 540px) {
+  /* line 256, ../../sass/_layout.scss */
+  .bEventSpeaker__messageWrap {
+    width: 100%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+  }
+}
+
+/* line 264, ../../sass/_layout.scss */
+.bEventFacts__itemWrap {
+  width: 33.33333%;
+  float: left;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%;
+}
+@media (max-width: 680px) {
+  /* line 264, ../../sass/_layout.scss */
+  .bEventFacts__itemWrap {
+    width: 100%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+  }
+}
+
+/* line 271, ../../sass/_layout.scss */
+.bEventInfoList__left {
+  width: 58.33333%;
+  float: left;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%;
+}
+@media (max-width: 1020px) {
+  /* line 271, ../../sass/_layout.scss */
+  .bEventInfoList__left {
+    width: 50%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+  }
+}
+@media (max-width: 760px) {
+  /* line 271, ../../sass/_layout.scss */
+  .bEventInfoList__left {
+    width: 100%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+  }
+}
+
+/* line 280, ../../sass/_layout.scss */
 .bEventInfoList__right {
   width: 41.66667%;
   float: left;
@@ -1908,7 +1980,7 @@ strong {
   padding-right: 1.04167%;
 }
 @media (max-width: 1020px) {
-  /* line 256, ../../sass/_layout.scss */
+  /* line 280, ../../sass/_layout.scss */
   .bEventInfoList__right {
     width: 50%;
     float: left;
@@ -1917,8 +1989,59 @@ strong {
   }
 }
 @media (max-width: 760px) {
-  /* line 256, ../../sass/_layout.scss */
+  /* line 280, ../../sass/_layout.scss */
   .bEventInfoList__right {
+    width: 100%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+  }
+}
+
+/* line 290, ../../sass/_layout.scss */
+.bEventMore__itemWrap {
+  width: 50%;
+  float: left;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%;
+}
+@media (max-width: 720px) {
+  /* line 290, ../../sass/_layout.scss */
+  .bEventMore__itemWrap {
+    width: 100%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+  }
+}
+
+/* line 297, ../../sass/_layout.scss */
+.bEventPartner__itemWrap {
+  width: 25%;
+  float: left;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%;
+}
+@media (max-width: 760px) {
+  /* line 297, ../../sass/_layout.scss */
+  .bEventPartner__itemWrap {
+    width: 50%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+  }
+}
+
+/* line 304, ../../sass/_layout.scss */
+.bEventContacts__itemWrap {
+  width: 50%;
+  float: left;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%;
+}
+@media (max-width: 760px) {
+  /* line 304, ../../sass/_layout.scss */
+  .bEventContacts__itemWrap {
     width: 100%;
     float: left;
     padding-left: 1.04167%;
@@ -4460,12 +4583,61 @@ p.contactInfo__link {
 }
 
 /* line 1171, ../../sass/_pages.scss */
+.bEventInfo__bigDigit {
+  font-size: 5em;
+  line-height: 1.05em;
+  font-weight: 900;
+  color: black;
+}
+@media (max-width: 740px) {
+  /* line 1171, ../../sass/_pages.scss */
+  .bEventInfo__bigDigit {
+    font-size: 3.75em;
+    line-height: 1.1em;
+  }
+}
+
+/* line 1179, ../../sass/_pages.scss */
+.bEventInfo__caption {
+  font-size: 1.5em;
+  line-height: 1.25em;
+}
+@media (max-width: 740px) {
+  /* line 1179, ../../sass/_pages.scss */
+  .bEventInfo__caption {
+    font-size: 1.25em;
+    line-height: 1.2em;
+  }
+}
+
+/* line 1185, ../../sass/_pages.scss */
+.bEventInfoLeft {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  /* line 1188, ../../sass/_pages.scss */
+  .bEventInfoRight {
+    text-align: center;
+  }
+}
+
+/* line 1193, ../../sass/_pages.scss */
 .bEventInfoCenter__content {
   max-width: 380px;
   margin: 0 auto;
 }
+@media (max-width: 600px) {
+  /* line 1193, ../../sass/_pages.scss */
+  .bEventInfoCenter__content {
+    margin-top: 1.5em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin-bottom: 1.5em;
+  }
+}
 
-/* line 1175, ../../sass/_pages.scss */
+/* line 1200, ../../sass/_pages.scss */
 .bEventInfo__title {
   font-size: 2.25em;
   line-height: 1.16667em;
@@ -4473,32 +4645,40 @@ p.contactInfo__link {
   color: black;
   line-height: 1.5em;
 }
+@media (max-width: 740px) {
+  /* line 1200, ../../sass/_pages.scss */
+  .bEventInfo__title {
+    font-size: 1.625em;
+    line-height: 1.15385em;
+    line-height: 1.5em;
+  }
+}
 
-/* line 1182, ../../sass/_pages.scss */
+/* line 1211, ../../sass/_pages.scss */
 .bEventInfo__title span {
   background-color: #ffcc00;
 }
 
-/* line 1185, ../../sass/_pages.scss */
+/* line 1214, ../../sass/_pages.scss */
 .bEventPhoto {
   background-size: cover;
   background-position: center center;
   min-height: 300px;
 }
 @media (max-width: 1140px) {
-  /* line 1185, ../../sass/_pages.scss */
+  /* line 1214, ../../sass/_pages.scss */
   .bEventPhoto {
     min-height: 200px;
   }
 }
 @media (max-width: 800px) {
-  /* line 1185, ../../sass/_pages.scss */
+  /* line 1214, ../../sass/_pages.scss */
   .bEventPhoto {
     min-height: 160px;
   }
 }
 
-/* line 1197, ../../sass/_pages.scss */
+/* line 1226, ../../sass/_pages.scss */
 .bEventSpeakers {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -4506,7 +4686,7 @@ p.contactInfo__link {
   margin-bottom: 3em;
 }
 
-/* line 1200, ../../sass/_pages.scss */
+/* line 1229, ../../sass/_pages.scss */
 .bEventSpeakers__heading {
   margin-top: 0em;
   padding-top: 0em;
@@ -4514,7 +4694,30 @@ p.contactInfo__link {
   margin-bottom: 1.5em;
 }
 
-/* line 1205, ../../sass/_pages.scss */
+/* line 1232, ../../sass/_pages.scss */
+.bEventSpeaker__item {
+  max-width: 240px;
+}
+
+/* line 1235, ../../sass/_pages.scss */
+.bEventSpeaker__itemLeft {
+  display: none;
+}
+@media (max-width: 540px) {
+  /* line 1235, ../../sass/_pages.scss */
+  .bEventSpeaker__itemLeft {
+    display: block;
+  }
+}
+
+@media (max-width: 540px) {
+  /* line 1241, ../../sass/_pages.scss */
+  .bEventSpeaker__itemRight {
+    display: none;
+  }
+}
+
+/* line 1246, ../../sass/_pages.scss */
 .bEventSpeaker__item img {
   width: 100%;
   height: auto;
@@ -4522,7 +4725,7 @@ p.contactInfo__link {
   padding-bottom: -1em;
 }
 
-/* line 1211, ../../sass/_pages.scss */
+/* line 1252, ../../sass/_pages.scss */
 .bEventSpeaker__message {
   background: #ddd;
   margin-top: 0em;
@@ -4534,7 +4737,7 @@ p.contactInfo__link {
   color: black;
 }
 
-/* line 1218, ../../sass/_pages.scss */
+/* line 1259, ../../sass/_pages.scss */
 .bEventSpeaker__messageIntro {
   font-size: 1.375em;
   line-height: 1.36364em;
@@ -4545,7 +4748,7 @@ p.contactInfo__link {
   margin-bottom: 0.75em;
 }
 
-/* line 1223, ../../sass/_pages.scss */
+/* line 1264, ../../sass/_pages.scss */
 .bEventSpeaker__itemSep {
   clear: both;
   margin-top: 0em;
@@ -4554,13 +4757,13 @@ p.contactInfo__link {
   margin-bottom: 1.5em;
 }
 
-/* line 1227, ../../sass/_pages.scss */
+/* line 1268, ../../sass/_pages.scss */
 .bEventSpeaker__messageIntro span {
   background: #ffcc00;
   font-weight: 400;
 }
 
-/* line 1232, ../../sass/_pages.scss */
+/* line 1273, ../../sass/_pages.scss */
 .bEventFacts {
   margin-top: 1.5em;
   padding-top: 0em;
@@ -4568,40 +4771,48 @@ p.contactInfo__link {
   margin-bottom: 3em;
 }
 
-/* line 1236, ../../sass/_pages.scss */
+/* line 1276, ../../sass/_pages.scss */
+.bEventFacts__itemWrap {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+
+/* line 1279, ../../sass/_pages.scss */
 .bEventFacts__item {
   max-width: 320px;
   margin: 0 auto;
 }
 
-/* line 1240, ../../sass/_pages.scss */
+/* line 1283, ../../sass/_pages.scss */
 .bEventFacts__item img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 1244, ../../sass/_pages.scss */
+/* line 1287, ../../sass/_pages.scss */
 .bEventFacts__heading {
   text-align: center;
 }
 
-/* line 1248, ../../sass/_pages.scss */
+/* line 1291, ../../sass/_pages.scss */
 .bEventInfoList {
   background: #1e1e1e;
   color: white;
   margin-top: 0em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  margin-bottom: 3em;
+  margin-bottom: 1.5em;
 }
 
-/* line 1253, ../../sass/_pages.scss */
+/* line 1296, ../../sass/_pages.scss */
 .bEventInfoListHeading {
   color: white;
   text-align: left;
 }
 
-/* line 1257, ../../sass/_pages.scss */
+/* line 1300, ../../sass/_pages.scss */
 .bEventInfoList__right {
   margin-top: 0em;
   padding-top: 2.25em;
@@ -4610,48 +4821,224 @@ p.contactInfo__link {
   text-align: center;
 }
 
-/* line 1261, ../../sass/_pages.scss */
+/* line 1304, ../../sass/_pages.scss */
 .bEventInfoList__right img {
   width: 390px;
   height: auto;
 }
 @media (max-width: 880px) {
-  /* line 1261, ../../sass/_pages.scss */
+  /* line 1304, ../../sass/_pages.scss */
   .bEventInfoList__right img {
     width: 280px;
   }
 }
 @media (max-width: 760px) {
-  /* line 1261, ../../sass/_pages.scss */
+  /* line 1304, ../../sass/_pages.scss */
   .bEventInfoList__right img {
     width: 390px;
   }
 }
 @media (max-width: 460px) {
-  /* line 1261, ../../sass/_pages.scss */
+  /* line 1304, ../../sass/_pages.scss */
   .bEventInfoList__right img {
     width: 280px;
   }
 }
 
-/* line 1274, ../../sass/_pages.scss */
+/* line 1317, ../../sass/_pages.scss */
 .bEventInfoList__image {
   z-index: 10;
 }
 
-/* line 1277, ../../sass/_pages.scss */
+/* line 1320, ../../sass/_pages.scss */
 .bEventInfoList__image_after {
   position: absolute;
   transform: scale(0.88, 0.74);
   transform-origin: left bottom;
 }
 
-/* line 1282, ../../sass/_pages.scss */
+/* line 1325, ../../sass/_pages.scss */
 .bEventInfoList__image_after.in-view {
   -webkit-animation: grow .5s ease-in forwards;
   animation: grow .5s ease-in forwards;
   -webkit-animation-delay: .5s;
   animation-delay: .5s;
+}
+
+/* line 1332, ../../sass/_pages.scss */
+.bEventMore {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 3em;
+}
+
+/* line 1335, ../../sass/_pages.scss */
+.bEventMoreHeading {
+  text-align: center;
+}
+
+/* line 1338, ../../sass/_pages.scss */
+.bEventMoreHeading {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+
+/* line 1342, ../../sass/_pages.scss */
+.bEventMoreItem {
+  max-width: 440px;
+  margin: 0 auto;
+  min-height: 10em;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  border: 4px dashed #ffcc00;
+  margin-top: 0em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  margin-bottom: 0em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  text-align: center;
+}
+@media (max-width: 760px) {
+  /* line 1342, ../../sass/_pages.scss */
+  .bEventMoreItem {
+    margin-top: 0em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    margin-bottom: 1.5em;
+  }
+}
+
+/* line 1358, ../../sass/_pages.scss */
+.bEventMoreItem__heading_price {
+  font-weight: 900;
+  font-size: 2.5em;
+  line-height: 1.2em;
+}
+
+/* line 1362, ../../sass/_pages.scss */
+span.discount {
+  text-decoration: line-through;
+  color: #cf0000;
+}
+
+/* line 1366, ../../sass/_pages.scss */
+span.discount span {
+  color: black;
+}
+
+/* line 1369, ../../sass/_pages.scss */
+.bEventMoreItem__content p {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+}
+
+/* line 1373, ../../sass/_pages.scss */
+.bEventPartners {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+
+@media (max-width: 760px) {
+  /* line 1376, ../../sass/_pages.scss */
+  .bEventPartner__item_dummy {
+    display: none;
+  }
+}
+
+/* line 1381, ../../sass/_pages.scss */
+.bEventPartner__item {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/* line 1386, ../../sass/_pages.scss */
+.bEventPartner__item img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  -webkit-filter: grayscale(1);
+}
+
+/* line 1392, ../../sass/_pages.scss */
+.bEventPartner__item img:hover {
+  -webkit-filter: grayscale(0);
+}
+
+/* line 1395, ../../sass/_pages.scss */
+.bEventPartners__heading {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+
+/* line 1399, ../../sass/_pages.scss */
+.bEventContactsHeading {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+
+/* line 1403, ../../sass/_pages.scss */
+.bEventContactsItem {
+  max-width: 400px;
+  margin: 0 auto;
+  display: table;
+  color: white;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+
+/* line 1410, ../../sass/_pages.scss */
+.bEventContacts__image {
+  display: table-cell;
+  float: left;
+  margin-right: 1em;
+}
+
+/* line 1415, ../../sass/_pages.scss */
+.bEventContacts__image img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 100%;
+}
+
+/* line 1420, ../../sass/_pages.scss */
+.bEventContacts__text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 1424, ../../sass/_pages.scss */
+.bEventContacts__heading {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+/* line 1428, ../../sass/_pages.scss */
+.bEventContacts__text a {
+  color: white;
+  border-bottom-width: 0.0625em;
+  border-bottom-style: solid;
+  padding-bottom: 0.125em;
+  border-style: dashed;
+}
+
+/* line 1433, ../../sass/_pages.scss */
+.bEventContacts__text a:hover {
+  border-style: solid;
 }
 
 /* line 5, ../../sass/_decoration.scss */
@@ -4660,6 +5047,11 @@ p.contactInfo__link {
 }
 
 /* line 6, ../../sass/_decoration.scss */
+.clr-red {
+  color: #cf0000 !important;
+}
+
+/* line 7, ../../sass/_decoration.scss */
 .align-center {
   text-align: center;
 }
