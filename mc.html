@@ -72,7 +72,7 @@
 						Каждый предприниматель хочет быстро и&nbsp;без лишних затрат вывести свой бизнес в&nbsp;другие регионы. Мало кто знает, насколько просто сделать это прямо сейчас.
 					</p>
 					
-					<p><a class="contact__button contact__button_big contact__button_dept1" href="#">Узнать больше</a></p>
+					<p class="mainHeadingCaption mainHeadingCaption_video"><i class="fa fa-play-circle"></i>&nbsp;<a href="http://www.youtube.com/watch?v=gNjpR4ohRGc" class="popup-youtube">Смотреть видео&nbsp;»</a></p>
 				</div>
 			</div>
 			<!-- END of firstScreen -->
@@ -122,7 +122,7 @@
 				</div>
 				<div class="bEventSpeaker__itemWrap">
 					<div class="bEventSpeaker__item">
-						<img src="assets/img/mc-sp1.jpg">
+						<img width=200 height=200 src="assets/img/mc-sp1.jpg" alt="">
 					</div>
 				</div>
 				<div class="bEventSpeaker__messageWrap">
@@ -134,7 +134,7 @@
 				<div class="bEventSpeaker__itemSep"></div>
 				<div class="bEventSpeaker__itemWrap bEventSpeaker__itemLeft">
 					<div class="bEventSpeaker__item">
-						<img src="assets/img/mc-sp2.jpg">
+						<img width=200 height=200 src="assets/img/mc-sp2.jpg" alt="">
 					</div>
 				</div>
 				<div class="bEventSpeaker__messageWrap">
@@ -145,7 +145,7 @@
 				</div>
 				<div class="bEventSpeaker__itemWrap bEventSpeaker__itemRight">
 					<div class="bEventSpeaker__item">
-						<img src="assets/img/mc-sp2.jpg">
+						<img width=200 height=200 src="assets/img/mc-sp2.jpg" alt="">
 					</div>
 				</div>
 				<div class="bEventSpeaker__itemSep"></div>
@@ -167,19 +167,19 @@
 				<div class="bEventFactsItems wrap">
 					<div class="bEventFacts__itemWrap">
 						<div class="bEventFacts__item">
-							<img src="assets/img/dept1Info2.png" alt="">
+							<img width=500 height=500 src="assets/img/mc-ic1.png" alt="">
 							<h3 class="bEventFacts__heading">Что такое «правило 3F» во франчайзинге?</h3>
 						</div>
 					</div>
 					<div class="bEventFacts__itemWrap">
 						<div class="bEventFacts__item">
-							<img src="assets/img/dept1Info2.png" alt="">
+							<img width=500 height=500 src="assets/img/mc-ic2.png" alt="">
 							<h3 class="bEventFacts__heading">Зачем вашей компании «летающая печень»?</h3>
 						</div>
 					</div>
 					<div class="bEventFacts__itemWrap">
 						<div class="bEventFacts__item">
-							<img src="assets/img/dept1Info2.png" alt="">
+							<img width=500 height=500 src="assets/img/mc-ic3.png" alt="">
 							<h3 class="bEventFacts__heading">Что такое «игла для партнеров»?</h3>
 						</div>
 					</div>
@@ -208,8 +208,8 @@
 						<p><a class="contact__button contact__button_dept1" href="#">Скачать программу</a></p>
 					</div>
 					<div class="bEventInfoList__right">
-						<img class="bEventInfoList__image_after animateOnScroll" src="assets/img/mc-tm1.png">
-						<img class="bEventInfoList__image" src="assets/img/mc-tm0.png">
+						<img width=600 height=265 class="bEventInfoList__image_after animateOnScroll" src="assets/img/mc-tm1.png" alt="">
+						<img width=600 height=265 class="bEventInfoList__image" src="assets/img/mc-tm0.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -288,6 +288,39 @@
 			</div>
 			<!-- END of dept2Price -->
 
+			<!-- BEGIN of bEventMiniForm -->
+			<div class="bEventMiniForm">
+				<div class="wrap bEventMiniForm__heading">
+					<h2 class="pageHeading">Сомневаетесь? <strong>Дадим советы</strong></h2>
+					<p class="pageHeadingCaption">Мы подготовили для вас интересные материалы о том, какие масштабные результаты принес франчайзинг собственникам бизнеса и как вам применить этот опыт. Оставьте свои контакты и получите их в кратчайшие сроки:</p>
+				</div>
+				<div class="wrap_sm">
+					<form method="POST" action="javascript:void(null);" onsubmit="sendEventMiniForm()">
+						<input type="hidden" id="eventMiniForm__type" name="popup__eventMini_type">
+						<div class="contactForm__control">
+							<input id="eventMiniForm__name" name="eventMiniForm__name" type="text" class="form-control" placeholder="Представьтесь" required="">
+						</div>
+						<div class="contactForm__control">
+							<input id="eventMiniForm__email" name="eventMiniForm__email" type="text" class="form-control" placeholder="ivanov@gmail.com" required="">
+						</div>
+						<div class="contactForm__checkbox">
+							<label><input type="checkbox" required="">Даю согласие на обработку своих персональных данных</label>
+						</div>
+						<p class="align-center"><button class="contactForm__button contactButton contactForm__button_gray contactForm__button_dept1">Отправить</button></p>
+					</form>
+				</div>
+			</div>
+			<!-- END of bEventMiniForm -->
+			
+			<!-- BEGIN of popup-success -->
+			<div class="popup mfp-hide zoom-anim-dialog" id="popup_success">
+				<div class="popupContent">
+						<p class="popupContent__heading"><i class="fa fa-check"></i>&nbsp;Свяжемся в ближайшее время</p>
+						<p class="popupContent__caption">Спасибо за интерес! Ваш запрос отправлен на обработку. <a style="cursor:pointer" onclick="$.magnificPopup.close();">Продолжить просмотр сайта&nbsp;»</a></p>
+				</div>
+			</div>
+			<!-- END of popup-sucess -->
+
 			<!-- BEGIN of bAbout -->
 			<div class="bAbout">
 				<div class="wrap">
@@ -338,12 +371,12 @@
 				</div>
 				<div class="bEventPartner__itemWrap">
 					<div class="bEventPartner__item">
-						<a href="#"><img src="assets/img/logo-main.png"></a>
+						<a href="#"><img width=454 height=202 src="assets/img/logo-main.png"></a>
 					</div>
 				</div>
 				<div class="bEventPartner__itemWrap">
 					<div class="bEventPartner__item">
-						<a href="#"><img src="assets/img/logo-main.png"></a>
+						<a href="#"><img width=454 height=202 src="assets/img/logo-main.png"></a>
 					</div>
 				</div>
 			</div>
@@ -363,12 +396,12 @@
 				</div>
 				<div class="bEventPartner__itemWrap">
 					<div class="bEventPartner__item">
-						<a href="http://ipartner.pro" target="_blank"><img src="assets/img/mc-org1.png"></a>
+						<a href="http://ipartner.pro" target="_blank"><img width=400 height=200 src="assets/img/mc-org1.png" alt=""></a>
 					</div>
 				</div>
 				<div class="bEventPartner__itemWrap">
 					<div class="bEventPartner__item">
-						<a href="http://topfranchise.ru" target="_blank"><img src="assets/img/mc-org2.png"></a>
+						<a href="http://topfranchise.ru" target="_blank"><img width=400 height=200 src="assets/img/mc-org2.png" alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -387,7 +420,7 @@
 					<div class="bEventContacts__itemWrap">
 						<div class="bEventContactsItem">
 							<div class="bEventContacts__image">
-								<img src="assets/img/mc-cnt2.jpg" alt="">
+								<img width=200 height=200 src="assets/img/mc-cnt2.jpg" alt="">
 							</div>
 							<div class="bEventContacts__text">
 								<p class="bEventContacts__heading">Дарья Другова</p>
@@ -398,7 +431,7 @@
 					<div class="bEventContacts__itemWrap">
 						<div class="bEventContactsItem">
 							<div class="bEventContacts__image">
-								<img src="assets/img/mc-cnt1.jpg" alt="">
+								<img width=200 height=200 src="assets/img/mc-cnt1.jpg" alt="">
 							</div>
 							<div class="bEventContacts__text">
 								<p class="bEventContacts__heading">Юлия Васильева</p>
@@ -448,6 +481,15 @@
 				</div>
 			</div>
 			<!-- END of deptSteps -->
+
+
+			<!-- BEGIN of popup-contact-event -->
+			<div class="popup mfp-hide zoom-anim-dialog popup_dept1" id="popup_mc-video">
+				<div class="videoWrapper">
+					<div id="player"></div>
+				</div>
+			</div>
+			<!-- END of popup-contact-event -->
 
 
 			<!-- BEGIN of popup-event-message -->
@@ -589,6 +631,9 @@
 		</footer>
 
 		<div id="updown"><div id="updown-container"></div></div>
+
+
+
 		<!-- Font loader -->
 		<script src="http://use.edgefonts.net/source-sans-pro:n3,n4,n6,n9:all.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -1153,7 +1152,7 @@ a {
 
 /* line 29, ../../sass/_common.scss */
 #updown.up #updown-container::before {
-  content: 'тЖС';
+  content: '\2191';
   font-size: 24px;
 }
 
@@ -1164,7 +1163,7 @@ a {
 
 /* line 36, ../../sass/_common.scss */
 #updown.down #updown-container::before {
-  content: 'тЖУ';
+  content: '\2193';
   font-size: 24px;
 }
 
@@ -2427,17 +2426,28 @@ header {
 }
 
 /* line 241, ../../sass/_main.scss */
+.mainHeadingCaption_video {
+  font-size: 1.75em;
+  line-height: 1.28571em;
+}
+
+/* line 244, ../../sass/_main.scss */
+.mainHeadingCaption_video a:hover {
+  text-decoration: underline;
+}
+
+/* line 247, ../../sass/_main.scss */
 .mainHeading, .mainHeadingCaption {
   color: white;
   text-shadow: 1px 1px 2px black;
 }
 
-/* line 245, ../../sass/_main.scss */
+/* line 251, ../../sass/_main.scss */
 .mainHeadingCaption-noShadow {
   text-shadow: none;
 }
 
-/* line 248, ../../sass/_main.scss */
+/* line 254, ../../sass/_main.scss */
 .mainHeadingEventInfo {
   font-size: 1.5em;
   line-height: 1.25em;
@@ -2445,20 +2455,20 @@ header {
   text-shadow: 1px 1px 2px black;
 }
 @media (max-width: 400px) {
-  /* line 248, ../../sass/_main.scss */
+  /* line 254, ../../sass/_main.scss */
   .mainHeadingEventInfo {
     font-size: 1em;
     line-height: 1.5em;
   }
 }
 
-/* line 256, ../../sass/_main.scss */
+/* line 262, ../../sass/_main.scss */
 .mainHeadingEventInfo i {
   margin-right: 0.25em;
   margin-left: 1em;
 }
 
-/* line 265, ../../sass/_main.scss */
+/* line 271, ../../sass/_main.scss */
 .footer__decorator {
   background: url("../img/footerDecorator.png");
   background-size: contain;
@@ -2467,12 +2477,12 @@ header {
   margin-top: -30px;
 }
 
-/* line 272, ../../sass/_main.scss */
+/* line 278, ../../sass/_main.scss */
 .footer__decorator.footer_contacts {
   margin-top: -26px;
 }
 
-/* line 275, ../../sass/_main.scss */
+/* line 281, ../../sass/_main.scss */
 footer {
   margin-top: 0em;
   padding-top: 1.5em;
@@ -2483,29 +2493,29 @@ footer {
   text-align: center;
 }
 
-/* line 281, ../../sass/_main.scss */
+/* line 287, ../../sass/_main.scss */
 .footer_contacts {
   opacity: 0.9999999;
 }
 
-/* line 284, ../../sass/_main.scss */
+/* line 290, ../../sass/_main.scss */
 footer a {
   color: white;
 }
 
-/* line 287, ../../sass/_main.scss */
+/* line 293, ../../sass/_main.scss */
 .footer__socLinkImage {
   height: 3em;
   width: 3em;
 }
 
-/* line 291, ../../sass/_main.scss */
+/* line 297, ../../sass/_main.scss */
 .footer__socLinks li {
   display: inline;
   margin: 0 0.5em;
 }
 
-/* line 295, ../../sass/_main.scss */
+/* line 301, ../../sass/_main.scss */
 .footer__upperNav {
   margin-top: 0.375em;
   padding-top: 0em;
@@ -2513,7 +2523,7 @@ footer a {
   margin-bottom: 1.125em;
 }
 
-/* line 298, ../../sass/_main.scss */
+/* line 304, ../../sass/_main.scss */
 .footer__upperNav li {
   display: inline;
   margin: 0 0.5em;
@@ -2522,22 +2532,22 @@ footer a {
   font-weight: 600;
 }
 
-/* line 304, ../../sass/_main.scss */
+/* line 310, ../../sass/_main.scss */
 .upperNav_dept1:hover {
   color: #ffcc00;
 }
 
-/* line 307, ../../sass/_main.scss */
+/* line 313, ../../sass/_main.scss */
 .upperNav_dept2:hover {
   color: #26a55b;
 }
 
-/* line 310, ../../sass/_main.scss */
+/* line 316, ../../sass/_main.scss */
 .upperNav_dept3:hover {
   color: #913d87;
 }
 
-/* line 313, ../../sass/_main.scss */
+/* line 319, ../../sass/_main.scss */
 .footer__lowerNav li {
   display: inline;
   margin: 0 0.5em;
@@ -2547,7 +2557,7 @@ footer a {
   text-transform: uppercase;
 }
 @media (max-width: 680px) {
-  /* line 313, ../../sass/_main.scss */
+  /* line 319, ../../sass/_main.scss */
   .footer__lowerNav li {
     display: block;
     margin-top: 0em;
@@ -2558,13 +2568,13 @@ footer a {
 }
 
 @media (max-width: 680px) {
-  /* line 325, ../../sass/_main.scss */
+  /* line 331, ../../sass/_main.scss */
   .lowerNav__separator {
     display: none !important;
   }
 }
 
-/* line 331, ../../sass/_main.scss */
+/* line 337, ../../sass/_main.scss */
 .footer__lowerNav {
   margin-top: 0em;
   padding-top: 0em;
@@ -2572,23 +2582,23 @@ footer a {
   margin-bottom: 0.75em;
 }
 
-/* line 335, ../../sass/_main.scss */
+/* line 341, ../../sass/_main.scss */
 .footer__contacts li {
   display: inline-block;
   margin: 0 0.5em;
 }
 
-/* line 339, ../../sass/_main.scss */
+/* line 345, ../../sass/_main.scss */
 .footer__contacts-left {
   text-align: right;
 }
 
-/* line 342, ../../sass/_main.scss */
+/* line 348, ../../sass/_main.scss */
 .footer__contacts-right {
   text-align: left;
 }
 
-/* line 347, ../../sass/_main.scss */
+/* line 353, ../../sass/_main.scss */
 .popup {
   background-color: white;
   max-width: 960px;
@@ -2600,17 +2610,17 @@ footer a {
   border-color: #cf0000;
 }
 
-/* line 355, ../../sass/_main.scss */
+/* line 361, ../../sass/_main.scss */
 .popup_dept1 {
   border-color: #ffcc00;
 }
 
-/* line 358, ../../sass/_main.scss */
+/* line 364, ../../sass/_main.scss */
 .popup_dept2 {
   border-color: #26a55b;
 }
 
-/* line 361, ../../sass/_main.scss */
+/* line 367, ../../sass/_main.scss */
 .popupContent {
   max-width: 600px;
   margin-top: 0em;
@@ -2620,7 +2630,7 @@ footer a {
   margin: 0 auto;
 }
 
-/* line 366, ../../sass/_main.scss */
+/* line 372, ../../sass/_main.scss */
 .popupContent__heading {
   font-size: 2em;
   line-height: 1.125em;
@@ -2631,7 +2641,7 @@ footer a {
   font-weight: 600;
 }
 
-/* line 371, ../../sass/_main.scss */
+/* line 377, ../../sass/_main.scss */
 .popupContent__caption {
   font-size: 1.125em;
   line-height: 1.33333em;
@@ -2642,17 +2652,17 @@ footer a {
   font-weight: 300;
 }
 
-/* line 376, ../../sass/_main.scss */
+/* line 382, ../../sass/_main.scss */
 .popupContent__caption strong {
   font-weight: 400;
 }
 
-/* line 379, ../../sass/_main.scss */
+/* line 385, ../../sass/_main.scss */
 .popupContent_success {
   display: none;
 }
 
-/* line 382, ../../sass/_main.scss */
+/* line 388, ../../sass/_main.scss */
 .popupContent_resume {
   max-width: 880px;
 }
@@ -5039,6 +5049,32 @@ span.discount span {
 /* line 1433, ../../sass/_pages.scss */
 .bEventContacts__text a:hover {
   border-style: solid;
+}
+
+/* line 1436, ../../sass/_pages.scss */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+/* line 1442, ../../sass/_pages.scss */
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 1449, ../../sass/_pages.scss */
+.bEventMiniForm__heading {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
 }
 
 /* line 5, ../../sass/_decoration.scss */

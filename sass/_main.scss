@@ -238,6 +238,12 @@ header {
 .mainHeadingCaption a{
 	color:white;
 }
+.mainHeadingCaption_video{
+	@include adjust-font-size-to(28px);
+}
+.mainHeadingCaption_video a:hover{
+	text-decoration:underline;
+}
 .mainHeading, .mainHeadingCaption{
 	color:white;
 	text-shadow:1px 1px 2px black;

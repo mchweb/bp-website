@@ -27,14 +27,14 @@ a {
 	cursor:pointer;
 }
 #updown.up #updown-container::before  {
-	content:'↑';
+	content:'\2191';
 	font-size:24px;
 }
 #updown.up #updown-container, #updown.down #updown-container  {
 	background:rgba(0,0,0,0.5);
 }
 #updown.down #updown-container::before {
-	content:'↓';
+	content:'\2193';
 	font-size:24px;
 }
 #updown:hover #updown-container{

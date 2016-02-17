@@ -50,7 +50,8 @@ module.exports = function(grunt) {
                     'prod/404.html': ['404.html'],
                     'prod/dept1.html': ['dept1.html'],
 					'prod/dept2.html': ['dept2.html'],
-                    'prod/contacts.html': ['contacts.html']
+                    'prod/contacts.html': ['contacts.html'],
+                    'prod/contacts.html': ['mc.html']
                 }
             }
         },
@@ -83,7 +84,7 @@ module.exports = function(grunt) {
         },
         inlineImgSize: {
             files: {
-                src: ['index.html', 'contact.html', '404.html', 'dept1.html', 'dept2.html', 'about.html']
+                src: ['index.html', 'contact.html', '404.html', 'dept1.html', 'dept2.html', 'about.html','mc.html']
             }
         }
     });
