@@ -2048,6 +2048,32 @@ strong {
   }
 }
 
+/* line 311, ../../sass/_layout.scss */
+.bEventIcons__itemWrap {
+  width: 25%;
+  float: left;
+  padding-left: 1.04167%;
+  padding-right: 1.04167%;
+}
+@media (max-width: 1200px) {
+  /* line 311, ../../sass/_layout.scss */
+  .bEventIcons__itemWrap {
+    width: 50%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+  }
+}
+@media (max-width: 600px) {
+  /* line 311, ../../sass/_layout.scss */
+  .bEventIcons__itemWrap {
+    width: 100%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+  }
+}
+
 /*
 
 .content {
@@ -5075,6 +5101,73 @@ span.discount span {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
+}
+
+/* line 1453, ../../sass/_pages.scss */
+.bEventIcons {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 3em;
+}
+
+/* line 1456, ../../sass/_pages.scss */
+.bEventIcons__heading {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+
+/* line 1459, ../../sass/_pages.scss */
+.bEventIconsItem {
+  display: table;
+  max-width: 380px;
+  margin: 0 auto;
+  margin-top: 0.75em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+
+/* line 1465, ../../sass/_pages.scss */
+.bEventIconsItem div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 1469, ../../sass/_pages.scss */
+.bEventIcons__icon img {
+  max-width: 4em;
+  margin-right: 1em;
+}
+
+/* line 1473, ../../sass/_pages.scss */
+.bEventIcons__text {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  padding-right: 0.5em;
+}
+@media (max-width: 760px) {
+  /* line 1473, ../../sass/_pages.scss */
+  .bEventIcons__text {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+@media (max-width: 600px) {
+  /* line 1473, ../../sass/_pages.scss */
+  .bEventIcons__text {
+    font-size: 1.25em;
+    line-height: 1.2em;
+  }
+}
+@media (max-width: 360px) {
+  /* line 1473, ../../sass/_pages.scss */
+  .bEventIcons__text {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
 }
 
 /* line 5, ../../sass/_decoration.scss */

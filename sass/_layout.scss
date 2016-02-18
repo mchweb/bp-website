@@ -307,6 +307,16 @@
 		@include span(12);
 	}
 }
+
+.bEventIcons__itemWrap{
+	@include span(3);
+	@media (max-width: 1200px) {
+		@include span(6);
+	}
+	@media (max-width: 600px) {
+		@include span(12);
+	}
+}
 /*
 
 .content {

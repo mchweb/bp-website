@@ -1449,3 +1449,37 @@ span.discount span{
 .bEventMiniForm__heading{
 	@include rhythm(0,0,0,4);
 }
+
+.bEventIcons{
+	@include rhythm(0,0,0,8);
+}
+.bEventIcons__heading{
+	@include rhythm(0,0,0,4);
+}
+.bEventIconsItem{
+	display:table;
+	max-width:380px;
+	margin:0 auto;
+	@include rhythm(2,0,0,4);
+}
+.bEventIconsItem div{
+	display:table-cell;
+	vertical-align: middle;
+}
+.bEventIcons__icon img {
+	max-width:4em;
+	margin-right:1em;
+}
+.bEventIcons__text{
+	@include adjust-font-size-to(20px);
+	padding-right:0.5em;
+	@media (max-width: 760px) {
+		@include adjust-font-size-to(16px);
+	}
+	@media (max-width: 600px) {
+		@include adjust-font-size-to(20px);
+	}
+	@media (max-width: 360px) {
+		@include adjust-font-size-to(16px);
+	}
+}
