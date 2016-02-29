@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Бизнес партнеры: акселерация и масштабирование бизнеса</title>
+		<meta name="description" content="Проводим акселерационные программы, запускаем франчайзинговые сети, развиваем предпринимательские сообщества">
+		
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+		
+		<!--[if lt IE 9]>
+			<script src="js/vendor/html5shiv.min.js"></script>
+		<![endif]-->
+
+		<!-- build:css assets/css/screen.min.css -->
+		<link rel="stylesheet" media="screen" href="assets/css/screen.css">
+		<!-- /build -->
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<!--[if lt IE 9]>
+			<p style="text-align:center;font-size:20px;background:white;width:100%;z-index:10000;padding:20px 0px"><strong>Кажется, ваш браузер безнадежно устарел.</strong> Скорее всего, сайт будет отображаться и работать некорректно.<br/>Пожалуйста, <a href="http://browsehappy.com/" target="_blank">установите с одного из официальных сайтов</a> новую версию своего браузера.<br/></p>
+		<![endif]-->
+		
+
+		<div id="navMain__back"></div>
+
+		<header class="header">
+			<div class="wrap">
+				<div class="header__logo">
+					<a href=""><img src="assets/img/logo-white.svg" width="114" height="54"></a>
+				</div>	
+				<div class="header__contacts">
+					<div class="contacts__info">
+						<p class="contacts__phone"><a href="tel:+73822933976">(3822)&nbsp;933-976</a></p>
+						<p><a href="mailto:info@ipartner.pro">info@ipartner.pro</a></p>
+					</div>
+					<div class="contacts__image">
+						<img src="assets/img/arrow-white.svg" width="100" height="100" />
+					</div>
+				</div>
+				<nav class="header__navMain" id="navMain">
+					<ul class="navMain">
+						<li class="navMainItem_dept1 navMainItem_current"><a href="#">Франчайзинг</a></li>
+						<li class="navMainItem_dept2"><a href="#">Акселерация</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div id="navTrigger">
+					<i class="fa fa-2x fa-bars"></i>
+				</div>
+			</div>
+		</header>
+
+		<!-- BEGIN of content -->
+		<div class="content">
+
+			<!-- BEGIN of firstScreen -->
+			<div class="firstScreen" id="firstScreen" style="background-image:url(assets/img/bg-dept1.jpg);">
+				<div class="firstScreen__text wrap">
+					<h1 class="mainHeading">Франчайзинговые продукты</h1>
+					<p class="mainHeadingCaption">
+						Как максимально быстро вывести свой бизнес на&nbsp;новый уровень&nbsp;&mdash; увеличить оборот, прибыль и&nbsp;охват целевой аудитории? Где найти дополнительные источники денег на&nbsp;развитие?
+					</p>
+					<p><a class="contact__button contact__button_big contact__button_dept1" href="#">Узнать больше</a></p>
+				</div>
+			</div>
+			<!-- END of firstScreen -->
+
+
+
+			<p class="wrap"><a onclick="showPopup(1, 1)">test-лид</a></p>
+			<p class="wrap"><a onclick="showPopup('contact-dept1', '2', 'Оставайтесь на связи', 'Укажите любой удобный способ связи (телефон, электронная почта, социальные сети): мы отправим вам дополнительные, подробные материалы об акселерационной программе и <strong>вышлем напоминание за 3&nbsp;дня до закрытия регистрации</strong>')">test-лид1</a></p>
+			<p class="wrap"><a onclick="showPopup('message', '3', 'Задать вопрос', 'Не забудьте указать контактную информацию (телефон, электронная почта, социальные сети), <strong>чтобы мы могли в кратчайшие сроки вам ответить</strong>')">testask</a></p>
+			<p class="wrap"><a onclick="showPopup('dept1', '1', 'Как с вами связаться?', '')">test1</a></p>
+			<p class="wrap"><a onclick="showPopup('dept1', '1', 'Как с вами связаться?', '','f1')">test1_f1</a></p>
+			<p class="wrap"><a onclick="showPopup('dept2', '1', 'Заявка на акселерационную программу', 'Мы назначим вам предварительную встречу для уточнения дополнительной информации и согласования вашего участия')">test2</a></p>
+
+			<!-- BEGIN of contactForm -->
+			<div class="contactForm">
+				<div class="wrap">
+					<div class="contactForm__text">
+						<h2 class="cFormHeading">Получите бесплатную консультацию</h2>
+						<p class="cFormCaption">Мы с радостью встретимся с вами и поможем разобраться с тем, как разработка фрнашизы поможет вашему бизнесу развиваться.<br/><br/>
+						Вы также можете задать свой вопрос с помощью данной формы.</p>
+					</div>
+					<div class="contactForm__form">
+						<div class="contactForm__formWrap">
+							<form method="POST" action="javascript:void(null);" onsubmit="sendContactForm()">
+								<div class="contactForm__control contactForm__control_horiz">
+									<label for="contactForm__name">Представьтесь</label>
+									<input id="contactForm__name" name="NAME" type="text" class="form-control" placeholder="Иванов Иван Иванович" required="">
+								</div>
+								<div class="contactForm__control contactForm__control_horiz">
+									<label for="contactForm__email">E-mail</label>
+									<input id="contactForm__email" name="EMAIL" type="email" class="form-control" placeholder="ivanov@gmail.com" required="">
+								</div>
+								<div class="contactForm__control contactForm__control_horiz">
+									<label for="contactForm__phone">Телефон</label>
+									<input id="contactForm__phone" name="PHONE" type="text" class="form-control" placeholder="+79123456789">
+								</div>
+								<div class="contactForm__control contactForm__control_horiz">
+									<label for="contactForm__message">Дополнительная информация</label><br>
+									<textarea id="contactForm__message" name="MESSAGE" type="text" class="form-control" placeholder="Расскажите о себе и своей компании" rows="3"></textarea>
+								</div>
+								<div class="contactForm__checkbox contactForm__control_horiz">
+									<label><input type="checkbox" required="">Даю согласие на обработку своих персональных данных</label>
+								</div>
+								<button class="contactForm__button contactForm__button_right contact__button_dept1" href="#">Отправить</button>
+							</form>
+					</div>
+					</div>
+				</div>
+			</div>
+			<!-- END of contactForm -->
+
+		</div>
+		<!-- END of content -->
+
+					<!-- BEGIN of popup-contact-dept1 -->
+			<div class="popup mfp-hide zoom-anim-dialog" id="popup_contact-dept1">
+				<div class="popupContent" id="popup__contact-dept1">
+					<p class="popupContent__heading" id="popup__contact-dept1_heading"></p>
+					<p class="popupContent__caption" id="popup__contact-dept1_caption"></p>
+					<form method="POST" action="javascript:void(null);" onsubmit="sendContactForm()">
+						<input type="hidden" name="form_type" id="popup__contact-dept1_type" value="unknown">
+						<div class="contactForm__control">
+							<input id="contact-dept1__name" name="contact-dept1__name" type="text" class="form-control" placeholder="Представьтесь" required="">
+						</div>
+						<div class="contactForm__control">
+							<input id="contact-dept1__email" name="contact-dept1__email" type="text" class="form-control" placeholder="ivanov@gmail.com" required="">
+						</div>
+						<div class="contactForm__checkbox">
+							<label><input type="checkbox" required="">Даю согласие на обработку своих персональных данных</label>
+						</div>
+						<button class="contactForm__button contactButton contactForm__button_gray contactButton contactForm__loading" >Отправить</button>
+					</form>
+				</div>
+				<div class="popupContent popupContent_success"  id="popup__contact-dept1_success">
+					<p class="popupContent__heading"><i class="fa fa-check"></i>&nbsp;Свяжемся в ближайшее время</p>
+					<p class="popupContent__caption">Спасибо за интерес! Ваш запрос отправлен на обработку. <a style="cursor:pointer" onclick="$.magnificPopup.close();">Продолжить просмотр сайта&nbsp;»</a></p>
+					
+				</div>
+			</div>
+			<!-- END of popup-contact-dept1 -->
+
+			<!-- BEGIN of popup-message -->
+			<div class="popup mfp-hide zoom-anim-dialog" id="popup_message">
+				<div class="popupContent" id="popup__message">
+					<p class="popupContent__heading" id="popup__message_heading"></p>
+					<p class="popupContent__caption" id="popup__message_caption"></p>
+					<form method="POST" action="javascript:void(null);" onsubmit="sendContactForm()">
+						<div class="contactForm__control">
+							<input id="contactForm__name" name="NAME" type="text" class="form-control" placeholder="Представьтесь" required="">
+						</div>
+						<div class="contactForm__control">
+							<input id="contactForm__email" name="EMAIL" type="text" class="form-control" placeholder="ivanov@gmail.com" required="">
+						</div>
+						<div class="contactForm__control">
+							<textarea id="contactForm__message" name="MESSAGE" type="text" class="form-control" placeholder="Ваш вопрос" rows="3"></textarea>
+						</div>
+						<div class="contactForm__checkbox">
+							<label><input type="checkbox" required="">Даю согласие на обработку своих персональных данных</label>
+						</div>
+						<button class="contactForm__button contactForm__button_gray" onclick="formSuccess('message')" href="#">Отправить</button>
+					</form>
+				</div>
+				<div class="popupContent popupContent_success"  id="popup__message_success">
+					<p class="popupContent__heading"><i class="fa fa-check"></i>&nbsp;Свяжемся в ближайшее время</p>
+					<p class="popupContent__caption">Спасибо за интерес! Ваш запрос отправлен на обработку. <a style="cursor:pointer" onclick="$.magnificPopup.close();">Продолжить просмотр сайта&nbsp;»</a></p>
+					
+				</div>
+			</div>
+			<!-- END of popup-message -->
+
+			<!-- BEGIN of popup-success -->
+			<div class="popup mfp-hide zoom-anim-dialog" id="popup_success">
+				<div class="popupContent">
+					<p class="popupContent__heading"><i class="fa fa-check"></i>&nbsp;Свяжемся в ближайшее время</p>
+					<p class="popupContent__caption">Спасибо за интерес! Ваш запрос отправлен на обработку. <a style="cursor:pointer" onclick="$.magnificPopup.close();">Продолжить просмотр сайта&nbsp;»</a></p>
+				</div>
+			</div>
+			<!-- END of popup-sucess -->
+
+			<!-- BEGIN of popup-dept1 -->
+			<div class="popup mfp-hide zoom-anim-dialog popup_dept1" id="popup_dept1">
+				<div class="popupContent" id="popup__dept1">
+					<p class="popupContent__heading" id="popup__dept1_heading"></p>
+					<p class="popupContent__caption" id="popup__dept1_caption"></p>
+					<form method="POST" action="javascript:void(null);" onsubmit="sendDept1Form()">
+						<div class="contactForm__control">
+							<label for="dept1Form__email">Представьтесь</label>
+							<input id="dept1Form__name" name="dept1Form__name" type="text" class="form-control" placeholder="Иванов Иван" required="">
+						</div>
+						<div class="contactForm__control">
+							<label for="dept1Form__email">E-mail</label>
+							<input id="dept1Form__email" name="dept1Form__email" type="text" class="form-control" placeholder="ivanov@gmail.com" required="">
+						</div>
+						<div class="contactForm__control">
+							<label for="dept1Form__phone">Телефон</label>
+							<input id="dept1Form__phone" name="dept1Form__phone" type="text" class="form-control" placeholder="+79123456789" required="">
+						</div>
+						<div class="contactForm__control">
+							<label for="dept1Form__company">Организация</label>
+							<input id="dept1Form__company" name="dept1Form__company" type="text" class="form-control" placeholder='ПАО "Газпром"' required="">
+						</div>
+						<div class="contactForm__control">
+							<label for="dept1Form__product">Что вас интересует?</label>
+							<select name="" id="dept1Form__product" class="dept1Form__product">
+								<option value="f1">Упаковка франчайзингового пакета</option>
+								<option value="f2">Продвижение и продажа готовой франшизы</option>
+								<option value="f3">Аудит готовой франшизы</option>
+								<option value="f4">Размещение франшизы на TopFranchise</option>
+								<option selected value="">-</option>
+							</select>
+						</div>
+						<div class="contactForm__checkbox">
+							<label><input type="checkbox" required="">Даю согласие на обработку своих персональных данных</label>
+						</div>
+						<button class="contactForm__button contactForm__button_dept1 contactForm__button_gray" onclick="formSuccess('message')" href="#">Отправить</button>
+					</form>
+				</div>
+				<div class="popupContent popupContent_success"  id="popup__dept1_success">
+					<p class="popupContent__heading"><i class="fa fa-check"></i>&nbsp;Свяжемся в ближайшее время</p>
+					<p class="popupContent__caption">Спасибо за интерес! Ваш запрос отправлен на обработку. <a style="cursor:pointer" onclick="$.magnificPopup.close();">Продолжить просмотр сайта&nbsp;»</a></p>
+					
+				</div>
+			</div>
+			<!-- END of popup-dept1 -->
+			
+			<!-- BEGIN of popup-dept2 -->
+			<div class="popup mfp-hide zoom-anim-dialog popup_dept2" id="popup_dept2">
+				<div class="popupContent" id="popup__dept2">
+					<p class="popupContent__heading" id="popup__dept2_heading"></p>
+					<p class="popupContent__caption" id="popup__dept2_caption"></p>
+					<form method="POST" action="javascript:void(null);" onsubmit="sendContactForm()">
+						<div class="contactForm__control">
+							<label for="contactForm__email">Представьтесь</label>
+							<input id="contactForm__name" name="NAME" type="text" class="form-control" placeholder="Иванов Иван" required="">
+						</div>
+						<div class="contactForm__control">
+							<label for="contactForm__email">E-mail</label>
+							<input id="contactForm__email" name="EMAIL" type="text" class="form-control" placeholder="ivanov@gmail.com" required="">
+						</div>
+						<div class="contactForm__control">
+							<label for="contactForm__email">Телефон</label>
+							<input id="contactForm__email" name="EMAIL" type="text" class="form-control" placeholder="+79123456789" required="">
+						</div>
+						<div class="contactForm__control">
+							<label for="contactForm__email">Организация</label>
+							<input id="contactForm__email" name="EMAIL" type="text" class="form-control" placeholder='ПАО "Газпром"' required="">
+						</div>
+						<div class="contactForm__checkbox">
+							<label><input type="checkbox" required="">Даю согласие на обработку своих персональных данных</label>
+						</div>
+						<button class="contactForm__button  contactForm__button_dept2 contactForm__button_gray" onclick="formSuccess('message')" href="#">Отправить</button>
+					</form>
+				</div>
+				<div class="popupContent popupContent_success"  id="popup__dept2_success">
+					<p class="popupContent__heading"><i class="fa fa-check"></i>&nbsp;Свяжемся в ближайшее время</p>
+					<p class="popupContent__caption">Спасибо за интерес! Ваш запрос отправлен на обработку. <a style="cursor:pointer" onclick="$.magnificPopup.close();">Продолжить просмотр сайта&nbsp;»</a></p>
+					
+				</div>
+			</div>
+			<!-- END of popup-dept2 -->
+
+		<!-- BEGIN of popup-resume-dept1 -->
+			<div class="popup mfp-hide zoom-anim-dialog popup_dept1" id="resume-dept1">
+				<div class="popupContent popupContent_resume">
+				<div class="deptExp__aboutTeam__itemWrap">
+					<div class="aboutTeam__item">
+						<div class="aboutTeam__itemImage" style="background-image:url(assets/img/team1.jpg)">
+							<div class="aboutTeamItem__back aboutTeamItem__back_dept1"></div>
+						</div>
+						<p class="aboutTeam__itemName">Наталья Абабий</p>
+						<p class="aboutTeam__itemCaption"><a href="#">Страница ВКонтакте »</a></p>
+						<p class="aboutTeam__itemCaption"><a href="#">Страница в Facebook »</a></p>
+						<p><a class="contact__button contact__button_gray contact__button_dept1" href="#">Задать вопрос</a></p>
+					</div>
+				</div>
+				<div class="deptExp__messageWrap">
+					<div class="deptExp__message deptExp__message_nopad deptExp__resumeText">
+						<h2>Резюме эксперта</h2>
+						<ul class="list-img">
+							<li>
+								<i class="fa fa-black-tie"></i>
+								<span>Сооснователь ГК WIN Corp (wincorp.ru);</span>
+							</li>
+							<li>
+								<i class="fa fa-certificate"></i>
+								<span>Эксперт по разработке маркетинговых стратегий (Член Гильдии Маркетологов, Президент Томского Маркетинг клуба);</span>
+							</li>
+							<li>
+								<i class="fa fa-briefcase"></i>
+								<span>Развитие собственных предпринимательских проектов (консалтинг, розница, мед.оборудование);</span>
+							</li>
+							<li>
+								<i class="fa fa-flask"></i>
+								<span>Область интересов: маркетинговые стратегии, франчайзинг, управление, личностный рост, наставничество.</span>
+							</li>
+
+						</ul>
+						
+						<h3>Текущая занятость</h3>
+						
+						<p>Управляющий состав WIN Corp, эксперт по маркетингу WIN бизнес-решения (winbd.ru), руководитель направления Франчайзинг Ассоциации «НП ПИТ «Бизнес 						партнеры»».</p>
+						
+						<h3>Портфель проектов</h3>
+						
+						<ul class="list-dots">
+							<li>WIN Бизнес решения,</li>
+							<li>НП ПИТ «Бизнес партнёры»,</li>
+							<li>«Спинор-Кристалл» официальный дилер медицинских аппаратов «Спинор»,</li>
+							<li>Розничная сеть магазинов «Экспедиция» и «1+1» в Томске,</li>
+							<li>Консалтинговая компания «Инициатива».</li>
+						</ul>
+						
+						<h3>Профильное образование</h3>
+						
+						<ul class="list-dots">
+							<li>Предпринимательство в инновационной сфере, Магистр инженер (Томский политехнический университет);</li>
+							<li>Переводчик немецкого языка в сфере профессиональной коммуникации (Томский политехнический университет);</li>
+							<li>Accredited KM Consultant - Аккредитованный консультант в области управления знаниями (Knowledge Management, Knowledge Associates, Cambridge (						England);</li>
+							<li>«Маркетинг» (The Wharton School of the University of Pennsylvania);</li>
+							<li>J.E.R.O.I. Flashpoint (Strategy, marketing, co-creation) (SOMAR, Cancun, Mexico);</li>
+							<li>Повышение квалификации по программе «Текст как маркетинговый инструмент компании: Школа копирайтера» (СБПГУКиТ, Санкт Петербург);</li>
+							<li>8-10 Международные маркетинговые Съезды (Москва).</li>
+						</ul>
+
+						<h3><a href="#">Скачать резюме »</a></h3>
+
+					</div>
+				</div>
+				<div style="clear:both"></div>
+				</div>
+			</div>
+			<!-- END of popup-resume-dept1 -->
+
+			<!-- BEGIN of popup-resume-dept2 -->
+			<div class="popup mfp-hide zoom-anim-dialog popup_dept2" id="resume-dept2">
+				<div class="popupContent popupContent_resume">
+				<div class="deptExp__aboutTeam__itemWrap">
+					<div class="aboutTeam__item">
+						<div class="aboutTeam__itemImage" style="background-image:url(assets/img/team1.jpg)">
+							<div class="aboutTeamItem__back aboutTeamItem__back_dept2"></div>
+						</div>
+						<p class="aboutTeam__itemName">Энвер Горпинич</p>
+						<p class="aboutTeam__itemCaption"><a href="#">Страница ВКонтакте »</a></p>
+						<p class="aboutTeam__itemCaption"><a href="#">Страница в Facebook »</a></p>
+						<p><a class="contact__button contact__button_gray contact__button_dept2" href="#">Задать вопрос</a></p>
+					</div>
+				</div>
+				<div class="deptExp__messageWrap">
+					<div class="deptExp__message deptExp__message_nopad deptExp__resumeText">
+						<h2>Резюме эксперта</h2>
+						<ul class="list-dots">
+							<li>2013–2014 гг. — НПО «ЗКСМ» — маркетолог инновационного проекта,</li>
+							<li>2012–2014 гг. — руководитель проекта «Система автоматизированной системы досветки растений на основе светодиодных ламп»,</li>
+							<li>2012–2013 гг. — руководитель проекта «Воздушная пирография»,</li>
+							<li>2010–2012 гг. — член молодежного совета г. Томск,</li>
+							<li>2007–2012 гг. — МОО «Экологический центр Стриж» — организатор мероприятий, направленных на сохранение окружающей среды.</li>
+						</ul>
+
+						<h3><a href="#">Скачать резюме »</a></h3>
+
+					</div>
+				</div>
+				<div style="clear:both"></div>
+				</div>
+			</div>
+			<!-- END of popup-resume-dept2 -->
+
+
+		
+		<div class="footer__decorator"></div>
+		<footer class="footer">
+			<ul class="footer__socLinks">
+				<li><a href="https://www.facebook.com/ipartner.pro"><img src="assets/img/fb.svg" class="footer__socLinkImage" alt="Мы в Facebook"></a></li>
+				<li><a href="https://vk.com/biznes.partnery"><img src="assets/img/vk.svg" class="footer__socLinkImage" alt="Мы ВКонтакте"></a></li>
+			</ul>
+			<ul class="footer__upperNav">
+				<li><a class="upperNav_dept1" href="#">франчайзинг</a></li>
+				<li><a class="upperNav_dept2" href="#">акселерация</a></li>
+				<li><a class="upperNav_dept3" href="#">сообщество</a></li>
+			</ul>
+			<ul class="footer__lowerNav">
+				<li><a href="#">Главная</a></li>
+				<li class="lowerNav__separator">|</li>
+				<li><a href="#">О компании</a></li>
+				<li class="lowerNav__separator">|</li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<div class="footer__adress">
+				
+			</div>
+			<ul class="footer__contacts">
+				<li class="footer__contacts-left">
+					Красноармейская 96,<br>
+					офис 303
+				</li>
+				<li class="footer__contacts-right">
+					<a href="tel:+73822933976">(3822)&nbsp;933-976</a><br>
+					<a href="mailto:info@ipartner.pro">info@ipartner.pro</a>
+				</li>
+			</ul>
+		</footer>
+
+		<div id="updown"><div id="updown-container"></div></div>
+		<!-- Font loader -->
+		<script src="http://use.edgefonts.net/source-sans-pro:n3,n4,n6,n9:all.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+		<!-- build:js assets/js/main.min.js -->
+		<script src="assets/js/main.js"></script>
+		<!-- /build -->
+	</body>
+</html>

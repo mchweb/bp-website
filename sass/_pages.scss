@@ -509,6 +509,12 @@ p.contactInfo__link {
 	background-size: 100% 200%;
     background-position:left top;
 }
+.contact__button_invert_dept1{
+	background: linear-gradient(to top, black 50%, $dept1 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+    border-color:black;
+}
 .contact__button_big{
 	@include adjust-font-size-to(20px);
 }
@@ -857,6 +863,7 @@ p.contactInfo__link {
 	border-radius:50%;
 	@include rhythm(0,0,0,2);
 }
+
 .deptStepsItem__circle_dept1{
 	background:$dept1;
 }
@@ -873,6 +880,14 @@ p.contactInfo__link {
 	line-height:90px;
 	font-weight:900;
 }
+.deptStepsItem__circle_small{
+	width:60px;
+	height:60px;
+}
+.deptStepsItem__circle_small p{
+	@include adjust-font-size-to(42px);
+	line-height:60px;
+}
 .deptStepsItem__caption{
 	@include adjust-font-size-to(20px);
 }
@@ -882,7 +897,7 @@ p.contactInfo__link {
 	background:$dark;
 	background-size:cover;
 }
-.dept2ReqItem__wrap, .dept1ReqItem__wrap{
+.dept2ReqItem__wrap, .dept1ReqItem__wrap, .dept1ReqItemFaf__wrap{
 	@include rhythm(4,0,0,2);
 	padding-left:1em;
 	padding-right:1em;
@@ -899,6 +914,17 @@ p.contactInfo__link {
 	cursor:pointer;
 	padding-left:0.5em;
 	padding-right:0.5em;
+}
+.deptReqItem p{
+	width:100%;
+}
+.bEventIconsFaf__sep{
+	width:90%;
+	margin: 0 auto;
+	@include trailing-border(1px, 0.5);
+	border-color:$dept1;
+	clear:both;
+	@include rhythm(0,0,0,2);
 }
 .deptReqItem_dept2:hover{
 	border-color:$dept2;
@@ -1153,7 +1179,7 @@ p.contactInfo__link {
 }
 
 .dept1PriceItem__priceWrap{
-	min-height:5em;
+	min-height:6em;
 	@media (max-width: 540px) {
 		min-height:0;
 	}
@@ -1279,9 +1305,11 @@ p.contactInfo__link {
 .bEventFacts__item{
 	max-width:320px;
 	margin:0 auto;
+	text-align:center;
 }
 .bEventFacts__item img{
-	max-width:100%;
+	width:100%;
+	max-width:200px;
 	height:auto;
 }
 .bEventFacts__heading{
@@ -1355,6 +1383,10 @@ p.contactInfo__link {
 		@include rhythm(0,2,2,4);
 	}
 }
+.bEventMoreItem_last{
+	max-width:600px;
+	@include rhythm(0,2,2,4);
+}
 .bEventMoreItem__heading_price{
 	font-weight:900;
 	@include adjust-font-size-to(40px);
@@ -1365,6 +1397,9 @@ span.discount{
 }
 span.discount span{
 	color:black;
+}
+.bEventMoreItem__content{
+	width:100%;
 }
 .bEventMoreItem__content p{
 	@include adjust-font-size-to(18px);
@@ -1454,7 +1489,7 @@ span.discount span{
 	@include rhythm(0,0,0,8);
 }
 .bEventIcons__heading{
-	@include rhythm(0,0,0,4);
+	@include rhythm(2,0,0,4);
 }
 .bEventIconsItem{
 	display:table;
@@ -1469,8 +1504,10 @@ span.discount span{
 .bEventIcons__icon img {
 	max-width:4em;
 	margin-right:1em;
+	height:auto;
 }
 .bEventIcons__text{
+	width:100%;
 	@include adjust-font-size-to(20px);
 	padding-right:0.5em;
 	@media (max-width: 760px) {
@@ -1482,4 +1519,105 @@ span.discount span{
 	@media (max-width: 360px) {
 		@include adjust-font-size-to(16px);
 	}
+}
+
+.bEventFeedback{
+	@include rhythm(0,0,0,4);
+}
+.bEventFeedback__heading{
+	@include rhythm(0,0,0,6);
+}
+.bEventFeedback__itemWrap{
+	@include rhythm(0,0,0,6);
+}
+.bEventFeedbackItem{
+	display:table;
+}
+.bEventFeedbackItem__imageWrap{
+	display:table-cell;
+}
+.bEventFeedbackItem__image {
+	margin-right:1.5em;
+	background-size:cover;
+	border-radius:100%;
+	width: 120px;
+    height: 120px;
+    padding-top: 32px;
+    @media (max-width: 480px) {
+    	width: 90px;
+    	height: 90px;
+    	padding-top: 24px;
+    }
+}
+.bEventFeedbackItem__image p{
+	font-weight:900;
+	color:$dept1;
+	@include adjust-font-size-to(100px);
+	@media (max-width: 480px) {
+		@include adjust-font-size-to(80px);
+	}
+	text-align:right;
+}
+.bEventFeedbackItem__text{
+	display:table-cell;
+	vertical-align: top;
+}
+.bEventFeedbackItem__textAuthor{
+	@include adjust-font-size-to(22px);
+}
+.bEventFeedbackItem__textCompany{
+	@include adjust-font-size-to(14px);
+	@include rhythm(0,0,0,2);
+}
+
+.bEventFeedbackItem__arrow{
+	width: 0.3333em;
+	height:auto;
+}
+
+.fafPriceItem{
+	text-align:center;
+	@include rhythm(4,0,0,4);
+}
+.fafPriceItem__heading{
+	@include adjust-font-size-to(24px);
+}
+.fafPriceItem__price{
+	@include rhythm(2,1,1,2);
+	background-color:$dept1;
+	padding-left:1em;
+	padding-right:1em;
+	display: inline-block;
+}
+.fafPriceItem__price p{
+	@include adjust-font-size-to(48px);
+	font-weight:900;
+	color:black;
+}
+
+.fafSteps{
+	@include rhythm(4,0,0,0);
+}
+.fafStepsItem{
+	display:table;
+}
+.fafStepsItem__left{
+	display:table-cell;
+	vertical-align:top;
+	background:url('../img/faf-steps.png');
+}
+.fafStepsItem__right{
+	display:table-cell;
+	padding-left: 1em;
+}
+.fafStepsItem__heading{
+	color:white;
+	@include adjust-font-size-to(22px);
+}
+.fafStepsItem__caption{
+	color:white;
+	margin-bottom:1.5em;
+}
+.fafStepsItem__left_noback{
+	background:none !important;
 }

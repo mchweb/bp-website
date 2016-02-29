@@ -162,6 +162,12 @@
 		@include span(12); 
 	}
 }
+.dept1ReqItemFaf__wrap{
+	@include span(4);
+	@media (max-width: 680px) {
+		@include span(12); 
+	}
+}
 .dept2ReqItem__wrap{
 	@include span(1 of 5);
 	@media (max-width: 960px) {
@@ -302,10 +308,7 @@
 }
 
 .bEventContacts__itemWrap{
-	@include span(6);
-	@media (max-width: 760px) {
 		@include span(12);
-	}
 }
 
 .bEventIcons__itemWrap{
@@ -313,6 +316,26 @@
 	@media (max-width: 1200px) {
 		@include span(6);
 	}
+	@media (max-width: 600px) {
+		@include span(12);
+	}
+}
+.bEventIconsFaf__itemWrap{
+	@include span(4);
+	@media (max-width: 680px) {
+		@include span(12);
+	}
+}
+
+.bEventFeedback__itemWrap{
+	@include span(6);
+	@media (max-width: 800px) {
+		@include span(12);
+	}
+}
+
+.fafPrice__itemWrap{
+	@include span(6);
 	@media (max-width: 600px) {
 		@include span(12);
 	}

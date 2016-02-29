@@ -246,6 +246,9 @@ function showPopup(x, type, extra){
     case 11:
       _showPopup('contact-event', type, 'Специально для вас', 'Мы не могли не заметить, что вы проявляете большой интерес к нашему мероприятию, поэтому подготовили для вас интересные материалы о том, какие масштабные результаты принес франчайзинг собственникам бизнеса и как вам применить этот опыт. <strong>Оставьте свои контакты и получите информацию в кратчайшие сроки.</strong>');
       break
+    case 12:
+      _showPopup('eventReg', type, 'Заявка на Федеральный акселератор франчайзинга', 'На указанную электронную почту мы вышлем дальнейшие инструкции');
+      break
     default:
       break
   }
@@ -292,7 +295,7 @@ function getStrippedUrl(url) {
 }
 
 $(document).ready(function(){
-    removeUtms();
+    setTimeout(removeUtms, 3 * 1000);
 });
 
 $( document ).ajaxStart(function() {
