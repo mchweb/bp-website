@@ -1,0 +1,599 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fad",
+				"fadeOut"
+			],
+			[
+				"logo",
+				"logo-main.png	w:454 h:202"
+			],
+			[
+				"i",
+				"img/"
+			],
+			[
+				"mc-",
+				"mc-tm0.png	w:600 h:265"
+			],
+			[
+				"str",
+				"strong	Tag"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"main",
+				"main.min.js"
+			],
+			[
+				"dept1",
+				"dept2About1.jpg	w:850 h:491"
+			],
+			[
+				"arr",
+				"arrow-white.svg"
+			],
+			[
+				"ar",
+				"arrow-small.png	w:64 h:88"
+			],
+			[
+				"logo-",
+				"logo-white-red.svg"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "sass/_land.scss",
+			"settings":
+			{
+				"buffer_size": 4197,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "landing.html",
+			"settings":
+			{
+				"buffer_size": 3689,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/js/landing.js",
+			"settings":
+			{
+				"buffer_size": 988,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sass/_pages.scss",
+			"settings":
+			{
+				"buffer_size": 30396,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/_main.scss",
+			"settings":
+			{
+				"buffer_size": 6460,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 150.0,
+		"selected_items":
+		[
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"bp",
+				"Snippet: bp-snippet"
+			],
+			[
+				"Snippet: ",
+				"Snippet: bp-snippet"
+			],
+			[
+				"snippet",
+				"Snippet: <!-- Begin of..."
+			],
+			[
+				"snip",
+				"Snippet: <!-- Begin of..."
+			],
+			[
+				"bps",
+				"Snippet: bp-snippet"
+			],
+			[
+				"snippet:bpe",
+				"Snippet: bpe-snippet"
+			],
+			[
+				"Snippet:bpe",
+				"Snippet: bpe-snippet"
+			],
+			[
+				"Snippet: bpe",
+				"Snippet: bpe-snippet"
+			],
+			[
+				"snippets",
+				"Snippet: background-size"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"scss",
+				"Set Syntax: CSS"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"emmet",
+				"Set Syntax: Emmet"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 192.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/index.html",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_typography.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_pages.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_var.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/screen.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/landing.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_landing.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/landing",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_layout.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_grids.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_common.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/assets/js/main.js",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/mc.html",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/contacts.html",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/landing.html",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/dept1.html",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_decoration.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/config.rb",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/assets/css/mc.css",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/assets/css/screen.css",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/assets/js/main.min.js",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/dept2.html",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/faf.html",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/Gruntfile.js",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/about.html",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_main.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/forms.html",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/prod/assets/css/screen.min.css",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/package.json",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/mc.scss",
+		"/C/Users/writt/Documents/wincorp/Бизнес партнеры/bp-website/assets/js/main.js",
+		"/C/Users/writt/Desktop/bp-website/dept1.html",
+		"/C/Users/writt/Desktop/bp-website/assets/js/main.js",
+		"/C/Users/writt/Desktop/bp-website/404.html",
+		"/C/Users/writt/Desktop/bp-website/index.html",
+		"/C/Users/writt/Desktop/bp-website/dept2.html",
+		"/C/Users/writt/Desktop/bp-website/about.html",
+		"/C/Users/writt/Desktop/bp-website/sass/_common.scss",
+		"/C/Users/writt/Desktop/bp-website/prod/assets/css/screen.min.css",
+		"/C/Users/writt/Desktop/bp-website/contacts.html",
+		"/C/Users/writt/Desktop/bp-website/sass/_pages.scss",
+		"/C/Users/writt/Desktop/bp-website/Gruntfile.js",
+		"/C/Users/writt/Desktop/bp-website/assets/css/screen.css",
+		"/C/Users/writt/Desktop/bp-website/sass/_main.scss",
+		"/C/Users/writt/Desktop/bp-website/config.rb",
+		"/C/Users/writt/Desktop/bp-website/js/main.js",
+		"/C/Users/writt/Desktop/bp-website/sass/_layout.scss",
+		"/C/Users/writt/Desktop/bp-website/sass/lib/_mfp.scss",
+		"/C/Users/writt/Desktop/bp-website/js/vendor/mfp.min.js",
+		"/C/Users/writt/Desktop/bp-website/sass/_var.scss",
+		"/C/Users/writt/Desktop/bp-website/sass/_anim.scss",
+		"/C/Users/writt/Desktop/bp-website/sass/screen.scss",
+		"/C/Users/writt/Desktop/bp-website/sass/_typography.scss",
+		"/C/Users/writt/Desktop/bp-website/sass/_decoration.scss",
+		"/C/Users/writt/Desktop/bp-website/sass/_grids.scss",
+		"/C/Users/writt/Desktop/bp-website/css/screen.css",
+		"/C/Users/writt/Desktop/bp-website/prod/css/screen.min.css",
+		"/C/Users/writt/Desktop/my-boilerplate/sass/_grids.scss",
+		"/C/Users/writt/Desktop/my-boilerplate/Gruntfile.js",
+		"/C/Users/writt/Desktop/my-boilerplate/css/screen.css",
+		"/C/Users/writt/Desktop/my-boilerplate/sass/_layout.scss",
+		"/C/Users/writt/Desktop/my-boilerplate/index.html",
+		"/C/Users/writt/AppData/Roaming/Sublime Text 2/Packages/User/bpe-snippet.sublime-snippet",
+		"/C/Users/writt/AppData/Roaming/Sublime Text 2/Packages/User/bp-snippet.sublime-snippet",
+		"/C/Users/writt/Desktop/my-boilerplate/sass/screen.scss",
+		"/C/Users/writt/Desktop/my-boilerplate/sass/_typography.scss",
+		"/C/Users/writt/Desktop/my-boilerplate/sass/lib/_reset.scss",
+		"/C/Users/writt/Desktop/my-boilerplate/sass/_var.scss",
+		"/C/Users/writt/Desktop/my-boilerplate/sass/_decoration.scss",
+		"/C/Users/writt/Desktop/my-boilerplate/sass/_common.scss",
+		"/C/Users/writt/Desktop/my-boilerplate/sass/_anim.scss",
+		"/C/Users/writt/Desktop/my-boilerplate/sass/_pages.scss",
+		"/C/Users/writt/Desktop/my-boilerplate/sass/_main.scss",
+		"/C/Users/writt/Desktop/my-boilerplate/sass/lib/_normalize.scss",
+		"/C/Users/writt/Desktop/my-boilerplate/package.json",
+		"/C/Users/writt/Desktop/my-boilerplate/config.rb",
+		"/C/Users/writt/Desktop/my-boilerplate/sass/lib/normalize.scss",
+		"/C/Users/writt/Desktop/my-boilerplate/.gitignore",
+		"/C/Users/writt/Desktop/html5-boilerplate/index.html",
+		"/C/Users/writt/Desktop/html5-boilerplate/css/screen.css",
+		"/C/Users/writt/Desktop/html5-boilerplate/Gruntfile.js",
+		"/C/Users/writt/Desktop/html5-boilerplate/scss/_typography.scss",
+		"/C/Users/writt/Desktop/html5-boilerplate/js/main.js",
+		"/C/Users/writt/Desktop/html5-boilerplate/package.json",
+		"/C/Users/writt/Desktop/html5-boilerplate/.gitignore",
+		"/C/Users/writt/Desktop/html5-boilerplate/build/index.html",
+		"/C/Users/writt/Desktop/html5-boilerplate/scss/screen.scss",
+		"/C/Users/writt/Desktop/html5-boilerplate/scss/_pages.scss",
+		"/C/Users/writt/Desktop/html5-boilerplate/scss/_common.scss",
+		"/C/Users/writt/Desktop/html5-boilerplate/scss/_main.scss",
+		"/C/Users/writt/Desktop/html5-boilerplate/scss/_decoration.scss",
+		"/C/Users/writt/Desktop/html5-boilerplate/scss/_anim.scss",
+		"/C/Users/writt/Desktop/html5-boilerplate/scss/normalize.scss",
+		"/C/Users/writt/Desktop/html5-boilerplate/scss/reset.scss",
+		"/C/Users/writt/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/writt/AppData/Roaming/Sublime Text 2/Packages/User/HTML.sublime-settings",
+		"/C/Users/writt/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/C/Users/writt/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/writt/AppData/Roaming/Sublime Text 2/Packages/User/di-snippet.sublime-snippet",
+		"/C/Users/writt/AppData/Roaming/Sublime Text 2/Packages/User/di-snippet.snippet",
+		"/C/Users/writt/Desktop/test/abyrvalg/plus.txt"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"button",
+			">\n",
+			"border-color:black",
+			"bEventIcons",
+			"bEventIcons__item",
+			".bEventIcons__item",
+			"faf",
+			"border",
+			"faf",
+			"min-height:6em",
+			"content:'",
+			"hidden",
+			"Т",
+			"content:",
+			"content",
+			"cformback",
+			"cform",
+			"img/",
+			".deptExp",
+			".deptExp__messageWrap",
+			">\n",
+			"deptExp__message_nopa",
+			"close",
+			"#555",
+			"способность»",
+			"circle",
+			";\n",
+			"\" ",
+			"}\n",
+			"#1e1e1e",
+			"border",
+			"strong",
+			"content",
+			"updown",
+			"					<",
+			"left",
+			"pageHeader",
+			"mainHeader",
+			"scss",
+			"common",
+			"\";",
+			"div",
+			"\n	",
+			">"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"assets/img/",
+			"$dept1-gray",
+			"pageHeading",
+			"mainHeading"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "sass/_land.scss",
+					"settings":
+					{
+						"buffer_size": 4197,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1386,
+								1386
+							]
+						],
+						"settings":
+						{
+							"auto_indent": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1442.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "landing.html",
+					"settings":
+					{
+						"buffer_size": 3689,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1646,
+								1646
+							],
+							[
+								1696,
+								1696
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 418.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/js/landing.js",
+					"settings":
+					{
+						"buffer_size": 988,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								986,
+								986
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "sass/_pages.scss",
+					"settings":
+					{
+						"buffer_size": 30396,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11272,
+								11132
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 11748.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "sass/_main.scss",
+					"settings":
+					{
+						"buffer_size": 6460,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								415,
+								421
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 194.0,
+	"status_bar_visible": true
+}

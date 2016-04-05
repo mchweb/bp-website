@@ -106,6 +106,7 @@
 					<p class="bEventInfo__caption">рабочий день</p>
 					<p>и вы готовы запускать свою франшизу</p>
 				</div>
+				<div style="clear:both"></div>
 			</div>
 			<!-- END of bEventInfo -->
 
@@ -149,10 +150,16 @@
 			</div>
 			<!-- END of bEventIcons -->
 
+			<p class="wrap h1 align-center"><strong>23 апреля в&nbsp;10:00</strong></p>
+			<p class="wrap h3 align-center"><strong>Место проведения:</strong> Открытый путь, центр развития и отдыха</p>
 
-			<!-- BEGIN of bEventPhoto -->
-			<div class="bEventPhoto" style="background-image:url(assets/img/mc-photo.jpg)"></div>
-			<!-- END of bEventPhoto -->
+			<div class="map-event" id="map-event"></div>
+<!--
+			<div class="indented-sm"><script charset="utf-8" src="http://widgets.2gis.com/js/DGWidgetLoader.js"></script><script>
+	new DGWidgetLoader({"width":'100%',"height":210,"borderColor":"transparent","pos":{"lat":,"lon":,"zoom":16},"opt":{"city":"novosibirsk"},"org":[{"id":"141266769700218"}]});</script></div>-->
+
+	<p class="align-center"><a class="contact__button contact__button_big contact__button_invert_dept1" href="#">Зарегистрироваться</a></p>
+
 
 			<!-- BEGIN of bEventSpeakers -->
 			<div class="bEventSpeakers wrap_md">
@@ -195,8 +202,9 @@
 			<!-- END of bEventSpeakers -->
 
 			<!-- BEGIN of bEventPhoto -->
-			<div class="bEventPhoto" style="background-image:url(assets/img/mc-photo1.jpg)"></div>
+			<div class="bEventPhoto" style="background-image:url(assets/img/mc-photo.jpg)"></div>
 			<!-- END of bEventPhoto -->
+
 
 			<!-- BEGIN of bEventFacts -->
 			<div class="bEventFacts">
@@ -473,31 +481,6 @@
 			</div>
 			<!-- END of bAbout -->
 
-			<!-- BEGIN of bEventPartners
-			<div class="bEventPartners wrap">
-				<div class="bEventPartners__heading">
-					<h2 class="pageHeading">Партнеры</h2>
-				</div>
-				<div class="bEventPartner__itemWrap">
-					<div class="bEventPartner__item">
-						&nbsp;
-					</div>
-				</div>
-				<div class="bEventPartner__itemWrap">
-					<div class="bEventPartner__item">
-						<a href="#"><img width=454 height=202 src="assets/img/logo-main.png"></a>
-					</div>
-				</div>
-				<div class="bEventPartner__itemWrap">
-					<div class="bEventPartner__item">
-						<a href="#"><img width=454 height=202 src="assets/img/logo-main.png"></a>
-					</div>
-				</div>
-			</div>
-			END of bEventPartners -->
-
-			<div style="clear:both"></div>
-
 			<!-- BEGIN of bEventPartners -->
 			<div class="bEventPartners wrap">
 				<div class="bEventPartners__heading">
@@ -518,6 +501,20 @@
 						<a href="http://topfranchise.ru" target="_blank"><img width=400 height=200 src="assets/img/mc-org2.png" alt=""></a>
 					</div>
 				</div>
+			</div>
+			<!-- END of bEventPartners -->
+
+			<div style="clear:both"></div>
+
+			<!-- BEGIN of bEventPartners -->
+			<div class="bEventPartners wrap">
+				<h2 class="pageHeading">Партнеры</h2>
+				<div class="bEventPartnerList">
+					<div class="bEventPartner__item">
+						<a href="#"><img width=454 height=202 src="assets/img/mc-p1.png"></a>
+					</div>
+				</div>
+
 			</div>
 			<!-- END of bEventPartners -->
 
@@ -755,5 +752,23 @@
 		<!-- build:js assets/js/main.min.js -->
 		<script src="assets/js/main.js"></script>
 		<!-- /build -->
+
+		<script src="http://maps.api.2gis.ru/2.0/loader.js"></script>
+		 <script>
+            DG.then(function() {
+                var map = DG.map('map-event', {
+                    center: [54.995502626273165, 82.9080891609192],
+                    zoom: 16,
+                    fullscreenControl: false,
+                    zoomControl: false,
+                    scrollWheelZoom: false
+                });
+
+                DG.popup([54.995502626273165, 82.9080891609192])
+                    .setLatLng([54.995502626273165, 82.9080891609192])
+                    .setContent('<p style="min-width:200px;"><strong>Горский&nbsp;микрорайон,&nbsp;9</strong><br>Открытый путь, центр развития и&nbsp;отдыха</p>')
+                    .openOn(map);
+            });
+        </script>
 	</body>
 </html>

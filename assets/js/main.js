@@ -244,7 +244,7 @@ function showPopup(x, type, extra){
       _showPopup('eventReg', type, 'Регистрация на мероприятие', '');
       break
     case 11:
-      _showPopup('contact-event', type, 'Специально для вас', 'Мы не могли не заметить, что вы проявляете большой интерес к нашему мероприятию, поэтому подготовили для вас интересные материалы о том, какие масштабные результаты принес франчайзинг собственникам бизнеса и как вам применить этот опыт. <strong>Оставьте свои контакты и получите информацию в кратчайшие сроки.</strong>');
+      _showPopup('contact-event', type, 'Специально для вас', 'Мы не могли не заметить, что вы проявляете большой интерес к нашему мероприятию, поэтому подготовили для вас интересные материалы:</p><ul class="list-dots indented-1"><li>с каким бизнесом идти во франчайзинг,</li><li>достоинства франчайзинговой модели,</li><li>проблемные точки франчайзинга,</li><li>6 аргумантов за франчайзинговую модель.</li></ul><p><strong>Оставьте свои контакты и получите информацию в кратчайшие сроки.</strong>');
       break
     case 12:
       _showPopup('eventReg', type, 'Заявка на Федеральный акселератор франчайзинга', 'На указанную электронную почту мы вышлем дальнейшие инструкции');
@@ -308,3 +308,16 @@ $( document ).ajaxStop(function() {
     $( this ).removeClass("contactForm__loading");
     });
 });
+
+//extrainfo
+
+function showExtraInfo(x){
+	if (!($("#extraInfo-"+x).hasClass("shown"))){
+		$(".deptIncludeItem__extraInfo").each(function () {
+    		$(this).hide();
+    		$(this).removeClass("shown");
+    	});
+    	$("#extraInfo-"+x).fadeIn();
+    	$("#extraInfo-"+x).addClass("shown");
+    }    
+}

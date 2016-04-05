@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Проверьте свой бизнес</title>
+		<meta name="description" content="Заполните чек-лист из 10 вопросов и узнайте, готов ли ваш бизнес к старту франшизы">
+		
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+		
+		<!--[if lt IE 9]>
+			<script src="js/vendor/html5shiv.min.js"></script>
+		<![endif]-->
+
+		<!-- build:css assets/css/landing.min.css -->
+		<link rel="stylesheet" media="screen" href="assets/css/landing.css">
+		<!-- /build -->
+
+	</head>
+	<body>
+
+		<div class="b-landing-result-wrap" id="js-div-result">
+			<div class="b-landing-result">
+				<div class="b-landing-result-success">
+					<p class="b-landing-result-success__heading">Чек-лист отправлен на вашу электронную почту</p>
+					<p class="b-landing-result-success__caption">Интересуетесь франчайзингом? Приходите на <a href="#">мастер-класс от опытных экспертов</a> или запишитесь в <a href="#">федеральный акселератор франчайзинга</a>.</p>
+					<p><a href="http://ipartner.pro/fr" class="b-landing-form__button b-landing-form__button_inline">Хочу запустить франшизу</a></p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="b-landing-back" id="js-div-back">
+			<div class="wrap">
+				<header class="b-langind-back__header">
+					<h1 class="b-landing-back__heading"><span>Проверьте свой бизнес</span></h1>
+				</header>
+
+				
+				<div class="b-landing-form">
+					<div class="b-landing-minutes">
+						<p class="b-landing-minutes__heading">3</p>
+						<p class="b-landing-minutes__caption">минуты</p>
+					</div>
+					<div class="b-landing-form__header">
+						<h2 class="b-landing-form__heading">Сверьтесь со списком из&nbsp;10&nbsp;вопросов и&nbsp;узнайте, готов&nbsp;ли ваш бизнес к&nbsp;старту франшизы</h2>
+					</div>
+					<form method="POST" action="javascript:void(null);" onsubmit="sendForm()">
+						<div class="b-landing-form__item">
+							<input type="text" class="b-landing-form__input" id="js-input-name" name="js-input-name" required placeholder="Представьтесь" />
+						</div>
+						<div class="b-landing-form__item">
+							<input type="text" class="b-landing-form__input" id="js-input-email" name="js-input-email" required placeholder="Электронная почта" />
+						</div>
+						<div class="b-landing-form__item">
+							<input type="text" class="b-landing-form__input" id="js-input-phone" name="js-input-phone" required placeholder="Телефон" />
+						</div>
+						<div class="b-landing-form__item">
+							<button class="b-landing-form__button">Получить чек-лист</button>
+						</div>
+						<p class="b-landing-form__oferta">Нажимая кнопку, вы соглашаетесь на обработку персональных данных<br>(см. <a href="javascript:void(0);" onclick="window.open('http://ipartner.pro/oferta', 'OFERTA', 'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no')">политику конфиденциальности</a>)</p>
+					</form>
+				</div>
+
+				<div class="b-landing-footer wrap">
+					<p><a class="b-landing-footer__text" target="_blank" href="http://ipartner.pro/fr">Узнать больше о франчайзинге »</a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Font loader -->
+		<script src="http://use.edgefonts.net/source-sans-pro:n3,n4,n6,n9:all.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+		<!-- build:js assets/js/landing.min.js -->
+		<script src="assets/js/landing.js"></script>
+		<!-- /build -->
+	</body>
+</html>

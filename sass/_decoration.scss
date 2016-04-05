@@ -4,6 +4,8 @@
 
 .clr-white {color:white !important}
 .clr-red {color:$red !important}
+.clr-black {color:black !important}
 .align-center{text-align:center}
 .indented{@include rhythm(6,0,0,6);}
 .indented-sm{@include rhythm(4,0,0,4);}
+.indented-1{@include rhythm(1,0,0,1);}
