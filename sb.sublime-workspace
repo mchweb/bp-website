@@ -55,7 +55,7 @@
 			"file": "sass/_land.scss",
 			"settings":
 			{
-				"buffer_size": 4197,
+				"buffer_size": 4393,
 				"line_ending": "Windows"
 			}
 		},
@@ -63,7 +63,7 @@
 			"file": "landing.html",
 			"settings":
 			{
-				"buffer_size": 3689,
+				"buffer_size": 3707,
 				"line_ending": "Unix"
 			}
 		},
@@ -395,7 +395,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -403,24 +403,25 @@
 					"file": "sass/_land.scss",
 					"settings":
 					{
-						"buffer_size": 4197,
+						"buffer_size": 4393,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1386,
-								1386
+								1506,
+								1506
 							]
 						],
 						"settings":
 						{
 							"auto_indent": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1442.0,
+						"translation.y": 1848.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -430,19 +431,15 @@
 					"file": "landing.html",
 					"settings":
 					{
-						"buffer_size": 3689,
+						"buffer_size": 3707,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1646,
-								1646
-							],
-							[
-								1696,
-								1696
+								1861,
+								1861
 							]
 						],
 						"settings":
@@ -451,7 +448,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 418.0,
+						"translation.y": 808.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -468,13 +465,15 @@
 						"selection":
 						[
 							[
-								986,
-								986
+								441,
+								441
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

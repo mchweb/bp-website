@@ -38,6 +38,14 @@ body{
 	filter: blur(4px);
     -webkit-filter: blur(4px);
     -o-filter: blur(8px);
+	position:relative;
+	overflow:hidden;
+	@media (max-width: 600px) {
+		display:none;
+	}
+}
+.b-landing-back_center{
+	text-align:center;
 }
 
 .wrap{
@@ -48,6 +56,16 @@ body{
 	@media (max-width: 600px) {
 		padding-left:1.5em;
 		padding-right:1.5em;
+	}
+}
+.wrap-sm{
+	max-width:960px;
+	margin:0 auto;
+	padding-left:4em;
+	padding-right:4em;
+	@media (max-width: 740px) {
+		padding-left:0.5em;
+		padding-right:0.5em;
 	}
 }
 
@@ -126,6 +144,7 @@ body{
 .b-landing-form__item{
 	@include rhythm(0, 0, 0, 1);
 }
+
 .b-landing-form__input{
 	display:block;
 	width:100%;
@@ -135,6 +154,10 @@ body{
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box; 
     box-sizing: border-box;
+}
+
+.b-landing-form__caption{
+	text-align:center;
 }
 
 .b-landing-form__button{
@@ -178,6 +201,11 @@ body{
 	color:white;
 	background-position:right bottom;
 }
+.b-landing-form__button_disabled:hover{
+	background-position:left top;
+	color:black;
+	cursor:default;
+}
 .b-landing-form__oferta{
 	@include adjust-font-size-to(12px);
 	text-align:center;
@@ -194,6 +222,10 @@ body{
 		text-align:center;
 	}
 }
+.b-landing-footer__logo{
+	max-width:10em;
+	height:auto;
+}
 .b-landing-footer__text{
 	color:#eee;
 	text-decoration:none;
@@ -207,26 +239,89 @@ body{
 .b-landing-result-wrap{
 	position:absolute;
 	width:100%;
-	height:100vh;
-	background:rgba(255,255,255,0.77);
+	min-height:100vh;
+	background:rgba(255,255,255,0.95);
 	align-items:center;
 	justify-content:center;
 	z-index: 10;
 	display:none;
+	@include rhythm(0, 0, 2, 0);
 }
 .b-landing-result-wrap_visible{
 	display:flex;
 	display:-webkit-flex;
 }
 .b-landing-result{
-	max-width:600px;
+	max-width:680px;
 	width:100%;
 	text-align:center;
 	padding-left:1em;
 	padding-right:1em;
+	@include rhythm(2, 0, 0, 0);
+}
+.b-landing-result-success__result{
+	@include adjust-font-size-to(48px);
+	font-weight:900;
 }
 .b-landing-result-success__heading{
 	@include adjust-font-size-to(24px);
 	font-weight:600;
-	@include rhythm(2, 0, 0, 1);
+	@include rhythm(0, 0, 0, 1);
+}
+.b-landing-result-success__heading-1{
+	@include rhythm(0, 2, 0, 0.5);
+	@include adjust-font-size-to(24px);
+	font-weight:600;
+}
+.b-landing-result-success__info{
+	@include rhythm(0, 0, 3, 0);
+	@include adjust-font-size-to(20px);
+	border-bottom:1px dashed #aaa;
+}
+
+.b-landing-result-success__caption strong{
+	font-weight:600;
+}
+.b-landing-result-success__caption a{
+	color:wh
+}
+
+.b-landing-test{
+	max-width:680px;
+	margin:0 auto;
+	background:white;
+	text-align:left;
+	
+	@include rhythm(0, 3, 3, 3);
+}
+.b-landing-test__desc{
+	@include adjust-font-size-to(20px);
+	text-align:center;
+	@include rhythm(0, 0, 0, 3);
+	padding-left:1.5em;
+	padding-right:1.5em;
+}
+.b-test-item{
+	border-top:1px dashed #aaa;
+	@include rhythm(0, 3, 3, 0);
+	padding-left:1.5em;
+	padding-right:1.5em;
+	@media (max-width: 600px) {
+		padding-left:1em;
+		padding-right:1em;
+	}
+	
+}
+.b-test-item_checked{
+	background:#cfc;
+}
+.b-test-item__label{
+	cursor:pointer;
+}
+.b-test-item__label h2{
+	@include adjust-font-size-to(18px);
+	font-weight:600;
+}
+.b-landing-test__button{
+	text-align:center;
 }

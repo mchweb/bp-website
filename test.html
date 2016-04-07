@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Проверьте свой бизнес</title>
+		<meta name="description" content="Заполните чек-лист из 10 вопросов и узнайте, готов ли ваш бизнес к старту франшизы">
+		
+		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+		
+		<!--[if lt IE 9]>
+			<script src="js/vendor/html5shiv.min.js"></script>
+		<![endif]-->
+
+		<!-- build:css assets/css/landing.min.css -->
+		<link rel="stylesheet" media="screen" href="assets/css/landing.css">
+		<!-- /build -->
+
+	</head>
+	<body>
+	<input type="hidden" id="js-input-name" value="2">
+	<input type="hidden" id="js-input-email" value="3">
+	<input type="hidden" id="js-input-phone" value="4">
+
+
+		<div class="b-landing-result-wrap" id="js-div-result">
+			<div class="b-landing-result">
+				<div class="b-landing-result-success">
+					<p class="b-landing-result-success__result"><span id="js-test-result">8</span> из 10</p>
+					<p class="b-landing-result-success__heading" id="js-test-heading">У вас хорошие амбиции!</p>
+					<p class="b-landing-result-success__info" id="js-test-caption">Ваши идеи нужно доработать, у вас есть текущие задачи, которые необходимо решить перед тем, как начать упаковывать свой бизнес во франшизу. Все это позволит вашему бизнесу вырасти в будущем.</p>
+					
+					<p class="b-landing-result-success__heading-1">Интересуетесь франчайзингом?</p>
+					<p class="b-landing-result-success__caption">23 апреля в Новосибирске состоится <a href="#"><strong>мастер-класс «Франчайзинг. Стартовое»</strong></a>. Аудит вашего бизнеса проведут эксперты франшиз «СБАРРО», «Экспедиция», «Экспектро», «Томогавк».<br>Всем участникам — бесплатная месячная публикация франшизы на портале TopFranchise.</p>
+					<p><button id="js-button-result" onclick="sendInfo()" class="b-landing-form__button b-landing-form__button_inline">Отправьте информацию на почту</button></p>
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="b-landing-back b-landing-back_center" id="js-div-back">
+			<div class="wrap-sm">
+				<header class="b-langind-back__header">
+					<h1 class="b-landing-back__heading"><span>Проверьте свой бизнес</span></h1>
+				</header>
+
+				<div class="b-landing-test">
+					<p class="b-landing-test__desc">Мы&nbsp;подготовили 10&nbsp;вопросов, которые стоит задать себе, чтобы определиться, насколько вы&nbsp;и&nbsp;ваш бизнес готовы к&nbsp;старту франшизы и&nbsp;масштабному продвижению.</p>
+
+					<div class="b-test-item">
+						
+						<label class="b-test-item__label" for="test-item-1">
+						<h2><input type="checkbox" class="b-test-item__checkbox" id="test-item-1">&nbsp;Вы можете понятно описать свой бренд</h2>
+						<p>Франчайзинг&nbsp;&mdash; это систематизация накопленного вами опыта и&nbsp;его передача. Вам будет необходимо предоставить франчайзи понятную информацию обо всех шагах по&nbsp;открытию бизнеса.</p>
+						</label>
+					</div>
+					<div class="b-test-item">
+						
+						<label class="b-test-item__label" for="test-item-2">
+						<h2><input type="checkbox" class="b-test-item__checkbox" id="test-item-2">&nbsp;Ваш бизнес можно тиражировать</h2>
+							
+
+						
+						<p>Насколько легко будет копировать ваш бизнес? Чтобы франшиза процветала, она должна уметь справляться с&nbsp;ежедневными проблемами без вас, опираясь на&nbsp;работающие механизмы.</p>
+						</label>
+					</div>
+					<div class="b-test-item">
+						
+						<label class="b-test-item__label" for="test-item-3">
+							<h2><input type="checkbox" class="b-test-item__checkbox" id="test-item-3">&nbsp;Вы готовы довериться экспертам разных областей</h2>
+							
+						<p>Создавая франчайзинговую сеть, вам придется поставить каждого франчайзи на&nbsp;рельсы созданной вами бизнес-системы. И&nbsp;это невозможно сделать в&nbsp;одиночку, только с&nbsp;правильными партнерами. </p>
+						</label>
+					</div>
+					<div class="b-test-item">
+						
+						<label class="b-test-item__label" for="test-item-4">
+							<h2><input type="checkbox" class="b-test-item__checkbox" id="test-item-4">&nbsp;Вы понимаете, что для создания франшизы нужны инвестиции</h2>
+							
+						<p>С&nbsp;упаковкой франшизы и&nbsp;появлением франчайзи расходы на&nbsp;развитие бренда в&nbsp;любом случае увеличатся. Часто предприниматели сосредотачиваются на&nbsp;потенциальном доходе, не&nbsp;рассматривая возможных потерь и&nbsp;затрат.</p>
+						</label>
+					</div>
+					<div class="b-test-item">
+						
+						<label class="b-test-item__label" for="test-item-5">
+							<h2><input type="checkbox" class="b-test-item__checkbox" id="test-item-5">&nbsp;Вы реалистично оцениваете масштабирование своего бизнеса</h2>
+							
+						<p>Чтобы развивать франчайзинговую сеть, вы&nbsp;должны быть провидцем, который верит в&nbsp;свой продукт, но&nbsp;кроме того умеет адекватно смотреть на&nbsp;вещи и&nbsp;анализировать, насколько возможен замысел в&nbsp;существующих реалиях.</p>
+						</label>
+					</div>
+					<div class="b-test-item">
+						
+						<label class="b-test-item__label" for="test-item-6">
+							<h2><input type="checkbox" class="b-test-item__checkbox" id="test-item-6">&nbsp;Вы знаете, чем ваша компания отличается от&nbsp;конкурентов на&nbsp;рынке</h2>
+							
+						<p>Это означает, что у&nbsp;вашего продукта нестандартный формат, он&nbsp;пользуется большим спросом, или вы&nbsp;обладаете уникальными ресурсами и&nbsp;производите продукт-бренд.</p>
+						</label>
+					</div>
+					<div class="b-test-item">
+						
+						<label class="b-test-item__label" for="test-item-7">
+							<h2><input type="checkbox" class="b-test-item__checkbox" id="test-item-7">&nbsp;В компании достаточно ресурсов для старта франчайзинга</h2>
+							
+						<p>Вам потребуется отдельный человек, отвечающий за&nbsp;упаковку и&nbsp;продвижение франшизы внутри компании или помощь извне.</p>
+						</label>
+					</div>
+					<div class="b-test-item">
+						
+						<label class="b-test-item__label" for="test-item-8">
+							<h2><input type="checkbox" class="b-test-item__checkbox" id="test-item-8">&nbsp;Вы готовы организовать сопровождение ваших партнеров</h2>
+							
+						<p>Будьте готовы к&nbsp;тому, что вам нужно будет оказывать всестороннюю поддержку партнерам. Именно от&nbsp;уровня вашего сопровождения зависит, в&nbsp;какие сроки окупится ваше вложение.</p>
+						</label>
+					</div>
+					<div class="b-test-item">
+						
+						<label class="b-test-item__label" for="test-item-9">
+							<h2><input type="checkbox" class="b-test-item__checkbox" id="test-item-9">&nbsp;Ваш бизнес прибылен и&nbsp;компания показывает ежегодный прирост</h2>
+							
+						<p>Никто не&nbsp;будет покупать бизнес, который теряет свои позиции на&nbsp;рынке, или не&nbsp;приносит прибыли самому собственнику.</p>
+						</label>
+					</div>
+					<div class="b-test-item">
+						
+						<label class="b-test-item__label" for="test-item-10">
+							<h2><input type="checkbox" class="b-test-item__checkbox" id="test-item-10">&nbsp;У вас несколько филиалов в&nbsp;одном городе (других городах)</h2>
+							
+						<p>Вы&nbsp;уже использовали свой опыт для успешного расширения собственного бизнеса, и&nbsp;готовы передавать накопленный опыт и&nbsp;извлеченные уроки своим партнерам.</p>
+
+						</label>
+					</div>
+					<p class="b-landing-test__button"><button class="b-landing-form__button b-landing-form__button_inline" onclick="checkTest()">Проверить</button></p>
+				</div>
+
+				<div class="b-landing-footer wrap">
+					<a href="http://ipartner.pro"><img class="b-landing-footer__logo" src="assets/img/logo-white-red.svg" alt=""></a>
+					<p><a class="b-landing-footer__text" target="_blank" href="http://ipartner.pro/fr">Узнать больше о франчайзинге »</a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Font loader -->
+		<script src="http://use.edgefonts.net/source-sans-pro:n3,n4,n6,n9:all.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+		<!-- build:js assets/js/landing.min.js -->
+		<script src="assets/js/landing.js"></script>
+		<!-- /build -->
+	</body>
+</html>
