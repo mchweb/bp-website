@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         cssmin: {
             dist: {
                 files: {
-                    'prod/assets/css/landing.min.css': ['assets/css/landing.css']
+                    'prod/assets/css/screen.min.css': ['assets/css/screen.css']
                 }
             }
         },

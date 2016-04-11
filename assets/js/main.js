@@ -17,6 +17,7 @@ $(document).ready(function(){
 		$("nav#navMain").removeClass("navMain_open");
 	});
 
+
   var x = 590;
   if (x < document.documentElement.clientHeight){x = document.documentElement.clientHeight}
 	$("#firstScreen").css("max-height",x);
@@ -294,8 +295,15 @@ function getStrippedUrl(url) {
     return url
 }
 
+function hideMcPopup(){
+	$("#mc-check-popup").fadeOut();
+}
+
 $(document).ready(function(){
     setTimeout(removeUtms, 3 * 1000);
+    setTimeout(function(){
+    	$("#mc-check-popup").animate({ right: 0 })
+    }, 3 * 1000);
 });
 
 $( document ).ajaxStart(function() {

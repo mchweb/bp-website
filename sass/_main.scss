@@ -48,7 +48,7 @@ header {
 .header__logo img {
 	width:auto;
 	height:54px;
-	@media (max-width: 749px) {
+	@media (max-width: 799px) {
 		height:36px;
 	}
 }
@@ -56,14 +56,14 @@ header {
 	float:right;
 	@include rhythm(5, 0, 0, 0);
 	
-	@media (max-width: 749px) {
+	@media (max-width: 799px) {
 		position: fixed;
 		z-index:101;
 		height:100%;
 		background: black;
 		@include rhythm(0, 1.5, 0, 0);
 		top:0;
-		right:-200px;
+		right:-300px;
 	}
 	
 }
@@ -79,9 +79,9 @@ header {
 	@include trailing-border(2px, 0.5);
 	@include rhythm(0, 0, 5, 0);
 	border-color:transparent;
-	@media (max-width: 749px) {
+	@media (max-width: 799px) {
 		display:list-item;
-		padding-left:1.5em;
+		padding-left:1em;
 		padding-right:3em;
 		border-right-width: 6px;
 		border-right-style:solid;
@@ -91,7 +91,13 @@ header {
 	}
 }
 .navMainItem_dept1:hover, .navMainItem_dept1.navMainItem_current{
-	border-color:$dept1 !important;
+	border-color:transparent !important;
+}
+
+.navMainItem_dept1{
+	@media (max-width: 799px) {
+		padding-right:0 !important;
+	}
 }
 .navMainItem_dept2:hover, .navMainItem_dept2.navMainItem_current{
 	border-color:$dept2 !important;
@@ -108,7 +114,7 @@ header {
 	color:white;
 	@include rhythm(0, 3, 0, 0);
 	cursor:pointer;
-	@media (min-width: 750px) {
+	@media (min-width: 800px) {
 		display:none;
 	}
 }
@@ -129,13 +135,72 @@ header {
 .navMain__back_open{
 	display:block !important;
 }
-.navMain li:hover a{
+.navMain li:hover{
 	color:rgba(255,255,255,1);
 }
-.navMain li a{
+.navMain li span{
 	color:rgba(255,255,255,.85);
 	@include adjust-font-size-to(20px);
 	font-weight:300;
+}
+.navMain li:hover .navMainSecondary{
+	display:block;
+}
+.navMainSecondary{
+	position:absolute;
+	display:none;
+	@include rhythm(5, 0, 0, 0);
+	
+	z-index:100;
+	max-width:600px;
+	margin-right:1.5em;
+	background:rgba(0,0,0,0.85);
+	
+	border-top:2px solid $dept1;
+	@media (max-width: 799px) {
+		position:relative;
+		display:block;
+		margin:0;
+		max-width:235px;
+		border:none;
+	}
+	
+}
+.navMainSecondary_dept1 li {
+	display:block;
+	padding-left:1em;
+	padding-right:1em;
+	@include rhythm(0, 1.5, 1.5, 0);
+	border:none;
+	color:white;
+	@media (max-width: 799px) {
+		@include rhythm(0.25, 1.5, 1.5, 0.25);
+		padding-left:0.5em;
+		padding-right:0.5em;
+	}
+}
+.navMainSecondary_dept1 li:hover{
+	border:none;
+	background:$dept1;
+	color:black;
+}
+.navMainSecondary_dept1 li:hover .navMainSecondary__heading{
+	color:black;
+}
+.navMainSecondary__heading{
+	@include adjust-font-size-to(20px);
+	font-weight:600;
+	color:white;
+	@media (max-width: 799px) {
+		font-weight:400;
+		@include adjust-font-size-to(16px);
+	}
+}
+.navMainSecondary__caption{
+	@include adjust-font-size-to(14px);
+	@media (max-width: 799px) {
+		display:none;
+	}
 }
 // Contacts
 .header__contacts {
@@ -146,7 +211,7 @@ header {
 	padding-left:1.5em;
 	padding-right:1em;
 	margin-left:2em;
-	@media (min-width: 1020px) {
+	@media (min-width: 1080px) {
 		display:block;
 	}
 }
@@ -221,6 +286,9 @@ header {
     100% { transform: scale(1, 1);}
 
 }
+.firstScreen_blog{
+	max-height:26.25em;
+}
 
 .mainHeading {
 	@include adjust-font-size-to(48px);
@@ -231,6 +299,9 @@ header {
 	@media (max-width: 400px) {
 		@include adjust-font-size-to(30px);
 	}
+}
+.mainHeading__topIndent{
+	margin-top:0.75em;
 }
 .mainHeadingCaption{
 	@include adjust-font-size-to(20px);

@@ -518,6 +518,13 @@ p.contactInfo__link {
     background-position:left top;
     border-color:black;
 }
+.contact__button_invert{
+	background: linear-gradient(to top, black 50%, $red 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+    border-color:black;
+    color:white;
+}
 .contact__button_big{
 	@include adjust-font-size-to(20px);
 }
@@ -1654,4 +1661,207 @@ span.discount span{
 	width: 100%; 
 	height: 25em;
 	@include rhythm(4,0,0,4);
+}
+
+.mc-check-popup{
+	position: fixed;
+    bottom: 0;
+    right: -800px;
+    margin: 1em;
+    padding: 0.5em 1em;
+    background: rgb(252,226,124);
+    color:black;
+    box-shadow:0px 0px 4px rgba(0,0,0,0.75);
+}
+.mc-check-popup:hover{
+	background: $dept1;
+}
+.blogTags{
+	@include rhythm(2,0,0,0);
+}
+.blogTags li{
+	display:inline-block;
+	@include rhythm(0,0.5,0.5,0.5);
+	padding-left:0.5em;
+	padding-right:0.5em;
+	background:$red;
+}
+.blogTags__item{
+	color:white;
+	margin-bottom:0.375em;
+}
+.blogTags__item:hover{
+	color:white
+}
+
+.blogTags li:hover{
+	background:$lightred;
+}
+
+.blogPost{
+	@include rhythm(2,0,0,2);
+}
+.blogPost__image{
+	width:100%;
+	height:auto;
+}
+.blogPostInfo{
+	background:$red;
+	color:white;
+	@include rhythm(-2,2,2,0);
+}
+.blogPostInfo_preview{
+	padding-left:1em;
+	padding-right:1em;
+}
+.blogPostInfo__title{
+	color:white;
+	font-weight:900;
+	@media (max-width: 539px) {
+		@include adjust-font-size-to(22px);
+	}
+}
+.blogPostInfo__desc{
+	color:white;
+}
+.blogPostInfo__tags li{
+	display:inline;
+	color:white;
+}
+.blogPostInfo__tags li a{
+	color:white;
+	border-bottom:1px solid white;
+}
+.blogPostInfo__tags li a:hover{
+	border:none;
+}
+.blogPostInfo_dept1{
+	background:$dept1;
+}
+.blogPostInfo_dept2{
+	background:$dept2;
+}
+.blogPostInfo_dept1 .blogPostInfo__title, 
+.blogPostInfo_dept1 .blogPostInfo__desc,
+.blogPostInfo_dept1 .blogPostInfo__tags li,
+.blogPostInfo_dept1 .blogPostInfo__tags li a{
+	color:black;
+	
+}
+.blogPostInfo_dept1 .blogPostInfo__tags li a{
+	border-color:black;
+}
+.blogPostInfo__date{
+	color:white !important;
+	@include rhythm(-6,2,2,0);
+	text-align:right;
+	opacity:0.75;
+	pointer-events: none;
+}
+.blogPostInfo__date span{
+	@include adjust-font-size-to(26px);
+	font-weight:900;
+}
+.blogPostInfo__desc_big{
+	@include adjust-font-size-to(20px);
+	@include rhythm(1,0,0,1);
+}
+
+.blogPostContent {
+	@include rhythm(0,0,2,0);
+}
+
+.blogPostContent p,
+.blogPostContent h2,
+.blogPostContent h3,
+.blogPostContent h4,
+.blogPostContent ul,
+.blogPostContent ol,
+.blogPostContent blockquote{
+	max-width:$sm;
+}
+.blogPostContent ul{
+	list-style-type: disc;
+    margin-left: 2em;
+    @include rhythm(0,0,0,2);
+}
+.blogPostContent ol{
+	list-style-type: decimal;
+    margin-left: 2em;
+    @include rhythm(0,0,0,2);
+}
+.blogPostContent a{
+	border-bottom:1px solid $red;
+}
+.blogPostContent a:hover{
+	border:none;
+}
+.blogPostContent p{
+	@include rhythm(0,0,0,2);
+}
+.blogPostContent img{
+	width:100%;
+	max-width:$sm;
+	height:auto;
+	@include rhythm(0,0,0,2);
+}
+.blogPostContent__side{
+	width:100%;
+	max-width:$md;
+	text-align:right;
+}
+
+.b-1{
+	border-top: 6px dashed $red;
+	padding-left:1em;
+	padding-right:1em;
+    @include rhythm(4,0,0,5);
+    text-align:center;
+    background:$gray;
+}
+.b-1 p{
+	@include adjust-font-size-to(24px,6);
+	@include rhythm(0,2,2,0);
+}
+
+
+.b-2{
+	padding-left:1em;
+	padding-right:1em;
+    @include rhythm(4,0,0,4);
+}
+.b-2 p{
+	@include adjust-font-size-to(24px,6);
+	@include rhythm(0,2,2,0);
+}
+
+blockquote.b-3::before{
+	content:"";
+	position: absolute;
+	background-image:url('../img/home-arrow-dept0.png');
+	background-size:contain;
+	width:3.75em;
+	height:3.75em;
+	@media (max-width: 539px) {
+		width:2.5em;
+		height:2.5em;
+	}
+}
+.b-3{
+	
+	padding-right:1em;
+    @include rhythm(4,0,0,4);
+}
+.b-3 p{
+	padding-left:4.75em;
+	@media (max-width: 539px) {
+		padding-left:3.5em;
+	}
+	@include adjust-font-size-to(18px);
+	font-weight:600;
+	@include rhythm(0,2,2,0);
+}
+.blogPostMore{
+	border-top:8px dashed $dark;
+	@include rhythm(0,4,0,0);
 }

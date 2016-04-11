@@ -52,34 +52,29 @@
 	"buffers":
 	[
 		{
-			"file": "sass/_land.scss",
+			"file": "sass/_pages.scss",
 			"settings":
 			{
-				"buffer_size": 4393,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "landing.html",
-			"settings":
-			{
-				"buffer_size": 3707,
+				"buffer_size": 34036,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "assets/js/landing.js",
+			"contents": "<!doctype html>\n<html lang=\"ru\">\n	<head>\n		<meta charset=\"utf-8\">\n		<meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n		<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n		\n		<title>Бизнес партнеры: акселерация и масштабирование бизнеса</title>\n		<meta name=\"description\" content=\"Проводим акселерационные программы, запускаем франчайзинговые сети, развиваем предпринимательские сообщества\">\n		\n		<link rel=\"icon\" href=\"favicon.ico\" type=\"image/x-icon\"/>\n		<link rel=\"apple-touch-icon\" href=\"assets/img/apple-touch-icon.png\">\n		\n		<!--[if lt IE 9]>\n			<script src=\"js/vendor/html5shiv.min.js\"></script>\n		<![endif]-->\n\n		<!-- build:css assets/css/screen.min.css -->\n		<link rel=\"stylesheet\" media=\"screen\" href=\"assets/css/screen.css\">\n		<!-- /build -->\n		<link rel=\"stylesheet\" media=\"screen\" href=\"assets/css/mc.css\">\n\n		<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css\">\n	</head>\n	<body>\n		<!--[if lt IE 9]>\n			<p style=\"text-align:center;font-size:20px;background:white;width:100%;z-index:10000;padding:20px 0px\"><strong>Кажется, ваш браузер безнадежно устарел.</strong> Скорее всего, сайт будет отображаться и работать некорректно.<br/>Пожалуйста, <a href=\"http://browsehappy.com/\" target=\"_blank\">установите с одного из официальных сайтов</a> новую версию своего браузера.<br/></p>\n		<![endif]-->\n\n		<div id=\"navMain__back\"></div>\n\n		<header class=\"header\">\n			<div class=\"wrap\">\n				<div class=\"header__logo\">\n					<a href=\"\"><img src=\"assets/img/logo-white.svg\" width=\"114\" height=\"54\"></a>\n				</div>	\n				<div class=\"header__contacts\">\n					<div class=\"contacts__info\">\n						<p class=\"contacts__phone\"><a href=\"tel:+73822933976\">(3822)&nbsp;933-976</a></p>\n						<p><a href=\"mailto:info@ipartner.pro\">info@ipartner.pro</a></p>\n					</div>\n					<div class=\"contacts__image\">\n						<img src=\"assets/img/arrow-white.svg\" width=\"100\" height=\"100\" />\n					</div>\n				</div>\n				<nav class=\"header__navMain\" id=\"navMain\">\n					<ul class=\"navMain\">\n						<li class=\"navMainItem_dept1\"><a href=\"#\">Франчайзинг</a></li>\n						<li class=\"navMainItem_dept2\"><a href=\"#\">Акселерация</a></li>\n						<li><a href=\"#\">О компании</a></li>\n						<li><a href=\"#\">Контакты</a></li>\n					</ul>\n				</nav>\n				<div id=\"navTrigger\">\n					<i class=\"fa fa-2x fa-bars\"></i>\n				</div>\n			</div>\n		</header>\n\n		<!-- BEGIN of content -->\n		<div class=\"content\">\n\n			<!-- BEGIN of firstScreen -->\n			<div class=\"firstScreen firstScreen_blog\"  style=\"background-image:url(assets/img/bg-blog.jpg);background-position:center center;\">\n				<div class=\"firstScreen__text wrap\">\n				</div>\n			</div>\n			<!-- END of firstScreen -->\n\n			<div class=\"blogPostInfo blogPostInfo_dept1\">\n				<div class=\"wrap_md\">\n				<h1 class=\"blogPostInfo__title\">Обзор самых вредных людей</h1>\n				<p class=\"blogPostInfo__desc blogPostInfo__desc_big\">Заметка о том, как убивать тех, кто реально этого достоен</p>\n				<ul class=\"blogPostInfo__tags\">\n					<li><strong>Теги: </strong></li>\n					<li><span><a href=\"\">франчайзинг</a>,</span></li>\n					<li><span><a href=\"\">полезный контент</a>,</span></li>\n					<li><span><a href=\"\">предпринимательство в Томске</a></span></li>\n				</ul>\n			</div>\n				\n			</div>\n			<div class=\"blogPostInfo__date wrap_md\"><span>30.05.2016</span></div>\n\n			<!-- BEGIN of blogPostContent -->\n			<div class=\"blogPostContent wrap_md\">\n				<h3>Привет, жирята</h3>\n				<p>Предсознательное важно отчуждает онтогенез речи, к тому же этот вопрос касается чего-то слишком общего. Генезис вызывает девиантный автоматизм, тем не менее как только ортодоксальность окончательно возобладает, даже эта маленькая лазейка будет закрыта. Структурный голод столь же важен для жизни, <strong>как и действие пространственно</strong> вызывает генезис, следовательно тенденция к конформизму связана с менее низким интеллектом. Самонаблюдение, несмотря на <a href=\"#\">внешние воздействия</a>, отражает филогенез. Реакция, в представлении Морено, доступна. Предсознательное спонтанно начинает эскапизм.</p>\n\n\n				<img src=\"assets/img/bg-dept2.jpg\" alt=\"\">\n\n				<p>Эгоцентризм имитирует закон, что отмечают такие крупнейшие ученые как Фрейд, Адлер, Юнг, Эриксон, Фромм. Предсознательное взаимно. Действительно, проекция регрессийно отталкивает гендер. Толпа, в первом приближении, иллюстрирует зеркальный громкостнoй прогрессийный период, следовательно основной закон психофизики: ощущение изменяется пропорционально логарифму раздражителя . Все это побудило нас обратить внимание на то, что серпантинная волна вызывает кризис жанра, что отмечают такие крупнейшие ученые как Фрейд, Адлер, Юнг, Эриксон, Фромм. Трехчастная фактурная форма, конечно, дает канал.</p>\n				\n\n				<ol>\n					<li>Жил</li>\n					<li>На свете (белом)</li>\n					<li>Старый пес</li>\n					<li>Колбасу мне не принес</li>\n					<li>В стране унылых грез</li>\n				</ol>\n			<h3>Привет, жирята</h3>\n			<p>Cледовательно тенденция к конформизму связана с менее низким интеллектом. Самонаблюдение, несмотря на <a href=\"#\">внешние воздействия</a>, отражает филогенез. Реакция, в представлении Морено, доступна. Предсознательное спонтанно начинает эскапизм. Даже эта маленькая лазейка будет закрыта. Структурный голод столь же важен для жизни, <strong>как и действие пространственно</strong> вызывает генезис, следовательно тенденция к конформизму.</p>\n\n			<blockquote class=\"b-1\">\n				<p>Шел бы ты отсюда, петушок. А то получишь по конфете. И еще одна строчка, чтобы проверить</p>\n			</blockquote>\n\n			<blockquote class=\"b-2\">\n				<p>Cледовательно тенденция к конформизму связана с менее низким интеллектом. Самонаблюдение, несмотря на <a href=\"#\">внешние воздействия</a>, отражает филогенез. Реакция, в представлении Морено, доступна. Предсознательное спонтанно начинает эскапизм. Даже эта маленькая лазейка будет закрыта.</p>\n			</blockquote>\n\n			<blockquote class=\"b-3\">\n				<p>Cледовательно тенденция к конформизму связана с менее низким интеллектом. Самонаблюдение, несмотря на <a href=\"#\">внешние воздействия</a>, отражает филогенез. Реакция, в представлении Морено, доступна. Предсознательное спонтанно начинает эскапизм. Даже эта маленькая лазейка будет закрыта.</p>\n			</blockquote>\n\n\n			</div>\n			<!-- END of blogPostContent -->\n\n			<!-- BEGIN of blogPostMore -->\n			<div class=\"blogPostMore\">\n				<h2 class=\"wrap_md\">Прочитайте похожие материалы или <a href=\"#\">посмотрите все записи</a></h2>\n				<a href=\"#\"><div class=\"blogPost wrap_md\">\n				<img class=\"blogPost__image\" src=\"assets/img/bg-blog.jpg\" alt=\"\">\n				<div class=\"blogPostInfo blogPostInfo_preview\">\n					<h2 class=\"blogPostInfo__title\">Обзор самых вредных людей</h2>\n					<p class=\"blogPostInfo__desc\">Заметка о том, как убивать тех, кто реально этого достоен</p>\n					<ul class=\"blogPostInfo__tags\">\n						<li><strong>Теги: </strong></li>\n						<li><span><a href=\"\">франчайзинг</a></span></li>\n						<li><span><a href=\"\">полезный контент</a></span></li>\n						<li><span><a href=\"\">предпринимательство в Томске</a></span></li>\n					</ul>\n				</div>\n				<div class=\"blogPostInfo__date\"><span>30.05.2016</span></div>\n				\n			</div>\n			</a>\n			</div>\n			<!-- END of blogPostMore -->\n\n\n			<div style=\"clear:both;padding-bottom:4em\"></div>\n\n\n\n\n\n		</div>\n		<!-- END of content -->\n\n		\n		<div class=\"footer__decorator\"></div>\n		<footer class=\"footer\">\n			<ul class=\"footer__socLinks\">\n				<li><a href=\"https://www.facebook.com/ipartner.pro\"><img src=\"assets/img/fb.svg\" class=\"footer__socLinkImage\" alt=\"Мы в Facebook\"></a></li>\n				<li><a href=\"https://vk.com/biznes.partnery\"><img src=\"assets/img/vk.svg\" class=\"footer__socLinkImage\" alt=\"Мы ВКонтакте\"></a></li>\n			</ul>\n			<ul class=\"footer__upperNav\">\n				<li><a class=\"upperNav_dept1\" href=\"#\">франчайзинг</a></li>\n				<li><a class=\"upperNav_dept2\" href=\"#\">акселерация</a></li>\n				<li><a class=\"upperNav_dept3\" href=\"#\">сообщество</a></li>\n			</ul>\n			<ul class=\"footer__lowerNav\">\n				<li><a href=\"#\">Главная</a></li>\n				<li class=\"lowerNav__separator\">|</li>\n				<li><a href=\"#\">О компании</a></li>\n				<li class=\"lowerNav__separator\">|</li>\n				<li><a href=\"#\">Контакты</a></li>\n			</ul>\n			<div class=\"footer__adress\">\n				\n			</div>\n			<ul class=\"footer__contacts\">\n				<li class=\"footer__contacts-left\">\n					Красноармейская 96,<br>\n					офис 303\n				</li>\n				<li class=\"footer__contacts-right\">\n					<a href=\"tel:+73822933976\">(3822)&nbsp;933-976</a><br>\n					<a href=\"mailto:info@ipartner.pro\">info@ipartner.pro</a>\n				</li>\n			</ul>\n		</footer>\n\n		<div id=\"updown\"><div id=\"updown-container\"></div></div>\n\n\n\n		<!-- Font loader -->\n		<script src=\"http://use.edgefonts.net/source-sans-pro:n3,n4,n6,n9:all.js\"></script>\n		<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js\"></script>\n		<script>window.jQuery || document.write('<script src=\"assets/js/vendor/jquery.min.js\"><\\/script>')</script>\n		<!-- build:js assets/js/main.min.js -->\n		<script src=\"assets/js/main.js\"></script>\n		<!-- /build -->\n\n		<script src=\"http://maps.api.2gis.ru/2.0/loader.js\"></script>\n		 <script>\n            DG.then(function() {\n                var map = DG.map('map-event', {\n                    center: [54.995502626273165, 82.9080891609192],\n                    zoom: 16,\n                    fullscreenControl: false,\n                    zoomControl: false,\n                    scrollWheelZoom: false\n                });\n\n                DG.popup([54.995502626273165, 82.9080891609192])\n                    .setLatLng([54.995502626273165, 82.9080891609192])\n                    .setContent('<p style=\"min-width:200px;\"><strong>Горский&nbsp;микрорайон,&nbsp;9</strong><br>Открытый путь, центр развития и&nbsp;отдыха</p>')\n                    .openOn(map);\n            });\n        </script>\n	</body>\n</html>\n",
+			"file": "blog-post.html",
+			"file_size": 11894,
+			"file_write_time": 131048471805160788,
 			"settings":
 			{
-				"buffer_size": 988,
-				"line_ending": "Windows"
+				"buffer_size": 9744,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "sass/_pages.scss",
+			"file": "blog.html",
 			"settings":
 			{
-				"buffer_size": 30396,
+				"buffer_size": 8302,
 				"line_ending": "Unix"
 			}
 		},
@@ -87,8 +82,64 @@
 			"file": "sass/_main.scss",
 			"settings":
 			{
-				"buffer_size": 6460,
+				"buffer_size": 7744,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/_var.scss",
+			"settings":
+			{
+				"buffer_size": 263,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/_decoration.scss",
+			"settings":
+			{
+				"buffer_size": 323,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/_grids.scss",
+			"settings":
+			{
+				"buffer_size": 276,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/_layout.scss",
+			"settings":
+			{
+				"buffer_size": 5287,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mc.html",
+			"settings":
+			{
+				"buffer_size": 35751,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 3399,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "$(document).ready(function() {\n  var offset = 0;\n\n  $('#more').click(function() {\n    var data = $(this).data();\n    $.post('[[~37]]', data, function(data) {\n    if (data == \"\"){\n    $('#more').css(\"display\", \"none\");\n  }else{\n      offset += 1;\n      $('#more').data(\"offset\", offset);\n      $('#result').append(data);\n      }\n    })\n  })\n})",
+			"settings":
+			{
+				"buffer_size": 342,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -212,21 +263,33 @@
 	},
 	"file_history":
 	[
-		"/C/Users/writt/Documents/wincorp/bp/bp-website/index.html",
-		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_typography.scss",
-		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_pages.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/blog.html",
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_var.scss",
-		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/screen.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/mc.html",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_grids.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/assets/js/main.js",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_anim.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/index.html",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_main.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_land.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/landing.html",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/test.html",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/Gruntfile.js",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/prod/assets/css/landing.min.css",
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/landing.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/prod/test.html",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/prod/landing.html",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/assets/js/landing.js",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/prod/assets/js/landing.min.js",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/package.json",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_pages.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_typography.scss",
+		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/screen.scss",
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_landing.scss",
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/landing",
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_layout.scss",
-		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_grids.scss",
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_common.scss",
-		"/C/Users/writt/Documents/wincorp/bp/bp-website/assets/js/main.js",
-		"/C/Users/writt/Documents/wincorp/bp/bp-website/mc.html",
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/contacts.html",
-		"/C/Users/writt/Documents/wincorp/bp/bp-website/landing.html",
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/dept1.html",
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_decoration.scss",
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/config.rb",
@@ -235,12 +298,9 @@
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/assets/js/main.min.js",
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/dept2.html",
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/faf.html",
-		"/C/Users/writt/Documents/wincorp/bp/bp-website/Gruntfile.js",
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/about.html",
-		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/_main.scss",
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/forms.html",
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/prod/assets/css/screen.min.css",
-		"/C/Users/writt/Documents/wincorp/bp/bp-website/package.json",
 		"/C/Users/writt/Documents/wincorp/bp/bp-website/sass/mc.scss",
 		"/C/Users/writt/Documents/wincorp/Бизнес партнеры/bp-website/assets/js/main.js",
 		"/C/Users/writt/Desktop/bp-website/dept1.html",
@@ -330,6 +390,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" contact__button_invert",
+			"test.html",
+			"button",
+			"Привет",
 			"button",
 			">\n",
 			"border-color:black",
@@ -395,51 +459,50 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 10,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "sass/_land.scss",
+					"file": "sass/_pages.scss",
 					"settings":
 					{
-						"buffer_size": 4393,
+						"buffer_size": 34036,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1506,
-								1506
+								31382,
+								31382
 							]
 						],
 						"settings":
 						{
 							"auto_indent": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1848.0,
+						"translation.y": 33801.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "landing.html",
+					"file": "blog-post.html",
 					"settings":
 					{
-						"buffer_size": 3707,
+						"buffer_size": 9744,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1861,
-								1861
+								6272,
+								6398
 							]
 						],
 						"settings":
@@ -448,30 +511,136 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 808.0,
+						"translation.y": 2866.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "assets/js/landing.js",
+					"file": "blog.html",
 					"settings":
 					{
-						"buffer_size": 988,
+						"buffer_size": 8302,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								441,
-								441
+								5609,
+								5675
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2100.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "sass/_main.scss",
+					"settings":
+					{
+						"buffer_size": 7744,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5013,
+								4986
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5533.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "sass/_var.scss",
+					"settings":
+					{
+						"buffer_size": 263,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								235,
+								235
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "sass/_decoration.scss",
+					"settings":
+					{
+						"buffer_size": 323,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								207,
+								207
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "sass/_grids.scss",
+					"settings":
+					{
+						"buffer_size": 276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -482,51 +651,108 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "sass/_pages.scss",
+					"buffer": 7,
+					"file": "sass/_layout.scss",
 					"settings":
 					{
-						"buffer_size": 30396,
+						"buffer_size": 5287,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11272,
-								11132
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 11748.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "sass/_main.scss",
-					"settings":
-					{
-						"buffer_size": 6460,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								415,
-								421
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "mc.html",
+					"settings":
+					{
+						"buffer_size": 35751,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6834,
+								6699
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3300.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Gruntfile.js",
+					"settings":
+					{
+						"buffer_size": 3399,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2594,
+								2599
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1200.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"settings":
+					{
+						"buffer_size": 342,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								245,
+								245
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -593,6 +819,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 194.0,
+	"side_bar_width": 387.0,
 	"status_bar_visible": true
 }
