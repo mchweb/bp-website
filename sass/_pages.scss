@@ -978,6 +978,29 @@ p.contactInfo__link {
 	display:none;
 }
 
+.acWho{
+	@include rhythm(0,3,3,4);
+}
+.acWho__heading{
+	@include rhythm(0,0,3,0);
+}
+.acWhoItem {
+	text-align:center;
+}
+.acWhoItemWrap{
+	@include rhythm(0,0,0,4);
+}
+.acWhoItem__image{
+	max-width:5em;
+}
+.acWhoItem__heading{
+	@include adjust-font-size-to(20px);
+	font-weight:600;
+}
+.acWhoItem{
+	max-width:16em;
+	margin:0 auto;
+}
 .deptExp{
 	@include rhythm(0,0,0,4);
 }

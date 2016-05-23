@@ -308,7 +308,10 @@
 }
 
 .bEventContacts__itemWrap{
+	@include span(6);
+	@media (max-width: 760px) {
 		@include span(12);
+	}
 }
 
 .bEventIcons__itemWrap{
@@ -338,6 +341,16 @@
 	@include span(6);
 	@media (max-width: 600px) {
 		@include span(12);
+	}
+}
+
+.acWhoItemWrap{
+	@include span(3);
+	@media (max-width: 940px) {
+		@include span(6);
+	}
+	@media (max-width: 540px) {
+		@include span(12); 
 	}
 }
 /*
