@@ -4751,6 +4751,16 @@ strong {
   max-width: 880px;
 }
 
+/* Map block ------*/
+.c-map {
+  display: inline-block;
+  width: 100%;
+}
+.c-map img {
+  width: 100%;
+  height: auto;
+}
+
 img {
   max-width: 100%;
 }

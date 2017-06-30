@@ -322,3 +322,13 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 .popupContent_resume{
 	max-width:880px;
 }
+
+/* Map block ------*/
+.c-map {
+    display: inline-block;
+    width: 100%;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
