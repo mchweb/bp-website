@@ -1,0 +1,34 @@
+// ----------------------- //
+// Animations ------------ //
+// ----------------------- //
+
+.navMain li,
+#navMain__back,
+.header__navMain,
+.event,
+.knowMoreItem__wrap,
+.navMain li a,
+.contactInfo__wrap,
+.aboutDepts__dept,
+#updown-container,
+.dept2ReqItem,
+.dept1InfoImage__anim,
+.dept1Info__caption,
+.dept1InfoImage,
+.navMainSecondary__heading
+{
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.eventInfo__more, .contactForm__button, .contact__button,
+.aboutTeamItem__back {
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}

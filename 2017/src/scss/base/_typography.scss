@@ -2,57 +2,121 @@
 // Typography style ------ //
 // ----------------------- //
 
+@import "compass/typography/vertical_rhythm";
+$base-font-size: 16px;
+$base-line-height: 6px;
+@include establish-baseline;
 
-body {
-    font-size: $font_size_base;
-    line-height: $line_height_base;
-    color: $color_black;
-    font-family: $font_family_base;  
+html {
+	@include adjust-leading-to(4);
 }
-input, label, select, button, textarea {
-    font-family: $font_family_base;  
+body{
+	font-family:source-sans-pro,Arial,sans-serif;
+	color:#333;
 }
-h1, h2, h3, h4 {
-    font-family: $font_family_base;
-    color: $color_black;
-}
-h1 {
-    font-size: $font_size_h1;
-    line-height: $line_height_h1;    
-    font-weight: bold;
-}
-h2 {
-    font-size: $font_size_h2;
-    line-height: $line_height_h2;
-}
-h3 {
-    font-size: $font_size_h3;
-    line-height: $line_height_h3;
-}
+
+.h1,
+.h2,
+.h3,
+.h4, 
+h1,
+h2,
+h3,
 h4 {
-    font-size: $font_size_h4;
-    line-height: $line_height_h4;
+	color:#111;
 }
-p {
-    font-family: $font_family_base;  
+.h1, 
+h1 {
+	@include adjust-font-size-to(42px);
+	font-weight:900;
 }
-strong {
-    font-family: $font_family_base;
+.h2, 
+h2 {
+	@include adjust-font-size-to(30px);
+}
+.h3, 
+h3 {
+	@include adjust-font-size-to(24px);
+}
+.h4, 
+h4 {
+	@include adjust-font-size-to(18px);
+}
+
+.mainHeading, .pageHeading, .mainHeadingCaption, .pageHeadingCaption {
+	text-align:center;
+}
+.pageHeading {
+	@include rhythm(0, 1, 0, 0);
+}
+.mainHeadingCaption, .pageHeadingCaption {
+	@include adjust-font-size-to(18px);
+	max-width:800px;
+	margin: 0 auto;
+	@include rhythm(1, 0, 0, 0);
 }
 a {
     text-decoration: none;
-    border-bottom: 1px solid;
-    border-bottom-color: rgba($color_black, 0.5);  
-    &:hover {
-        border-bottom-color: rgba($color_black, 0.5);  
-    }
-    &:active {
-        border-bottom-color: rgba($color_black, 0.5);  
-    }
-    &:visited {
-        border-bottom-color: rgba($color_black, 0.5);  
-    }
-    &:focus {
-        border-bottom-color: rgba($color_black, 0.5); 
-    }    
 }
+strong{
+	font-weight:600;
+}
+
+.c-content__title {
+    text-align:center;
+    @include rhythm(0, 1, 1, 0);
+}
+
+//body {
+//    font-size: $font_size_base;
+//    line-height: $line_height_base;
+//    color: $color_black;
+//    font-family: $font_family_base;  
+//}
+//input, label, select, button, textarea {
+//    font-family: $font_family_base;  
+//}
+//h1, h2, h3, h4 {
+//    font-family: $font_family_base;
+//    color: $color_black;
+//}
+//h1 {
+//    font-size: $font_size_h1;
+//    line-height: $line_height_h1;    
+//    font-weight: bold;
+//}
+//h2 {
+//    font-size: $font_size_h2;
+//    line-height: $line_height_h2;
+//}
+//h3 {
+//    font-size: $font_size_h3;
+//    line-height: $line_height_h3;
+//}
+//h4 {
+//    font-size: $font_size_h4;
+//    line-height: $line_height_h4;
+//}
+//p {
+//    font-family: $font_family_base;  
+//}
+//strong {
+//    font-family: $font_family_base;
+//}
+//a {
+//    text-decoration: none;
+//    border-bottom: 1px solid;
+//    border-bottom-color: rgba($color_black, 0.5);  
+//    &:hover {
+//        border-bottom-color: rgba($color_black, 0.5);  
+//    }
+//    &:active {
+//        border-bottom-color: rgba($color_black, 0.5);  
+//    }
+//    &:visited {
+//        border-bottom-color: rgba($color_black, 0.5);  
+//    }
+//    &:focus {
+//        border-bottom-color: rgba($color_black, 0.5); 
+//    }    
+//}

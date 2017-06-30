@@ -11,7 +11,13 @@ $url_fonts: "../fonts";
 /* Colors ---------*/
 $color_white: #ffffff;
 $color_black: #000000;
-
+$color_purple: #913d88;
+$color_red: #cf0000;
+$color_yellow: #ffcc00;
+$color_green: #26a65b;
+$color_blue: #4183d7;
+$color_gray: #cecece;
+$color_gray_dark: #444444;
 /* Fonts ----------*/
 $font_family_base: Arial, Helvetica, sans-serif;
 /*font awesome settings*/
@@ -52,4 +58,22 @@ $screen_xs_max: ($screen_sm_min - 1);
 $screen_xs_min: 480px;    
 $screen_xs_small_max: ($screen_xs_min - 1); 
 $screen_xs_small_min: 320px;  
+
+/* Variables old ----*/
+$lg: 1280px;
+$md: 990px;
+$sm: 680px;
+
+//colors
+$red: #cf0000;
+$lightred: #ff3333;
+$dept1: #ffcc00;
+$dept1-50: rgba(255,204,0,.5);
+$dept1-gray:#444;
+$dept1-accent:#ff9900;
+$dept2: #26a55b;
+$dept3: #913d87;
+$footer: #333333;
+$gray: #ddd;
+$dark:#1e1e1e;
 

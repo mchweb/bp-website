@@ -1,3 +1,183 @@
 // ----------------------- //
 // Navigation style ------ //
 // ----------------------- //
+
+
+.navMain {
+	list-style-type: none;
+}
+.navMain li {
+	display:inline;
+	padding-left:1em;
+	padding-right:1em;
+	@include trailing-border(2px, 0.5);
+	@include rhythm(0, 0, 4.5, 0);
+	border-color:transparent;
+	@media (max-width: 799px) {
+		display:list-item;
+		padding-left:1em;
+		padding-right:3em;
+		border-right-width: 6px;
+		border-right-style:solid;
+		border-right-color:transparent;
+		border-bottom-style:none;
+		@include rhythm(0, 1.5, 1.5, 0);
+	}
+}
+.navMainItem_dept1:hover, .navMainItem_dept1.navMainItem_current{
+	border-color:transparent !important;
+}
+
+.navMainItem_dept1{
+	@media (max-width: 799px) {
+		padding-right:0 !important;
+	}
+}
+.navMainItem_dept2:hover, .navMainItem_dept2.navMainItem_current{
+	border-color:$dept2 !important;
+}
+.navMain li:hover {
+	border-color:$red;
+}
+.navMainItem_current{
+	border-color:$red !important;
+}
+
+#navTrigger {
+	float:right;
+	color:white;
+	@include rhythm(0, 3, 0, 0);
+	cursor:pointer;
+	@media (min-width: 800px) {
+		display:none;
+	}
+}
+.navMain_open {
+	right:0px;
+}
+#navMain__back{
+	display:none;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255,255,255);
+    opacity:0;
+    z-index: 100;
+}
+.navMain__back_open{
+	display:block !important;
+}
+.navMain li:hover{
+	color:rgba(255,255,255,1);
+}
+.navMain li span{
+	color:rgba(255,255,255,.85);
+	@include adjust-font-size-to(20px);
+	font-weight:300;
+}
+.navMain li:hover .navMainSecondary{
+	display:block;
+}
+.navMainSecondary{
+	position:absolute;
+	display:none;
+	@include rhythm(5, 0, 0, 0);
+	
+	z-index:100;
+	max-width:600px;
+	margin-right:1.5em;
+	background:rgba(0,0,0,0.85);
+	
+	border-top:2px solid $dept1;
+	@media (max-width: 799px) {
+		position:relative;
+		display:block;
+		margin:0;
+		max-width:235px;
+		border:none;
+	}
+	
+}
+.navMainSecondary_dept1 li {
+	display:block;
+	padding-left:1em;
+	padding-right:1em;
+	@include rhythm(0, 1.5, 1.5, 0);
+	border:none;
+	color:white;
+	@media (max-width: 799px) {
+		@include rhythm(0.25, 1.5, 1.5, 0.25);
+		padding-left:0.5em;
+		padding-right:0.5em;
+	}
+}
+.navMainSecondary_dept1 li:hover{
+	border:none;
+	background:$dept1;
+	color:black;
+}
+.navMainSecondary_dept1 li:hover .navMainSecondary__heading{
+	color:black;
+}
+.navMainSecondary__heading{
+	@include adjust-font-size-to(20px);
+	font-weight:600;
+	color:white;
+	@media (max-width: 799px) {
+		font-weight:400;
+		@include adjust-font-size-to(16px);
+	}
+}
+.navMainSecondary__caption{
+	@include adjust-font-size-to(14px);
+	@media (max-width: 799px) {
+		display:none;
+	}
+}
+
+/* Navigation submenu ------*/
+.c-header__nav-submenu {
+    background-color: $color_white;
+}
+.c-nav-submenu__item {
+    display: inline-block;
+	padding-left:1em;
+	padding-right:1em;
+	@include leading-border(2px, 0.5);
+	@include rhythm(0, 1.5, 1.5, 0);    
+    border-color: transparent;
+    position: relative;
+}
+$colors_nav: $color_yellow, $color_green, $color_blue, $color_purple;
+@for $i from 1 through length($colors_nav) {
+	.c-nav-submenu__item:nth-child(#{$i}):hover {
+		border-color: nth($colors_nav, $i);
+	}
+}
+
+.c-nav-submenu__link {
+    color: $color_black;
+}
+.c-nav-submenu__link:hover {
+}
+.c-nav-submenu__item.is-child:hover .c-nav-childmenu {
+    display: block;
+}
+.c-nav-childmenu {
+    position: absolute;
+    @include leading-border(2px, 0.5);
+    border-color: $color_purple;
+    background: white;
+    top: 33px;    
+    display: none;
+}
+.c-nav-childmenu__item {
+	padding-left:1em;
+	padding-right:1em;
+	@include rhythm(0, 1.5, 1.5, 0);  
+}
+.c-nav-childmenu__link {
+    color: $color_black;
+}

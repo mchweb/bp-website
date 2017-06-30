@@ -6,9 +6,14 @@
 @import "../../vendor/susy/sass/susy";
 $susy: (
   columns: 12, 
-  gutters: 30px/70px,
-  column-width: 70px,
-  gutter-position: inside-static,
+//  gutters: 30px/70px,
+  gutters: 1/3,
+  math: fluid,
+  output: float,    
+  gutter-position: inside,
+    
+  //column-width: 70px,
+  //gutter-position: inside-static,
   global-box-sizing: border-box,
   debug: (
       //image: show,
@@ -23,6 +28,7 @@ $susy: (
 
 .container {
     @include container;
+    max-width: $screen_lg_min;
 }
 
 .l-content__grid--four {
@@ -66,4 +72,17 @@ $susy: (
             @include span(6); 
         }    
     }
+}
+
+.wrap {
+	@include container; 
+	max-width:$lg;
+	padding-left:1em;
+	padding-right:1em;
+}
+.wrap_md {
+	@include container(); 
+	max-width:$md;
+	padding-left:1em;
+	padding-right:1em;
 }
