@@ -332,3 +332,243 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         height: auto;
     }
 }
+
+/* Accevnt block ------*/
+.c-accent__item {
+    @include span(4);
+    padding: 1em;
+}
+.c-accent__content {
+    @include rhythm-borders(4px, 0);
+    border-color: $color_gray_dark;
+    border-style: dashed;    
+    padding: 2em;
+    text-align: center;
+    &.bg-purple {
+        background-color: $color_purple;
+    }        
+}
+.c-accent__title {
+    @include adjust-font-size-to(18px);
+    font-weight: bold;
+}
+
+/* Accent block ------*/
+.deptSteps{
+	@include rhythm(0,2,6,2);
+	background:url('../img/bg-blur.jpg');
+	background-size:cover;
+}
+.deptStepsItem{
+	text-align:center;
+	color:white;
+	@include rhythm(4,0,0,4);
+}
+.deptStepsItem__circle{
+	width:90px;
+	height:90px;
+	margin:0 auto;
+	border-radius:50%;
+	@include rhythm(0,0,0,2);
+}
+
+.deptStepsItem__circle_dept1{
+	background:$dept1;
+}
+.deptStepsItem__circle_dept1 p{
+	color:$dept1-gray !important;
+}
+.deptStepsItem__circle_dept2{
+	background:$dept2;
+}
+.deptStepsItem__circle p{
+	text-align:center;
+	color:white;	
+	@include adjust-font-size-to(60px);
+	line-height:90px;
+	font-weight:900;
+}
+.deptStepsItem__circle_small{
+	width:60px;
+	height:60px;
+}
+.deptStepsItem__circle_small p{
+	@include adjust-font-size-to(42px);
+	line-height:60px;
+}
+.deptStepsItem__caption{
+	@include adjust-font-size-to(20px);
+}
+.deptStepsItem{
+	@include span(4);
+	@media (max-width: 680px) {
+		@include span(12); 
+	}
+}
+
+/* DeptExp block ------*/
+.deptExp{
+	@include rhythm(0,0,0,4);
+}
+.deptExp__heading{
+	@include rhythm(2,0,0,4);
+}
+.deptExp__message{
+	@include rhythm(0,2,2,0);
+	padding-left:1.25em;
+	padding-right:1.25em;
+}
+.deptExp__message_nopad{
+	padding:0;
+}
+.deptExp__message_dept1{ 
+	border:2px dashed $dept1;
+}
+.deptExp__message_dept2{ 
+	border:2px dashed $dept2;
+}
+
+.deptExp__aboutTeam__itemWrap{
+	padding-right:1.5em;
+}
+.deptExp__aboutTeam__itemWrap .aboutTeam__item {
+	min-height:0;
+	@media (max-width: 860px) {
+		margin:0;
+		@include rhythm(0,0,0,2);
+	}
+}
+.deptExp__resumeText h3{
+	@include rhythm(2,0,0,0);
+}
+.deptExp__aboutTeam__itemWrap{
+	@include span(3);
+	@media (max-width: 860px) {
+		@include span(12);
+	}
+}
+.deptExp__messageWrap{
+	@include span(9);
+	@media (max-width: 860px) {
+		@include span(12); 
+	}
+}
+
+/* DeptReq block ------*/
+.deptReq{
+	@include rhythm(0,2,5,0);
+	background:$dark;
+	background-size:cover;
+}
+.dept2ReqItem__wrap, .dept1ReqItem__wrap, .dept1ReqItemFaf__wrap{
+	@include rhythm(4,0,0,2);
+	padding-left:1em;
+	padding-right:1em;
+}
+.deptReqItem{
+	margin:0 auto;
+	@include rhythm(0,1,1,0);
+	max-width:220px;
+	min-height:10em;
+	border:4px dashed white;	
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	cursor:pointer;
+	padding-left:0.5em;
+	padding-right:0.5em;
+}
+.deptReqItem p{
+	width:100%;
+}
+.bEventIconsFaf__sep{
+	width:90%;
+	margin: 0 auto;
+	@include trailing-border(1px, 0.5);
+	border-color:$dept1;
+	clear:both;
+	@include rhythm(0,0,0,2);
+}
+.deptReqItem_dept2:hover{
+	border-color:$dept2;
+}
+.deptReqItem_dept2.deptReqItem_on{
+	background:$dept2;
+	border-color:$dept2;
+}
+.deptReqItem_dept1:hover{
+	border-color:$dept1;
+}
+.deptReqItem_dept1.deptReqItem_on p{
+	color:$dept1-gray;
+}
+.deptReqItem_dept1.deptReqItem_on{
+	background:$dept1;
+	border-color:$dept1;
+}
+
+.deptReqItem p{
+	color:white;
+	text-align:center;
+	@include adjust-font-size-to(18px);
+}
+
+#deptReqButton{
+	display:none;
+}
+.dept1ReqItem__wrap{
+	@include span(3);
+	@media (max-width: 860px) {
+		@include span(6);
+	}
+	@media (max-width: 460px) {
+		@include span(12); 
+	}
+}
+
+/* Results block ------*/
+.c-results {
+    padding: 50px 0px;    
+}
+.c-results__title {
+	@include rhythm(0, 1, 0, 0);
+}
+.c-results__subheader {
+    @include adjust-font-size-to(18px);
+}
+.c-results__block {
+    @include rhythm-borders(4px, 0);
+    border-color: $color_red;
+    border-style: dashed;  
+    padding: 1em;  
+    margin-top: 2em;
+}
+.c-results__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.c-results__header {
+    @include trailing-border(1px, 0);
+    border-color: $color_red;
+    border-style: dashed;  
+    text-align: left;
+}
+.c-results__body {
+    
+}
+.c-results__row {
+    .c-results__col:first-child {
+        @include rhythm-borders(1px, 0);
+        border-color: $color_red;
+        border-style: dashed;    
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+    } 
+}
+.c-results__col { 
+    display: table-cell;
+    padding: .25em .5em;
+    padding-bottom: 0.3em;
+    padding-top: 0.5em;    
+}

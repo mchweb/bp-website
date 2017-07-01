@@ -13,18 +13,18 @@ var funcBackgroundImageBlocks = function (blockName, imgName, bagPositionHoriz, 
                 $(blockNameBack).css({'background-image': 'url('+$(blockThumbnail).attr('src')+')'});
                 $(blockNameBack).css({'background-position': bagPositionHoriz+' '+bagPositionVertical});
                 $(blockNameBack).css({'background-repeat':'no-repeat'});
-                $(blockNameBack).css({'background-size': bagSize});                     
+                $(blockNameBack).css({'background-size':  bagSize+' '});                     
             }else {
                 $(element).css({'background-image': 'url('+$(blockThumbnail).attr('src')+')'});
                 $(element).css({'background-position': bagPositionHoriz+' '+bagPositionVertical});
                 $(element).css({'background-repeat':'no-repeat'});
-                $(element).css({'background-size': bagSize});          
+                $(element).css({'background-size': bagSize+' '});          
             }             
         }
     });   
 };
 
-/* Finding the maximum height among the elements */
+/* Finding the min height among the elements */
 var funcMinHeightElement = function(blockName) {
     var blockItems =  $(blockName);
     var blockItemsHeight = [];
@@ -34,5 +34,17 @@ var funcMinHeightElement = function(blockName) {
     });  
     $(blockItems).each(function(indx, blockItem){
         $(blockItem).height(Math.min.apply(null, blockItemsHeight));
+    });   
+};
+
+/* Finding the maximum height among the elements */
+var funcMaxHeightElement = function(blockName) {
+    var blockItems =  $(blockName);
+    var blockItemsHeight = [];
+    $(blockItems).each(function(indx, blockItem){
+        blockItemsHeight.push($(blockItem).outerHeight(true));
+    });  
+    $(blockItems).each(function(indx, blockItem){
+        $(blockItem).height(Math.max.apply(null, blockItemsHeight));
     });   
 };

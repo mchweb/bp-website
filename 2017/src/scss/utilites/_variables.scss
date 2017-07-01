@@ -18,6 +18,12 @@ $color_green: #26a65b;
 $color_blue: #4183d7;
 $color_gray: #cecece;
 $color_gray_dark: #444444;
+.bg-purple {
+    background-color: $color_purple !important;
+}
+.color-white {
+    color: $color_white !important;
+}
 /* Fonts ----------*/
 $font_family_base: Arial, Helvetica, sans-serif;
 /*font awesome settings*/

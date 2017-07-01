@@ -133,6 +133,8 @@
 /* Welcome ------*/
 .c-welcome {
     height: 925px;
+    position: relative;
+    z-index: -1;
 }
 .c-welcome__thumbnail {
     display: none;
@@ -171,4 +173,41 @@
     top: 0;
     height: 50px;
     width: 50px;
+}
+.c-welcome {
+    &.is-small {
+        height: 425px;
+        .c-welcome__container {
+            border: none;
+            height: 100px;
+            width: 400px;
+            padding-top: 200px;
+        }
+        .c-welcome__icon {
+            display: none;
+        }    
+        .c-welcome__text {
+            max-width: none;
+            background: transparent;
+            span {
+                @include rhythm-borders(4px, 0);
+                border-color: $color_black;
+                border-style: dashed;
+                @include adjust-font-size-to(18px);
+                color: $color_white;
+                background-color: $color_purple;
+                text-transform: none;
+                font-weight: normal;
+                padding: 0.25em;
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
+            h2 {
+                color: $color_white;
+                text-transform: none;
+                margin-top: .1em;
+            }
+        }
+    }
 }

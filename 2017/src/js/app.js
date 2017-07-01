@@ -18,7 +18,7 @@ $(document).ready(function(){
 	});  
     /* Welcome block */
     /* Set a background image */
-    funcBackgroundImageBlocks('.c-welcome','.c-welcome__thumbnail img','center','center','cover'); 
+    funcBackgroundImageBlocks('.c-welcome','.c-welcome__thumbnail img','center','center','','cover'); 
     
     /* Connecting flickity.js for parners slider */ 
     var elemSlider = $('.c-slider');
@@ -36,6 +36,9 @@ $(document).ready(function(){
     /* Set a background image */
     //funcMinHeightElement('.c-partners__item');   
     funcBackgroundImageBlocks('.c-partners__item','img','center','center','','contain'); 
+    
+    /* Accent */
+    funcMaxHeightElement('.c-accent__item');   
 });     
 
 /* Responsive menu */
