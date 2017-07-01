@@ -426,6 +426,9 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 }
 .deptExp__message_dept2{ 
 	border:2px dashed $dept2;
+    &.is-blue {
+        border-color: $color_blue;
+    }
 }
 
 .deptExp__aboutTeam__itemWrap{
@@ -525,7 +528,21 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 		@include span(12); 
 	}
 }
-
+.dept2ReqItem__wrap{
+	@include span(1 of 5);
+    &.is-six {
+        @include span(1 of 6);
+    }    
+	@media (max-width: 960px) {
+		@include span(4);
+	}
+	@media (max-width: 700px) {
+		@include span(6);
+	}
+	@media (max-width: 460px) {
+		@include span(12); 
+	}
+}
 /* Results block ------*/
 .c-results {
     padding: 50px 0px;    
@@ -571,4 +588,59 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
     padding: .25em .5em;
     padding-bottom: 0.3em;
     padding-top: 0.5em;    
+}
+
+/* Results block ------*/
+.dept1Info{
+	text-align:center;
+	@include rhythm(1,0,0,5);
+}
+.dept1InfoItem{
+	max-width:300px;
+	margin:0 auto;
+}
+.dept1Info__heading{
+	@include adjust-font-size-to(26px);
+	font-weight:600;
+	margin-top: -80px;
+}
+.dept1Info__heading_after{
+	margin-top: 0px;
+    opacity:0;
+    font-size:0;
+}
+.dept1Info__caption{
+	@include adjust-font-size-to(20px);
+	opacity:0;
+}
+.dept1Info__caption_after, .dept1InfoImage_after{
+	opacity:1 !important;
+}
+.dept1InfoImage{
+	max-width:100%;
+	height:auto;
+}
+.dept1InfoImage__anim{
+	width:100%;
+	background-size: 30% 30%;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-image:url('../img/dept1Info.png');
+}
+.dept1InfoImage__anim_after{
+	background-size: 100% 100%;
+}
+.dept1InfoImage_hidden{
+	opacity:0;	
+}
+.dept1InfoItemWrap{
+	@include span(4);
+	@media (max-width: 820px) {
+		@include span(12);
+	}
+}
+.c-howto__item img {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2em;
 }

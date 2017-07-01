@@ -180,7 +180,7 @@
         .c-welcome__container {
             border: none;
             height: 100px;
-            width: 400px;
+            width: auto;
             padding-top: 200px;
         }
         .c-welcome__icon {
@@ -194,8 +194,7 @@
                 border-color: $color_black;
                 border-style: dashed;
                 @include adjust-font-size-to(18px);
-                color: $color_white;
-                background-color: $color_purple;
+                color: $color_white;              
                 text-transform: none;
                 font-weight: normal;
                 padding: 0.25em;
@@ -207,6 +206,8 @@
                 color: $color_white;
                 text-transform: none;
                 margin-top: .1em;
+                max-width: 500px;
+                text-align: center;
             }
         }
     }
