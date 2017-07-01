@@ -189,6 +189,9 @@
         .c-welcome__text {
             max-width: none;
             background: transparent;
+            left: 0px;
+            right: 0px;
+            margin: auto;
             span {
                 @include rhythm-borders(4px, 0);
                 border-color: $color_black;
@@ -206,7 +209,7 @@
                 color: $color_white;
                 text-transform: none;
                 margin-top: .1em;
-                max-width: 500px;
+//                max-width: 500px;
                 text-align: center;
             }
         }
