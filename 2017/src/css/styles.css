@@ -3488,20 +3488,6 @@ p {
 
 a {
   text-decoration: none;
-  border-bottom: 1px solid;
-  border-bottom-color: rgba(0, 0, 0, 0.5);
-}
-a:hover {
-  border-bottom-color: rgba(0, 0, 0, 0.5);
-}
-a:active {
-  border-bottom-color: rgba(0, 0, 0, 0.5);
-}
-a:visited {
-  border-bottom-color: rgba(0, 0, 0, 0.5);
-}
-a:focus {
-  border-bottom-color: rgba(0, 0, 0, 0.5);
 }
 
 strong {
