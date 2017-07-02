@@ -1,3 +1,77 @@
 // ----------------------- //
 // Buttons style --------- //
 // ----------------------- //
+
+/* Contact btn ------*/
+.contact__button {
+	display:inline-block;
+	text-transform: uppercase;
+	border:none;
+	@include trailing-border(3px, 0.5);
+	@include rhythm(2, 1.5, 1, 1);
+	padding-left:1.5em;
+	padding-right:1.5em;
+	background:#eee;
+	color:black;
+	border-color:$red;
+	background: linear-gradient(to top, $red 50%, white 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+	font-weight:600;
+    margin-top: .75em;
+    margin-bottom: .375em;   
+    padding: .5625em 1.5em .375em;
+}
+.contact__button_gray{
+	background: linear-gradient(to top, $red 50%, $gray 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+}
+.contact__button_invert_dept1{
+	background: linear-gradient(to top, black 50%, $dept1 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+    border-color:black;
+}
+.contact__button_invert{
+	background: linear-gradient(to top, black 50%, $red 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+    border-color:black;
+    color:white;
+}
+.contact__button_big{
+	@include adjust-font-size-to(20px);
+}
+.contact__button:hover{
+	color:white;
+	background-position:right bottom;
+}
+.contact__button_dept1:hover{
+	color:$dept1-gray !important;
+}
+.contact__button_dept1{
+	border-color:$dept1;
+	background: linear-gradient(to top, $dept1 50%, white 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+}
+.contact__button_gray.contact__button_dept1{
+	background: linear-gradient(to top, $dept1 50%, $gray 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+}
+.contact__button_dept2{
+	border-color:$dept2;
+	background: linear-gradient(to top, $dept2 50%, white 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+}
+.contact__button_gray.contact__button_dept2{
+	background: linear-gradient(to top, $dept2 50%, $gray 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+}
+.contact__button_dept1:hover, .contact__button_dept2:hover,{
+	background-position:right bottom;
+}
