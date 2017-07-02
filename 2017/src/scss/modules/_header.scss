@@ -115,7 +115,7 @@
     color: $color_white;
     text-align: left;
     max-width: 300px;
-	@include rhythm(0, 3, 2, 0);
+	@include rhythm(.6, 3, 2, 0);
 	padding-left:1.5em;
 	padding-right:1em;
 	margin-left:2em;    
