@@ -11,6 +11,7 @@ $url_fonts: "../fonts";
 /* Colors ---------*/
 $color_white: #ffffff;
 $color_black: #000000;
+$color_black_light: #111111;
 $color_purple: #913d88;
 $color_red: #cf0000;
 $color_yellow: #ffcc00;
@@ -18,6 +19,7 @@ $color_green: #26a65b;
 $color_blue: #4183d7;
 $color_gray: #cecece;
 $color_gray_dark: #444444;
+$color_gray_dark0: #333333;
 .bg-purple {
     background-color: $color_purple !important;
 }
@@ -34,7 +36,8 @@ $color_gray_dark: #444444;
     color: $color_white !important;
 }
 /* Fonts ----------*/
-$font_family_base: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,900,900i&subset=cyrillic');
+$font_family_base: 'Source Sans Pro', Arial sans-serif;
 /*font awesome settings*/
 $fa-font-path: "#{$url_fonts}";
 /* Indents --------*/
