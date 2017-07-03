@@ -5651,7 +5651,7 @@ strong {
 }
 
 .bEventContactsItem {
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
   display: table;
   color: white;
@@ -5668,7 +5668,7 @@ strong {
 }
 
 .bEventContacts__image img {
-  max-width: 100px;
+  max-width: 150px;
   height: auto;
 }
 
