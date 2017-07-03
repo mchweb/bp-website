@@ -38,7 +38,12 @@ $(document).ready(function(){
     funcBackgroundImageBlocks('.c-partners__item','img','center','center','','contain'); 
     
     /* Accent */
-    funcMaxHeightElement('.c-accent__item');   
+    /* Set the same maximum height for all blocks */
+    funcMaxHeightElement('.c-accent__item');  
+    
+    /* Products */
+    /* Set the same maximum height for all blocks */
+    funcMaxHeightElement('.l-products__item .c-products__container');       
 });     
 
 /* Responsive menu */

@@ -453,8 +453,9 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
     &.is-blue {
         border-color: $color_blue;
     }
-    &.is-blue {
+    &.is-yellow {
         border-color: $color_yellow;
+        @include adjust-font-size-to(20px);
     }    
 }
 

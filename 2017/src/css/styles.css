@@ -5086,8 +5086,10 @@ strong {
 .deptExp__message_dept2.is-blue {
   border-color: #4183d7;
 }
-.deptExp__message_dept2.is-blue {
+.deptExp__message_dept2.is-yellow {
   border-color: #ffcc00;
+  font-size: 1.25em;
+  line-height: 1.2em;
 }
 
 .deptExp__aboutTeam__itemWrap {
