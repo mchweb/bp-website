@@ -247,8 +247,10 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
 	padding-top: 100%;
 }
 .aboutTeam__itemName{
-	@include adjust-font-size-to(24px);
+	@include adjust-font-size-to(20px);
 	@include rhythm(1,0,0,0);
+    font-weight: 600;
+    text-align: start;
 }
 
 .aboutTeam__itemImage:hover .aboutTeamItem__back_expert {
@@ -476,6 +478,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
     }
 }
 .aboutTeam__itemCaption {
+    text-align: start;
     a {
         color: $color_red;
     }    

@@ -4761,12 +4761,14 @@ strong {
 }
 
 .aboutTeam__itemName {
-  font-size: 1.5em;
-  line-height: 1.25em;
+  font-size: 1.25em;
+  line-height: 1.2em;
   margin-top: 0.375em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
+  font-weight: 600;
+  text-align: start;
 }
 
 .aboutTeam__itemImage:hover .aboutTeamItem__back_expert {
@@ -5119,6 +5121,9 @@ strong {
   color: #cf0000;
 }
 
+.aboutTeam__itemCaption {
+  text-align: start;
+}
 .aboutTeam__itemCaption a {
   color: #cf0000;
 }
