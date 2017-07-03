@@ -4627,9 +4627,23 @@ strong {
   overflow: hidden;
   margin-bottom: 2em;
   position: relative;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 .c-partners__item img {
   display: none;
+}
+.c-partners__item:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 .c-partners__link {

@@ -151,6 +151,12 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
     overflow: hidden;
     margin-bottom: 2em;
     position: relative;
+    @include filter(grayscale(100%));
+    @include transition-property(all);
+    @include transition-duration(0.3s); 
+    &:hover {
+       @include filter(grayscale(0)); 
+    }
 }
 .c-partners__link {
     position: absolute;
