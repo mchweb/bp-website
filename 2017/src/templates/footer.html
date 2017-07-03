@@ -8,41 +8,38 @@
                 Вы&nbsp;также можете задать свой вопрос с&nbsp;помощью данной формы.</p>
             </div>
             <div class="contactForm__form">
-        <div class="contactForm__formWrap">
-            <form method="POST" action="javascript:void(null);" onsubmit="sendContactForm()">
-                <input type="hidden" id="contactForm__type" name="contactForm__type" value="1">
-                <div class="contactForm__control contactForm__control_horiz">
-                    <label for="contactForm__name">Представьтесь</label>
-                    <input id="contactForm__name" name="contactForm__name" type="text" class="form-control" placeholder="Иванов Иван Иванович" required="">
+                <div class="contactForm__formWrap">
+                    <form method="POST" action="javascript:void(null);" onsubmit="sendContactForm()">
+                        <input type="hidden" id="contactForm__type" name="contactForm__type" value="1">
+                        <div class="contactForm__control contactForm__control_horiz">
+                            <label for="contactForm__name">Представьтесь</label>
+                            <input id="contactForm__name" name="contactForm__name" type="text" class="form-control" placeholder="Иванов Иван Иванович" required="">
+                        </div>
+                        <div class="contactForm__control contactForm__control_horiz">
+                            <label for="contactForm__email">E-mail</label>
+                            <input id="contactForm__email" name="contactForm__email" type="email" class="form-control" placeholder="ivanov@gmail.com" required="">
+                        </div>
+                        <div class="contactForm__control contactForm__control_horiz">
+                            <label for="contactForm__phone">Телефон</label>
+                            <input id="contactForm__phone" name="contactForm__phone" type="text" class="form-control" placeholder="+79123456789">
+                        </div>
+                        <div class="contactForm__control contactForm__control_horiz">
+                            <label for="contactForm__message">Дополнительная информация</label><br>
+                            <textarea id="contactForm__message" name="contactForm__message" class="form-control" placeholder="Расскажите о себе и своей компании" rows="3"></textarea>
+                        </div>
+                        <div class="contactForm__checkbox contactForm__control_horiz">
+                            <label class="contactForm__offer">Нажимая «Отправить», вы соглашаетесь на обработку персональных данных (см. <a class="clr-white" href="javascript:void(0);" onclick="window.open('http://ipartner.pro/oferta', 'OFERTA', 'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no')">политику конфиденциальности</a>)</label>
+                        </div>
+                        <button class="contactForm__button contactButton contactForm__button_right">Отправить</button>
+                    </form>
                 </div>
-                <div class="contactForm__control contactForm__control_horiz">
-                    <label for="contactForm__email">E-mail</label>
-                    <input id="contactForm__email" name="contactForm__email" type="email" class="form-control" placeholder="ivanov@gmail.com" required="">
-                </div>
-                <div class="contactForm__control contactForm__control_horiz">
-                    <label for="contactForm__phone">Телефон</label>
-                    <input id="contactForm__phone" name="contactForm__phone" type="text" class="form-control" placeholder="+79123456789">
-                </div>
-                <div class="contactForm__control contactForm__control_horiz">
-                    <label for="contactForm__message">Дополнительная информация</label><br>
-                    <textarea id="contactForm__message" name="contactForm__message" class="form-control" placeholder="Расскажите о себе и своей компании" rows="3"></textarea>
-                </div>
-                <div class="contactForm__checkbox contactForm__control_horiz">
-                    <label class="contactForm__offer">Нажимая «Отправить», вы соглашаетесь на обработку персональных данных (см. <a class="clr-white" href="javascript:void(0);" onclick="window.open('http://ipartner.pro/oferta', 'OFERTA', 'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no')">политику конфиденциальности</a>)</label>
-                </div>
-                <button class="contactForm__button contactButton contactForm__button_right">Отправить</button>
-            </form>
-        </div>
-      
-    </div>
-        <!-- BEGIN of popup-success -->
-        <div class="popup mfp-hide zoom-anim-dialog" id="popup_success">
-            <div class="popupContent">
-                <p class="popupContent__heading"><i class="fa fa-check"></i>&nbsp;Свяжемся в ближайшее время</p>
-        <p class="popupContent__caption">Спасибо за интерес! Ваш запрос отправлен на обработку. <a style="cursor:pointer" onclick="$.magnificPopup.close();">Продолжить просмотр сайта&nbsp;»</a></p>
             </div>
-        </div>
-        <!-- END of popup-sucess -->
+            <div class="popup mfp-hide zoom-anim-dialog" id="popup_success">
+                <div class="popupContent">
+                    <p class="popupContent__heading"><i class="fa fa-check"></i>&nbsp;Свяжемся в ближайшее время</p>
+                    <p class="popupContent__caption">Спасибо за интерес! Ваш запрос отправлен на обработку. <a style="cursor:pointer" onclick="$.magnificPopup.close();">Продолжить просмотр сайта&nbsp;»</a></p>
+                </div>
+            </div>
         </div>
     </div> 
         <div class="footer__decorator"></div>
@@ -77,3 +74,62 @@
             </ul>
         </div>       
   </footer>
+  
+    <div class="popup zoom-anim-dialog popup_dept2 mfp-hide" id="popup_message">
+        <div class="popupContent" id="popup__message" style="display: block;">
+            <p class="popupContent__heading" id="popup__message_heading">Задать вопрос</p>
+            <p class="popupContent__caption" id="popup__message_caption">Не&nbsp;забудьте указать контактную информацию (телефон, электронная почта, социальные сети), <strong>чтобы мы&nbsp;могли в&nbsp;кратчайшие сроки вам ответить</strong></p>
+            <form method="POST" action="javascript:void(null);" onsubmit="sendMessageForm()">
+                <input type="hidden" id="popup__message_type" name="messageForm__type" value="19">
+                <div class="contactForm__control">
+                    <input id="messageForm__name" name="messageForm__name" type="text" class="form-control" placeholder="Представьтесь" required="">
+                </div>
+                <div class="contactForm__control">
+                    <input id="messageForm__email" name="messageForm__email" type="text" class="form-control" placeholder="Телефон" required="">
+                </div>
+                <input type="hidden" id="messageForm__phone" name="messageForm__phone" value="">
+                <div class="contactForm__control">
+                    <textarea id="messageForm__message" name="messageForm__message" class="form-control" placeholder="Ваш вопрос" rows="3"></textarea>
+                </div>
+                <div class="contactForm__checkbox">
+                    <label class="contactForm__offer">Нажимая &laquo;Отправить&raquo;, вы&nbsp;соглашаетесь на&nbsp;обработку персональных данных (см.<a class="clr-black" href="javascript:void(0);" onclick="window.open('http://ipartner.pro/oferta', 'OFERTA', 'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no')">политику конфиденциальности</a>)</label>
+                </div>
+                <button class="contactForm__button contactButton contactForm__button_gray contactForm__button_dept2">Отправить</button>
+            </form>
+        </div>
+        <div class="popupContent popupContent_success" id="popup__message_success" style="display: none;">
+            <p class="popupContent__heading"><i class="fa fa-check"></i>&nbsp;Свяжемся в ближайшее время</p>
+            <p class="popupContent__caption">Спасибо за интерес! Ваш запрос отправлен на обработку. <a style="cursor:pointer" onclick="$.magnificPopup.close();">Продолжить просмотр сайта&nbsp;»</a></p>
+        </div>
+        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+    </div>
+
+    <div class="popup mfp-hide zoom-anim-dialog popup_dept2" id="resume-19">
+        <div class="popupContent popupContent_resume" style="display: block;">
+        <div class="deptExp__aboutTeam__itemWrap">
+            <div class="aboutTeam__item">
+                <div class="aboutTeam__itemImage" style="background-image:url(assets/content/img/team-enver-g.jpg)">
+                    <div class="aboutTeamItem__back aboutTeamItem__back_dept2"></div>
+                </div>
+                <p class="aboutTeam__itemName">Энвер Горпинич</p>
+                <p class="aboutTeam__itemCaption"><a href="http://vk.com/id38928063" target="_blank">Страница ВКонтакте »</a></p>
+                <p class="aboutTeam__itemCaption"><a href="http://www.facebook.com/enwerische" target="_blank">Страница в Facebook »</a></p>
+            </div>
+        </div>
+        <div class="deptExp__messageWrap">
+            <div class="deptExp__message deptExp__message_nopad deptExp__resumeText">
+                <h2>Резюме эксперта</h2>
+                <ul class="list-dots">
+                    <li>2013–2014&nbsp;гг. —&nbsp;НПО «ЗКСМ»&nbsp;— Руководитель маркетингового отдела,</li>
+                    <li>2012–2014&nbsp;гг. —&nbsp;Руководитель проекта «Система автоматизированной системы досветки растений на&nbsp;основе светодиодных ламп»,</li>
+                    <li>2012–2013&nbsp;гг. —&nbsp;Руководитель проекта «Воздушная пирография»,</li>
+                    <li>2010–2012&nbsp;гг. —&nbsp;Член молодежного совета&nbsp;г. Томск,</li>
+                    <li>2007–2012&nbsp;гг. —&nbsp;МОО «Экологический центр Стриж»&nbsp;— организация мероприятий, направленных на&nbsp;сохранение окружающей среды.</li>
+                </ul>
+
+                <h3><a href="content/content/files/Gorpinich_ER_resume.pdf" target="_blank">Скачать резюме »</a></h3>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+        </div>
+    </div>
