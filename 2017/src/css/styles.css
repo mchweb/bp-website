@@ -5374,11 +5374,20 @@ strong {
 .c-results__block.is-border-yellow {
   border-color: #ffcc00;
 }
-.c-results__block .c-results__header {
+.c-results__block.is-border-yellow .c-results__header {
   border-color: #ffcc00;
 }
-.c-results__block .c-results__row .c-results__col:first-child {
+.c-results__block.is-border-yellow .c-results__row .c-results__col:first-child {
   border-color: #ffcc00;
+}
+.c-results__block.is-border-purple {
+  border-color: #913d88;
+}
+.c-results__block.is-border-purple .c-results__header {
+  border-color: #913d88;
+}
+.c-results__block.is-border-purple .c-results__row .c-results__col:first-child {
+  border-color: #913d88;
 }
 
 .c-results__img {

@@ -637,14 +637,25 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 .c-results__block {
     &.is-border-yellow {
         border-color: $color_yellow;
-    }
-    .c-results__header {
-        border-color: $color_yellow;
-    }
-    .c-results__row {
-        .c-results__col:first-child {    
+        .c-results__header {
             border-color: $color_yellow;
-        } 
+        }
+        .c-results__row {
+            .c-results__col:first-child {    
+                border-color: $color_yellow;
+            } 
+        }        
+    }
+    &.is-border-purple {
+        border-color: $color_purple;
+        .c-results__header {
+            border-color: $color_purple;
+        }
+        .c-results__row {
+            .c-results__col:first-child {    
+                border-color: $color_purple;
+            } 
+        }        
     }
 }
 .c-results__img {
