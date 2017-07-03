@@ -550,6 +550,11 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
             border-color: $color_purple;
         }
     }
+    &.is-blue {
+        .deptReqItem_dept2:hover{
+            border-color: $color_blue;
+        }
+    }    
 }
 .deptReqItem_dept1.deptReqItem_on p{
 	color:$dept1-gray;
@@ -767,15 +772,17 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 	text-align:center;
 }
 .bAbout__item {
+    margin-top: 1em;
 	@include span(4); 
 	@media (max-width: 680px) {
 		@include span(12 last); 
 		@include rhythm(0, 0, 0, 2);
 	}
+    text-align: left;
 }
 .bAboutItem__heading{
 	color:white;
-	@include adjust-font-size-to(18px);
+	@include adjust-font-size-to(20px);
 	font-weight:600;
 }
 .img-responsive {

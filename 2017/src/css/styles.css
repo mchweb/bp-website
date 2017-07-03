@@ -5232,6 +5232,9 @@ strong {
 .deptReq.is-purple .deptReqItem_dept1:hover {
   border-color: #913d88;
 }
+.deptReq.is-blue .deptReqItem_dept2:hover {
+  border-color: #4183d7;
+}
 
 .deptReqItem_dept1.deptReqItem_on p {
   color: #444;
@@ -5531,10 +5534,12 @@ strong {
 }
 
 .bAbout__item {
+  margin-top: 1em;
   width: 33.33333%;
   float: left;
   padding-left: 1.04167%;
   padding-right: 1.04167%;
+  text-align: left;
 }
 @media (max-width: 680px) {
   .bAbout__item {
@@ -5551,8 +5556,8 @@ strong {
 
 .bAboutItem__heading {
   color: white;
-  font-size: 1.125em;
-  line-height: 1.33333em;
+  font-size: 1.25em;
+  line-height: 1.2em;
   font-weight: 600;
 }
 
