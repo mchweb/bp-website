@@ -4955,11 +4955,15 @@ strong {
   padding: -0.25em;
   border-color: #444444;
   border-style: dashed;
-  padding: 2em;
+  padding: 0.8em;
   text-align: center;
 }
 .c-accent__content.bg-purple {
   background-color: #913d88;
+}
+
+.c-accent__text {
+  color: #000000;
 }
 
 .c-accent__title {

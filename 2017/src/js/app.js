@@ -39,7 +39,7 @@ $(document).ready(function(){
     
     /* Accent */
     /* Set the same maximum height for all blocks */
-    funcMaxHeightElement('.c-accent__item');  
+    funcMaxHeightElement('.c-accent__item .c-accent__content');  
     
     /* Products */
     /* Set the same maximum height for all blocks */

@@ -368,11 +368,14 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
     @include rhythm-borders(4px, 0);
     border-color: $color_gray_dark;
     border-style: dashed;    
-    padding: 2em;
+    padding: 0.8em;
     text-align: center;
     &.bg-purple {
         background-color: $color_purple;
     }        
+}
+.c-accent__text {
+    color: $color_black;
 }
 .c-accent__title {
     @include adjust-font-size-to(18px);
