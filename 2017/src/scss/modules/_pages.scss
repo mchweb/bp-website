@@ -544,6 +544,13 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 .deptReqItem_dept1:hover{
 	border-color:$dept1;
 }
+.deptReq {
+    &.is-purple {
+        .deptReqItem_dept1:hover{
+            border-color: $color_purple;
+        }
+    }
+}
 .deptReqItem_dept1.deptReqItem_on p{
 	color:$dept1-gray;
 }
