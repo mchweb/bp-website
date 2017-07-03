@@ -3717,16 +3717,28 @@ strong {
 .c-nav-submenu__item:nth-child(1):hover {
   border-color: #ffcc00;
 }
+.c-nav-submenu__item:nth-child(1):hover .c-nav-childmenu {
+  border-color: #ffcc00;
+}
 
 .c-nav-submenu__item:nth-child(2):hover {
+  border-color: #26a65b;
+}
+.c-nav-submenu__item:nth-child(2):hover .c-nav-childmenu {
   border-color: #26a65b;
 }
 
 .c-nav-submenu__item:nth-child(3):hover {
   border-color: #4183d7;
 }
+.c-nav-submenu__item:nth-child(3):hover .c-nav-childmenu {
+  border-color: #4183d7;
+}
 
 .c-nav-submenu__item:nth-child(4):hover {
+  border-color: #913d88;
+}
+.c-nav-submenu__item:nth-child(4):hover .c-nav-childmenu {
   border-color: #913d88;
 }
 
