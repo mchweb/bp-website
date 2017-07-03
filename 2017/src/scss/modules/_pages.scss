@@ -638,6 +638,13 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         border-bottom: none;
     } 
 }
+.c-results__body {
+    .c-results__row {
+        &:hover {
+            background-color: $color_gray_light;
+        }        
+    }
+}
 .c-results__col { 
     display: table-cell;
     padding: .25em .5em;

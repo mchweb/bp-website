@@ -5381,6 +5381,10 @@ strong {
   border-bottom: none;
 }
 
+.c-results__body .c-results__row:hover {
+  background-color: #E8E8E8;
+}
+
 .c-results__col {
   display: table-cell;
   padding: .25em .5em;
