@@ -45,6 +45,7 @@
 	@media (max-width: 680px) {
 		@include adjust-font-size-to(24px);
 	}
+    text-align: left;
 }
 .aboutQuote__text strong{
 	font-weight:400;

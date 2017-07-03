@@ -4478,6 +4478,7 @@ strong {
 .aboutQuote__text {
   width: 90%;
   margin: 0 auto;
+  text-align: left;
 }
 @media (max-width: 680px) {
   .aboutQuote__text {
