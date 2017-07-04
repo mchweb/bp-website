@@ -5111,7 +5111,7 @@ strong {
   border-width: 0.25em;
   border-style: solid;
   padding: -0.25em;
-  border-color: #444444;
+  border-color: #000000;
   border-style: dashed;
   padding: 0.8em;
   text-align: center;
@@ -5121,13 +5121,16 @@ strong {
 }
 
 .c-accent__text {
-  color: #000000;
+  color: #ffffff;
 }
 
 .c-accent__title {
   font-size: 1.125em;
   line-height: 1.33333em;
-  font-weight: bold;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1em;
+  padding-bottom: .8em;
 }
 
 /* Accent block ------*/
