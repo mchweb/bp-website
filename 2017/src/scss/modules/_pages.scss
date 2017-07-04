@@ -908,9 +908,12 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 	}
     text-align: left;
 }
+.bAbout__item p {
+    font-weight: 300;
+}
 .bAboutItem__heading{
 	color:white;
-	@include adjust-font-size-to(20px);
+	@include adjust-font-size-to(23px);
 	font-weight:600;
 }
 .img-responsive {
