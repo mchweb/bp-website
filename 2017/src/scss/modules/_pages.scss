@@ -287,7 +287,8 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
 $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 @for $i from 1 through length($colors_team) {
     .aboutTeam__itemWrap:nth-child(#{$i}n+#{$i}) .aboutTeamItem__back {
-        background-color: nth($colors_team, $i);
+        //background-color: nth($colors_team, $i);
+        background-color: $color_red;
     }
 }
 .aboutTeamItem__expertImage{

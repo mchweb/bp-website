@@ -4829,19 +4829,19 @@ strong {
 }
 
 .aboutTeam__itemWrap:nth-child(1n+1) .aboutTeamItem__back {
-  background-color: #ffcc00;
+  background-color: #cf0000;
 }
 
 .aboutTeam__itemWrap:nth-child(2n+2) .aboutTeamItem__back {
-  background-color: #26a65b;
+  background-color: #cf0000;
 }
 
 .aboutTeam__itemWrap:nth-child(3n+3) .aboutTeamItem__back {
-  background-color: #4183d7;
+  background-color: #cf0000;
 }
 
 .aboutTeam__itemWrap:nth-child(4n+4) .aboutTeamItem__back {
-  background-color: #913d88;
+  background-color: #cf0000;
 }
 
 .aboutTeamItem__expertImage {
