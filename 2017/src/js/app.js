@@ -81,7 +81,12 @@ $(document).ready(function() {
     callbacks: {
       close: popupsClosed
     }
-  });
+  });   
+  $('.mfp-link').click(function(){
+      if(!$($(this).attr('href')).hasClass('is-'+$(this).data('color'))){
+          $($(this).attr('href')).addClass('is-'+$(this).data('color'))
+      }      
+  });    
   $('.popup-youtube').magnificPopup({
 		disableOn: 700,
 		type: 'iframe',
@@ -99,7 +104,7 @@ function formSuccess(x){
   });  
 }
 
-function popupsClosed(){
+function popupsClosed(classColor,element){
   $( ".popupContent" ).each(function(index) {
     $(this).css("display", "block");
   });
@@ -108,7 +113,7 @@ function popupsClosed(){
   });
 }
 
-function showPopup(x, type, extra){
+function showPopup(x, type, extra, color){
   switch (x) {
     case 0:
       $.magnificPopup.open({items: { src: $("#popup_success") }, 
@@ -120,7 +125,7 @@ function showPopup(x, type, extra){
     });
       break
     case 1:
-      _showPopup('message', type, 'Задать вопрос', 'Не забудьте указать контактную информацию (телефон, электронная почта, социальные сети), <strong>чтобы мы могли в кратчайшие сроки вам ответить</strong>');
+      _showPopup('message', type, 'Задать вопрос', 'Не забудьте указать контактную информацию (телефон, электронная почта, социальные сети), <strong>чтобы мы могли в кратчайшие сроки вам ответить</strong>', '', color);
       break
     case 2:
       _showPopup('contact-dept1', type, 'Куда отправить информацию?', 'Укажите любой удобный способ связи (телефон, электронная почта, социальные сети) и мы отправим вам <strong>дополнительные, подробные материалы о франчайзинговых продуктах</strong>');
@@ -160,12 +165,16 @@ function showPopup(x, type, extra){
   }
 }
 
-function _showPopup(popup, type, heading, caption, extra){
+function _showPopup(popup, type, heading, caption, extra, color){
+    console.log(color);
   $( "#popup__"+popup+"_heading" ).html( heading );
   $( "#popup__"+popup+"_caption" ).html( caption );
   $( "#popup__"+popup+"_type" ).val( type );
   if (extra){
     $("#dept1Form__product").val(extra);
+  }
+  if(!$("#popup_"+popup).hasClass('is-'+color)){
+      $("#popup_"+popup).addClass('is-'+color);
   }
   $.magnificPopup.open({items: { src: $("#popup_"+popup) }, 
       type: 'inline',

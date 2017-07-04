@@ -4824,12 +4824,12 @@ strong {
 }
 
 .aboutTeam__itemImage:hover .aboutTeamItem__back_dept1 {
-  background: url("../img/expert-dept1.png");
+  background: url("../img/expert-yellow.png");
   background-size: cover;
 }
 
 .aboutTeam__itemImage:hover .aboutTeamItem__back_dept2 {
-  background: url("../img/expert-dept2.png");
+  background: url("../img/expert-green.png");
   background-size: cover;
 }
 
@@ -4931,8 +4931,108 @@ strong {
   border-color: #ffcc00;
 }
 
-.popup_dept2 {
+.popup_dept2.c-popup {
   border-color: #26a55b;
+}
+.popup_dept2.c-popup.is-yellow {
+  border-color: #ffcc00;
+}
+.popup_dept2.c-popup.is-yellow .contactForm__button_gray.contactForm__button_dept2 {
+  background: linear-gradient(to top, #ffcc00 50%, #dddddd 50%) !important;
+  background-size: 100% 200% !important;
+  background-position: left top !important;
+}
+.popup_dept2.c-popup.is-yellow .contactForm__button_dept2 {
+  border-color: #ffcc00 !important;
+}
+.popup_dept2.c-popup.is-yellow .contactForm__button_dept2:hover {
+  background-position: right bottom !important;
+}
+.popup_dept2.c-popup.is-yellow .aboutTeamItem__back_dept2 {
+  background-color: #ffcc00 !important;
+}
+.popup_dept2.c-popup.is-yellow .aboutTeam__itemImage.is-no-bg:hover .aboutTeamItem__back_dept2 {
+  background: none;
+}
+.popup_dept2.c-popup.is-purple {
+  border-color: #913d88;
+}
+.popup_dept2.c-popup.is-purple .contactForm__button_gray.contactForm__button_dept2 {
+  background: linear-gradient(to top, #913d88 50%, #dddddd 50%) !important;
+  background-size: 100% 200% !important;
+  background-position: left top !important;
+}
+.popup_dept2.c-popup.is-purple .contactForm__button_dept2 {
+  border-color: #913d88 !important;
+}
+.popup_dept2.c-popup.is-purple .contactForm__button_dept2:hover {
+  background-position: right bottom !important;
+}
+.popup_dept2.c-popup.is-purple .aboutTeamItem__back_dept2 {
+  background-color: #913d88 !important;
+}
+.popup_dept2.c-popup.is-purple .aboutTeam__itemImage.is-no-bg:hover .aboutTeamItem__back_dept2 {
+  background: none;
+}
+.popup_dept2.c-popup.is-red {
+  border-color: #cf0000;
+}
+.popup_dept2.c-popup.is-red .contactForm__button_gray.contactForm__button_dept2 {
+  background: linear-gradient(to top, #cf0000 50%, #dddddd 50%) !important;
+  background-size: 100% 200% !important;
+  background-position: left top !important;
+}
+.popup_dept2.c-popup.is-red .contactForm__button_dept2 {
+  border-color: #cf0000 !important;
+}
+.popup_dept2.c-popup.is-red .contactForm__button_dept2:hover {
+  background-position: right bottom !important;
+}
+.popup_dept2.c-popup.is-red .aboutTeamItem__back_dept2 {
+  background-color: #cf0000 !important;
+}
+.popup_dept2.c-popup.is-red .aboutTeam__itemImage.is-no-bg:hover .aboutTeamItem__back_dept2 {
+  background: none;
+}
+.popup_dept2.c-popup.is-green {
+  border-color: #26a65b;
+}
+.popup_dept2.c-popup.is-green .contactForm__button_gray.contactForm__button_dept2 {
+  background: linear-gradient(to top, #26a65b 50%, #dddddd 50%) !important;
+  background-size: 100% 200% !important;
+  background-position: left top !important;
+}
+.popup_dept2.c-popup.is-green .contactForm__button_dept2 {
+  border-color: #26a65b !important;
+}
+.popup_dept2.c-popup.is-green .contactForm__button_dept2:hover {
+  background-position: right bottom !important;
+}
+.popup_dept2.c-popup.is-green .aboutTeamItem__back_dept2 {
+  background-color: #26a65b !important;
+}
+.popup_dept2.c-popup.is-green .aboutTeam__itemImage.is-no-bg:hover .aboutTeamItem__back_dept2 {
+  background: none;
+}
+.popup_dept2.c-popup.is-blue {
+  border-color: #4183d7;
+}
+.popup_dept2.c-popup.is-blue .contactForm__button_gray.contactForm__button_dept2 {
+  background: linear-gradient(to top, #4183d7 50%, #dddddd 50%) !important;
+  background-size: 100% 200% !important;
+  background-position: left top !important;
+}
+.popup_dept2.c-popup.is-blue .contactForm__button_dept2 {
+  border-color: #4183d7 !important;
+}
+.popup_dept2.c-popup.is-blue .contactForm__button_dept2:hover {
+  background-position: right bottom !important;
+}
+.popup_dept2.c-popup.is-blue .aboutTeamItem__back_dept2 {
+  background-color: #4183d7 !important;
+}
+.popup_dept2.c-popup.is-blue .aboutTeam__itemImage.is-no-bg:hover .aboutTeamItem__back_dept2 {
+  background: none;
 }
 
 .popupContent {
@@ -5326,6 +5426,99 @@ strong {
   }
 }
 
+.deptExp.is-purple .deptExp__message_dept2 {
+  border-color: #913d88;
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
+.deptExp.is-purple .aboutTeamItem__back_dept2 {
+  background-color: #913d88 !important;
+}
+.deptExp.is-purple .contact__button_gray.contact__button_dept2 {
+  background: linear-gradient(to top, #913d88 50%, #dddddd 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+}
+.deptExp.is-purple .contact__button_dept2 {
+  border-color: #913d88;
+}
+.deptExp.is-purple .contact__button_dept1:hover, .deptExp.is-purple .contact__button_dept2:hover {
+  background-position: right bottom;
+}
+.deptExp.is-purple .aboutTeam__itemImage:hover .aboutTeamItem__back_dept2 {
+  background: url(../img/expert-purple.png);
+  background-size: cover;
+}
+.deptExp.is-green .deptExp__message_dept2 {
+  border-color: #26a65b;
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
+.deptExp.is-green .aboutTeamItem__back_dept2 {
+  background-color: #26a65b !important;
+}
+.deptExp.is-green .contact__button_gray.contact__button_dept2 {
+  background: linear-gradient(to top, #26a65b 50%, #dddddd 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+}
+.deptExp.is-green .contact__button_dept2 {
+  border-color: #26a65b;
+}
+.deptExp.is-green .contact__button_dept1:hover, .deptExp.is-green .contact__button_dept2:hover {
+  background-position: right bottom;
+}
+.deptExp.is-green .aboutTeam__itemImage:hover .aboutTeamItem__back_dept2 {
+  background: url(../img/expert-green.png);
+  background-size: cover;
+}
+.deptExp.is-blue .deptExp__message_dept2 {
+  border-color: #4183d7;
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
+.deptExp.is-blue .aboutTeamItem__back_dept2 {
+  background-color: #4183d7 !important;
+}
+.deptExp.is-blue .contact__button_gray.contact__button_dept2 {
+  background: linear-gradient(to top, #4183d7 50%, #dddddd 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+}
+.deptExp.is-blue .contact__button_dept2 {
+  border-color: #4183d7;
+}
+.deptExp.is-blue .contact__button_dept1:hover, .deptExp.is-blue .contact__button_dept2:hover {
+  background-position: right bottom;
+}
+.deptExp.is-blue .aboutTeam__itemImage:hover .aboutTeamItem__back_dept2 {
+  background: url(../img/expert-blue.png);
+  background-size: cover;
+}
+.deptExp.is-yellow .deptExp__message_dept2 {
+  border-color: #ffcc00;
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
+.deptExp.is-yellow .aboutTeamItem__back_dept2 {
+  background-color: #ffcc00 !important;
+}
+.deptExp.is-yellow .contact__button_gray.contact__button_dept2 {
+  background: linear-gradient(to top, #ffcc00 50%, #dddddd 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+}
+.deptExp.is-yellow .contact__button_dept2 {
+  border-color: #ffcc00;
+}
+.deptExp.is-yellow .contact__button_dept1:hover, .deptExp.is-yellow .contact__button_dept2:hover {
+  background-position: right bottom;
+}
+.deptExp.is-yellow .aboutTeam__itemImage:hover .aboutTeamItem__back_dept2 {
+  background: url(../img/expert-yellow.png);
+  background-size: cover;
+}
+
 /* DeptReq block ------*/
 .deptReq {
   margin-top: 0em;
@@ -5554,6 +5747,15 @@ strong {
 }
 .c-results__block.is-border-yellow .c-results__row .c-results__col:first-child {
   border-color: #ffcc00;
+}
+.c-results__block.is-border-green {
+  border-color: #26a65b;
+}
+.c-results__block.is-border-green .c-results__header {
+  border-color: #26a65b;
+}
+.c-results__block.is-border-green .c-results__row .c-results__col:first-child {
+  border-color: #26a65b;
 }
 .c-results__block.is-border-purple {
   border-color: #913d88;

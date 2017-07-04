@@ -269,11 +269,11 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
 	padding-top:100%;
 }
 .aboutTeam__itemImage:hover .aboutTeamItem__back_dept1 {
-	background:url('../img/expert-dept1.png');
+	background:url('../img/expert-yellow.png');
 	background-size:cover;
 }
 .aboutTeam__itemImage:hover .aboutTeamItem__back_dept2 {
-	background:url('../img/expert-dept2.png');
+	background:url('../img/expert-green.png');
 	background-size:cover;
 }
 .aboutTeamItem__back_dept1{
@@ -329,8 +329,108 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 .popup_dept1 {
 	border-color:$dept1;
 }
-.popup_dept2 {
+.popup_dept2.c-popup {
 	border-color:$dept2;
+    &.is-yellow {
+        border-color: $color_yellow;
+        .contactForm__button_gray.contactForm__button_dept2 {
+            background: linear-gradient(to top,$color_yellow 50%,#ddd 50%) !important;
+            background-size: 100% 200% !important;
+            background-position: left top !important;            
+        }        
+        .contactForm__button_dept2 {
+            border-color: $color_yellow !important;
+        }
+        .contactForm__button_dept2:hover {
+            background-position: right bottom !important;
+        }  
+        .aboutTeamItem__back_dept2 {
+            background-color: $color_yellow!important;
+        }
+        .aboutTeam__itemImage.is-no-bg:hover .aboutTeamItem__back_dept2 {
+            background: none;
+        }
+    }
+    &.is-purple {
+        border-color: $color_purple;
+        .contactForm__button_gray.contactForm__button_dept2 {
+            background: linear-gradient(to top,$color_purple 50%,#ddd 50%) !important;
+            background-size: 100% 200% !important;
+            background-position: left top !important;            
+        }        
+        .contactForm__button_dept2 {
+            border-color: $color_purple !important;
+        }
+        .contactForm__button_dept2:hover {
+            background-position: right bottom !important;
+        }  
+        .aboutTeamItem__back_dept2 {
+            background-color: $color_purple!important;
+        }
+        .aboutTeam__itemImage.is-no-bg:hover .aboutTeamItem__back_dept2 {
+            background: none;
+        }        
+    }
+    &.is-red {
+        border-color: $color_red;
+        .contactForm__button_gray.contactForm__button_dept2 {
+            background: linear-gradient(to top,$color_red 50%,#ddd 50%) !important;
+            background-size: 100% 200% !important;
+            background-position: left top !important;            
+        }        
+        .contactForm__button_dept2 {
+            border-color: $color_red !important;
+        }
+        .contactForm__button_dept2:hover {
+            background-position: right bottom !important;
+        }  
+        .aboutTeamItem__back_dept2 {
+            background-color: $color_red!important;
+        }
+        .aboutTeam__itemImage.is-no-bg:hover .aboutTeamItem__back_dept2 {
+            background: none;
+        }        
+    }
+    &.is-green {
+        border-color: $color_green;
+        .contactForm__button_gray.contactForm__button_dept2 {
+            background: linear-gradient(to top,$color_green 50%,#ddd 50%) !important;
+            background-size: 100% 200% !important;
+            background-position: left top !important;            
+        }        
+        .contactForm__button_dept2 {
+            border-color: $color_green !important;
+        }
+        .contactForm__button_dept2:hover {
+            background-position: right bottom !important;
+        }  
+        .aboutTeamItem__back_dept2 {
+            background-color: $color_green!important;
+        }
+        .aboutTeam__itemImage.is-no-bg:hover .aboutTeamItem__back_dept2 {
+            background: none;
+        }         
+    }  
+    &.is-blue {
+        border-color: $color_blue;
+        .contactForm__button_gray.contactForm__button_dept2 {
+            background: linear-gradient(to top,$color_blue 50%,#ddd 50%) !important;
+            background-size: 100% 200% !important;
+            background-position: left top !important;            
+        }        
+        .contactForm__button_dept2 {
+            border-color: $color_blue !important;
+        }
+        .contactForm__button_dept2:hover {
+            background-position: right bottom !important;
+        }  
+        .aboutTeamItem__back_dept2 {
+            background-color: $color_blue!important;
+        }
+        .aboutTeam__itemImage.is-no-bg:hover .aboutTeamItem__back_dept2 {
+            background: none;
+        }         
+    }      
 }
 .popupContent{
 	max-width:600px;
@@ -624,7 +724,104 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 		@include span(12); 
 	}
 }
-
+.deptExp {
+    &.is-purple {
+        .deptExp__message_dept2 {
+            border-color: $color_purple;
+            @include adjust-font-size-to(20px);
+        }
+        .aboutTeamItem__back_dept2 {
+            background-color: $color_purple !important;            
+        }
+        .contact__button_gray.contact__button_dept2 {
+            background: linear-gradient(to top,$color_purple 50%,#ddd 50%);
+            background-size: 100% 200%;
+            background-position: left top;            
+        }        
+        .contact__button_dept2 {
+            border-color: $color_purple;
+        }
+        .contact__button_dept1:hover, .contact__button_dept2:hover {
+            background-position: right bottom;
+        }
+        .aboutTeam__itemImage:hover .aboutTeamItem__back_dept2 {
+            background: url(../img/expert-purple.png);
+            background-size: cover;
+        }
+    }
+    &.is-green {
+        .deptExp__message_dept2 {
+            border-color: $color_green;
+            @include adjust-font-size-to(20px);
+        }
+        .aboutTeamItem__back_dept2 {
+            background-color: $color_green !important;            
+        }
+        .contact__button_gray.contact__button_dept2 {
+            background: linear-gradient(to top,$color_green 50%,#ddd 50%);
+            background-size: 100% 200%;
+            background-position: left top;            
+        }        
+        .contact__button_dept2 {
+            border-color: $color_green;
+        }
+        .contact__button_dept1:hover, .contact__button_dept2:hover {
+            background-position: right bottom;
+        }
+        .aboutTeam__itemImage:hover .aboutTeamItem__back_dept2 {
+            background: url(../img/expert-green.png);
+            background-size: cover;
+        }
+    } 
+    &.is-blue {
+        .deptExp__message_dept2 {
+            border-color: $color_blue;
+            @include adjust-font-size-to(20px);
+        }
+        .aboutTeamItem__back_dept2 {
+            background-color: $color_blue !important;            
+        }
+        .contact__button_gray.contact__button_dept2 {
+            background: linear-gradient(to top,$color_blue 50%,#ddd 50%);
+            background-size: 100% 200%;
+            background-position: left top;            
+        }        
+        .contact__button_dept2 {
+            border-color: $color_blue;
+        }
+        .contact__button_dept1:hover, .contact__button_dept2:hover {
+            background-position: right bottom;
+        }
+        .aboutTeam__itemImage:hover .aboutTeamItem__back_dept2 {
+            background: url(../img/expert-blue.png);
+            background-size: cover;
+        }
+    }
+    &.is-yellow {
+        .deptExp__message_dept2 {
+            border-color: $color_yellow;
+            @include adjust-font-size-to(20px);
+        }
+        .aboutTeamItem__back_dept2 {
+            background-color: $color_yellow !important;            
+        }
+        .contact__button_gray.contact__button_dept2 {
+            background: linear-gradient(to top,$color_yellow 50%,#ddd 50%);
+            background-size: 100% 200%;
+            background-position: left top;            
+        }        
+        .contact__button_dept2 {
+            border-color: $color_yellow;
+        }
+        .contact__button_dept1:hover, .contact__button_dept2:hover {
+            background-position: right bottom;
+        }
+        .aboutTeam__itemImage:hover .aboutTeamItem__back_dept2 {
+            background: url(../img/expert-yellow.png);
+            background-size: cover;
+        }
+    }     
+}
 /* DeptReq block ------*/
 .deptReq{
 	@include rhythm(0,2,5,0);
@@ -791,6 +988,17 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
             } 
         }        
     }
+    &.is-border-green {
+        border-color: $color_green;
+        .c-results__header {
+            border-color: $color_green;
+        }
+        .c-results__row {
+            .c-results__col:first-child {    
+                border-color: $color_green;
+            } 
+        }        
+    }    
     &.is-border-purple {
         border-color: $color_purple;
         .c-results__header {
