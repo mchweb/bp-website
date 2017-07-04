@@ -4357,6 +4357,10 @@ strong {
   width: 3em;
 }
 
+.footer__socLinks {
+  margin-bottom: 1em;
+}
+
 .footer__socLinks li {
   display: inline;
   margin: 0 0.5em;
@@ -4418,6 +4422,10 @@ strong {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0.75em;
+}
+
+.footer__contacts {
+  line-height: 1.5em;
 }
 
 .footer__contacts li {

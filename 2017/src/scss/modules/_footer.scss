@@ -211,6 +211,9 @@
 	height:3em;
 	width:3em;
 }
+.footer__socLinks {
+    margin-bottom: 1em;
+}
 .footer__socLinks li{
 	display:inline;
 	margin:0 0.5em;
@@ -254,7 +257,9 @@
 .footer__lowerNav{
 	@include rhythm(0, 0, 0, 2);
 }
-
+.footer__contacts {
+    line-height: 1.5em;
+}
 .footer__contacts li{
 	display:inline-block;
 	margin:0 0.5em;
