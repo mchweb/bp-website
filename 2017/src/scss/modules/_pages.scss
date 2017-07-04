@@ -239,15 +239,18 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
 /* Team block ------*/
 .aboutTeam{
 	@include rhythm(4,0,0,0);
-	text-align:center;
+	text-align: center;
 }
 .aboutTeam__header{
 	@include rhythm(0,0,0,4);
 }
 .aboutTeam__item{
-	max-width:200px;
+	max-width: 200px;
     margin: 0 auto;
-    min-height:13em;
+    min-height: 20em;
+    &.is-small-height {
+        min-height: 13em;
+    }
 }
 .aboutTeam__itemImage{
 	background-size:contain;
