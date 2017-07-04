@@ -360,12 +360,124 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 .c-map {
     display: inline-block;
     width: 100%;
+    background-color: $color_black_light2;
+    padding: 50px 0px;
+    .container {
+        position: relative;        
+    }
     img {
         width: 100%;
         height: auto;
     }
 }
-
+.c-map__element {
+    background-image: url('../img/icon-map-basic.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+//    width: 41px;
+//    height: 62px;
+    width: 3.4%;
+    height: 9.3%;    
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    &::before {
+        display: none;
+    }    
+    &.is-helsinki {
+        left: 52%;
+        top: 15%;        
+    }
+    &.is-moskva {
+        left: 55%;
+        top: 20%; 
+        &::before {
+            left: -30%;
+        }        
+    }
+    &.is-omsk {
+        left: 67%;
+        top: 22%;  
+        &::before {
+            left: -9%;
+        }           
+    }
+    &.is-tomsk {
+        left: 71%;
+        top: 21%; 
+        &::before {
+            left: -19%;
+        }           
+    }
+    &.is-kemerovo {
+        left: 72%;
+        top: 22%;   
+        &::before {
+            left: -55%;
+        }           
+    }
+    &.is-novosibirsk {
+        left: 69%;
+        top: 24%;   
+        &::before {
+            left: -55%;
+        }           
+    }
+    &.is-novokuzneck {
+        left: 73%;
+        top: 25%;
+        &::before {
+            left: -80%;
+        }           
+    }
+    &.is-barnaul {
+        left: 71%;
+        top: 26%;
+        z-index: 9;   
+        &::before {
+            left: -40%;
+        }           
+    }    
+    &.is-vladivostok {
+        left: 82%;
+        top: 28%;   
+        &::before {
+            left: -86%;
+        }        
+    } 
+    &.is-samara {
+        left: 60%;
+        top: 25%;   
+        &::before {
+            left: -30%;
+        }
+    } 
+    &::before {
+        content: attr(data-map-city-name);
+        @include rhythm-borders(1px, 0);
+        border-color: $color_red;
+        border-style: dashed;  
+        background-color: $color_white;
+        color: $color_red;
+        padding: .5em;
+        left: -55%;
+        position: absolute;
+        top: -65%;
+    }
+    &:hover {
+        background-image: url('../img/icon-map-active.png');
+        cursor: pointer;
+        z-index: 999;
+        &::before {
+            display: block;
+        }        
+    }
+}
+.c-map__element[data-map-city-name='Хельсинки'] {
+    left: 52%;
+    top: 15%;     
+}
 /* Accevnt block ------*/
 .c-accent__item {
     @include span(4);

@@ -4048,7 +4048,7 @@ strong {
 .contactForm {
   background-size: cover;
   background-image: url("../img/bg-blur.jpg");
-  margin-top: 1.5em;
+  margin-top: 0em;
   padding-top: 1.5em;
   padding-bottom: 2.25em;
   margin-bottom: 0em;
@@ -4961,10 +4961,125 @@ strong {
 .c-map {
   display: inline-block;
   width: 100%;
+  background-color: #1e1e1e;
+  padding: 50px 0px;
+}
+.c-map .container, .c-map .l-products {
+  position: relative;
 }
 .c-map img {
   width: 100%;
   height: auto;
+}
+
+.c-map__element {
+  background-image: url("../img/icon-map-basic.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 3.4%;
+  height: 9.3%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+.c-map__element::before {
+  display: none;
+}
+.c-map__element.is-helsinki {
+  left: 52%;
+  top: 15%;
+}
+.c-map__element.is-moskva {
+  left: 55%;
+  top: 20%;
+}
+.c-map__element.is-moskva::before {
+  left: -30%;
+}
+.c-map__element.is-omsk {
+  left: 67%;
+  top: 22%;
+}
+.c-map__element.is-omsk::before {
+  left: -9%;
+}
+.c-map__element.is-tomsk {
+  left: 71%;
+  top: 21%;
+}
+.c-map__element.is-tomsk::before {
+  left: -19%;
+}
+.c-map__element.is-kemerovo {
+  left: 72%;
+  top: 22%;
+}
+.c-map__element.is-kemerovo::before {
+  left: -55%;
+}
+.c-map__element.is-novosibirsk {
+  left: 69%;
+  top: 24%;
+}
+.c-map__element.is-novosibirsk::before {
+  left: -55%;
+}
+.c-map__element.is-novokuzneck {
+  left: 73%;
+  top: 25%;
+}
+.c-map__element.is-novokuzneck::before {
+  left: -80%;
+}
+.c-map__element.is-barnaul {
+  left: 71%;
+  top: 26%;
+  z-index: 9;
+}
+.c-map__element.is-barnaul::before {
+  left: -40%;
+}
+.c-map__element.is-vladivostok {
+  left: 82%;
+  top: 28%;
+}
+.c-map__element.is-vladivostok::before {
+  left: -86%;
+}
+.c-map__element.is-samara {
+  left: 60%;
+  top: 25%;
+}
+.c-map__element.is-samara::before {
+  left: -30%;
+}
+.c-map__element::before {
+  content: attr(data-map-city-name);
+  border-width: 0.0625em;
+  border-style: solid;
+  padding: -0.0625em;
+  border-color: #cf0000;
+  border-style: dashed;
+  background-color: #ffffff;
+  color: #cf0000;
+  padding: .5em;
+  left: -55%;
+  position: absolute;
+  top: -65%;
+}
+.c-map__element:hover {
+  background-image: url("../img/icon-map-active.png");
+  cursor: pointer;
+  z-index: 999;
+}
+.c-map__element:hover::before {
+  display: block;
+}
+
+.c-map__element[data-map-city-name='╨е╨╡╨╗╤М╤Б╨╕╨╜╨║╨╕'] {
+  left: 52%;
+  top: 15%;
 }
 
 /* Accevnt block ------*/

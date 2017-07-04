@@ -6,7 +6,7 @@
 .contactForm{
 	background-size:cover;
 	background-image:url('../img/bg-blur.jpg');
-	@include rhythm(4, 4, 6, 0);
+	@include rhythm(0, 4, 6, 0);
 }
 .contactForm__text, .contactForm__form{
 	color: white;
