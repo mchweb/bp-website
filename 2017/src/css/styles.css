@@ -5655,6 +5655,7 @@ strong {
 .c-list-links {
   list-style: none;
   padding-left: none;
+  margin-bottom: 2em;
 }
 
 .c-list-links__item {
