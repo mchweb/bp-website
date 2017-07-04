@@ -3122,6 +3122,10 @@ table {
   color: #ffffff !important;
 }
 
+.color-black {
+  color: #000000 !important;
+}
+
 /* Fonts ----------*/
 /*font awesome settings*/
 /* Indents --------*/
@@ -3342,7 +3346,7 @@ table {
   font-weight: 600;
   margin-top: .75em;
   margin-bottom: .375em;
-  padding: .5625em 1.5em .375em;
+  padding: .5625em 1.5em .349999em;
 }
 
 .contact__button_gray {
@@ -3408,6 +3412,10 @@ table {
 
 .contact__button_dept1:hover, .contact__button_dept2:hover {
   background-position: right bottom;
+}
+
+.deptExp__messageWrap .contact__button {
+  padding-bottom: 7px;
 }
 
 /* Forms *******************/

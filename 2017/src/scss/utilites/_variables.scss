@@ -37,6 +37,9 @@ $color_gray_light: #E8E8E8;
 .color-white {
     color: $color_white !important;
 }
+.color-black {
+    color: $color_black !important;
+}
 /* Fonts ----------*/
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,900,900i&subset=cyrillic');
 $font_family_base: 'Source Sans Pro', Arial sans-serif;

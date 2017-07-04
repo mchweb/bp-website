@@ -19,8 +19,9 @@
     background-position:left top;
 	font-weight:600;
     margin-top: .75em;
-    margin-bottom: .375em;   
-    padding: .5625em 1.5em .375em;
+    margin-bottom: .375em;    
+    padding: .5625em 1.5em .349999em;    
+//    padding: .5625em 1.5em .375em;
 }
 .contact__button_gray{
 	background: linear-gradient(to top, $red 50%, $gray 50%);
@@ -74,4 +75,7 @@
 }
 .contact__button_dept1:hover, .contact__button_dept2:hover,{
 	background-position:right bottom;
+}
+.deptExp__messageWrap .contact__button {
+    padding-bottom: 7px;
 }
