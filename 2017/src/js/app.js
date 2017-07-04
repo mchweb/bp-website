@@ -26,7 +26,9 @@ $(document).ready(function(){
         pageDots: false,
         draggable: true,
         groupCells: true,
-        prevNextButtons: true
+        prevNextButtons: true,
+        cellAlign: 'left',
+        contain: true
     };
     if(elemSlider.length){
         elemSlider.flickity(paramsSlider);
