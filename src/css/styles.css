@@ -4697,7 +4697,7 @@ strong {
   text-align: center;
   margin-top: 0em;
   padding-top: 1.5em;
-  padding-bottom: 0.75em;
+  padding-bottom: 1.125em;
   margin-bottom: 0em;
 }
 
@@ -5202,12 +5202,17 @@ strong {
 }
 
 /* Accevnt block ------*/
+.c-accent__header {
+  margin-top: 1em;
+}
+
 .c-accent__item {
   width: 33.33333%;
   float: left;
   padding-left: 1.04167%;
   padding-right: 1.04167%;
   padding: 1em;
+  margin-bottom: 1em;
 }
 
 .c-accent__content {
@@ -5253,6 +5258,7 @@ strong {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
+  margin-top: 2em;
 }
 
 .deptStepsItem__circle {

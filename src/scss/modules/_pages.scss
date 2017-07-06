@@ -189,7 +189,7 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
 .aboutFacts{
 	background:$dark;
 	text-align:center;
-	@include rhythm(0, 4, 2, 0);
+	@include rhythm(0, 4, 3, 0);
 }
 .pageHeading_aboutFacts{
 	color:white;
@@ -583,9 +583,13 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
     top: 15%;     
 }
 /* Accevnt block ------*/
+.c-accent__header {
+    margin-top: 1em;
+}
 .c-accent__item {
     @include span(4);
     padding: 1em;
+    margin-bottom: 1em;
 }
 .c-accent__content {
     @include rhythm-borders(4px, 0);
@@ -618,6 +622,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 	text-align:center;
 	color:white;
 	@include rhythm(4,0,0,4);
+    margin-top: 2em;
 }
 .deptStepsItem__circle{
 	width:90px;
