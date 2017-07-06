@@ -19,6 +19,7 @@ $(document).ready(function(){
     /* Welcome block */
     /* Set a background image */
     funcBackgroundImageBlocks('.c-welcome','.c-welcome__thumbnail img','center','center','','cover'); 
+    funcBackgroundImageBlocks('.c-welcome.is-position-back-left','.c-welcome__thumbnail img','left','top','','cover'); 
     
     /* Connecting flickity.js for parners slider */ 
     var elemSlider = $('.c-slider');
