@@ -6041,6 +6041,10 @@ strong {
   float: left;
   margin-right: 1em;
 }
+.bEventContacts__image.is-black img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
 
 .bEventContacts__image img {
   max-width: 150px;

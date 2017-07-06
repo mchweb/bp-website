@@ -1185,6 +1185,11 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 	display:table-cell;
 	float:left;
 	margin-right:1em;
+    &.is-black {
+        img {
+            @include filter(grayscale(100%));
+        }        
+    }
 }
 .bEventContacts__image img{
 	max-width: 150px;
