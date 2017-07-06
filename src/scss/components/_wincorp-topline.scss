@@ -1,0 +1,29 @@
+// ----------------------- //
+// Wincorp topline style - //
+// ----------------------- //
+
+/* Wincorp line ------*/
+.wincorp-topline {
+    font-size: 12px;
+    font-family: Tahoma,sans-serif;
+    background-color: #dcdcdc;
+    border-bottom: 1px solid #9f9f9f;
+    z-index: 10000;
+    text-align: center;
+    line-height: 19px;
+    letter-spacing: 0px;
+}
+.wincorp-topline ul {
+    padding: 0 !important;
+}
+.wincorp-topline ul li {
+    display: inline-block;
+    padding: 2px 6px;
+}
+.wincorp-topline ul li a {
+    color: #505050;
+    text-decoration: none;
+}
+.wincorp-topline ul li a:hover{
+    color: #cf0000;
+}
