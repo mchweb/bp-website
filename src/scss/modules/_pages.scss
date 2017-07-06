@@ -927,10 +927,11 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 }
 /* Results block ------*/
 .c-results {
-    padding: 50px 0px;    
+    //padding: 50px 0px;    
 }
 .c-results__title {
-	@include rhythm(0, 1, 0, 0);
+	@include rhythm(0, 2, 1, 0);
+    text-align: center;
 }
 .c-results__subheader {
     @include adjust-font-size-to(18px);
@@ -940,7 +941,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
     border-color: $color_red;
     border-style: dashed;  
     padding: 1em;  
-    margin-top: 2em;
+    //margin-top: 2em;
 }
 .c-results__table {
     width: 100%;
@@ -1075,6 +1076,11 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
     margin-top: 2em;
 }
 /* List arrow block ------*/
+.c-list-arrow__title {
+    @include adjust-font-size-to(18px);
+    font-weight: normal;
+    margin-bottom: .75em;
+}
 .c-list-arrow {
     list-style: none;
     padding-left: none;
@@ -1101,10 +1107,12 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
     list-style: none;
     padding-left: none;
     margin-bottom: 2em;
+    margin-top: 1em;
 }
 .c-list-links__item {
     list-style: none;
-
+    display: inline-block;
+    margin-left: .5em;
 }
 .c-list-links__link {
     @include adjust-font-size-to(20px);

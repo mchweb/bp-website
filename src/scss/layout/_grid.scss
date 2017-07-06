@@ -60,6 +60,7 @@ $susy: (
     }    
 }
 .l-content__grid--two {
+    display: inline-block;
     .l-content__col {
         @include span(6);
         @include for-size(device-small) {
