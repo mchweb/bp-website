@@ -217,7 +217,7 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
 }
 
 .mainHeadingCaption{
-	@include adjust-font-size-to(20px);
+	@include adjust-font-size-to(16px);
 }
 .mainHeadingCaption a{
 	color:white;
