@@ -473,6 +473,9 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         width: 100%;
         height: auto;
     }
+    .container.is-small {
+        max-width: 900px;
+    }
 }
 .c-map__element {
     background-image: url('../img/icon-map-basic.png');

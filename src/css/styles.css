@@ -5102,6 +5102,9 @@ strong {
   width: 100%;
   height: auto;
 }
+.c-map .container.is-small, .c-map .is-small.l-products {
+  max-width: 900px;
+}
 
 .c-map__element {
   background-image: url("../img/icon-map-basic.png");
