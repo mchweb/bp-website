@@ -5935,7 +5935,7 @@ strong {
 }
 
 .c-list-arrow__description {
-  width: 50%;
+  width: 100%;
   padding-left: 1em;
   margin-bottom: 2em;
 }
