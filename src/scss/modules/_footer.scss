@@ -131,6 +131,8 @@
 	@media (max-width: 680px) {
 		width:100%  !important;
 	}
+    padding: .5625em 1.5em .349999em;   
+    cursor: pointer;
 }
 .contactForm__button_gray{
 	background: linear-gradient(to top, $red 50%, $gray 50%);
@@ -213,6 +215,7 @@
 }
 .footer__socLinks {
     margin-bottom: 1em;
+    padding-left: 2em;
 }
 .footer__socLinks li{
 	display:inline;
