@@ -5144,6 +5144,7 @@ strong {
 .c-map__element.is-tomsk {
   left: 48%;
   top: 33%;
+  z-index: 0;
 }
 .c-map__element.is-tomsk::before {
   left: -19%;

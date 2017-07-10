@@ -523,7 +523,8 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
     }
     &.is-tomsk {
         left: 48%;
-        top: 33%;         
+        top: 33%;        
+        z-index: 0;
 // big map           
 //        left: 71%;
 //        top: 21%; 
