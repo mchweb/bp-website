@@ -493,69 +493,99 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         display: none;
     }    
     &.is-helsinki {
-        left: 52%;
-        top: 15%;        
+        left: 17%;
+        top: 26%;  
+// big map        
+//        left: 52%;
+//        top: 15%;        
     }
     &.is-moskva {
-        left: 55%;
-        top: 20%; 
+        left: 21%;
+        top: 33%;   
+// big map           
+//        left: 55%;
+//        top: 20%; 
         &::before {
             left: -30%;
         }        
     }
     &.is-omsk {
-        left: 67%;
-        top: 22%;  
+        left: 41%;
+        top: 34%;  
+// big map           
+//        left: 67%;
+//        top: 22%;  
         &::before {
             left: -9%;
         }           
     }
     &.is-tomsk {
-        left: 71%;
-        top: 21%; 
+        left: 46%;
+        top: 31%;  
+// big map           
+//        left: 71%;
+//        top: 21%; 
         &::before {
             left: -19%;
         }           
     }
     &.is-kemerovo {
-        left: 72%;
-        top: 22%;   
+        left: 49%;
+        top: 34%;  
+// big map            
+//        left: 72%;
+//        top: 22%;   
         &::before {
             left: -55%;
         }           
     }
     &.is-novosibirsk {
-        left: 69%;
-        top: 24%;   
+        left: 44%;
+        top: 37%;      
+// big map         
+//        left: 69%;
+//        top: 24%;   
         &::before {
             left: -55%;
         }           
     }
     &.is-novokuzneck {
-        left: 73%;
-        top: 25%;
+        left: 51%;
+        top: 40%;  
+// big map           
+//        left: 73%;
+//        top: 25%;
         &::before {
             left: -80%;
         }           
     }
     &.is-barnaul {
-        left: 71%;
-        top: 26%;
+        left: 47%;
+        top: 40%;  
+// big map            
+//        left: 71%;
+//        top: 26%;
         z-index: 9;   
         &::before {
             left: -40%;
         }           
     }    
     &.is-vladivostok {
-        left: 82%;
-        top: 28%;   
+        left: 69%;
+        top: 48%;   
+// big map           
+//        left: 82%;
+//        top: 28%;   
         &::before {
             left: -86%;
         }        
     } 
     &.is-samara {
-        left: 60%;
-        top: 25%;   
+        left: 30%;
+        top: 43%;  
+// big map                
+//        left: 60%;
+//        top: 25%;   
         &::before {
             left: -30%;
         }
@@ -580,10 +610,6 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
             display: block;
         }        
     }
-}
-.c-map__element[data-map-city-name='Хельсинки'] {
-    left: 52%;
-    top: 15%;     
 }
 /* Accevnt block ------*/
 .c-accent__header {

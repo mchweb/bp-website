@@ -5124,69 +5124,69 @@ strong {
   display: none;
 }
 .c-map__element.is-helsinki {
-  left: 52%;
-  top: 15%;
+  left: 17%;
+  top: 26%;
 }
 .c-map__element.is-moskva {
-  left: 55%;
-  top: 20%;
+  left: 21%;
+  top: 33%;
 }
 .c-map__element.is-moskva::before {
   left: -30%;
 }
 .c-map__element.is-omsk {
-  left: 67%;
-  top: 22%;
+  left: 41%;
+  top: 34%;
 }
 .c-map__element.is-omsk::before {
   left: -9%;
 }
 .c-map__element.is-tomsk {
-  left: 71%;
-  top: 21%;
+  left: 46%;
+  top: 31%;
 }
 .c-map__element.is-tomsk::before {
   left: -19%;
 }
 .c-map__element.is-kemerovo {
-  left: 72%;
-  top: 22%;
+  left: 49%;
+  top: 34%;
 }
 .c-map__element.is-kemerovo::before {
   left: -55%;
 }
 .c-map__element.is-novosibirsk {
-  left: 69%;
-  top: 24%;
+  left: 44%;
+  top: 37%;
 }
 .c-map__element.is-novosibirsk::before {
   left: -55%;
 }
 .c-map__element.is-novokuzneck {
-  left: 73%;
-  top: 25%;
+  left: 51%;
+  top: 40%;
 }
 .c-map__element.is-novokuzneck::before {
   left: -80%;
 }
 .c-map__element.is-barnaul {
-  left: 71%;
-  top: 26%;
+  left: 47%;
+  top: 40%;
   z-index: 9;
 }
 .c-map__element.is-barnaul::before {
   left: -40%;
 }
 .c-map__element.is-vladivostok {
-  left: 82%;
-  top: 28%;
+  left: 69%;
+  top: 48%;
 }
 .c-map__element.is-vladivostok::before {
   left: -86%;
 }
 .c-map__element.is-samara {
-  left: 60%;
-  top: 25%;
+  left: 30%;
+  top: 43%;
 }
 .c-map__element.is-samara::before {
   left: -30%;
@@ -5212,11 +5212,6 @@ strong {
 }
 .c-map__element:hover::before {
   display: block;
-}
-
-.c-map__element[data-map-city-name='╨е╨╡╨╗╤М╤Б╨╕╨╜╨║╨╕'] {
-  left: 52%;
-  top: 15%;
 }
 
 /* Accevnt block ------*/
