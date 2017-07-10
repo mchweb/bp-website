@@ -483,8 +483,10 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
     background-repeat: no-repeat;
 //    width: 41px;
 //    height: 62px;
-    width: 3.4%;
-    height: 9.3%;    
+//    width: 3.4%;
+//    height: 9.3%;   
+    width: 5%;
+    height: 10%;     
     position: absolute;
     left: 0px;
     top: 0px;
@@ -493,15 +495,15 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         display: none;
     }    
     &.is-helsinki {
-        left: 17%;
-        top: 26%;  
+        left: 15%;
+        top: 26.8%;        
 // big map        
 //        left: 52%;
 //        top: 15%;        
     }
     &.is-moskva {
-        left: 21%;
-        top: 33%;   
+        left: 24%;
+        top: 33%;         
 // big map           
 //        left: 55%;
 //        top: 20%; 
@@ -510,8 +512,8 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         }        
     }
     &.is-omsk {
-        left: 41%;
-        top: 34%;  
+        left: 40%;
+        top: 38%;          
 // big map           
 //        left: 67%;
 //        top: 22%;  
@@ -520,8 +522,8 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         }           
     }
     &.is-tomsk {
-        left: 46%;
-        top: 31%;  
+        left: 48%;
+        top: 33%;         
 // big map           
 //        left: 71%;
 //        top: 21%; 
@@ -530,8 +532,8 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         }           
     }
     &.is-kemerovo {
-        left: 49%;
-        top: 34%;  
+        left: 50%;
+        top: 35%;          
 // big map            
 //        left: 72%;
 //        top: 22%;   
@@ -540,8 +542,8 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         }           
     }
     &.is-novosibirsk {
-        left: 44%;
-        top: 37%;      
+        left: 46%;
+        top: 36%;             
 // big map         
 //        left: 69%;
 //        top: 24%;   
@@ -550,8 +552,8 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         }           
     }
     &.is-novokuzneck {
-        left: 51%;
-        top: 40%;  
+        left: 53%;
+        top: 37%;        
 // big map           
 //        left: 73%;
 //        top: 25%;
@@ -560,8 +562,8 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         }           
     }
     &.is-barnaul {
-        left: 47%;
-        top: 40%;  
+        left: 49%;
+        top: 40%;        
 // big map            
 //        left: 71%;
 //        top: 26%;
@@ -571,8 +573,8 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         }           
     }    
     &.is-vladivostok {
-        left: 69%;
-        top: 48%;   
+        left: 69.5%;
+        top: 48%;        
 // big map           
 //        left: 82%;
 //        top: 28%;   
@@ -581,8 +583,8 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         }        
     } 
     &.is-samara {
-        left: 30%;
-        top: 43%;  
+        left: 31%;
+        top: 40%;        
 // big map                
 //        left: 60%;
 //        top: 25%;   
