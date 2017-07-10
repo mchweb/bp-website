@@ -48,3 +48,14 @@ var funcMaxHeightElement = function(blockName) {
         $(blockItem).height(Math.max.apply(null, blockItemsHeight));
     });   
 };
+/* Finding the maximum height with paddings among the elements */
+var funcMaxHeightElementWithPaddings = function(blockName) {
+    var blockItems =  $(blockName);
+    var blockItemsHeight = [];
+    $(blockItems).each(function(indx, blockItem){
+        blockItemsHeight.push($(blockItem).outerHeight(true));
+    });  
+    $(blockItems).each(function(indx, blockItem){
+        $(blockItem).height(Math.max.apply(null, blockItemsHeight));
+    });   
+};

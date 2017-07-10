@@ -6426,6 +6426,7 @@ img.mfp-img {
 /* Mentors block ------*/
 .c-mentors {
   background-color: #26a65b;
+  padding-bottom: 3em;
 }
 
 .c-mentors__header {
@@ -6445,7 +6446,7 @@ img.mfp-img {
 }
 
 .c-mentors__item {
-  width: 25%;
+  width: 16.66667%;
   float: left;
   padding-left: 1.04167%;
   padding-right: 1.04167%;
@@ -6460,6 +6461,7 @@ img.mfp-img {
   border-color: #ffffff;
   border-style: dashed;
   border-bottom: none;
+  position: relative;
 }
 
 .c-mentors__content {
@@ -6468,7 +6470,7 @@ img.mfp-img {
   padding: -0.125em;
   border-color: #ffffff;
   border-style: dashed;
-  padding: 1em;
+  padding: 0em .5em .5em .5em;
 }
 
 .c-mentors__title {
@@ -6479,12 +6481,17 @@ img.mfp-img {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
+  position: absolute;
+  bottom: .5em;
+  left: .5em;
+  right: .5em;
+  font-weight: 600;
 }
 
 .c-mentors__text {
   color: #ffffff;
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 0.875em;
+  line-height: 1.28571em;
   margin-top: 0em;
   padding-top: 0.375em;
   padding-bottom: 0.375em;

@@ -16,6 +16,14 @@ $(document).ready(function(){
 		$("html, body").animate({ scrollTop: 0 }, 600);
 		return false;
 	});  
+    /* Mentors */
+    /* Set the same maximum height for all blocks */
+    funcMaxHeightElementWithPaddings('.c-mentors__item .c-mentors__content');  
+    /* Set a background image */ 
+    funcBackgroundImageBlocks('.c-mentors__item','.c-mentors__image img','center','center','.c-mentors__image','cover');     
+    $('.c-mentors__item').each(function(mentorIndex, mentorElement){
+        $(mentorElement).find('.c-mentors__image').height($(mentorElement).find('.c-mentors__image').width());
+    });    
     /* Welcome block */
     /* Set a background image */
     funcBackgroundImageBlocks('.c-welcome','.c-welcome__thumbnail img','center','center','','cover'); 
@@ -48,14 +56,6 @@ $(document).ready(function(){
     /* Set the same maximum height for all blocks */
     funcMaxHeightElement('.l-products__item .c-products__container');   
     
-    /* Mentors */
-    /* Set the same maximum height for all blocks */
-    funcMaxHeightElement('.c-mentors__item .c-mentors__content');  
-    /* Set a background image */ 
-    funcBackgroundImageBlocks('.c-mentors__item','.c-mentors__image img','center','center','.c-mentors__image','cover');     
-    $('.c-mentors__item').each(function(mentorIndex, mentorElement){
-        $(mentorElement).find('.c-mentors__image').height($(mentorElement).find('.c-mentors__image').width());
-    });
 });     
 
 /* Responsive menu */

@@ -1506,6 +1506,7 @@ img.mfp-img {
 /* Mentors block ------*/
 .c-mentors {
     background-color: $color_green;
+    padding-bottom: 3em;
 }
 .c-mentors__header {
 	@include rhythm(0, 2, 1, 0);
@@ -1526,7 +1527,7 @@ img.mfp-img {
     }    
 }
 .c-mentors__item {
-    @include span(3);   
+    @include span(2);   
     margin-bottom: 1em;
     margin-top: 1em;
 }
@@ -1535,20 +1536,26 @@ img.mfp-img {
     border-color: $color_white;
     border-style: dashed;  
     border-bottom: none;
+    position: relative;
 }
 .c-mentors__content {    
     @include rhythm-borders(2px, 0);
     border-color: $color_white;
     border-style: dashed;  
-    padding: 1em;    
+    padding: 0em .5em .5em .5em;   
 }
 .c-mentors__title {
     color: $color_white;
     @include adjust-font-size-to(20px);
     @include rhythm(0, 0, 0, 0);
+    position: absolute;
+    bottom: .5em;
+    left: .5em;
+    right: .5em;
+    font-weight: 600;
 }
 .c-mentors__text {
     color: $color_white;
-    @include adjust-font-size-to(16px);
+    @include adjust-font-size-to(14px);
     @include rhythm(0, 1, 1, 0);  
 }
