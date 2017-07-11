@@ -61,6 +61,17 @@
     padding-left: 1em;
     padding-right: 1em;
 }
+@include for-size(tablet-max) {
+    .l-products__item {
+        @include span(6);
+    }        
+}
+@include for-size(device-small-max) {
+    .l-products__item {
+        @include span(12);
+    }        
+}
+
 .c-products__header {
     @include adjust-font-size-to(10px);
     padding: 10px;
@@ -97,6 +108,17 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
         background-color: nth($colors_product, $i);
     }
 }
+@include for-size(desktop-only) {
+    .c-products__header {
+        @include adjust-font-size-to(8px);
+    }        
+}
+@include for-size(phone-max) {
+    .c-products__header {
+        @include adjust-font-size-to(8px);
+    }        
+}
+
 .l-products {
     &.is-same-back {
         .c-products__header {
@@ -132,6 +154,18 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
         border-bottom: 1px solid rgba($color_black, 0.8);
     }
 }
+@include for-size(desktop-only) {
+    .c-products__title {
+        @include adjust-font-size-to(8px);
+    }        
+}
+@include for-size(phone-max) {
+    .c-products__title {
+        @include adjust-font-size-to(8px);
+    }        
+}
+
+
 .c-products__container:hover {
     position: relative;
     .c-products__header {
@@ -140,6 +174,21 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
 }
 .c-slider__item {
     @include span(3);
+}
+@include for-size(desktop-max) {
+    .c-slider__item {
+        @include span(4);
+    }     
+}
+@include for-size(tablet-max) {
+    .c-slider__item {
+        @include span(6);
+    }           
+}
+@include for-size(device-small-max) {
+    .c-slider__item {
+        @include span(12);
+    }         
 }
 /* Partners block ------*/
 .c-partners__item {

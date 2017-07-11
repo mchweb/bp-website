@@ -54,7 +54,7 @@ $(document).ready(function(){
     
     /* Products */
     /* Set the same maximum height for all blocks */
-    funcMaxHeightElement('.l-products__item .c-products__container');   
+    funcMaxHeightElementWithPaddings('.l-products__item .c-products__container')   
     
 });     
 
