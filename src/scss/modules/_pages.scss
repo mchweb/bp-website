@@ -646,7 +646,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 
 /* Accent block ------*/
 .deptSteps{
-	@include rhythm(0,2,6,2);
+	@include rhythm(0,2,6,0);
 	background:url('../img/bg-blur.jpg');
 	background-size:cover;
 }
