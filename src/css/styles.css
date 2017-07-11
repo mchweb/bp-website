@@ -6469,7 +6469,7 @@ img.mfp-img {
   padding: -0.125em;
   border-color: #ffffff;
   border-style: dashed;
-  padding: 0em .5em .5em .5em;
+  padding: .5em .5em .5em .5em;
 }
 
 .c-mentors__title {
@@ -6481,10 +6481,13 @@ img.mfp-img {
   padding-bottom: 0em;
   margin-bottom: 0em;
   position: absolute;
-  bottom: .5em;
-  left: .5em;
-  right: .5em;
+  bottom: 0px;
+  left: 0px;
+  right: auto;
   font-weight: 600;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: .3em .5em;
 }
 
 .c-mentors__text {
@@ -6492,9 +6495,10 @@ img.mfp-img {
   font-size: 0.875em;
   line-height: 1.28571em;
   margin-top: 0em;
-  padding-top: 0.375em;
-  padding-bottom: 0.375em;
+  padding-top: 0em;
+  padding-bottom: 0em;
   margin-bottom: 0em;
+  line-height: 1em;
 }
 
 img {

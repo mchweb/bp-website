@@ -1571,20 +1571,24 @@ img.mfp-img {
     @include rhythm-borders(2px, 0);
     border-color: $color_white;
     border-style: dashed;  
-    padding: 0em .5em .5em .5em;   
+    padding: .5em .5em .5em .5em;   
 }
 .c-mentors__title {
     color: $color_white;
     @include adjust-font-size-to(20px);
     @include rhythm(0, 0, 0, 0);
     position: absolute;
-    bottom: .5em;
-    left: .5em;
-    right: .5em;
+    bottom: 0px;
+    left: 0px;
+    right: auto;
     font-weight: 600;
+    background: rgba($color_black,.5);
+    width: 100%;
+    padding: .3em .5em;    
 }
 .c-mentors__text {
     color: $color_white;
     @include adjust-font-size-to(14px);
-    @include rhythm(0, 1, 1, 0);  
+    @include rhythm(0, 0, 0, 0);  
+    line-height: 1em;
 }

@@ -18,7 +18,7 @@ $(document).ready(function(){
 	});  
     /* Mentors */
     /* Set the same maximum height for all blocks */
-    funcMaxHeightElementWithPaddings('.c-mentors__item .c-mentors__content');  
+    funcMaxHeightElement('.c-mentors__item .c-mentors__content');  
     /* Set a background image */ 
     funcBackgroundImageBlocks('.c-mentors__item','.c-mentors__image img','center','center','.c-mentors__image','cover');     
     $('.c-mentors__item').each(function(mentorIndex, mentorElement){
