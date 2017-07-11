@@ -54,7 +54,13 @@ $(document).ready(function(){
     
     /* Products */
     /* Set the same maximum height for all blocks */
-    funcMaxHeightElementWithPaddings('.l-products__item .c-products__container')   
+    funcMaxHeightElementWithPaddings('.l-products__item .c-products__container');  
+    
+    /* Navigation mobile */
+    /* Set the same maximum height for all blocks */    
+    if($(window).width() <= screen_md_min & $(window).width() >= screen_xs_min){
+        funcMaxHeightElementWithPaddings('.c-nav-submenu__item');            
+    }   
     
 });     
 

@@ -1,7 +1,7 @@
 /*
  * Basic
  */
-
+var screen_xs_min = 480;
 var screen_md_min = 992;
 var classActive = 'is-active';
 var classOpen = 'is-open';
