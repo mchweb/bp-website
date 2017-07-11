@@ -82,21 +82,22 @@ $(document).ready(function(){
 
 /* Popup */
 $(document).ready(function() {
-  $('.mfp-link').magnificPopup({
-    type: 'inline',
-    preloader: false,
-    midClick: true,
-    removalDelay: 300,
-    mainClass: 'my-mfp-zoom-in',
-    callbacks: {
-      close: popupsClosed
-    }
-  });   
-  $('.mfp-link').click(function(){
-      if(!$($(this).attr('href')).hasClass('is-'+$(this).data('color'))){
-          $($(this).attr('href')).addClass('is-'+$(this).data('color'))
-      }      
-  });    
+    //resume
+//  $('.mfp-link').magnificPopup({
+//    type: 'inline',
+//    preloader: false,
+//    midClick: true,
+//    removalDelay: 300,
+//    mainClass: 'my-mfp-zoom-in',
+//    callbacks: {
+//      close: popupsClosed
+//    }
+//  });   
+//  $('.mfp-link').click(function(){
+//      if(!$($(this).attr('href')).hasClass('is-'+$(this).data('color'))){
+//          $($(this).attr('href')).addClass('is-'+$(this).data('color'))
+//      }      
+//  });    
   $('.popup-youtube').magnificPopup({
 		disableOn: 700,
 		type: 'iframe',

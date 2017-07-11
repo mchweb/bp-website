@@ -4832,12 +4832,6 @@ strong {
   text-align: start;
 }
 
-.aboutTeam__itemImage:hover .aboutTeamItem__back_expert {
-  opacity: 0.8;
-  margin-top: -100%;
-  padding-top: 100%;
-}
-
 .aboutTeam__itemImage:hover .aboutTeamItem__back_dept1 {
   background: url("../img/expert-yellow.png");
   background-size: cover;
