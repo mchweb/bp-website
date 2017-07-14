@@ -1,0 +1,128 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ru"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="ru"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="ru"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<!--[if lt IE 10]>
+	<p style="text-align:center;font-size:20px;background:white;width:100%;z-index:10000;padding:20px 0px"><strong>Кажется, ваш браузер безнадежно устарел.</strong> Скорее всего, сайт будет отображаться и работать некорректно.<br/>Пожалуйста, <a style="color:red" href="http://browsehappy.com/" target="_blank">установите с одного из официальных сайтов</a> новую версию своего браузера.<br/></p>
+<![endif]-->
+
+
+//= templates/header.html
+  
+  <main id="content">
+		<!-- BEGIN of content -->
+		<div class="content">
+
+			<!-- BEGIN of firstScreen -->
+			<div class="firstScreen fistScreen_contacts" id="firstScreen">
+				<div class="contactInfo__wrap" id="contactInfo">
+					<div class="contactInfo">
+						<img src="assets/img/logo-white-red.svg" alt="" class="contactInfo__logo"/>
+						<p class="contactInfo_marDown">НП&nbsp;&laquo;ПИТ &bdquo;Бизнес партнеры&ldquo;&raquo;</p>
+						<ul class="contactInfo__list">
+							<li class="contactInfo_marDown">
+								<img src="assets/img/arrow-white.svg" alt="">
+								<span>г. Томск,<br>
+								ул. Красноармейская, 96,<br>
+								офис 303 (3 этаж)</span>
+							</li>
+							<li>
+								<img src="assets/img/cnt.svg" alt="">
+								<span><a class="contactInfo__link" href="#">(3822) 933-976</a></span>
+							</li>
+							<li>
+								<img src="assets/img/cnt.svg" alt="">
+								<span><a class="contactInfo__link" href="#">info@winbd.ru</a></span>
+							</li>
+							<li>
+								<img src="assets/img/fb.svg" alt="">
+								<span><a class="contactInfo__link" href="#">Мы в Facebook</a></span>
+							</li>
+							<li>
+								<img src="assets/img/vk.svg" alt="">
+								<span><a class="contactInfo__link" href="#">Мы ВКонтакте</a></span>
+							</li>
+						</ul>
+						<p class="contactInfo__link"><a class="contactInfo__link mfp-link" href="#popup_legal"><strong>Реквизиты »</strong></a></p>
+						<p><a class="contact__button" href="#">Задать вопрос</a></p>
+					</div>
+				</div>
+				<div class="contacts__mapWrap">
+					<div id="map"><script charset="utf-8" src="http://widgets.2gis.com/js/DGWidgetLoader.js"></script><script>
+	new DGWidgetLoader({"width":'100%',"height":900,"borderColor":"transparent","pos":{"lat":56.47092720029681,"lon":84.95797018432617,"zoom":16},"opt":{"city":"tomsk"},"org":[{"id":"422740746482922"}]});</script></div>
+				</div>
+
+			</div>
+			<!-- END of firstScreen -->
+
+			<!-- BEGIN of popup-message -->
+			<div class="popup mfp-hide zoom-anim-dialog" id="popup_message">
+				<div class="popupContent" id="popup__message">
+					<p class="popupContent__heading" id="popup__message_heading"></p>
+					<p class="popupContent__caption" id="popup__message_caption"></p>
+					<form method="POST" action="javascript:void(null);" onsubmit="sendMessageForm()">
+						<input type="hidden" id="popup__message_type" name="messageForm__type">
+						<div class="contactForm__control">
+							<input id="messageForm__name" name="messageForm__name" type="text" class="form-control" placeholder="Представьтесь" required="">
+						</div>
+						<div class="contactForm__control">
+							<input id="messageForm__email" name="messageForm__email" type="text" class="form-control" placeholder="ivanov@gmail.com" required="">
+						</div>
+						<input type="hidden" id="messageForm__phone" name="messageForm__phone" value="">
+						<div class="contactForm__control">
+							<textarea id="messageForm__message" name="messageForm__message" type="text" class="form-control" placeholder="Ваш вопрос" rows="3"></textarea>
+						</div>
+						<div class="contactForm__checkbox">
+							<label><input type="checkbox" required="">Даю согласие на обработку своих персональных данных</label>
+						</div>
+						<button class="contactForm__button contactForm__button_gray" href="#">Отправить</button>
+					</form>
+				</div>
+				<div class="popupContent popupContent_success"  id="popup__message_success">
+					<p class="popupContent__heading"><i class="fa fa-check"></i>&nbsp;Свяжемся в ближайшее время</p>
+					<p class="popupContent__caption">Спасибо за интерес! Ваш запрос отправлен на обработку. <a style="cursor:pointer" onclick="$.magnificPopup.close();">Продолжить просмотр сайта&nbsp;»</a></p>
+					
+				</div>
+			</div>
+			<!-- END of popup-message -->
+
+			<!-- BEGIN of legalInfo -->
+			<div class="popup mfp-hide zoom-anim-dialog" id="popup_legal">
+				<div class="popupContent">
+					<h3>Ассоциация НП&nbsp;&laquo;ПИТ &bdquo;Бизнес партнеры&ldquo;&raquo;</h3>
+					<p><strong>Директор:</strong> Смолякова Светлана Николаевна<br>
+						<strong>Телефон:</strong> +7 (3822) 933-976<br>
+						<strong>Адрес:</strong> 634028, Томская обл, г Томск, тракт Московский, д 83, офис 131<br>
+						<strong>Веб-сайт:</strong> ipartner.pro<br>
+						<strong>ИНН:</strong> 7014054136<br>
+						<strong>КПП:</strong> 701701001<br>
+						<strong>ОГРН:</strong> 1107000000964<br><br>
+					</p>
+					<h3>Банковский счёт:</h3>
+					<p><strong>Банк:</strong> Филиал ПАО &laquo;Бинбанк&raquo; в Новосибирске<br>
+						<strong>Расчетный счет:</strong> 40703810020170000018<br>
+						<strong>БИК:</strong> 045004842
+					</p>
+				</div>
+			</div>
+			<!-- END of legalInfo -->
+
+		</div>
+		<!-- END of content -->
+  </main>
+
+//= templates/footer.html
+
+  <script src="assets/js/main.js"></script>
+  <a href="#" id="scrollup"><i class="fa fa-angle-up"></i></a>
+</body>
+</html>

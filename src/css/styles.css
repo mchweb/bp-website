@@ -6872,6 +6872,78 @@ img.mfp-img {
   line-height: 1em;
 }
 
+/* Contacts page ------*/
+.contactInfo__wrap {
+  position: absolute;
+  top: 11em;
+  margin: 0 auto;
+  left: 30px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.contactInfo {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  border-radius: 3px;
+  margin-top: 0em;
+  padding-top: 1.125em;
+  padding-bottom: 0.75em;
+  margin-bottom: 0em;
+  padding-right: 1em;
+  padding-left: 1em;
+  width: 432px;
+  font-size: 1.125em;
+  line-height: 1.33333em;
+}
+@media (max-width: 480px) {
+  .contactInfo {
+    width: 280px;
+  }
+}
+
+.contactInfo__logo {
+  width: auto;
+  max-height: 5em;
+  max-width: 20em;
+}
+
+.contactInfo__link {
+  color: white;
+}
+
+p.contactInfo__link {
+  margin-top: 0.75em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+}
+
+.contactInfo__list li {
+  display: table;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.1875em;
+}
+
+.contactInfo__list li img {
+  display: table-cell;
+  float: left;
+  height: 1.5em;
+  width: auto;
+  margin-right: 0.75em;
+}
+
+.contactInfo__list li span {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.contactInfo_marDown {
+  margin-bottom: 0.75em !important;
+}
+
 img {
   max-width: 100%;
 }
