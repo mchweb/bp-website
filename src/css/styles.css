@@ -5856,8 +5856,8 @@ c
 .deptReqItem p {
   color: white;
   text-align: center;
-  font-size: 1.125em;
-  line-height: 1.33333em;
+  font-size: 1.0625em;
+  line-height: 1.41176em;
 }
 
 #deptReqButton {
@@ -5898,6 +5898,30 @@ c
   float: left;
   padding-left: 2.08333%;
   padding-right: 2.08333%;
+}
+@media only screen and (max-width: 1199px) {
+  .dept2ReqItem__wrap.is-six {
+    width: 33.33333%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .dept2ReqItem__wrap.is-six {
+    width: 50%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+  }
+}
+@media (max-width: 479px) {
+  .dept2ReqItem__wrap.is-six {
+    width: 100%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+  }
 }
 @media (max-width: 960px) {
   .dept2ReqItem__wrap {

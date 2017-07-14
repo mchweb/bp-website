@@ -1009,7 +1009,7 @@ c
 .deptReqItem p{
 	color:white;
 	text-align:center;
-	@include adjust-font-size-to(18px);
+	@include adjust-font-size-to(17px);
 }
 
 #deptReqButton{
@@ -1028,6 +1028,15 @@ c
 	@include span(1 of 5);
     &.is-six {
         @include span(1 of 6);
+        @include for-size(desktop-max) {
+            @include span(4);
+        }
+        @include for-size(tablet-max) {
+            @include span(6);         
+        }
+        @include for-size(device-small-max) {
+            @include span(12);     
+        }        
     }    
 	@media (max-width: 960px) {
 		@include span(4);
