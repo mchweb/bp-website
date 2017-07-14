@@ -4701,6 +4701,7 @@ strong {
   padding-right: 1.04167%;
   padding-left: 1em;
   padding-right: 1em;
+  margin-bottom: 1em;
 }
 
 @media only screen and (max-width: 991px) {
@@ -4802,6 +4803,11 @@ strong {
   border-color: #cecece;
 }
 
+@media (max-width: 479px) {
+  .c-products__container {
+    height: auto !important;
+  }
+}
 .c-products__article {
   margin-top: 2em;
 }
@@ -5148,7 +5154,7 @@ strong {
   }
 }
 
-/* Popup block ------*/
+c
 .popup {
   background-color: white;
   max-width: 960px;
@@ -6011,6 +6017,10 @@ strong {
 .c-results__img {
   width: 100%;
   margin: 0 auto;
+}
+
+.c-table__container {
+  overflow: scroll;
 }
 
 /* Results block ------*/

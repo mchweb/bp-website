@@ -60,6 +60,7 @@
     @include span(3);
     padding-left: 1em;
     padding-right: 1em;
+    margin-bottom: 1em;
 }
 @include for-size(tablet-max) {
     .l-products__item {
@@ -141,6 +142,11 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
     @include rhythm-borders(1px, 0);
     padding: 1em;  
     border-color: $color_gray;     
+}
+@include for-size(device-small-max) {
+    .c-products__container {
+        height: auto !important;
+    }
 }
 .c-products__article {
     margin-top: 2em;
@@ -377,7 +383,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 		@include span(12);
 	}
 }
-/* Popup block ------*/
+c
 .popup{
 	background-color:white;
 	max-width:960px;
@@ -1128,6 +1134,9 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 .c-results__img {
     width: 100%;
     margin: 0 auto;
+}
+.c-table__container {
+    overflow: scroll;
 }
 /* Results block ------*/
 .dept1Info{
