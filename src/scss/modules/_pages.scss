@@ -689,6 +689,24 @@ c
     padding: 1em;
     margin-bottom: 1em;
 }
+@include for-size(desktop-max) {
+    .c-accent__item {
+        @include span(4);
+    }     
+}
+@include for-size(phone-max) {
+    .c-accent__item {
+        @include span(6);
+    }           
+}
+@include for-size(device-small-max) {
+    .c-accent__item {
+        @include span(12);
+        .c-accent__content {
+            height: auto !important;
+        }
+    }         
+}
 .c-accent__content {
     @include rhythm-borders(4px, 0);
     border-color: $color_black;
