@@ -193,6 +193,12 @@
 .c-welcome {
     &.is-small {
         height: 425px;
+        @include for-size(phone-max) {
+            height: 500px;
+        }
+        @include for-size(device-small-max) {
+            height: 700px;
+        }
         .c-welcome__container {
             border: none;
             height: 100px;
