@@ -1610,6 +1610,21 @@ img.mfp-img {
     margin-bottom: 1em;
     margin-top: 1em;
 }
+@include for-size(desktop-max) {
+    .c-mentors__item {
+        @include span(4);
+    }     
+}
+@include for-size(tablet-max) {
+    .c-mentors__item {
+        @include span(6);
+    }           
+}
+@include for-size(device-small-max) {
+    .c-mentors__item {
+        @include span(12);
+    }         
+}
 .c-mentors__image {
     @include rhythm-borders(2px, 0);
     border-color: $color_white;
