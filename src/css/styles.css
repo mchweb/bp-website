@@ -3595,8 +3595,16 @@ strong {
   }
 }
 
+@media (max-width: 479px) {
+  #navTrigger {
+    margin-top: 0em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin-bottom: 0em;
+  }
+}
 .navMain_open {
-  right: 0px;
+  right: 0px !important;
 }
 
 #navMain__back {
@@ -4113,6 +4121,14 @@ strong {
   margin-left: 2em;
 }
 
+@media (max-width: 479px) {
+  .c-header__message {
+    margin-top: 0em;
+    padding-top: 0.375em;
+    padding-bottom: 0.375em;
+    margin-bottom: 0em;
+  }
+}
 /* Navigation ------*/
 .c-header__nav {
   position: absolute;
@@ -4129,6 +4145,11 @@ strong {
   z-index: -1;
 }
 
+@media (max-width: 479px) {
+  .c-welcome {
+    height: 700px;
+  }
+}
 .c-welcome__thumbnail {
   display: none;
 }
@@ -4149,6 +4170,16 @@ strong {
   max-height: 200px;
 }
 
+@media only screen and (max-width: 1199px) {
+  .c-welcome__container {
+    margin-bottom: 1em;
+  }
+}
+@media (max-width: 479px) {
+  .c-welcome__container {
+    max-height: 150px;
+  }
+}
 .c-welcome__text {
   background-color: #ffffff;
   margin-top: 0em;
@@ -4168,6 +4199,20 @@ strong {
   color: #cf0000;
 }
 
+@media only screen and (max-width: 767px) {
+  .c-welcome__text {
+    max-width: 360px;
+    font-size: 0.875em;
+    line-height: 1.28571em;
+  }
+}
+@media (max-width: 479px) {
+  .c-welcome__text {
+    max-width: 320px;
+    font-size: 0.75em;
+    line-height: 1.5em;
+  }
+}
 .c-welcome__icon {
   position: absolute;
   right: 0;
@@ -4176,6 +4221,14 @@ strong {
   width: 50px;
 }
 
+@media (max-width: 479px) {
+  .c-welcome__icon {
+    max-width: 320px;
+    height: 20px;
+    width: 20px;
+    top: -14px;
+  }
+}
 .c-welcome.is-small {
   height: 425px;
 }

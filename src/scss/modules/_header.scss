@@ -97,7 +97,11 @@
 	padding-right:1em;
 	margin-left:2em;    
 }
-
+@include for-size(device-small-max) {
+    .c-header__message {
+        @include rhythm(0, 1, 1, 0);
+    }         
+}
 /* Navigation ------*/
 .c-header__nav {
     position: absolute;
@@ -112,6 +116,11 @@
     height: 650px;
     position: relative;
     z-index: -1;
+}
+@include for-size(device-small-max) {
+    .c-welcome {
+        height: 700px;
+    }         
 }
 .c-welcome__thumbnail {
     display: none;
@@ -129,6 +138,16 @@
     max-width: 600px;
     max-height: 200px;
 }
+@include for-size(desktop-max) {
+    .c-welcome__container {
+        margin-bottom: 1em;
+    }     
+}
+@include for-size(device-small-max) {
+    .c-welcome__container {
+        max-height: 150px;
+    }      
+}
 .c-welcome__text {
     background-color: $color_white;
 	@include rhythm(0, 3, 3, 0);
@@ -144,12 +163,32 @@
     left: 0;
     bottom: 0;
 }
+@include for-size(phone-max) {
+    .c-welcome__text {
+        max-width: 360px;
+        @include adjust-font-size-to(14px);
+    }
+}
+@include for-size(device-small-max) {
+    .c-welcome__text {
+        max-width: 320px;
+        @include adjust-font-size-to(12px);
+    }      
+}
 .c-welcome__icon {
     position: absolute;
     right: 0;
     top: 0;
     height: 50px;
     width: 50px;
+}
+@include for-size(device-small-max) {
+    .c-welcome__icon {
+        max-width: 320px;
+        height: 20px;
+        width: 20px;
+        top: -14px;
+    }      
 }
 .c-welcome {
     &.is-small {
