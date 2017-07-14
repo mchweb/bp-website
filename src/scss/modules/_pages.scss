@@ -301,6 +301,11 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
         min-height: 13em;
     }
 }
+@include for-size(phone-max) {
+    .aboutTeam__item{
+        min-height: 17em;
+    }         
+}
 .aboutTeam__itemImage{
 	background-size:contain;
 	padding-top: 100%;
@@ -351,15 +356,20 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 }
 .aboutTeam__itemWrap{
 	@include span(3);
-	@media (max-width: 900px) {
-		@include span(4); 
-	}
+//	@media (max-width: 900px) {
+//		@include span(4); 
+//	}
 	@media (max-width: 680px) {
 		@include span(6); 
 	}
 	@media (max-width: 460px) {
 		@include span(12); 
 	}
+}
+@include for-size(phone-max) {
+    .aboutTeam__itemWrap{
+        @include span(12);
+    }           
 }
 .deptExp__aboutTeam__itemWrap{
 	@include span(3);
@@ -818,9 +828,14 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 }
 .deptExp__messageWrap{
 	@include span(9);
-	@media (max-width: 860px) {
-		@include span(12); 
-	}
+//	@media (max-width: 860px) {
+//		@include span(12); 
+//	}
+}
+@include for-size(phone-max) {
+    .deptExp__messageWrap {
+        @include span(12);
+    }           
 }
 .deptExp {
     &.is-purple {
@@ -1320,6 +1335,11 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 .bEventContacts__text{
 	display:table-cell;
 	vertical-align:middle;
+}
+@include for-size(device-small-max) {
+    .bEventContacts__text {
+        float: left;
+    }         
 }
 .bEventContacts__heading{
 	@include adjust-font-size-to(20px);

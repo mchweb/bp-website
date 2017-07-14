@@ -5035,6 +5035,11 @@ strong {
   min-height: 13em;
 }
 
+@media only screen and (max-width: 767px) {
+  .aboutTeam__item {
+    min-height: 17em;
+  }
+}
 .aboutTeam__itemImage {
   background-size: contain;
   padding-top: 100%;
@@ -5103,14 +5108,6 @@ strong {
   padding-left: 1.04167%;
   padding-right: 1.04167%;
 }
-@media (max-width: 900px) {
-  .aboutTeam__itemWrap {
-    width: 33.33333%;
-    float: left;
-    padding-left: 1.04167%;
-    padding-right: 1.04167%;
-  }
-}
 @media (max-width: 680px) {
   .aboutTeam__itemWrap {
     width: 50%;
@@ -5128,6 +5125,14 @@ strong {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .aboutTeam__itemWrap {
+    width: 100%;
+    float: left;
+    padding-left: 1.04167%;
+    padding-right: 1.04167%;
+  }
+}
 .deptExp__aboutTeam__itemWrap {
   width: 25%;
   float: left;
@@ -5657,7 +5662,8 @@ strong {
   padding-left: 1.04167%;
   padding-right: 1.04167%;
 }
-@media (max-width: 860px) {
+
+@media only screen and (max-width: 767px) {
   .deptExp__messageWrap {
     width: 100%;
     float: left;
@@ -5665,7 +5671,6 @@ strong {
     padding-right: 1.04167%;
   }
 }
-
 .deptExp.is-purple .deptExp__message_dept2 {
   border-color: #913d88;
   font-size: 1.25em;
@@ -6315,6 +6320,11 @@ strong {
   vertical-align: middle;
 }
 
+@media (max-width: 479px) {
+  .bEventContacts__text {
+    float: left;
+  }
+}
 .bEventContacts__heading {
   font-size: 1.25em;
   line-height: 1.2em;
