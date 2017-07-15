@@ -237,3 +237,42 @@
         }
     }
 }
+/* First Screen ------*/
+.firstScreen{
+	background-size:cover; 
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	height:47em;
+	width:100%;
+}
+
+.firstScreen__text{
+	width:100%;
+	text-align:center;
+}
+.firstScreen__image{
+	width:auto;
+	max-height:12em;
+	position:absolute;
+	transform: scale(0.91, 0.73);
+    transform-origin: left bottom;
+    -webkit-animation: grow 0.5s ease-in forwards;
+    animation: grow 0.5s ease-in forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    @media (max-width: 539px) {
+    	max-height:6em;
+    }
+}
+.firstScreen__image2{
+	width:auto;
+	max-height:12em;
+	@include rhythm(0, 0, 0, 2);
+	@media (max-width: 539px) {
+    	max-height:6em;
+    }
+}
+.firstScreen_blog{
+	max-height:26.25em;
+}
