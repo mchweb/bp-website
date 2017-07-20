@@ -1395,6 +1395,9 @@ c
 		@include span(12);
 	}
 }
+.contacts__mapWrap {
+    width: 100%;
+}
 /* List dots CSS */
 .list-dots{
 	list-style-type: initial;
@@ -1714,6 +1717,12 @@ img.mfp-img {
     line-height: 1em;
 }
 /* Contacts page ------*/
+.fistScreen_contacts{
+	margin-bottom: -26px;
+    margin-bottom: -3px;
+	align-items:flex-end;
+	align-items:-webkit-flex-end;
+}
 .contactInfo__wrap{
 	position: absolute;
     top: 11em;
@@ -1721,6 +1730,27 @@ img.mfp-img {
     left:30px;
     margin-left:1em;
     margin-right:1em;
+}
+@include for-size(desktop-max) {
+    .contactInfo__wrap{
+        top: 18em;
+    }
+}
+.contacts__mapWrap{
+	width:100%;
+}
+#map iframe{
+	@media (max-width: 880px) {
+		opacity:0;
+		pointer-events:none;
+	}
+}
+#map{
+	@media (max-width: 880px) {
+		background-image:url(../img/bg-contact.jpg);
+		background-size:cover;
+		width:100%;
+	}
 }
 .contactInfo{
 	background:rgba(0,0,0,0.75);

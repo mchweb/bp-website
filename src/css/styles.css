@@ -6589,6 +6589,10 @@ c
   }
 }
 
+.contacts__mapWrap {
+  width: 100%;
+}
+
 /* List dots CSS */
 .list-dots {
   list-style-type: initial;
@@ -6980,6 +6984,13 @@ img.mfp-img {
 }
 
 /* Contacts page ------*/
+.fistScreen_contacts {
+  margin-bottom: -26px;
+  margin-bottom: -3px;
+  align-items: flex-end;
+  align-items: -webkit-flex-end;
+}
+
 .contactInfo__wrap {
   position: absolute;
   top: 11em;
@@ -6987,6 +6998,30 @@ img.mfp-img {
   left: 30px;
   margin-left: 1em;
   margin-right: 1em;
+}
+
+@media only screen and (max-width: 1199px) {
+  .contactInfo__wrap {
+    top: 18em;
+  }
+}
+.contacts__mapWrap {
+  width: 100%;
+}
+
+@media (max-width: 880px) {
+  #map iframe {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 880px) {
+  #map {
+    background-image: url(../img/bg-contact.jpg);
+    background-size: cover;
+    width: 100%;
+  }
 }
 
 .contactInfo {
