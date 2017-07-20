@@ -680,6 +680,14 @@ c
         }        
     }
 }
+@include for-size(device-small-max) {
+    .c-map__element {
+        &::before {
+            @include adjust-font-size-to(12px);
+            top: -120%;
+        }
+    }         
+}
 /* Accevnt block ------*/
 .c-accent__header {
     margin-top: 1em;

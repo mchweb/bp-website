@@ -5609,6 +5609,13 @@ c
   display: block;
 }
 
+@media (max-width: 479px) {
+  .c-map__element::before {
+    font-size: 0.75em;
+    line-height: 1.5em;
+    top: -120%;
+  }
+}
 /* Accevnt block ------*/
 .c-accent__header {
   margin-top: 1em;
