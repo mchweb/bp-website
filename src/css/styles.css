@@ -3598,7 +3598,7 @@ strong {
 @media (max-width: 479px) {
   #navTrigger {
     margin-top: 0em;
-    padding-top: 0em;
+    padding-top: 1.125em;
     padding-bottom: 0em;
     margin-bottom: 0em;
   }
@@ -4171,6 +4171,14 @@ strong {
     padding-top: 0.375em;
     padding-bottom: 0.375em;
     margin-bottom: 0em;
+    padding-left: 0px;
+    max-width: 200px;
+    margin-left: 1em;
+  }
+}
+@media (max-width: 360px) {
+  .c-header__message {
+    max-width: 100px;
   }
 }
 /* Navigation ------*/

@@ -54,7 +54,7 @@
 }
 @include for-size(device-small-max) {
     #navTrigger {
-        @include rhythm(0, 0, 0, 0);
+        @include rhythm(0, 3, 0, 0);
     }         
 }
 
