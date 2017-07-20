@@ -271,3 +271,41 @@ $colors_nav: $color_yellow, $color_green, $color_blue, $color_purple;
 .c-nav-childmenu__link {
     color: $color_black;
 }
+@include for-size(phone-max) { 
+    .c-nav-submenu__item {
+        width: 100%;
+        float: left;
+        border: 0px !important;
+        border-bottom: 1px solid rgba($color_white,0.6) !important;
+        height: auto !important;
+        &::before {
+            display: none;
+        }
+    }     
+    .navMain {
+        li {
+           border-bottom: 1px solid rgba($color_white,0.6); 
+        }
+    }
+    .c-header__nav-submenu {
+        max-width: 290px;
+        background-color: transparent;
+    }
+    .c-nav-submenu__item, .c-nav-submenu__link, .c-nav-childmenu__item a {
+        color: $color_white;
+    }
+    .c-nav-childmenu {
+        background-color: transparent;
+    }
+    .c-nav-childmenu__item, .c-nav-childmenu__item .c-nav-childmenu__link {
+        color: rgba($color_white,.85);
+        @include adjust-font-size-to(20px);
+        font-weight: 300;        
+    }
+    .c-nav-submenu__link {
+        color: rgba($color_white,.65);
+        @include adjust-font-size-to(14px);
+        text-transform: none;
+        line-height: 1;
+    }
+}

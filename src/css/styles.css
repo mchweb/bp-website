@@ -3952,6 +3952,50 @@ strong {
   color: #000000;
 }
 
+@media only screen and (max-width: 767px) {
+  .c-nav-submenu__item {
+    width: 100%;
+    float: left;
+    border: 0px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6) !important;
+    height: auto !important;
+  }
+  .c-nav-submenu__item::before {
+    display: none;
+  }
+
+  .navMain li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  }
+
+  .c-header__nav-submenu {
+    max-width: 290px;
+    background-color: transparent;
+  }
+
+  .c-nav-submenu__item, .c-nav-submenu__link, .c-nav-childmenu__item a {
+    color: #ffffff;
+  }
+
+  .c-nav-childmenu {
+    background-color: transparent;
+  }
+
+  .c-nav-childmenu__item, .c-nav-childmenu__item .c-nav-childmenu__link {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.25em;
+    line-height: 1.2em;
+    font-weight: 300;
+  }
+
+  .c-nav-submenu__link {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.875em;
+    line-height: 1.28571em;
+    text-transform: none;
+    line-height: 1;
+  }
+}
 /* Slider ******************/
 /* Winorp topline **********/
 /* Wincorp line ------*/
@@ -4098,7 +4142,7 @@ strong {
     height: 100%;
     background: black;
     margin-top: 0em;
-    padding-top: 0.5625em;
+    padding-top: 0em;
     padding-bottom: 0em;
     margin-bottom: 0em;
     top: 0;
@@ -4229,17 +4273,22 @@ strong {
     top: -14px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .c-welcome {
+    height: 400px;
+  }
+}
 .c-welcome.is-small {
   height: 425px;
 }
 @media only screen and (max-width: 767px) {
   .c-welcome.is-small {
-    height: 500px;
+    height: 300px;
   }
 }
 @media (max-width: 479px) {
   .c-welcome.is-small {
-    height: 700px;
+    height: 500px;
   }
 }
 .c-welcome.is-small .c-welcome__container {

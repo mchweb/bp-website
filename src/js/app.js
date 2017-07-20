@@ -61,7 +61,11 @@ $(document).ready(function(){
     if($(window).width() <= screen_md_min & $(window).width() >= screen_xs_min){
         funcMaxHeightElementWithPaddings('.c-nav-submenu__item');            
     }   
-    
+    if ($(window).width() <= screen_xs_max) {
+        var childNavMenu = $('.c-header__nav-submenu');
+        $('.c-header__nav-submenu').remove();
+        $('.header__navMain').prepend(childNavMenu);
+    }
 });     
 
 /* Responsive menu */

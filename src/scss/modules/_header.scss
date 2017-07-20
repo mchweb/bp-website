@@ -79,7 +79,8 @@
 		z-index:101;
 		height:100%;
 		background: black;
-		@include rhythm(0, 1.5, 0, 0);
+		//@include rhythm(0, 1.5, 0, 0);
+        @include rhythm(0, 0, 0, 0);
 		top:0;
 		right:-300px;
 	}
@@ -191,13 +192,16 @@
     }      
 }
 .c-welcome {
+    @include for-size(phone-max) {
+        height: 400px;
+    }    
     &.is-small {
         height: 425px;
         @include for-size(phone-max) {
-            height: 500px;
+            height: 300px;
         }
         @include for-size(device-small-max) {
-            height: 700px;
+            height: 500px;
         }
         .c-welcome__container {
             border: none;
