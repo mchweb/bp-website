@@ -43,7 +43,7 @@
 	width:90%;
 	margin:0 auto;
 	@media (max-width: 680px) {
-		@include adjust-font-size-to(24px);
+		@include adjust-font-size-to(20px);
 	}
     text-align: left;
 }
