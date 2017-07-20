@@ -5284,7 +5284,7 @@ strong {
   padding-left: 1.04167%;
   padding-right: 1.04167%;
 }
-@media (max-width: 680px) {
+@media only screen and (max-width: 767px) {
   .aboutTeam__itemWrap {
     width: 50%;
     float: left;
@@ -5292,23 +5292,7 @@ strong {
     padding-right: 1.04167%;
   }
 }
-@media (max-width: 460px) {
-  .aboutTeam__itemWrap {
-    width: 100%;
-    float: left;
-    padding-left: 1.04167%;
-    padding-right: 1.04167%;
-  }
-}
 
-@media only screen and (max-width: 767px) {
-  .aboutTeam__itemWrap {
-    width: 100%;
-    float: left;
-    padding-left: 1.04167%;
-    padding-right: 1.04167%;
-  }
-}
 .deptExp__aboutTeam__itemWrap {
   width: 25%;
   float: left;
@@ -5324,7 +5308,6 @@ strong {
   }
 }
 
-c
 .popup {
   background-color: white;
   max-width: 960px;

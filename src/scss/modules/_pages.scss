@@ -365,17 +365,9 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 //	@media (max-width: 900px) {
 //		@include span(4); 
 //	}
-	@media (max-width: 680px) {
-		@include span(6); 
-	}
-	@media (max-width: 460px) {
-		@include span(12); 
-	}
-}
-@include for-size(phone-max) {
-    .aboutTeam__itemWrap{
-        @include span(12);
-    }           
+    @include for-size(phone-max){
+        @include span(6);     
+    }    
 }
 .deptExp__aboutTeam__itemWrap{
 	@include span(3);
@@ -383,7 +375,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 		@include span(12);
 	}
 }
-c
+
 .popup{
 	background-color:white;
 	max-width:960px;
