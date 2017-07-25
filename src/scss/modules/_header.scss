@@ -263,6 +263,11 @@
 	width:100%;
 	text-align:center;
 }
+@media (min-width: $screen_xs_max) and (max-width: $screen_md_max) {
+    .firstScreen__text{
+        margin-top: 15em;
+    }
+}
 .firstScreen__image{
 	width:auto;
 	max-height:12em;
