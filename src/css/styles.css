@@ -6938,6 +6938,9 @@ img.mfp-img {
   border-style: dashed;
   border-bottom: none;
   position: relative;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .c-mentors__content {
@@ -6947,6 +6950,9 @@ img.mfp-img {
   border-color: #ffffff;
   border-style: dashed;
   padding: .5em .5em .5em .5em;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .c-mentors__title {
@@ -6965,6 +6971,7 @@ img.mfp-img {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   padding: .3em .5em;
+  max-width: 200px;
 }
 
 .c-mentors__text {

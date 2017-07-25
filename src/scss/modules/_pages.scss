@@ -1690,12 +1690,18 @@ img.mfp-img {
     border-style: dashed;  
     border-bottom: none;
     position: relative;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .c-mentors__content {    
     @include rhythm-borders(2px, 0);
     border-color: $color_white;
     border-style: dashed;  
     padding: .5em .5em .5em .5em;   
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;    
 }
 .c-mentors__title {
     color: $color_white;
@@ -1708,7 +1714,8 @@ img.mfp-img {
     font-weight: 600;
     background: rgba($color_black,.5);
     width: 100%;
-    padding: .3em .5em;    
+    padding: .3em .5em;  
+    max-width: 200px;
 }
 .c-mentors__text {
     color: $color_white;
