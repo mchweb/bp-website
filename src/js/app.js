@@ -58,14 +58,37 @@ $(document).ready(function(){
     
     /* Navigation mobile */
     /* Set the same maximum height for all blocks */    
-    if($(window).width() <= screen_md_min & $(window).width() >= screen_xs_min){
-        funcMaxHeightElementWithPaddings('.c-nav-submenu__item');            
-    }   
-    if ($(window).width() <= screen_xs_max) {
-        var childNavMenu = $('.c-header__nav-submenu');
-        $('.c-header__nav-submenu').remove();
-        $('.header__navMain').prepend(childNavMenu);
-    }
+    var funcMaxHeightElementsNav = function (){
+        if($(window).width() <= screen_md_min & $(window).width() >= screen_xs_min){
+            funcMaxHeightElementWithPaddings('.c-nav-submenu__item');            
+        }else {
+            $('.c-nav-submenu__item').height('auto');
+        }         
+    };
+    funcMaxHeightElementsNav();
+    $(window).resize(function() {
+        funcMaxHeightElementsNav();        
+    });
+    var funcRelocationNavigation = function(){
+        var childNavMenu = $('.c-header__nav-submenu');  
+        if ($(window).width() <= screen_xs_max) {    
+            if($('.header__navMain').find(childNavMenu).length == 0){
+               $('.c-header__nav-submenu').remove(); 
+               $('.header__navMain').prepend(childNavMenu);
+            }
+        }else {
+            $('.header__navMain').find(childNavMenu).remove(); 
+            if($('.c-header__nav').find(childNavMenu).length == 0){
+                
+                $('.c-header__nav').append(childNavMenu);
+            }
+            
+        }          
+    };
+    funcRelocationNavigation();
+    $(window).resize(function() {
+      funcRelocationNavigation();
+    });
 });     
 
 /* Responsive menu */
@@ -92,6 +115,16 @@ $(document).ready(function(){
 
 /* Popup */
 $(document).ready(function() {
+  $('.mfp-link').magnificPopup({
+    type: 'inline',
+    preloader: false,
+    midClick: true,
+    removalDelay: 300,
+    mainClass: 'my-mfp-zoom-in',
+    callbacks: {
+      close: popupsClosed
+    }
+  });    
     //resume
 //  $('.mfp-link').magnificPopup({
 //    type: 'inline',

@@ -98,6 +98,11 @@
 	padding-right:1em;
 	margin-left:2em;    
 }
+@include for-size(phone-only) {
+    .c-header__message {
+        @include rhythm(.6, 2, 2, 0);
+    }
+}
 @include for-size(device-small-max) {
     .c-header__message {
         @include rhythm(0, 1, 1, 0);
@@ -106,9 +111,19 @@
         margin-left: 1em;
     }         
 }
+@media (min-width: 360px) and (max-width: $screen_xs_min) {
+    .c-header__message {
+        @include adjust-font-size-to(13px);
+        line-height: 1em;
+        margin-top: 0.6em;
+    }    
+}
 @media (max-width: 360px) {
     .c-header__message {
+        @include adjust-font-size-to(10px);
         max-width: 100px;
+        line-height: 1em;
+        margin-top: 0.6em;
     }
 }  
 /* Navigation ------*/

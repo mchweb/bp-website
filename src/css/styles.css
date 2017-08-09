@@ -3593,6 +3593,12 @@ strong {
   border-color: #cf0000;
 }
 
+@media (max-width: 800px) {
+  .navMain li:hover {
+    border-color: transparent;
+    border-bottom: 1px solid #ffffff;
+  }
+}
 .navMainItem_current {
   border-color: #cf0000 !important;
 }
@@ -4013,6 +4019,11 @@ strong {
     line-height: 1;
   }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .c-nav-submenu__item {
+    max-height: 73px;
+  }
+}
 /* Slider ******************/
 /* Winorp topline **********/
 /* Wincorp line ------*/
@@ -4207,6 +4218,14 @@ strong {
   margin-left: 2em;
 }
 
+@media (min-width: 480px) and (max-width: 767px) {
+  .c-header__message {
+    margin-top: 0.225em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    margin-bottom: 0em;
+  }
+}
 @media (max-width: 479px) {
   .c-header__message {
     margin-top: 0em;
@@ -4218,9 +4237,21 @@ strong {
     margin-left: 1em;
   }
 }
+@media (min-width: 360px) and (max-width: 480px) {
+  .c-header__message {
+    font-size: 0.8125em;
+    line-height: 1.38462em;
+    line-height: 1em;
+    margin-top: 0.6em;
+  }
+}
 @media (max-width: 360px) {
   .c-header__message {
+    font-size: 0.625em;
+    line-height: 1.8em;
     max-width: 100px;
+    line-height: 1em;
+    margin-top: 0.6em;
   }
 }
 /* Navigation ------*/
@@ -7043,7 +7074,7 @@ img.mfp-img {
 
 .contactInfo__wrap {
   position: absolute;
-  top: 11em;
+  top: 13em;
   margin: 0 auto;
   left: 30px;
   margin-left: 1em;

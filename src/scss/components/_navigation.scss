@@ -39,6 +39,12 @@
 .navMain li:hover {
 	border-color:$red;
 }
+@media (max-width: 800px){
+    .navMain li:hover {
+       border-color: transparent;
+       border-bottom: 1px solid $color_white;
+    }
+}
 .navMainItem_current{
 	border-color:$red !important;
 }
@@ -165,6 +171,7 @@ $colors_nav: $color_yellow, $color_green, $color_blue, $color_purple;
         }
 	}
 }
+
 @include for-size(desktop-max) {
     .c-nav-submenu__item {
         width: 50%;
@@ -307,5 +314,10 @@ $colors_nav: $color_yellow, $color_green, $color_blue, $color_purple;
         @include adjust-font-size-to(14px);
         text-transform: none;
         line-height: 1;
+    }
+}
+@media (min-width: $screen_sm_min) and (max-width: $screen_md_min) {
+    .c-nav-submenu__item {
+        max-height: 73px;
     }
 }
