@@ -41,6 +41,19 @@
     border-color:black;
     color:white;
 }
+.contact__button_transparent {
+	background: linear-gradient(to top, $color_white 50%, transparent 50%);
+	background-size: 100% 200%;
+    background-position:left top;
+    border-color:$color_white;
+    color:$color_white;  
+    @include rhythm-borders(3px, 0.5);
+	padding-left: 2em;
+	padding-right: 2em;    
+}
+.contact__button_transparent:hover {
+    color: $color_black !important;
+}
 .contact__button_big{
 	@include adjust-font-size-to(20px);
 }

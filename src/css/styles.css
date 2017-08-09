@@ -3377,6 +3377,23 @@ table {
   color: white;
 }
 
+.contact__button_transparent {
+  background: linear-gradient(to top, #ffffff 50%, rgba(0, 0, 0, 0) 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+  border-color: #ffffff;
+  color: #ffffff;
+  border-width: 0.1875em;
+  border-style: solid;
+  padding: 0.5625em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.contact__button_transparent:hover {
+  color: #000000 !important;
+}
+
 .contact__button_big {
   font-size: 1.25em;
   line-height: 1.2em;
