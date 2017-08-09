@@ -181,6 +181,9 @@ function showPopup(x, type, extra, color){
     case 12:
       _showPopup('eventReg', type, 'Заявка на Федеральный акселератор франчайзинга', 'На указанную электронную почту мы вышлем дальнейшие инструкции');
       break
+    case 13:
+      _showPopup('subscribe', type, 'Оформить подписку', 'Буть вкурсе всех новостей', '', color);
+      break      
     default:
       break
   }

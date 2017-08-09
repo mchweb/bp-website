@@ -472,6 +472,31 @@
         <button title="Close (Esc)" type="button" class="mfp-close">×</button>
     </div>
 
+    <div class="popup zoom-anim-dialog popup_dept2 mfp-hide c-popup" id="popup_subscribe">
+        <div class="popupContent" id="popup__message" style="display: block;">
+            <p class="popupContent__heading" id="popup__subscribe_heading">Задать вопрос</p>
+            <p class="popupContent__caption" id="popup__subscribe_caption">Не&nbsp;забудьте указать контактную информацию (телефон, электронная почта, социальные сети), <strong>чтобы мы&nbsp;могли в&nbsp;кратчайшие сроки вам ответить</strong></p>
+            <form method="POST" action="javascript:void(null);" onsubmit="sendMessageForm()">
+                <input type="hidden" id="popup__subscribe_type" name="messageForm__type" value="19">
+                <div class="contactForm__control">
+                    <input id="messageForm__name" name="messageForm__name" type="text" class="form-control" placeholder="Представьтесь" required="">
+                </div>
+                <div class="contactForm__control">
+                    <input id="messageForm__email" name="messageForm__email" type="email" class="form-control" placeholder="Email" required="">
+                </div>
+                <div class="contactForm__checkbox">
+                    <label class="contactForm__offer">Нажимая &laquo;Отправить&raquo;, вы&nbsp;соглашаетесь на&nbsp;обработку персональных данных (см.<a class="color-black" href="javascript:void(0);" onclick="window.open('http://ipartner.pro/oferta', 'OFERTA', 'menubar=no,location=no,resizable=yes,scrollbars=yes,status=no')">политику конфиденциальности</a>)</label>
+                </div>
+                <button class="contactForm__button contactButton contactForm__button_gray contactForm__button_dept2">Отправить</button>
+            </form>
+        </div>
+        <div class="popupContent popupContent_success" id="popup_subscribe_success" style="display: none;">
+            <p class="popupContent__heading"><i class="fa fa-check"></i>&nbsp;Свяжемся в ближайшее время</p>
+            <p class="popupContent__caption">Спасибо за интерес! Ваш запрос отправлен на обработку. <a style="cursor:pointer" onclick="$.magnificPopup.close();">Продолжить просмотр сайта&nbsp;»</a></p>
+        </div>
+        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+    </div>  
+   
     <div class="popup mfp-hide zoom-anim-dialog popup_dept2 c-popup" id="resume-19">
         <div class="popupContent popupContent_resume" style="display: block;">
         <div class="deptExp__aboutTeam__itemWrap">
