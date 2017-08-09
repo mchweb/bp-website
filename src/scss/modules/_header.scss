@@ -293,3 +293,8 @@
 .firstScreen_blog{
 	max-height: 34.25em;
 }
+@include for-size(device-small-max) {
+    .firstScreen_blog{
+        max-height: 43.25em;
+    }    
+}

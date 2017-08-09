@@ -4435,6 +4435,11 @@ strong {
   max-height: 34.25em;
 }
 
+@media (max-width: 479px) {
+  .firstScreen_blog {
+    max-height: 43.25em;
+  }
+}
 /* Footer ******************/
 /* Contact form block ------*/
 .contactForm {
