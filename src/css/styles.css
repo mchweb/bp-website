@@ -3447,11 +3447,17 @@ table {
 .contactForm__formWrap div.wpcf7-validation-errors {
   margin-top: 0px;
   display: inline-block;
+  width: 100%;
 }
 .contactForm__formWrap span.wpcf7-not-valid-tip {
   display: inline-block;
   margin-left: 30%;
-  color: #fff;
+  color: #cf0000;
+}
+.contactForm__formWrap div.wpcf7-mail-sent-ok {
+  display: inline-block;
+  margin-top: 0px;
+  width: 100%;
 }
 
 /* Lists *******************/

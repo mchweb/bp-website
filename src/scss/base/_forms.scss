@@ -7,10 +7,16 @@
     div.wpcf7-validation-errors {
         margin-top: 0px;
         display: inline-block;
+        width: 100%;   
     }   
     span.wpcf7-not-valid-tip {
         display: inline-block;
         margin-left: 30%;
-        color: #fff;        
+        color: $color_red;        
+    }
+    div.wpcf7-mail-sent-ok {
+        display: inline-block;
+        margin-top: 0px;
+        width: 100%;        
     }
 }
