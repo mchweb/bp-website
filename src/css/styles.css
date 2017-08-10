@@ -3443,6 +3443,17 @@ table {
 }
 
 /* Forms *******************/
+/* Style for Contact Form 7 plugin (wordpress) ------*/
+.contactForm__formWrap div.wpcf7-validation-errors {
+  margin-top: 0px;
+  display: inline-block;
+}
+.contactForm__formWrap span.wpcf7-not-valid-tip {
+  display: inline-block;
+  margin-left: 30%;
+  color: #fff;
+}
+
 /* Lists *******************/
 /* Typography **************/
 html {
