@@ -258,13 +258,13 @@ $colors_nav: $color_yellow, $color_green, $color_blue, $color_purple;
         border: none;
     }     
 }
-.c-nav-childmenu__item {
+.c-nav-childmenu__item, .c-nav-childmenu .c-nav-submenu__item{
 	padding-left:1em;
 	padding-right:1em;
 	@include rhythm(0, 1.5, 1.5, 0);  
 }
 @include for-size(desktop-max) {
-    .c-nav-childmenu__item  {
+    .c-nav-childmenu__item, .c-nav-childmenu .c-nav-submenu__item  {
         @include adjust-font-size-to(14px);
         @include rhythm(0,0,0,0);
         font-weight: bold;
@@ -298,13 +298,13 @@ $colors_nav: $color_yellow, $color_green, $color_blue, $color_purple;
         max-width: 290px;
         background-color: transparent;
     }
-    .c-nav-submenu__item, .c-nav-submenu__link, .c-nav-childmenu__item a {
+    .c-nav-submenu__item, .c-nav-submenu__link, .c-nav-childmenu__item a, .c-nav-childmenu .c-nav-submenu__item a {
         color: $color_white;
     }
     .c-nav-childmenu {
         background-color: transparent;
     }
-    .c-nav-childmenu__item, .c-nav-childmenu__item .c-nav-childmenu__link {
+    .c-nav-childmenu__item, .c-nav-childmenu__item .c-nav-childmenu__link, .c-nav-childmenu .c-nav-submenu__item, .c-nav-childmenu .c-nav-submenu__item .c-nav-childmenu__link {
         color: rgba($color_white,.85);
         @include adjust-font-size-to(20px);
         font-weight: 300;        
