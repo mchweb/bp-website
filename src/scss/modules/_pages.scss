@@ -252,7 +252,7 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
 }
 .aboutFactsCol {
 	@include rhythm(2, 0, 0, 0);
-	min-height:12em;
+	min-height:14em;
 }
 .aboutFactsCol p{
 	max-width:360px;
