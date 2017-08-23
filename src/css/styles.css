@@ -7375,6 +7375,10 @@ p.contactInfo__link {
   margin-bottom: 0.75em;
 }
 
+.blogPostContent .wp-caption {
+  width: 100% !important;
+}
+
 .blogPostContent__side {
   width: 100%;
   max-width: 990px;

@@ -1941,6 +1941,9 @@ p.contactInfo__link {
 	height:auto;
 	@include rhythm(0,0,0,2);
 }
+.blogPostContent .wp-caption {
+    width: 100% !important;
+}
 .blogPostContent__side{
 	width:100%;
 	max-width:$md;
