@@ -1893,13 +1893,15 @@ p.contactInfo__link {
 .blogPostContent h4,
 .blogPostContent ul,
 .blogPostContent ol,
-.blogPostContent blockquote{
+.blogPostContent blockquote,
+.blogPostContent {
 	max-width:$sm;
 }
 .blogPostContent p,
-.blogPostContent ul {
+.blogPostContent ul, .blogPostContent {
     @include adjust-font-size-to(16px);
 }
+
 .blogPostContent {
     a {
         color: $color_red;

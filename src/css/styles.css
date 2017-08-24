@@ -7309,12 +7309,13 @@ p.contactInfo__link {
 .blogPostContent h4,
 .blogPostContent ul,
 .blogPostContent ol,
-.blogPostContent blockquote {
+.blogPostContent blockquote,
+.blogPostContent {
   max-width: 680px;
 }
 
 .blogPostContent p,
-.blogPostContent ul {
+.blogPostContent ul, .blogPostContent {
   font-size: 1em;
   line-height: 1.5em;
 }
