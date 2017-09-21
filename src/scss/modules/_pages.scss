@@ -1840,6 +1840,9 @@ p.contactInfo__link {
 	color:white;
     @include adjust-font-size-to(16px);
 }
+.blogPostInfo__tags {
+    max-width: 80%;
+}
 .blogPostInfo__tags li{
 	display:inline;
 	color:white;
