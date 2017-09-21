@@ -7237,6 +7237,10 @@ p.contactInfo__link {
   line-height: 1.5em;
 }
 
+.blogPostInfo__tags {
+  max-width: 80%;
+}
+
 .blogPostInfo__tags li {
   display: inline;
   color: white;
@@ -7301,17 +7305,6 @@ p.contactInfo__link {
   padding-top: 0em;
   padding-bottom: 0.75em;
   margin-bottom: 0em;
-}
-
-.blogPostContent p,
-.blogPostContent h2,
-.blogPostContent h3,
-.blogPostContent h4,
-.blogPostContent ul,
-.blogPostContent ol,
-.blogPostContent blockquote,
-.blogPostContent {
-  max-width: 680px;
 }
 
 .blogPostContent p,
