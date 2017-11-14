@@ -5678,6 +5678,23 @@ strong {
 .c-map__element.is-samara::before {
   left: -30%;
 }
+.c-map__element.is-surgut {
+  left: 40%;
+  top: 28%;
+}
+.c-map__element.is-ufa {
+  left: 35%;
+  top: 35%;
+}
+.c-map__element.is-tumen {
+  left: 37%;
+  top: 31%;
+  z-index: 0;
+}
+.c-map__element.is-yoshkarola {
+  left: 29%;
+  top: 30%;
+}
 .c-map__element::before {
   content: attr(data-map-city-name);
   border-width: 0.0625em;

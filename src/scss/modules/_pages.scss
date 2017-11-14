@@ -66,12 +66,12 @@
 @include for-size(tablet-max) {
     .l-products__item {
         @include span(6);
-    }        
+    }
 }
 @include for-size(device-small-max) {
     .l-products__item {
         @include span(12);
-    }        
+    }
 }
 
 .c-products__header {
@@ -86,8 +86,8 @@
         height: 20px;
         top: 5px;
         right: 5px;
-        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4yLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwb2x5Z29uIGZpbGw9IiMwMDAwMDAiIHBvaW50cz0iMCw0MCAxMDAsMCA2MCwxMDAgNTAsNTAgIi8+DQo8L3N2Zz4NCg==');  
-        background-repeat: no-repeat;     
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4yLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwb2x5Z29uIGZpbGw9IiMwMDAwMDAiIHBvaW50cz0iMCw0MCAxMDAsMCA2MCwxMDAgNTAsNTAgIi8+DQo8L3N2Zz4NCg==');
+        background-repeat: no-repeat;
         background-size: contain;
         z-index: -1;
     }
@@ -95,12 +95,12 @@
         content: '';
         position: absolute;
         width: 100%;
-        height: 100%;   
+        height: 100%;
         left: 0px;
         top: 0px;
         @include rhythm-borders(4px, 0);
         border-color: $color_gray_dark;
-        border-style: dashed;        
+        border-style: dashed;
         z-index: -2;
     }
 }
@@ -120,12 +120,12 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
 @include for-size(desktop-only) {
     .c-products__header {
         @include adjust-font-size-to(8px);
-    }        
+    }
 }
 @include for-size(phone-max) {
     .c-products__header {
         @include adjust-font-size-to(8px);
-    }        
+    }
 }
 
 .l-products {
@@ -143,13 +143,13 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
             .c-products__header {
                 position: relative;
             }
-        }        
+        }
     }
 }
 .c-products__container {
     @include rhythm-borders(1px, 0);
-    padding: 1em;  
-    border-color: $color_gray;     
+    padding: 1em;
+    border-color: $color_gray;
 }
 @include for-size(device-small-max) {
     .c-products__container {
@@ -171,12 +171,12 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
 @include for-size(desktop-only) {
     .c-products__title {
         @include adjust-font-size-to(8px);
-    }        
+    }
 }
 @include for-size(phone-max) {
     .c-products__title {
         @include adjust-font-size-to(8px);
-    }        
+    }
 }
 
 
@@ -192,17 +192,17 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
 @include for-size(desktop-max) {
     .c-slider__item {
         @include span(4);
-    }     
+    }
 }
 @include for-size(tablet-max) {
     .c-slider__item {
         @include span(6);
-    }           
+    }
 }
 @include for-size(device-small-max) {
     .c-slider__item {
         @include span(12);
-    }         
+    }
 }
 /* Partners block ------*/
 .c-partners__item {
@@ -216,9 +216,9 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
     position: relative;
     @include filter(grayscale(100%));
     @include transition-property(all);
-    @include transition-duration(0.3s); 
+    @include transition-duration(0.3s);
     &:hover {
-       @include filter(grayscale(0)); 
+       @include filter(grayscale(0));
     }
 }
 .c-partners__link {
@@ -231,22 +231,22 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
 .c-slider {
     padding: 0 3em;
     .flickity-prev-next-button {
-        height: 80px;    
+        height: 80px;
         background: transparent;
         svg {
             display: none;
-        }    
+        }
         background-repeat: no-repeat;
-        background-size: contain;          
+        background-size: contain;
         &.previous {
-            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIzNC41cHgiIGhlaWdodD0iMTE0LjVweCIgdmlld0JveD0iMCAwIDM0LjUgMTE0LjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM0LjUgMTE0LjU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7c3Ryb2tlOiMzQzNDM0I7c3Ryb2tlLXdpZHRoOjAuNTtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBvbHlsaW5lIGNsYXNzPSJzdDAiIHBvaW50cz0iMzQuMywwLjEgMC4zLDU5LjEgMzQuMywxMTQuNCAiLz4NCjwvc3ZnPg0K');   
+            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIzNC41cHgiIGhlaWdodD0iMTE0LjVweCIgdmlld0JveD0iMCAwIDM0LjUgMTE0LjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM0LjUgMTE0LjU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7c3Ryb2tlOiMzQzNDM0I7c3Ryb2tlLXdpZHRoOjAuNTtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBvbHlsaW5lIGNsYXNzPSJzdDAiIHBvaW50cz0iMzQuMywwLjEgMC4zLDU5LjEgMzQuMywxMTQuNCAiLz4NCjwvc3ZnPg0K');
             background-position: left;
         }
         &.next {
-            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIzNC41cHgiIGhlaWdodD0iMTE0LjVweCIgdmlld0JveD0iMCAwIDM0LjUgMTE0LjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM0LjUgMTE0LjU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7c3Ryb2tlOiMzQzNDM0I7c3Ryb2tlLXdpZHRoOjAuNTtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBvbHlsaW5lIGNsYXNzPSJzdDAiIHBvaW50cz0iMC4zLDExNC40IDM0LjMsNTUuNCAwLjMsMC4xICIvPg0KPC9zdmc+DQo=');  
+            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIzNC41cHgiIGhlaWdodD0iMTE0LjVweCIgdmlld0JveD0iMCAwIDM0LjUgMTE0LjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM0LjUgMTE0LjU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7c3Ryb2tlOiMzQzNDM0I7c3Ryb2tlLXdpZHRoOjAuNTtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBvbHlsaW5lIGNsYXNzPSJzdDAiIHBvaW50cz0iMC4zLDExNC40IDM0LjMsNTUuNCAwLjMsMC4xICIvPg0KPC9zdmc+DQo=');
             background-position: right;
-        }    
-    }  
+        }
+    }
 }
 /* About Facts block ------*/
 .aboutFacts{
@@ -275,7 +275,7 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
 		@include span(6);
 	}
 	@media (max-width: 680px) {
-		@include span(12); 
+		@include span(12);
 	}
 }
 
@@ -318,7 +318,7 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
 @include for-size(phone-max) {
     .aboutTeam__item{
         min-height: 17em;
-    }         
+    }
 }
 .aboutTeam__itemImage{
 	background-size:contain;
@@ -371,11 +371,11 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 .aboutTeam__itemWrap{
 	@include span(3);
 //	@media (max-width: 900px) {
-//		@include span(4); 
+//		@include span(4);
 //	}
     @include for-size(phone-max){
-        @include span(6);     
-    }    
+        @include span(6);
+    }
 }
 .deptExp__aboutTeam__itemWrap{
 	@include span(3);
@@ -402,14 +402,14 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         .contactForm__button_gray.contactForm__button_dept2 {
             background: linear-gradient(to top,$color_yellow 50%,#ddd 50%) !important;
             background-size: 100% 200% !important;
-            background-position: left top !important;            
-        }        
+            background-position: left top !important;
+        }
         .contactForm__button_dept2 {
             border-color: $color_yellow !important;
         }
         .contactForm__button_dept2:hover {
             background-position: right bottom !important;
-        }  
+        }
         .aboutTeamItem__back_dept2 {
             background-color: $color_yellow!important;
         }
@@ -422,81 +422,81 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         .contactForm__button_gray.contactForm__button_dept2 {
             background: linear-gradient(to top,$color_purple 50%,#ddd 50%) !important;
             background-size: 100% 200% !important;
-            background-position: left top !important;            
-        }        
+            background-position: left top !important;
+        }
         .contactForm__button_dept2 {
             border-color: $color_purple !important;
         }
         .contactForm__button_dept2:hover {
             background-position: right bottom !important;
-        }  
+        }
         .aboutTeamItem__back_dept2 {
             background-color: $color_purple!important;
         }
         .aboutTeam__itemImage.is-no-bg:hover .aboutTeamItem__back_dept2 {
             background: none;
-        }        
+        }
     }
     &.is-red {
         border-color: $color_red;
         .contactForm__button_gray.contactForm__button_dept2 {
             background: linear-gradient(to top,$color_red 50%,#ddd 50%) !important;
             background-size: 100% 200% !important;
-            background-position: left top !important;            
-        }        
+            background-position: left top !important;
+        }
         .contactForm__button_dept2 {
             border-color: $color_red !important;
         }
         .contactForm__button_dept2:hover {
             background-position: right bottom !important;
-        }  
+        }
         .aboutTeamItem__back_dept2 {
             background-color: $color_red!important;
         }
         .aboutTeam__itemImage.is-no-bg:hover .aboutTeamItem__back_dept2 {
             background: none;
-        }        
+        }
     }
     &.is-green {
         border-color: $color_green;
         .contactForm__button_gray.contactForm__button_dept2 {
             background: linear-gradient(to top,$color_green 50%,#ddd 50%) !important;
             background-size: 100% 200% !important;
-            background-position: left top !important;            
-        }        
+            background-position: left top !important;
+        }
         .contactForm__button_dept2 {
             border-color: $color_green !important;
         }
         .contactForm__button_dept2:hover {
             background-position: right bottom !important;
-        }  
+        }
         .aboutTeamItem__back_dept2 {
             background-color: $color_green!important;
         }
         .aboutTeam__itemImage.is-no-bg:hover .aboutTeamItem__back_dept2 {
             background: none;
-        }         
-    }  
+        }
+    }
     &.is-blue {
         border-color: $color_blue;
         .contactForm__button_gray.contactForm__button_dept2 {
             background: linear-gradient(to top,$color_blue 50%,#ddd 50%) !important;
             background-size: 100% 200% !important;
-            background-position: left top !important;            
-        }        
+            background-position: left top !important;
+        }
         .contactForm__button_dept2 {
             border-color: $color_blue !important;
         }
         .contactForm__button_dept2:hover {
             background-position: right bottom !important;
-        }  
+        }
         .aboutTeamItem__back_dept2 {
             background-color: $color_blue!important;
         }
         .aboutTeam__itemImage.is-no-bg:hover .aboutTeamItem__back_dept2 {
             background: none;
-        }         
-    }      
+        }
+    }
 }
 .popupContent{
 	max-width:600px;
@@ -533,7 +533,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
     background-color: $color_black_light2;
     padding: 50px 0px;
     .container {
-        position: relative;        
+        position: relative;
     }
     img {
         width: 100%;
@@ -550,120 +550,137 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 //    width: 41px;
 //    height: 62px;
 //    width: 3.4%;
-//    height: 9.3%;   
+//    height: 9.3%;
     width: 5%;
-    height: 10%;     
+    height: 10%;
     position: absolute;
     left: 0px;
     top: 0px;
     z-index: 1;
     &::before {
         display: none;
-    }    
+    }
     &.is-helsinki {
         left: 15%;
-        top: 26.8%;        
-// big map        
+        top: 26.8%;
+// big map
 //        left: 52%;
-//        top: 15%;        
+//        top: 15%;
     }
     &.is-moskva {
         left: 24%;
-        top: 33%;         
-// big map           
+        top: 33%;
+// big map
 //        left: 55%;
-//        top: 20%; 
+//        top: 20%;
         &::before {
             left: -30%;
-        }        
+        }
     }
     &.is-omsk {
         left: 40%;
-        top: 38%;          
-// big map           
+        top: 38%;
+// big map
 //        left: 67%;
-//        top: 22%;  
+//        top: 22%;
         &::before {
             left: -9%;
-        }           
+        }
     }
     &.is-tomsk {
         left: 48%;
-        top: 33%;        
+        top: 33%;
         z-index: 0;
-// big map           
+// big map
 //        left: 71%;
-//        top: 21%; 
+//        top: 21%;
         &::before {
             left: -19%;
-        }           
+        }
     }
     &.is-kemerovo {
         left: 50%;
-        top: 35%;          
-// big map            
+        top: 35%;
+// big map
 //        left: 72%;
-//        top: 22%;   
+//        top: 22%;
         &::before {
             left: -55%;
-        }           
+        }
     }
     &.is-novosibirsk {
         left: 46%;
-        top: 36%;             
-// big map         
+        top: 36%;
+// big map
 //        left: 69%;
-//        top: 24%;   
+//        top: 24%;
         &::before {
             left: -55%;
-        }           
+        }
     }
     &.is-novokuzneck {
         left: 53%;
-        top: 37%;        
-// big map           
+        top: 37%;
+// big map
 //        left: 73%;
 //        top: 25%;
         &::before {
             left: -80%;
-        }           
+        }
     }
     &.is-barnaul {
         left: 49%;
-        top: 40%;        
-// big map            
+        top: 40%;
+// big map
 //        left: 71%;
 //        top: 26%;
-        z-index: 9;   
+        z-index: 9;
         &::before {
             left: -40%;
-        }           
-    }    
+        }
+    }
     &.is-vladivostok {
         left: 69.5%;
-        top: 48%;        
-// big map           
+        top: 48%;
+// big map
 //        left: 82%;
-//        top: 28%;   
+//        top: 28%;
         &::before {
             left: -86%;
-        }        
-    } 
+        }
+    }
     &.is-samara {
         left: 31%;
-        top: 40%;        
-// big map                
+        top: 40%;
+// big map
 //        left: 60%;
-//        top: 25%;   
+//        top: 25%;
         &::before {
             left: -30%;
         }
-    } 
+    }
+    &.is-surgut {
+        left: 40%;
+        top: 28%;
+    }
+    &.is-ufa {
+        left: 35%;
+        top: 35%;
+    }
+    &.is-tumen {
+        left: 37%;
+        top: 31%;
+        z-index: 0;
+    }
+    &.is-yoshkarola {
+        left: 29%;
+        top: 30%;
+    }
     &::before {
         content: attr(data-map-city-name);
         @include rhythm-borders(1px, 0);
         border-color: $color_red;
-        border-style: dashed;  
+        border-style: dashed;
         background-color: $color_white;
         color: $color_red;
         padding: .5em;
@@ -677,7 +694,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         z-index: 999;
         &::before {
             display: block;
-        }        
+        }
     }
 }
 @include for-size(device-small-max) {
@@ -686,7 +703,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
             @include adjust-font-size-to(12px);
             top: -120%;
         }
-    }         
+    }
 }
 /* Accevnt block ------*/
 .c-accent__header {
@@ -700,12 +717,12 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 @include for-size(desktop-max) {
     .c-accent__item {
         @include span(4);
-    }     
+    }
 }
 @include for-size(phone-max) {
     .c-accent__item {
         @include span(6);
-    }           
+    }
 }
 @include for-size(device-small-max) {
     .c-accent__item {
@@ -713,17 +730,17 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         .c-accent__content {
             height: auto !important;
         }
-    }         
+    }
 }
 .c-accent__content {
     @include rhythm-borders(4px, 0);
     border-color: $color_black;
-    border-style: dashed;    
+    border-style: dashed;
     padding: 0.8em;
     text-align: center;
     &.bg-purple {
         background-color: $color_purple;
-    }        
+    }
 }
 .c-accent__text {
     color: $color_white;
@@ -767,7 +784,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 }
 .deptStepsItem__circle p{
 	text-align:center;
-	color:white;	
+	color:white;
 	@include adjust-font-size-to(60px);
 	line-height:90px;
 	font-weight:900;
@@ -786,20 +803,20 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 .deptStepsItem{
 	@include span(4);
 	@media (max-width: 680px) {
-		@include span(12); 
+		@include span(12);
 	}
 }
 .deptSteps {
     .c-slider {
-        .flickity-prev-next-button {         
+        .flickity-prev-next-button {
             &.previous {
-                background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIzNC41cHgiIGhlaWdodD0iMTE0LjVweCIgdmlld0JveD0iMCAwIDM0LjUgMTE0LjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM0LjUgMTE0LjU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7c3Ryb2tlOiNmZmZmZmY7c3Ryb2tlLXdpZHRoOjAuNTtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBvbHlsaW5lIGNsYXNzPSJzdDAiIHBvaW50cz0iMzQuMywwLjEgMC4zLDU5LjEgMzQuMywxMTQuNCAiLz4NCjwvc3ZnPg0K');   
+                background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIzNC41cHgiIGhlaWdodD0iMTE0LjVweCIgdmlld0JveD0iMCAwIDM0LjUgMTE0LjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM0LjUgMTE0LjU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7c3Ryb2tlOiNmZmZmZmY7c3Ryb2tlLXdpZHRoOjAuNTtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBvbHlsaW5lIGNsYXNzPSJzdDAiIHBvaW50cz0iMzQuMywwLjEgMC4zLDU5LjEgMzQuMywxMTQuNCAiLz4NCjwvc3ZnPg0K');
             }
             &.next {
-                background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIzNC41cHgiIGhlaWdodD0iMTE0LjVweCIgdmlld0JveD0iMCAwIDM0LjUgMTE0LjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM0LjUgMTE0LjU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7c3Ryb2tlOiNmZmZmZmY7c3Ryb2tlLXdpZHRoOjAuNTtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBvbHlsaW5lIGNsYXNzPSJzdDAiIHBvaW50cz0iMC4zLDExNC40IDM0LjMsNTUuNCAwLjMsMC4xICIvPg0KPC9zdmc+DQo=');  
-            }    
-        }  
-    }    
+                background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIzNC41cHgiIGhlaWdodD0iMTE0LjVweCIgdmlld0JveD0iMCAwIDM0LjUgMTE0LjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM0LjUgMTE0LjU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7c3Ryb2tlOiNmZmZmZmY7c3Ryb2tlLXdpZHRoOjAuNTtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBvbHlsaW5lIGNsYXNzPSJzdDAiIHBvaW50cz0iMC4zLDExNC40IDM0LjMsNTUuNCAwLjMsMC4xICIvPg0KPC9zdmc+DQo=');
+            }
+        }
+    }
 }
 /* DeptExp block ------*/
 .deptExp{
@@ -816,10 +833,10 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 .deptExp__message_nopad{
 	padding:0;
 }
-.deptExp__message_dept1{ 
+.deptExp__message_dept1{
 	border:2px dashed $dept1;
 }
-.deptExp__message_dept2{ 
+.deptExp__message_dept2{
 	border:2px dashed $dept2;
     &.is-blue {
         border-color: $color_blue;
@@ -827,7 +844,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
     &.is-yellow {
         border-color: $color_yellow;
         @include adjust-font-size-to(20px);
-    }    
+    }
 }
 
 .deptExp__aboutTeam__itemWrap{
@@ -850,7 +867,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
     text-align: start;
     a {
         color: $color_red;
-    }    
+    }
 }
 .deptExp__aboutTeam__itemWrap{
 	@include span(3);
@@ -861,13 +878,13 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 .deptExp__messageWrap{
 	@include span(9);
 //	@media (max-width: 860px) {
-//		@include span(12); 
+//		@include span(12);
 //	}
 }
 @include for-size(phone-max) {
     .deptExp__messageWrap {
         @include span(12);
-    }           
+    }
 }
 .deptExp {
     &.is-purple {
@@ -876,13 +893,13 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
             @include adjust-font-size-to(20px);
         }
         .aboutTeamItem__back_dept2 {
-            background-color: $color_purple !important;            
+            background-color: $color_purple !important;
         }
         .contact__button_gray.contact__button_dept2 {
             background: linear-gradient(to top,$color_purple 50%,#ddd 50%);
             background-size: 100% 200%;
-            background-position: left top;            
-        }        
+            background-position: left top;
+        }
         .contact__button_dept2 {
             border-color: $color_purple;
         }
@@ -900,13 +917,13 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
             @include adjust-font-size-to(20px);
         }
         .aboutTeamItem__back_dept2 {
-            background-color: $color_green !important;            
+            background-color: $color_green !important;
         }
         .contact__button_gray.contact__button_dept2 {
             background: linear-gradient(to top,$color_green 50%,#ddd 50%);
             background-size: 100% 200%;
-            background-position: left top;            
-        }        
+            background-position: left top;
+        }
         .contact__button_dept2 {
             border-color: $color_green;
         }
@@ -917,20 +934,20 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
             background: url(../img/expert-green.png);
             background-size: cover;
         }
-    } 
+    }
     &.is-blue {
         .deptExp__message_dept2 {
             border-color: $color_blue;
             @include adjust-font-size-to(20px);
         }
         .aboutTeamItem__back_dept2 {
-            background-color: $color_blue !important;            
+            background-color: $color_blue !important;
         }
         .contact__button_gray.contact__button_dept2 {
             background: linear-gradient(to top,$color_blue 50%,#ddd 50%);
             background-size: 100% 200%;
-            background-position: left top;            
-        }        
+            background-position: left top;
+        }
         .contact__button_dept2 {
             border-color: $color_blue;
         }
@@ -948,13 +965,13 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
             @include adjust-font-size-to(20px);
         }
         .aboutTeamItem__back_dept2 {
-            background-color: $color_yellow !important;            
+            background-color: $color_yellow !important;
         }
         .contact__button_gray.contact__button_dept2 {
             background: linear-gradient(to top,$color_yellow 50%,#ddd 50%);
             background-size: 100% 200%;
-            background-position: left top;            
-        }        
+            background-position: left top;
+        }
         .contact__button_dept2 {
             border-color: $color_yellow;
         }
@@ -965,7 +982,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
             background: url(../img/expert-yellow.png);
             background-size: cover;
         }
-    }     
+    }
 }
 /* DeptReq block ------*/
 .deptReq{
@@ -983,7 +1000,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 	@include rhythm(0,1,1,0);
 	max-width:220px;
 	min-height:10em;
-	border:4px dashed white;	
+	border:4px dashed white;
 	display:flex;
 	display:-webkit-flex;
 	align-items:center;
@@ -1022,7 +1039,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         .deptReqItem_dept2:hover{
             border-color: $color_blue;
         }
-    }    
+    }
 }
 .deptReqItem_dept1.deptReqItem_on p{
 	color:$dept1-gray;
@@ -1047,7 +1064,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 		@include span(6);
 	}
 	@media (max-width: 460px) {
-		@include span(12); 
+		@include span(12);
 	}
 }
 .dept2ReqItem__wrap{
@@ -1058,12 +1075,12 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
             @include span(4);
         }
         @include for-size(tablet-max) {
-            @include span(6);         
+            @include span(6);
         }
         @include for-size(device-small-max) {
-            @include span(12);     
-        }        
-    }    
+            @include span(12);
+        }
+    }
 	@media (max-width: 960px) {
 		@include span(4);
 	}
@@ -1071,12 +1088,12 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 		@include span(6);
 	}
 	@media (max-width: 460px) {
-		@include span(12); 
+		@include span(12);
 	}
 }
 /* Results block ------*/
 .c-results {
-    //padding: 50px 0px;    
+    //padding: 50px 0px;
 }
 .c-results__title {
 	@include rhythm(0, 2, 1, 0);
@@ -1088,8 +1105,8 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 .c-results__block {
     @include rhythm-borders(4px, 0);
     border-color: $color_red;
-    border-style: dashed;  
-    padding: 1em;  
+    border-style: dashed;
+    padding: 1em;
     //margin-top: 2em;
 }
 .c-results__table {
@@ -1099,37 +1116,37 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 .c-results__header {
     @include trailing-border(1px, 0);
     border-color: $color_red;
-    border-style: dashed;  
+    border-style: dashed;
     text-align: left;
 }
 .c-results__body {
-    
+
 }
 .c-results__row {
     .c-results__col:first-child {
         @include rhythm-borders(1px, 0);
         border-color: $color_red;
-        border-style: dashed;    
+        border-style: dashed;
         border-left: none;
         border-top: none;
         border-bottom: none;
-    } 
+    }
 }
 .c-results__body {
     .c-results__row {
         &:hover {
             background-color: $color_gray_light;
-        }        
+        }
     }
 }
-.c-results__col { 
+.c-results__col {
     display: table-cell;
     padding: .25em .5em;
     padding-bottom: 0.3em;
-    padding-top: 0.5em;    
+    padding-top: 0.5em;
     &.is-text-right {
         text-align: right;
-    }    
+    }
 }
 .c-results__block {
     &.is-border-yellow {
@@ -1138,10 +1155,10 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
             border-color: $color_yellow;
         }
         .c-results__row {
-            .c-results__col:first-child {    
+            .c-results__col:first-child {
                 border-color: $color_yellow;
-            } 
-        }        
+            }
+        }
     }
     &.is-border-green {
         border-color: $color_green;
@@ -1149,21 +1166,21 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
             border-color: $color_green;
         }
         .c-results__row {
-            .c-results__col:first-child {    
+            .c-results__col:first-child {
                 border-color: $color_green;
-            } 
-        }        
-    }    
+            }
+        }
+    }
     &.is-border-purple {
         border-color: $color_purple;
         .c-results__header {
             border-color: $color_purple;
         }
         .c-results__row {
-            .c-results__col:first-child {    
+            .c-results__col:first-child {
                 border-color: $color_purple;
-            } 
-        }        
+            }
+        }
     }
 }
 .c-results__img {
@@ -1174,8 +1191,8 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 @include for-size(device-small-max) {
     .c-table__container {
         overflow-y: scroll;
-    } 
-}       
+    }
+}
 /* Results block ------*/
 .dept1Info{
 	text-align:center;
@@ -1217,7 +1234,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 	background-size: 100% 100%;
 }
 .dept1InfoImage_hidden{
-	opacity:0;	
+	opacity:0;
 }
 .dept1InfoItemWrap{
 	@include span(4);
@@ -1253,9 +1270,9 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         top: 0;
         width: 30px;
         height: 30px;
-        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4yLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwb2x5Z29uIGZpbGw9IiNmZmNjMDAiIHBvaW50cz0iMCw0MCAxMDAsMCA2MCwxMDAgNTAsNTAgIi8+DQo8L3N2Zz4NCg==');         
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4yLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwb2x5Z29uIGZpbGw9IiNmZmNjMDAiIHBvaW50cz0iMCw0MCAxMDAsMCA2MCwxMDAgNTAsNTAgIi8+DQo8L3N2Zz4NCg==');
         background-repeat: no-repeat;
-        background-size: contain;                    
+        background-size: contain;
     }
 }
 .c-list-arrow {
@@ -1263,7 +1280,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         margin-top: 1em;
         .c-list-arrow__item {
             &:before {
-                background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4yLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwb2x5Z29uIGZpbGw9IiMyNmE2NWIiIHBvaW50cz0iMCw0MCAxMDAsMCA2MCwxMDAgNTAsNTAgIi8+DQo8L3N2Zz4NCg==');                   
+                background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4yLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwb2x5Z29uIGZpbGw9IiMyNmE2NWIiIHBvaW50cz0iMCw0MCAxMDAsMCA2MCwxMDAgNTAsNTAgIi8+DQo8L3N2Zz4NCg==');
             }
         }
     }
@@ -1298,9 +1315,9 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 }
 .bAbout__item {
     margin-top: 1em;
-	@include span(4); 
+	@include span(4);
 	@media (max-width: 680px) {
-		@include span(12 last); 
+		@include span(12 last);
 		@include rhythm(0, 0, 0, 2);
 	}
     text-align: left;
@@ -1340,7 +1357,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 		@include span(6);
 	}
 	@media (max-width: 680px) {
-		@include span(12); 
+		@include span(12);
 	}
 }
 .aboutPartners__info{
@@ -1349,7 +1366,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 		@include span(6 last);
 	}
 	@media (max-width: 680px) {
-		@include span(12); 
+		@include span(12);
 	}
 }
 /* bEventContacts block ------*/
@@ -1371,7 +1388,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
     &.is-black {
         img {
             @include filter(grayscale(100%));
-        }        
+        }
     }
 }
 .bEventContacts__image img{
@@ -1386,11 +1403,11 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
 @include for-size(device-small-max) {
     .bEventContacts__text {
         float: left;
-    }         
+    }
 }
 .bEventContacts__heading{
 	@include adjust-font-size-to(20px);
-	font-weight:600;	
+	font-weight:600;
 }
 .bEventContacts__text a{
 	color:white;
@@ -1600,38 +1617,38 @@ img.mfp-img {
 .my-mfp-zoom-in .zoom-anim-dialog {
   opacity: 0;
 
-  -webkit-transition: all 0.15s ease-in-out; 
-  -moz-transition: all 0.15s ease-in-out; 
-  -o-transition: all 0.15s ease-in-out; 
-  transition: all 0.15s ease-in-out; 
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 
 
 
-  -webkit-transform: scale(0.8); 
-  -moz-transform: scale(0.8); 
-  -ms-transform: scale(0.8); 
-  -o-transform: scale(0.8); 
-  transform: scale(0.8); 
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 /* animate in */
 .my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
   opacity: 1;
 
-  -webkit-transform: scale(1); 
-  -moz-transform: scale(1); 
-  -ms-transform: scale(1); 
-  -o-transform: scale(1); 
-  transform: scale(1); 
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
 }
 
 /* animate out */
 .my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
-  -webkit-transform: scale(0.8); 
-  -moz-transform: scale(0.8); 
-  -ms-transform: scale(0.8); 
-  -o-transform: scale(0.8); 
-  transform: scale(0.8); 
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
 
   opacity: 0;
 }
@@ -1639,9 +1656,9 @@ img.mfp-img {
 /* Dark overlay, start state */
 .my-mfp-zoom-in.mfp-bg {
   opacity: 0;
-  -webkit-transition: opacity 0.2s ease-out; 
-  -moz-transition: opacity 0.2s ease-out; 
-  -o-transition: opacity 0.2s ease-out; 
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
 }
 /* animate in */
@@ -1659,60 +1676,60 @@ img.mfp-img {
 }
 .c-mentors__header {
 	@include rhythm(0, 2, 1, 0);
-    text-align: center; 
+    text-align: center;
     color: $color_white;
 }
 
 .c-mentors__list {
     &.c-slider {
-        .flickity-prev-next-button {         
+        .flickity-prev-next-button {
             &.previous {
-                background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIzNC41cHgiIGhlaWdodD0iMTE0LjVweCIgdmlld0JveD0iMCAwIDM0LjUgMTE0LjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM0LjUgMTE0LjU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7c3Ryb2tlOiNmZmZmZmY7c3Ryb2tlLXdpZHRoOjAuNTtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBvbHlsaW5lIGNsYXNzPSJzdDAiIHBvaW50cz0iMzQuMywwLjEgMC4zLDU5LjEgMzQuMywxMTQuNCAiLz4NCjwvc3ZnPg0K');   
+                background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIzNC41cHgiIGhlaWdodD0iMTE0LjVweCIgdmlld0JveD0iMCAwIDM0LjUgMTE0LjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM0LjUgMTE0LjU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7c3Ryb2tlOiNmZmZmZmY7c3Ryb2tlLXdpZHRoOjAuNTtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBvbHlsaW5lIGNsYXNzPSJzdDAiIHBvaW50cz0iMzQuMywwLjEgMC4zLDU5LjEgMzQuMywxMTQuNCAiLz4NCjwvc3ZnPg0K');
             }
             &.next {
-                background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIzNC41cHgiIGhlaWdodD0iMTE0LjVweCIgdmlld0JveD0iMCAwIDM0LjUgMTE0LjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM0LjUgMTE0LjU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7c3Ryb2tlOiNmZmZmZmY7c3Ryb2tlLXdpZHRoOjAuNTtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBvbHlsaW5lIGNsYXNzPSJzdDAiIHBvaW50cz0iMC4zLDExNC40IDM0LjMsNTUuNCAwLjMsMC4xICIvPg0KPC9zdmc+DQo=');  
-            }    
-        }  
-    }    
+                background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIzNC41cHgiIGhlaWdodD0iMTE0LjVweCIgdmlld0JveD0iMCAwIDM0LjUgMTE0LjUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM0LjUgMTE0LjU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7c3Ryb2tlOiNmZmZmZmY7c3Ryb2tlLXdpZHRoOjAuNTtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBvbHlsaW5lIGNsYXNzPSJzdDAiIHBvaW50cz0iMC4zLDExNC40IDM0LjMsNTUuNCAwLjMsMC4xICIvPg0KPC9zdmc+DQo=');
+            }
+        }
+    }
 }
 .c-mentors__item {
-    @include span(2);   
+    @include span(2);
     margin-bottom: 1em;
     margin-top: 1em;
 }
 @include for-size(desktop-max) {
     .c-mentors__item {
         @include span(4);
-    }     
+    }
 }
 @include for-size(tablet-max) {
     .c-mentors__item {
         @include span(6);
-    }           
+    }
 }
 @include for-size(device-small-max) {
     .c-mentors__item {
         @include span(12);
-    }         
+    }
 }
 .c-mentors__image {
     @include rhythm-borders(2px, 0);
     border-color: $color_white;
-    border-style: dashed;  
+    border-style: dashed;
     border-bottom: none;
     position: relative;
     max-width: 200px;
     margin-left: auto;
     margin-right: auto;
 }
-.c-mentors__content {    
+.c-mentors__content {
     @include rhythm-borders(2px, 0);
     border-color: $color_white;
-    border-style: dashed;  
-    padding: .5em .5em .5em .5em;   
+    border-style: dashed;
+    padding: .5em .5em .5em .5em;
     max-width: 200px;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
 }
 .c-mentors__title {
     color: $color_white;
@@ -1725,13 +1742,13 @@ img.mfp-img {
     font-weight: 600;
     background: rgba($color_black,.5);
     width: 100%;
-    padding: .3em .5em;  
+    padding: .3em .5em;
     max-width: 200px;
 }
 .c-mentors__text {
     color: $color_white;
     @include adjust-font-size-to(14px);
-    @include rhythm(0, 0, 0, 0);  
+    @include rhythm(0, 0, 0, 0);
     line-height: 1em;
 }
 /* Contacts page ------*/
@@ -1860,12 +1877,12 @@ p.contactInfo__link {
 .blogPostInfo_dept2{
 	background:$dept2;
 }
-.blogPostInfo_dept1 .blogPostInfo__title, 
+.blogPostInfo_dept1 .blogPostInfo__title,
 .blogPostInfo_dept1 .blogPostInfo__desc,
 .blogPostInfo_dept1 .blogPostInfo__tags li,
 .blogPostInfo_dept1 .blogPostInfo__tags li a{
 	color:black;
-	
+
 }
 .blogPostInfo_dept1 .blogPostInfo__tags li a{
 	border-color:black;
@@ -1911,14 +1928,14 @@ p.contactInfo__link {
         &:hover {
             color: $color_red;
         }
-    } 
+    }
     p {
         a {
             color: $color_red;
             &:hover {
                 color: $color_red;
             }
-        }         
+        }
     }
 }
 .blogPostContent ul{
@@ -1977,7 +1994,7 @@ p.contactInfo__link {
         &:hover {
             color: $color_red;
         }
-    }    
+    }
 }
 .b-1 p{
 	@include adjust-font-size-to(24px,6);
@@ -1992,7 +2009,7 @@ p.contactInfo__link {
         &:hover {
             color: $color_red;
         }
-    }       
+    }
 }
 .b-2 p{
 	@include adjust-font-size-to(24px,6);
@@ -2011,7 +2028,7 @@ blockquote.b-3::before{
 	}
 }
 .b-3{
-	
+
 	padding-right:1em;
     @include rhythm(4,0,0,4);
 }
