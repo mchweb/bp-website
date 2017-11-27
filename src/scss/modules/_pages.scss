@@ -1891,6 +1891,8 @@ p.contactInfo__link {
 	color:white !important;
 	@include rhythm(-6,2,2,0);
 	text-align:right;
+    margin-top: -2.7em;
+    margin-right: 5px;    
 	opacity:0.75;
 	pointer-events: none;
 }

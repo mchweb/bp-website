@@ -7300,6 +7300,8 @@ p.contactInfo__link {
   padding-bottom: 0.75em;
   margin-bottom: 0em;
   text-align: right;
+  margin-top: -2.7em;
+  margin-right: 5px;
   opacity: 0.75;
   pointer-events: none;
 }
