@@ -18,7 +18,7 @@
 .header__navMain{
 	float:right;
 	@include rhythm(5, 0, 0, 0);
-	
+
 	@media (max-width: 799px) {
 		position: fixed;
 		z-index:101;
@@ -28,7 +28,7 @@
 		top:0;
 		right:-300px;
 	}
-	
+
 }
 
 /* Contacts ------*/
@@ -73,7 +73,7 @@
 .header__navMain{
 	float:right;
 	@include rhythm(5, 0, 0, 0);
-	
+
 	@media (max-width: 799px) {
 		position: fixed;
 		z-index:101;
@@ -84,7 +84,7 @@
 		top:0;
 		right:-300px;
 	}
-	
+
 }
 
 /* Message ------*/
@@ -96,7 +96,7 @@
 	@include rhythm(.6, 3, 2, 0);
 	padding-left:1.5em;
 	padding-right:1em;
-	margin-left:2em;    
+	margin-left:2em;
 }
 @include for-size(phone-only) {
     .c-header__message {
@@ -109,14 +109,14 @@
         padding-left: 0px;
         max-width: 200px;
         margin-left: 1em;
-    }         
+    }
 }
 @media (min-width: 360px) and (max-width: $screen_xs_min) {
     .c-header__message {
         @include adjust-font-size-to(13px);
         line-height: 1em;
         margin-top: 0.6em;
-    }    
+    }
 }
 @media (max-width: 360px) {
     .c-header__message {
@@ -125,14 +125,14 @@
         line-height: 1em;
         margin-top: 0.6em;
     }
-}  
+}
 /* Navigation ------*/
 .c-header__nav {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-	background: rgba(0,0,0,0.75); 
+	background: rgba(0,0,0,0.75);
 }
 
 /* Welcome ------*/
@@ -144,7 +144,7 @@
 @include for-size(device-small-max) {
     .c-welcome {
         height: 700px;
-    }         
+    }
 }
 .c-welcome__thumbnail {
     display: none;
@@ -165,18 +165,18 @@
 @include for-size(desktop-max) {
     .c-welcome__container {
         margin-bottom: 1em;
-    }     
+    }
 }
 @include for-size(device-small-max) {
     .c-welcome__container {
         max-height: 150px;
-    }      
+    }
 }
 .c-welcome__text {
     background-color: $color_white;
 	@include rhythm(0, 3, 3, 0);
 	padding-left: 1.5em;
-	padding-right: 1em;    
+	padding-right: 1em;
     max-width: 500px;
     text-transform: uppercase;
     font-weight: bold;
@@ -197,7 +197,7 @@
     .c-welcome__text {
         max-width: 320px;
         @include adjust-font-size-to(12px);
-    }      
+    }
 }
 .c-welcome__icon {
     position: absolute;
@@ -212,12 +212,12 @@
         height: 20px;
         width: 20px;
         top: -14px;
-    }      
+    }
 }
 .c-welcome {
     @include for-size(phone-max) {
         height: 400px;
-    }    
+    }
     &.is-small {
         height: 425px;
         @include for-size(phone-max) {
@@ -234,7 +234,7 @@
         }
         .c-welcome__icon {
             display: none;
-        }    
+        }
         .c-welcome__text {
             max-width: none;
             background: transparent;
@@ -246,7 +246,7 @@
                 border-color: $color_black;
                 border-style: dashed;
                 @include adjust-font-size-to(18px);
-                color: $color_white;              
+                color: $color_white;
                 text-transform: none;
                 font-weight: normal;
                 padding: 0.25em;
@@ -258,6 +258,7 @@
                 color: $color_white;
                 text-transform: none;
                 margin-top: .1em;
+				@include adjust-font-size-to(38px);
 //                max-width: 500px;
                 text-align: center;
             }
@@ -266,7 +267,7 @@
 }
 /* First Screen ------*/
 .firstScreen{
-	background-size:cover; 
+	background-size:cover;
 	display:flex;
 	display:-webkit-flex;
 	align-items:center;
@@ -311,5 +312,5 @@
 @include for-size(device-small-max) {
     .firstScreen_blog{
         max-height: 43.25em;
-    }    
+    }
 }

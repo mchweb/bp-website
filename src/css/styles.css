@@ -4425,6 +4425,8 @@ strong {
   color: #ffffff;
   text-transform: none;
   margin-top: .1em;
+  font-size: 2.375em;
+  line-height: 1.10526em;
   text-align: center;
 }
 
