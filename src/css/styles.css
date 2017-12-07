@@ -5328,8 +5328,9 @@ strong {
   }
 }
 .aboutTeam__itemImage {
-  background-size: contain;
+  background-size: cover;
   padding-top: 100%;
+  background-repeat: no-repeat;
 }
 
 .aboutTeam__itemName {

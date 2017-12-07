@@ -321,8 +321,9 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
     }
 }
 .aboutTeam__itemImage{
-	background-size:contain;
+	background-size: cover;
 	padding-top: 100%;
+    background-repeat: no-repeat;
 }
 .aboutTeam__itemName{
 	@include adjust-font-size-to(20px);
@@ -1892,7 +1893,7 @@ p.contactInfo__link {
 	@include rhythm(-6,2,2,0);
 	text-align:right;
     margin-top: -2.7em;
-    margin-right: 5px;    
+    margin-right: 5px;
 	opacity:0.75;
 	pointer-events: none;
 }
