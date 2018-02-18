@@ -5698,6 +5698,13 @@ strong {
   left: 29%;
   top: 30%;
 }
+.c-map__element.is-rostov {
+  left: 24%;
+  top: 43%;
+}
+.c-map__element.is-rostov::before {
+  left: -30%;
+}
 .c-map__element::before {
   content: attr(data-map-city-name);
   border-width: 0.0625em;

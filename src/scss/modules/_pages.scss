@@ -677,6 +677,16 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
         left: 29%;
         top: 30%;
     }
+    &.is-rostov {
+        left: 24%;
+        top: 43%;
+// big map
+//        left: 60%;
+//        top: 25%;
+        &::before {
+            left: -30%;
+        }
+    }
     &::before {
         content: attr(data-map-city-name);
         @include rhythm-borders(1px, 0);
