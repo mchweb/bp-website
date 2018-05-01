@@ -56,6 +56,11 @@
     @extend .container;
     margin-bottom: 3em;
 }
+.l-products.two {
+    .l-products__item {
+        @include span(6);
+    }
+}
 .l-products__item {
     @include span(3);
     padding-left: 1em;
@@ -106,7 +111,7 @@
 }
 .c-products__link {
     position: absolute;
-    let: 0;
+    left: 0;
     top: 0;
     width: 100%;
     height: 100%;
@@ -127,6 +132,9 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
         @include adjust-font-size-to(8px);
     }
 }
+.c-products__header.bg-red::after {
+    background-color: $color_red_two !important;
+}
 
 .l-products {
     &.is-same-back {
@@ -143,6 +151,18 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
             .c-products__header {
                 position: relative;
             }
+        }
+    }
+}
+.c-products__container.bg-red:hover {
+    .c-products__header, .c-products__title, .c-products__text {
+        color: $color_white !important;
+        a {
+            color: $color_white !important;
+            border-bottom-color: $color_white !important;
+        }
+        h2 {
+            color: $color_white !important;
         }
     }
 }
@@ -278,7 +298,15 @@ $colors_product: $color_yellow, $color_green, $color_blue, $color_purple;
 		@include span(12);
 	}
 }
-
+.aboutFacts.bg-white {
+    background: #ffffff;
+}
+.aboutFacts.bg-white .pageHeading_aboutFacts {
+    color: $dark;
+}
+.aboutFacts.bg-white .aboutFactsCol p {
+    color: $dark;
+}
 .mainHeadingCaption{
 	@include adjust-font-size-to(16px);
 }
@@ -559,7 +587,7 @@ $colors_team: $color_yellow, $color_green, $color_blue, $color_purple;
     top: 0px;
     z-index: 1;
     &::before {
-        display: none;
+        display: block;
     }
     &.is-helsinki {
         left: 15%;

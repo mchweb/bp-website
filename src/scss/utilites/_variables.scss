@@ -15,6 +15,7 @@ $color_black_light: #111111;
 $color_black_light2: #1e1e1e;
 $color_purple: #913d88;
 $color_red: #cf0000;
+$color_red_two: #d40000;
 $color_yellow: #ffcc00;
 $color_green: #26a65b;
 $color_blue: #4183d7;
@@ -76,14 +77,14 @@ $btn_font_size_small: 14px;
 /* Breakpoints ----*/
 $screen_lg: 1400px;
 $screen_lg_min: 1200px;
-$screen_md_max: ($screen_lg_min - 1); 
+$screen_md_max: ($screen_lg_min - 1);
 $screen_md_min: 992px;
 $screen_sm_max: ($screen_md_min - 1);
 $screen_sm_min: 768px;
 $screen_xs_max: ($screen_sm_min - 1);
-$screen_xs_min: 480px;    
-$screen_xs_small_max: ($screen_xs_min - 1); 
-$screen_xs_small_min: 320px;  
+$screen_xs_min: 480px;
+$screen_xs_small_max: ($screen_xs_min - 1);
+$screen_xs_small_min: 320px;
 
 /* Variables old ----*/
 $lg: 1280px;
@@ -102,4 +103,3 @@ $dept3: #913d87;
 $footer: #333333;
 $gray: #ddd;
 $dark:#1e1e1e;
-
