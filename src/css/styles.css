@@ -3119,6 +3119,10 @@ table {
   background-color: #26a65b !important;
 }
 
+.bg-red {
+  background-color: #cf0000 !important;
+}
+
 .color-white {
   color: #ffffff !important;
 }
@@ -5493,6 +5497,26 @@ strong {
 .popup_dept2.c-popup.is-yellow .aboutTeam__itemImage.is-no-bg:hover .aboutTeamItem__back_dept2 {
   background: none;
 }
+.popup_dept2.c-popup.is-red {
+  border-color: #cf0000;
+}
+.popup_dept2.c-popup.is-red .contactForm__button_gray.contactForm__button_dept2 {
+  background: linear-gradient(to top, #cf0000 50%, #dddddd 50%) !important;
+  background-size: 100% 200% !important;
+  background-position: left top !important;
+}
+.popup_dept2.c-popup.is-red .contactForm__button_dept2 {
+  border-color: #cf0000 !important;
+}
+.popup_dept2.c-popup.is-red .contactForm__button_dept2:hover {
+  background-position: right bottom !important;
+}
+.popup_dept2.c-popup.is-red .aboutTeamItem__back_dept2 {
+  background-color: #cf0000 !important;
+}
+.popup_dept2.c-popup.is-red .aboutTeam__itemImage.is-no-bg:hover .aboutTeamItem__back_dept2 {
+  background: none;
+}
 .popup_dept2.c-popup.is-purple {
   border-color: #913d88;
 }
@@ -5632,7 +5656,21 @@ strong {
 .c-map .container.is-small, .c-map .is-small.l-products {
   max-width: 900px;
 }
+.c-map .is-desktop {
+  display: block;
+}
+.c-map .is-mobile {
+  display: none;
+}
 
+@media only screen and (max-width: 767px) {
+  .c-map .is-desktop {
+    display: none;
+  }
+  .c-map .is-mobile {
+    display: block;
+  }
+}
 .c-map__element {
   background-image: url("../img/icon-map-basic.png");
   background-size: contain;
@@ -5970,6 +6008,11 @@ strong {
   font-size: 1.25em;
   line-height: 1.2em;
 }
+.deptExp__message_dept2.is-red {
+  border-color: #cf0000;
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
 
 .deptExp__aboutTeam__itemWrap {
   padding-right: 1.5em;
@@ -6125,6 +6168,29 @@ strong {
 }
 .deptExp.is-yellow .aboutTeam__itemImage:hover .aboutTeamItem__back_dept2 {
   background: url(../img/expert-yellow.png);
+  background-size: cover;
+}
+.deptExp.is-red .deptExp__message_dept2 {
+  border-color: #cf0000;
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
+.deptExp.is-red .aboutTeamItem__back_dept2 {
+  background-color: #cf0000 !important;
+}
+.deptExp.is-red .contact__button_gray.contact__button_dept2 {
+  background: linear-gradient(to top, #cf0000 50%, #dddddd 50%);
+  background-size: 100% 200%;
+  background-position: left top;
+}
+.deptExp.is-red .contact__button_dept2 {
+  border-color: #cf0000;
+}
+.deptExp.is-red .contact__button_dept1:hover, .deptExp.is-red .contact__button_dept2:hover {
+  background-position: right bottom;
+}
+.deptExp.is-red .aboutTeam__itemImage:hover .aboutTeamItem__back_dept2 {
+  background: url(../img/expert-red.png);
   background-size: cover;
 }
 
